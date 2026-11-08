@@ -3105,3 +3105,47 @@
   font-weight: 700;
   cursor: pointer;
 }
+
+/* Generic app themes for banks, messengers, social, marketplaces, delivery, gov */
+.v-app--bank .v-head { background: #123a5c; color: #fff; }
+.v-app--messenger .v-head { background: #2f6fb0; color: #fff; }
+.v-app--social .v-head { background: #b23a6b; color: #fff; }
+.v-app--market .v-head { background: #b06a22; color: #fff; }
+.v-app--delivery .v-head { background: #b83a2e; color: #fff; }
+.v-app--gov .v-head { background: #0b564f; color: #fff; }
+
+.v-app--bank .v-logo span,
+.v-app--messenger .v-logo span,
+.v-app--social .v-logo span,
+.v-app--market .v-logo span,
+.v-app--delivery .v-logo span,
+.v-app--gov .v-logo span {
+  background: #fff;
+  color: #101010;
+}
+
+.v-app--bank .v-cta { background: #123a5c; border-color: #123a5c; }
+.v-app--messenger .v-cta { background: #2f6fb0; border-color: #2f6fb0; }
+.v-app--social .v-cta { background: #b23a6b; border-color: #b23a6b; }
+.v-app--market .v-cta { background: #b06a22; border-color: #b06a22; }
+.v-app--delivery .v-cta { background: #b83a2e; border-color: #b83a2e; }
+.v-app--gov .v-cta { background: #0b564f; border-color: #0b564f; }
+
+.v-code {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 18px 0 6px;
+}
+
+.v-code span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 44px;
+  border: 1px solid #d8dee2;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}

@@ -1019,6 +1019,145 @@
     </div>
   </section>
 </div>
+                <div class="screens" data-screens="generic">
+  <section class="screen v-app g-app" data-screen="a_home">
+    <div class="v-head">
+      <div class="v-head__top">
+        <div class="v-logo"><span aria-hidden="true" data-slot="letter">A</span><span data-slot="brand">Приложение</span></div>
+        <button type="button" class="iconbtn" aria-label="Меню" style="color:inherit">
+          <svg aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+      <p data-slot="city">Алматы</p>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-fields">
+          <button type="button" class="v-field" data-t="home_open">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-menu"/></svg></span>
+            <span>
+              <span class="v-field__label" data-slot="homeLabel">Раздел</span>
+              <span class="v-field__value" data-slot="homeValue">Открыть</span>
+            </span>
+            <svg aria-hidden="true" style="margin-left:auto;width:16px;height:16px;color:#9aa6ae"><use href="#i-chevron-right"/></svg>
+          </button>
+        </div>
+        <div class="v-fare"><span data-slot="homeNote">Учебный экран</span><b data-slot="homeAmount">—</b></div>
+      </div>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span data-slot="homeHint">Это учебный экран. Реальные операции не выполняются.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen v-app g-app" data-screen="a_list">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:inherit">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700" data-slot="listTitle">Выберите</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-items">
+          <button type="button" class="v-item" data-t="list_pick">
+            <svg aria-hidden="true"><use href="#i-user"/></svg>
+            <b><span data-slot="item0Label">Первый</span><span data-slot="item0Sub">Описание</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-user"/></svg>
+            <b><span data-slot="item1Label">Второй</span><span data-slot="item1Sub">Описание</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-user"/></svg>
+            <b><span data-slot="item2Label">Третий</span><span data-slot="item2Sub">Описание</span></b>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen v-app g-app" data-screen="a_confirm">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:inherit">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700" data-slot="confirmTitle">Проверьте</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-fields">
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-info"/></svg></span>
+            <span><span class="v-field__label" data-slot="row0Label">Параметр</span><span class="v-field__value" data-slot="row0Value">Значение</span></span>
+          </div>
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-info"/></svg></span>
+            <span><span class="v-field__label" data-slot="row1Label">Параметр</span><span class="v-field__value" data-slot="row1Value">Значение</span></span>
+          </div>
+        </div>
+        <div class="v-fare"><span data-slot="confirmNote">Итого</span><b data-slot="confirmValue">—</b></div>
+      </div>
+      <button type="button" class="app-cta v-cta" data-t="confirm_go" data-slot="confirmCta">Подтвердить</button>
+    </div>
+  </section>
+
+  <section class="screen v-app g-app" data-screen="a_code">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:inherit">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700" data-slot="codeTitle">Код из SMS</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-note" style="margin:0">
+          <svg aria-hidden="true"><use href="#i-shield"/></svg>
+          <span data-slot="codeText">Введите код 4821. Никому его не называйте.</span>
+        </div>
+        <div class="v-code" aria-hidden="true"><span>4</span><span>8</span><span>2</span><span>1</span></div>
+      </div>
+      <button type="button" class="app-cta v-cta" data-t="code_ok" data-slot="codeCta">Подтвердить</button>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>Код нужен только для этого действия. Сотрудник банка его не спрашивает.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen v-app g-app" data-screen="a_chat">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:inherit">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700" data-slot="chatTitle">Чат</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-chat">
+        <div class="v-chat__bubble v-chat__bubble--in" data-slot="chatIn">Здравствуйте!</div>
+        <div class="v-chat__bubble v-chat__bubble--out" data-slot="chatOut">Хорошо.</div>
+        <button type="button" class="v-quick" data-t="chat_send" data-slot="chatQuick">Готовая фраза</button>
+      </div>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span data-slot="chatHint">Готовая фраза экономит время.</span>
+      </div>
+    </div>
+  </section>
+</div>
                 <div class="screens" data-screens="taxi-vostok">
   <!-- form -->
   <section class="screen v-app" data-screen="v_home">
@@ -1831,6 +1970,7 @@
 
 <script src="assets/js/app.js"></script>
 <script src="assets/js/data.js"></script>
+<script src="assets/js/app-lessons.js"></script>
 <script src="assets/js/trainer.js"></script>
 </body>
 </html>

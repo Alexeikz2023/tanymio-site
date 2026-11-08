@@ -12,7 +12,7 @@
   var activeFilter = "all";
   var progressPanel = document.querySelector("[data-progress-panel]");
 
-  function preview(app) {
+  function preview(app, item) {
     if (app === "yandex") {
       return (
         '<div class="mini">' +
@@ -58,6 +58,17 @@
         '<div class="mini__bubble">Привет, бабушка!</div>' +
         '<div class="mini__bubble mini__bubble--out">Сейчас отправлю фото</div>' +
         '<div class="mini__photo"></div>' +
+        "</div></div>"
+      );
+    }
+    if (app === "generic") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#123a5c;color:#fff"><span style="font-weight:800">' + T.escape(item.appLabel || "Приложение") + '</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__field"><svg aria-hidden="true"><use href="#i-menu"/></svg>' + T.escape(item.ui && item.ui.homeLabel || "Раздел") + '</div>' +
+        '<div class="mini__row"><span>' + T.escape(item.ui && item.ui.homeValue || "") + '</span><b>' + T.escape(item.ui && item.ui.homeAmount || "") + '</b></div>' +
+        '<div class="mini__cta" style="background:#123a5c">' + T.escape(item.ui && item.ui.confirmCta || "Открыть") + '</div>' +
         "</div></div>"
       );
     }
@@ -123,7 +134,7 @@
       '<div class="lesson-card__visual">' +
       '<div class="lesson-card__badges">' + badge +
       '<span class="lesson-card__app">' + T.escape(item.appLabel) + "</span></div>" +
-      preview(item.app) +
+      preview(item.app, item) +
       (locked ? '<div class="locked-overlay" aria-hidden="true"><svg><use href="#i-lock"/></svg></div>' : "") +
       "</div>" +
       '<div class="lesson-card__body">' +
