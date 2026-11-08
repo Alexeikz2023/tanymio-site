@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Tanymio">
+  <rect width="48" height="48" rx="13" fill="#0B564F"/>
+  <path d="M11 35.5h8v-8h8v-8h8" fill="none" stroke="#FFFDF8" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="36.2" cy="13.4" r="3.6" fill="#E7A24A"/>
+</svg>
