@@ -61,6 +61,28 @@
         "</div></div>"
       );
     }
+    if (app === "indrive") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#c8f36a;color:#101010"><span style="font-weight:800">inDrive</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__map"></div>' +
+        '<div class="mini__field"><svg aria-hidden="true"><use href="#i-search"/></svg>Куда едем?</div>' +
+        '<div class="mini__cta">Предложить 1 200 ₸</div>' +
+        "</div></div>"
+      );
+    }
+    if (app === "greensm") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#0b7a45;color:#fff"><span style="font-weight:800">Xanh SM</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__field"><svg aria-hidden="true"><use href="#i-search"/></svg>Where to?</div>' +
+        '<div class="mini__row"><span>GreenCar</span><b>180 000 ₫</b></div>' +
+        '<div class="mini__cta" style="background:#0b7a45">Book</div>' +
+        "</div></div>"
+      );
+    }
     return (
       '<div class="mini">' +
       '<div class="mini__bar" style="background:#101a17;color:#fff"><span style="font-weight:800">Входящий вызов</span></div>' +

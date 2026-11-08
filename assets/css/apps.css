@@ -3011,3 +3011,97 @@
 .y-menu { width: 44px; height: 44px; }
 .y-place { min-height: 44px; padding-top: 8px; padding-bottom: 8px; }
 .chipbtn { min-height: 44px; display: inline-flex; align-items: center; }
+/* inDrive */
+.v-app--indrive {
+  background: #f5f5ef;
+  color: #101010;
+}
+
+.v-app--indrive .v-head {
+  background: #c8f36a;
+  color: #101010;
+}
+
+.v-app--indrive .v-head p {
+  color: #384d12;
+}
+
+.v-app--indrive .v-logo span {
+  background: #101010;
+  color: #c8f36a;
+}
+
+.v-app--indrive .v-cta {
+  background: #101010;
+  color: #fff;
+  border-color: #101010;
+}
+
+/* Green SM / Xanh SM */
+.v-app--green {
+  background: #f3f8f4;
+  color: #10251a;
+}
+
+.v-app--green .v-head {
+  background: #0b7a45;
+  color: #fff;
+}
+
+.v-app--green .v-logo span {
+  background: #fff;
+  color: #0b7a45;
+}
+
+.v-app--green .v-cta {
+  background: #0b7a45;
+  color: #fff;
+  border-color: #0b7a45;
+}
+
+.pin--end {
+  background: #b06a22;
+}
+
+/* simple in-app chat */
+.v-chat {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 12px;
+  border-radius: 14px;
+  background: #eef4ef;
+}
+
+.v-chat__bubble {
+  max-width: 86%;
+  padding: 9px 11px;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.v-chat__bubble--in {
+  align-self: flex-start;
+  background: #fff;
+}
+
+.v-chat__bubble--out {
+  align-self: flex-end;
+  background: #d7f0dc;
+}
+
+.v-quick {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 9px 12px;
+  border: 1px solid #b9d9c1;
+  border-radius: 999px;
+  background: #fff;
+  color: #0b5f36;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}

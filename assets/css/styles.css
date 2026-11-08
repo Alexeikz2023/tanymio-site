@@ -3057,6 +3057,15 @@ a.lesson-card:hover .lesson-card__foot svg {
    -------------------------------------------------------------------------- */
 
 @media (max-width: 1080px) {
+  .nav,
+  .head-actions .link-quiet {
+    display: none;
+  }
+
+  .burger {
+    display: inline-flex;
+  }
+
   .nav {
     gap: 22px;
   }

@@ -613,6 +613,408 @@
     </div>
   </section>
 </div>
+                <div class="screens" data-screens="taxi-indrive">
+  <!-- home -->
+  <section class="screen v-app v-app--indrive" data-screen="i_home">
+    <div class="v-head">
+      <div class="v-head__top">
+        <div class="v-logo"><span aria-hidden="true">i</span>inDrive</div>
+        <button type="button" class="iconbtn" aria-label="Меню" style="color:#101010">
+          <svg aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+      <p>Алматы · поездки по городу</p>
+    </div>
+    <div class="v-body">
+      <div class="v-map">
+        <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+        <span class="pin" style="left:42%;top:64%"></span>
+      </div>
+      <div class="v-card">
+        <div class="v-fields">
+          <button type="button" class="v-field" data-t="dest">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span>
+              <span class="v-field__label">Куда едем?</span>
+              <span class="v-field__value is-empty">Введите адрес</span>
+            </span>
+            <svg aria-hidden="true" style="margin-left:auto;width:16px;height:16px;color:#9aa6ae"><use href="#i-chevron-right"/></svg>
+          </button>
+        </div>
+        <div class="v-fare"><span>Пассажир предлагает цену</span><b>— ₸</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- search -->
+  <section class="screen v-app v-app--indrive" data-screen="i_search">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:#101010">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Куда едем?</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-fields">
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-search"/></svg></span>
+            <span><span class="v-field__value">Поликлиника</span></span>
+          </div>
+        </div>
+        <div class="v-items">
+          <button type="button" class="v-item" data-t="clinic">
+            <svg aria-hidden="true"><use href="#i-map-pin"/></svg>
+            <b>Поликлиника №4<span>ул. Толе би, 59</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-map-pin"/></svg>
+            <b>Аптека на Толе би<span>ул. Толе би, 71</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-map-pin"/></svg>
+            <b>Дом<span>ул. Абая, 15</span></b>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- offer price -->
+  <section class="screen v-app v-app--indrive" data-screen="i_offer">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:#101010">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Ваш заказ</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-map" style="flex:1;min-height:150px">
+        <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+        <span class="pin" style="left:42%;top:64%"></span>
+        <span class="pin pin--end" style="left:58%;top:38%"></span>
+      </div>
+      <div class="v-card">
+        <div class="v-fields">
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span><span class="v-field__label">Откуда</span><span class="v-field__value">ул. Абая, 15</span></span>
+          </div>
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span><span class="v-field__label">Куда</span><span class="v-field__value">Поликлиника №4, Толе би, 59</span></span>
+          </div>
+        </div>
+        <div class="v-fare"><span>Ваша цена · 4,2 км</span><b>1 200 ₸</b></div>
+      </div>
+      <button type="button" class="app-cta v-cta" data-t="order">Заказать за 1 200 ₸</button>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>В inDrive цену предлагает пассажир. Водители могут согласиться или предложить свою.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- driver offers -->
+  <section class="screen v-app v-app--indrive" data-screen="i_offers">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:#101010">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Предложения водителей</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-note">
+          <svg aria-hidden="true"><use href="#i-info"/></svg>
+          <span>Выберите водителя. Цена и время придут вместе с предложением.</span>
+        </div>
+        <div class="v-items">
+          <button type="button" class="v-item" data-t="accept">
+            <svg aria-hidden="true"><use href="#i-star"/></svg>
+            <b>Аслан · 4,9<span>1 250 ₸ · приедет через 3 минуты · Toyota Camry</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-star"/></svg>
+            <b>Мадияр · 4,7<span>1 200 ₸ · через 5 минут · Hyundai Elantra</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-star"/></svg>
+            <b>Данияр · 4,8<span>1 300 ₸ · через 2 минуты · Kia Rio</span></b>
+          </button>
+        </div>
+      </div>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>Если цена кажется высокой, можно подождать: предложения обновляются.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- driver found -->
+  <section class="screen v-app v-app--indrive" data-screen="i_driver">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:#101010">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Машина в пути</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-map" style="flex:1;min-height:140px">
+        <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+        <span class="pin" style="left:46%;top:58%"></span>
+      </div>
+      <div class="v-card">
+        <div class="v-found">
+          <div class="v-found__badge"><svg aria-hidden="true"><use href="#i-check"/></svg></div>
+          <div>
+            <h3>Аслан приедет через 3 минуты</h3>
+            <p>Toyota Camry, белая · 727 ABC 02</p>
+          </div>
+        </div>
+        <div class="v-car">
+          <span class="v-car__icon"><svg aria-hidden="true"><use href="#i-car"/></svg></span>
+          <div><b>Код посадки: 4821</b><span>Назовите код водителю перед посадкой</span></div>
+        </div>
+        <div class="v-actions">
+          <button type="button" class="app-cta v-cta" data-t="message">Написать</button>
+          <button type="button" class="app-cta v-cta" style="background:#fff;color:#16232e;border:1px solid #dfe4e7">Позвонить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- chat -->
+  <section class="screen v-app v-app--indrive" data-screen="i_chat">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:#101010">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Чат с водителем</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-chat">
+        <div class="v-chat__bubble v-chat__bubble--in">Здравствуйте! Я у второго подъезда.</div>
+        <div class="v-chat__bubble v-chat__bubble--out">Хорошо, сейчас выйду.</div>
+        <button type="button" class="v-quick" data-t="reply">Я у подъезда</button>
+      </div>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>Готовые фразы экономят время: не нужно печатать на ходу.</span>
+      </div>
+    </div>
+  </section>
+</div>
+                <div class="screens" data-screens="taxi-greensm">
+  <!-- home -->
+  <section class="screen v-app v-app--green" data-screen="g_home">
+    <div class="v-head">
+      <div class="v-head__top">
+        <div class="v-logo"><span aria-hidden="true">G</span>Xanh SM</div>
+        <button type="button" class="iconbtn" aria-label="Menu" style="color:#fff">
+          <svg aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+      <p>Ho Chi Minh City · electric taxi</p>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-fields">
+          <button type="button" class="v-field" data-t="dest">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-search"/></svg></span>
+            <span>
+              <span class="v-field__label">Where to?</span>
+              <span class="v-field__value is-empty">Enter destination</span>
+            </span>
+            <svg aria-hidden="true" style="margin-left:auto;width:16px;height:16px;color:#9aa6ae"><use href="#i-chevron-right"/></svg>
+          </button>
+        </div>
+        <div class="v-fare"><span>GreenCar · 4 seats</span><b>from 165,000 ₫</b></div>
+      </div>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>Интерфейс вьетнамского приложения — на английском. Объяснения в уроке — на русском.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- search -->
+  <section class="screen v-app v-app--green" data-screen="g_search">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Back" style="color:#fff">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Where to?</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-fields">
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-search"/></svg></span>
+            <span><span class="v-field__value">Tan Son Nhat</span></span>
+          </div>
+        </div>
+        <div class="v-items">
+          <button type="button" class="v-item" data-t="airport">
+            <svg aria-hidden="true"><use href="#i-map-pin"/></svg>
+            <b>Tan Son Nhat Airport<span>International terminal · Ho Chi Minh City</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-map-pin"/></svg>
+            <b>Ben Thanh Market<span>District 1</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-map-pin"/></svg>
+            <b>War Remnants Museum<span>District 3</span></b>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- service -->
+  <section class="screen v-app v-app--green" data-screen="g_service">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Back" style="color:#fff">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Choose a service</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-items">
+          <button type="button" class="v-item" data-t="greencar">
+            <svg aria-hidden="true"><use href="#i-car"/></svg>
+            <b>GreenCar<span>4 seats · 165,000–190,000 ₫ · 22 min</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-car"/></svg>
+            <b>GreenTaxi<span>4 seats · meter · 24 min</span></b>
+          </button>
+          <button type="button" class="v-item">
+            <svg aria-hidden="true"><use href="#i-users"/></svg>
+            <b>GreenCar Plus<span>6 seats · 230,000 ₫ · 24 min</span></b>
+          </button>
+        </div>
+      </div>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>GreenCar — фиксированная цена. GreenTaxi считает по счётчику.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- confirm -->
+  <section class="screen v-app v-app--green" data-screen="g_confirm">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Back" style="color:#fff">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Confirm your ride</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-fields">
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span><span class="v-field__label">Pickup</span><span class="v-field__value">Hotel Nikko Saigon</span></span>
+          </div>
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span><span class="v-field__label">Drop-off</span><span class="v-field__value">Tan Son Nhat Airport</span></span>
+          </div>
+        </div>
+        <div class="v-fare"><span>GreenCar · 22 min · 11.4 km</span><b>180,000 ₫</b></div>
+        <div class="v-note" style="margin:8px 0 0">
+          <svg aria-hidden="true"><use href="#i-card"/></svg>
+          <span>Payment: cash or card. Price is fixed before booking.</span>
+        </div>
+      </div>
+      <button type="button" class="app-cta v-cta" data-t="book">Book GreenCar · 180,000 ₫</button>
+    </div>
+  </section>
+
+  <!-- driver -->
+  <section class="screen v-app v-app--green" data-screen="g_driver">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Back" style="color:#fff">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Driver is on the way</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card">
+        <div class="v-found">
+          <div class="v-found__badge"><svg aria-hidden="true"><use href="#i-check"/></svg></div>
+          <div>
+            <h3>Minh is 3 minutes away</h3>
+            <p>VinFast VF 5, white · 51F-123.45</p>
+          </div>
+        </div>
+        <div class="v-fare"><span>GreenCar to Tan Son Nhat</span><b>180,000 ₫</b></div>
+        <div class="v-actions">
+          <button type="button" class="app-cta v-cta" data-t="chat">Chat</button>
+          <button type="button" class="app-cta v-cta" style="background:#fff;color:#16232e;border:1px solid #dfe4e7">Call</button>
+        </div>
+      </div>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>Водитель может написать по-английски. В уроке есть готовые фразы.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- chat -->
+  <section class="screen v-app v-app--green" data-screen="g_chat">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Back" style="color:#fff">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Chat with Minh</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-chat">
+        <div class="v-chat__bubble v-chat__bubble--in">I am at the hotel entrance.</div>
+        <div class="v-chat__bubble v-chat__bubble--out">Okay, I am coming out now.</div>
+        <button type="button" class="v-quick" data-t="reply">I'm at the lobby</button>
+      </div>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>Короткая фраза понятнее, чем длинное объяснение на английском.</span>
+      </div>
+    </div>
+  </section>
+</div>
                 <div class="screens" data-screens="taxi-vostok">
   <!-- form -->
   <section class="screen v-app" data-screen="v_home">
