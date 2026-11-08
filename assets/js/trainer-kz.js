@@ -17,7 +17,22 @@
   }
 
   function screenGroupFor(item) {
+    if (item.uiGroup) return item.uiGroup;
     return item.app === "whatsapp" ? "whatsapp" : item.id;
+  }
+
+  function applyGenericUi() {
+    if (!lesson || lesson.uiGroup !== "generic" || !lesson.ui) return;
+    var group = els.phone.querySelector('.screens[data-screens="generic"]');
+    if (!group) return;
+    group.querySelectorAll("[data-slot]").forEach(function (el) {
+      var value = lesson.ui[el.dataset.slot];
+      if (typeof value === "string" && value) el.textContent = value;
+    });
+    group.querySelectorAll(".screen").forEach(function (screen) {
+      screen.classList.remove("v-app--bank", "v-app--messenger", "v-app--social", "v-app--market", "v-app--delivery", "v-app--gov");
+      if (lesson.ui.theme) screen.classList.add("v-app--" + lesson.ui.theme);
+    });
   }
 
   function activeScreen() {
@@ -582,6 +597,7 @@
     if (shell) shell.hidden = true;
     if (grid) grid.hidden = false;
 
+    applyGenericUi();
     setScreen(lesson.steps[0].screen);
     els.done.hidden = true;
     state.hints = 0;

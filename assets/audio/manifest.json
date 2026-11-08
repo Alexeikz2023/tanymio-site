@@ -1,7 +1,7 @@
 {
   "provider": "edge-neural (prototype)",
   "rate": "-5%",
-  "generatedAt": "2026-11-05T20:15:23",
+  "generatedAt": "2026-11-08T21:00:38",
   "languages": {
     "ru": {
       "female": {
@@ -31,11 +31,31 @@
   "lessons": {
     "ru": [
       "taxi-yandex",
+      "taxi-indrive",
+      "taxi-greensm",
       "safety-call",
       "taxi-vostok",
       "kaspi-transfer",
       "whatsapp-photo",
-      "whatsapp-video"
+      "whatsapp-video",
+      "bank-halyk",
+      "bank-bcc",
+      "bank-freedom",
+      "telegram",
+      "instagram",
+      "tiktok",
+      "kaspi-shop",
+      "ozon",
+      "wildberries",
+      "temu",
+      "yandex-delivery",
+      "wolt",
+      "glovo",
+      "magnum",
+      "egov",
+      "eotinish",
+      "kaspi-gov",
+      "halyk-gov"
     ],
     "kk": [
       "taxi-yandex",
@@ -43,7 +63,27 @@
       "taxi-vostok",
       "kaspi-transfer",
       "whatsapp-photo",
-      "whatsapp-video"
+      "whatsapp-video",
+      "taxi-indrive",
+      "taxi-greensm",
+      "bank-halyk",
+      "bank-bcc",
+      "bank-freedom",
+      "telegram",
+      "instagram",
+      "tiktok",
+      "kaspi-shop",
+      "ozon",
+      "wildberries",
+      "temu",
+      "yandex-delivery",
+      "wolt",
+      "glovo",
+      "magnum",
+      "egov",
+      "eotinish",
+      "kaspi-gov",
+      "halyk-gov"
     ]
   }
 }

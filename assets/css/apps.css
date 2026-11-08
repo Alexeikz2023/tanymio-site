@@ -3149,3 +3149,19 @@
   font-size: 20px;
   font-weight: 800;
 }
+
+/* Bank-specific screens */
+.v-app--halyk .v-head { background: #087f45; color: #fff; }
+.v-app--bcc .v-head { background: #1b3f73; color: #fff; }
+.v-app--freedom .v-head { background: #c8102e; color: #fff; }
+
+.v-app--halyk .v-logo span,
+.v-app--bcc .v-logo span,
+.v-app--freedom .v-logo span {
+  background: #fff;
+  color: #101010;
+}
+
+.v-app--halyk .v-cta { background: #087f45; border-color: #087f45; }
+.v-app--bcc .v-cta { background: #1b3f73; border-color: #1b3f73; }
+.v-app--freedom .v-cta { background: #c8102e; border-color: #c8102e; }
