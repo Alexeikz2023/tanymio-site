@@ -3038,25 +3038,1486 @@
 }
 
 /* Green SM / Xanh SM */
-.v-app--green {
-  background: #f3f8f4;
-  color: #10251a;
+/* ==========================================================================
+   Green SM (Xanh SM) — real-app styling (teal brand + yellow "SM")
+   ========================================================================== */
+
+.g-app {
+  --g-teal: #2bc4cc;
+  --g-teal-d: #1ba3ab;
+  --g-ink: #111416;
+  --g-sm: #ffce1f;
+  background: #f7f8f8;
+  color: var(--g-ink);
 }
 
-.v-app--green .v-head {
-  background: #0b7a45;
-  color: #fff;
+/* home — точная копия главного экрана приложения (картинки вырезаны из реального скриншота) */
+.gh {
+  background: #fcfcfc;
 }
 
-.v-app--green .v-logo span {
+.gh-body {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  padding: 24px 14px 0;
+}
+
+.gh-search {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  border: 1px solid #e4e7e8;
+  border-radius: 20px;
   background: #fff;
-  color: #0b7a45;
+  box-shadow: 0 6px 18px rgba(20, 30, 40, 0.07);
+  font: inherit;
+  font-size: 16px;
+  color: #74797c;
+  text-align: left;
+  cursor: pointer;
 }
 
-.v-app--green .v-cta {
-  background: #0b7a45;
+.gh-search svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  color: #1d2022;
+}
+
+.gh-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 16px -2px 0;
+}
+
+.gh-tile {
+  aspect-ratio: 418 / 232;
+  background: center / cover no-repeat;
+}
+
+.gh-tile--auto {
+  background-image: url("../img/greensm/tile-auto.jpg");
+}
+
+.gh-tile--pay {
+  background-image: url("../img/greensm/tile-pay.jpg");
+}
+
+.gh-h {
+  margin: 20px 0 12px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0c0c0e;
+}
+
+.gh-svc {
+  width: 106px;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(20, 30, 40, 0.04);
+  font-size: 12.5px;
+  color: #1c1f21;
+}
+
+.gh-svc__ic {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: url("../img/greensm/put.jpg") center / 112% no-repeat;
+}
+
+.gh-zone {
+  margin-top: 22px;
+  aspect-ratio: 855 / 357;
+  border-radius: 14px;
+  background: url("../img/greensm/zone.jpg") center / cover no-repeat;
+}
+
+.gh-dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0 0;
+}
+
+.gh-dots i {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: #c9c9c9;
+}
+
+.gh-dots i.is-on {
+  width: 13px;
+  background: #2cbabe;
+}
+
+.gh .gh-dots + .gh-h {
+  margin-top: 18px;
+}
+
+.gh-promos {
+  display: flex;
+  gap: 9px;
+}
+
+.gh-promo {
+  width: 143px;
+  flex: none;
+  aspect-ratio: 365 / 331;
+  border-radius: 12px;
+  background: center top / cover no-repeat;
+}
+
+.gh-promo--corp {
+  background-image: url("../img/greensm/promo-corp.jpg");
+}
+
+.gh-promo--drv {
+  background-image: url("../img/greensm/promo-drivers.jpg");
+}
+
+.gh-nav {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  width: 230px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 14px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.82);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 26px rgba(20, 30, 40, 0.1);
+}
+
+.gh-nav svg {
+  width: 21px;
+  height: 21px;
+  fill: #9d9ea0;
+  fill-rule: evenodd;
+  stroke: none;
+}
+
+/* search — как в приложении: «Использовать моё местоположение», серое поле с жёлтым квадратом, бирюзовый плюс */
+.gs {
+  background: #fff;
+}
+
+.gs-top {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px 10px 10px;
+}
+
+.gs-back {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  color: #1d2022;
+}
+
+.gs-me {
+  display: block;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  color: #1d2022;
+}
+
+.gs-me i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 9px;
+  vertical-align: -2px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0 2.6px, #2d3033 3px);
+}
+
+.gs-fieldrow {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px 0 36px;
+}
+
+.gs-field {
+  flex: 1;
+  min-width: 0;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  border-radius: 14px;
+  background: #f0f1f3;
+  font-size: 15px;
+  color: #1d2022;
+}
+
+.gs-sq {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  border-radius: 2px;
+  background: linear-gradient(#fff, #fff) center / 5px 5px no-repeat #fecf00;
+}
+
+.gs-caret {
+  width: 1.5px;
+  height: 18px;
+  margin-left: -9px;
+  background: #2bccd4;
+  animation: gs-blink 1s steps(1) infinite;
+}
+
+@keyframes gs-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.gs-plus {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #2dcbd6;
+  box-shadow: 0 4px 10px rgba(43, 204, 212, 0.35);
+}
+
+.gs-plus svg {
+  width: 20px;
+  height: 20px;
   color: #fff;
-  border-color: #0b7a45;
+  stroke-width: 2.2;
+}
+
+.gs-list {
+  flex: none;
+  padding-top: 10px;
+}
+
+.gs-item,
+.gp-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+  padding: 9px 12px 9px 4px;
+  border: 0;
+  background: none;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.gs-item__ic {
+  width: 48px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding-top: 1px;
+  color: #3a3d40;
+}
+
+.gs-item__ic svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.6;
+}
+
+.gs-item__ic small {
+  font-size: 10.5px;
+  color: #3a3d40;
+}
+
+.gs-item__tx {
+  flex: 1;
+  min-width: 0;
+}
+
+.gs-item__tx b {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #1d2022;
+}
+
+.gs-item__tx span {
+  display: block;
+  margin-top: 2px;
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: #878b8c;
+}
+
+.gs-item__act {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 5px;
+  color: #b9bcbc;
+}
+
+.gs-item__act svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+}
+
+.gs-item__act em {
+  font-style: normal;
+  font-size: 16px;
+  color: #9a9d9e;
+}
+
+.gs-links {
+  flex: none;
+  margin-top: 4px;
+  padding: 6px 0;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.gs-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px;
+}
+
+.gs-link__ic {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #eef2f3;
+  color: #3a3d40;
+}
+
+.gs-link__ic svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.6;
+}
+
+.gs-link__ic--heart svg {
+  fill: #e2553f;
+  stroke: none;
+}
+
+.gs-link__tx {
+  flex: 1;
+  min-width: 0;
+}
+
+.gs-link__tx b {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #1d2022;
+}
+
+.gs-link__tx span {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #878b8c;
+}
+
+.gs-link i {
+  font-style: normal;
+  font-size: 22px;
+  color: #9a9d9e;
+}
+
+/* pickup point — «Место посадки» */
+.gp,
+.go {
+  background: #fff;
+}
+
+.gp-map {
+  position: relative;
+  flex: none;
+  height: 250px;
+  overflow: hidden;
+  background: #f5efd7;
+}
+
+.gp-map__svg,
+.go-map__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  stroke: none;
+}
+
+.gp-back,
+.gp-find,
+.gp-locate,
+.go-other,
+.go-pill,
+.go-sq {
+  position: absolute;
+  z-index: 2;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  color: #1d2022;
+}
+
+.gp-back {
+  top: 12px;
+  left: 12px;
+  width: 34px;
+  justify-content: center;
+}
+
+.gp-back svg,
+.gp-locate svg {
+  width: 20px;
+  height: 20px;
+}
+
+.gp-find {
+  top: 12px;
+  left: 54px;
+  gap: 7px;
+  padding: 0 14px 0 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.gp-find svg {
+  width: 18px;
+  height: 18px;
+}
+
+.gp-label {
+  position: absolute;
+  z-index: 2;
+  left: 51.7%;
+  top: 136px;
+  transform: translateX(-50%);
+  padding: 7px 12px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.gp-pin {
+  position: absolute;
+  z-index: 2;
+  left: 51.7%;
+  top: 172px;
+  width: 17px;
+  height: 17px;
+  margin-left: -8.5px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0 3px, #2a2d30 3.6px);
+}
+
+.gp-pin::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  width: 2.5px;
+  height: 10px;
+  margin-left: -1.25px;
+  border-radius: 2px;
+  background: #2a2d30;
+}
+
+.gp-locate {
+  right: 12px;
+  bottom: 28px;
+  width: 34px;
+  justify-content: center;
+}
+
+.gp-sheet {
+  position: relative;
+  z-index: 3;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: -16px;
+  padding: 8px 0 14px;
+  overflow: hidden;
+  border-radius: 18px 18px 0 0;
+  background: #fff;
+}
+
+.gp-handle {
+  flex: none;
+  width: 30px;
+  height: 4px;
+  margin: 0 auto 6px;
+  border-radius: 2px;
+  background: #e3e3e3;
+}
+
+.gp-row {
+  flex: none;
+  cursor: default;
+}
+
+.gp-row.is-on {
+  background: #eaf8f9;
+}
+
+.gp-note {
+  flex: none;
+  margin: 8px 16px 0;
+  font-size: 13px;
+  color: #8a8e90;
+}
+
+.gp-cta,
+.go-cta {
+  height: 46px;
+  border: 0;
+  border-radius: 12px;
+  background: #2bccd4;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.08);
+  color: #fff;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.gp-cta {
+  flex: none;
+  margin: auto 10px 0;
+}
+
+/* order — маршрут на карте и тариф Green SM Taxi */
+.go-map {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background: #f2edda;
+}
+
+.go-other {
+  top: 12px;
+  right: 10px;
+  gap: 6px;
+  padding: 0 12px 0 10px;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.go-other svg {
+  width: 20px;
+  height: 20px;
+  fill: #ff5a6e;
+  stroke: none;
+}
+
+.go-eta {
+  position: absolute;
+  z-index: 1;
+  top: 56px;
+  right: 118px;
+  padding: 3px 10px 12px;
+  border-radius: 8px 8px 0 0;
+  background: #d6f5f7;
+  color: #167f86;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.go-pill {
+  justify-content: space-between;
+  gap: 6px;
+  height: 32px;
+  padding: 0 10px 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.go-pill i {
+  font-style: normal;
+  font-size: 18px;
+  color: #8a8e90;
+}
+
+.go-pill--to {
+  top: 72px;
+  right: 52px;
+  width: 186px;
+}
+
+.go-pill--from {
+  bottom: 84px;
+  left: 10px;
+  width: 150px;
+}
+
+.go-sq {
+  width: 34px;
+  height: 32px;
+  justify-content: center;
+  color: #2bccd4;
+}
+
+.go-sq svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.go-sq--to {
+  top: 72px;
+  right: 10px;
+}
+
+.go-sq--from {
+  bottom: 84px;
+  left: 168px;
+}
+
+.go-sheet {
+  position: relative;
+  z-index: 3;
+  flex: none;
+  margin-top: -16px;
+  padding: 14px 12px 14px;
+  border-radius: 18px 18px 0 0;
+  background: #fff;
+  box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.g-sheet.go-sheet {
+  flex: none;
+  gap: 11px;
+  padding: 16px 16px 18px;
+}
+
+.go-tariff {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px 6px 0;
+  overflow: hidden;
+  border: 1.5px solid #2bccd4;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #ecfffe 0, #fff 90px);
+}
+
+.go-tariff__car {
+  width: 74px;
+  height: 66px;
+  flex: none;
+  background: url("../img/greensm/car-taxi.jpg") center / contain no-repeat;
+}
+
+.go-tariff__tx {
+  flex: 1;
+  min-width: 0;
+}
+
+.go-tariff__tx b {
+  display: block;
+  font-size: 15.5px;
+  font-weight: 600;
+}
+
+.go-seats {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 3px 0;
+  font-size: 12px;
+  color: #6d7173;
+}
+
+.go-seats svg {
+  width: 12px;
+  height: 12px;
+  fill: #8a8e90;
+  stroke: none;
+}
+
+.go-tariff__tx small {
+  display: block;
+  font-size: 11px;
+  color: #6d7173;
+}
+
+.go-price {
+  flex: none;
+  align-self: flex-start;
+  padding-top: 6px;
+  text-align: right;
+}
+
+.go-price b {
+  display: block;
+  font-size: 15.5px;
+  font-weight: 600;
+}
+
+.go-price s {
+  display: block;
+  margin-top: 6px;
+  font-size: 11.5px;
+  color: #8a8e90;
+}
+
+.go-pay {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px -12px 0;
+  padding: 12px 12px 4px;
+  border-top: 1px solid #f2f2f2;
+  font-size: 13px;
+  color: #1d2022;
+}
+
+.go-pay span {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.go-pay span:first-child {
+  flex: none;
+  padding-right: 10px;
+  border-right: 1px solid #ececec;
+}
+
+.go-pay span svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.go-pay__promo {
+  color: #19c48a;
+}
+
+.go-pay__more {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  margin-left: auto;
+  color: #3a3d40;
+}
+
+.go-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.go-now {
+  width: 64px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  color: #1d2022;
+}
+
+.go-now svg {
+  width: 26px;
+  height: 26px;
+  color: #2bccd4;
+}
+
+.go-cta {
+  flex: 1;
+  font-size: 17px;
+}
+
+.go-pay__method {
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 0;
+  border: 0;
+  border-right: 1px solid #ececec;
+  background: none;
+  font: inherit;
+  color: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.go-pay__method svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+
+.go-pay .go-pay__method--card {
+  display: flex;
+  font-weight: 600;
+}
+
+.go-pay__method--card svg {
+  color: #2bccd4;
+}
+
+.go-toast {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  bottom: 34px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #1d2022;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 500;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.go-toast svg {
+  width: 17px;
+  height: 17px;
+  color: #6fe3e9;
+  stroke-width: 2.4;
+}
+
+/* payment — способ оплаты, учебная карта, код из SMS (в стиле приложения) */
+.gpay,
+.gsms {
+  background: #fff;
+}
+
+.gpay-top {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px 10px 10px;
+  font-size: 17px;
+}
+
+.gpay-top b {
+  font-weight: 600;
+}
+
+.gpay-h {
+  flex: none;
+  margin: 4px 16px 6px;
+  font-size: 13px;
+  color: #878b8c;
+}
+
+.gpay-row {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 0;
+  border-bottom: 1px solid #f1f1f1;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+}
+
+button.gpay-row {
+  cursor: pointer;
+}
+
+.gpay-ic {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #eef2f3;
+  color: #3a3d40;
+}
+
+.gpay-ic svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.7;
+}
+
+.gpay-ic--add {
+  background: #2dcbd6;
+  color: #fff;
+}
+
+.gpay-ic--add svg {
+  stroke-width: 2.4;
+}
+
+.gpay-ic--promo {
+  background: #e6f8f0;
+  color: #19c48a;
+}
+
+.gpay-tx {
+  flex: 1;
+  min-width: 0;
+}
+
+.gpay-tx b {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1d2022;
+}
+
+.gpay-tx span {
+  display: block;
+  margin-top: 2px;
+  font-size: 12.5px;
+  color: #878b8c;
+}
+
+.gpay-add .gpay-tx b {
+  color: #149ca4;
+  font-weight: 600;
+}
+
+.gpay-radio {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  border: 6px solid #2bccd4;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.gpay-chev {
+  font-style: normal;
+  font-size: 22px;
+  color: #9a9d9e;
+}
+
+.gpay-h2 {
+  flex: none;
+  margin: 18px 16px 2px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.gpay-note {
+  flex: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 14px 16px 0;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: #878b8c;
+}
+
+.gpay-note svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  margin-top: 1px;
+  color: #2bccd4;
+}
+
+.gpay .gp-cta,
+.gsms .gp-cta {
+  margin: auto 12px 16px;
+}
+
+.gcard-pre {
+  flex: none;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 4px 16px 14px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2bccd4, #12868d);
+  box-shadow: 0 8px 20px rgba(27, 163, 171, 0.3);
+  color: #fff;
+}
+
+.gcard-pre__top,
+.gcard-pre__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.5px;
+}
+
+.gcard-pre__top small {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.gcard-pre__chip {
+  width: 34px;
+  height: 26px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ffe58a, #e0b02c);
+}
+
+.gcard-pre__num {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.gcard-f {
+  flex: none;
+  margin: 0 16px 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #f0f1f3;
+}
+
+.gcard-f span {
+  display: block;
+  font-size: 11.5px;
+  color: #878b8c;
+}
+
+.gcard-f b {
+  display: block;
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.gcard-2 {
+  flex: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0 16px;
+}
+
+.gcard-2 .gcard-f {
+  margin: 0 0 10px;
+}
+
+.gcard-2 + .gpay-note {
+  margin-top: 4px;
+}
+
+.gsms-push {
+  flex: none;
+  display: flex;
+  gap: 10px;
+  margin: 8px 8px 0;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: #f2f2f5;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: #1d2022;
+  animation: gsms-in 0.5s ease-out both;
+}
+
+.gsms-push i {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #34c759;
+  color: #fff;
+  font-style: normal;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.gsms-push b {
+  display: block;
+  margin-bottom: 1px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #6d7173;
+}
+
+@keyframes gsms-in {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+}
+
+.gsms-body {
+  flex: none;
+  padding: 6px 24px 0;
+  text-align: center;
+}
+
+.gsms-bank {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  margin: 2px auto 12px;
+  border-radius: 50%;
+  background: #e3f7f8;
+  color: #167f86;
+}
+
+.gsms-bank svg {
+  width: 28px;
+  height: 28px;
+}
+
+.gsms-body h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.gsms-body p {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: #6d7173;
+}
+
+.gsms-code {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 18px 0 10px;
+}
+
+.gsms-code i {
+  width: 46px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid #2bccd4;
+  border-radius: 12px;
+  background: #f4fdfd;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.gsms-body .gsms-sub {
+  font-size: 12.5px;
+  color: #9a9d9e;
+}
+
+/* bottom sheet */
+.g-sheet {
+  position: relative;
+  z-index: 5;
+  flex: 1 1 auto;
+  margin-top: -18px;
+  border-radius: 22px 22px 0 0;
+  background: #fff;
+  padding: 8px 16px 16px;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  min-height: 0;
+}
+
+/* CTAs */
+.g-cta {
+  background: var(--g-teal);
+  color: #fff;
+}
+
+.g-cta--ghost {
+  background: #fff;
+  color: #0f2a26;
+  border: 1.5px solid #dfe6e4;
+}
+
+.g-cta svg {
+  width: 19px;
+  height: 19px;
+}
+
+.g-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.g-actions .g-cta {
+  min-height: 50px;
+  font-size: 15px;
+}
+
+/* driver */
+.g-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.g-dotpulse {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--g-teal);
+  flex: none;
+  animation: g-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes g-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 191, 166, 0.45); }
+  50% { box-shadow: 0 0 0 7px rgba(0, 191, 166, 0); }
+}
+
+.g-driver {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  background: #f3f8f7;
+}
+
+.g-driver__car {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  color: var(--g-teal-d);
+  flex: none;
+  box-shadow: 0 2px 8px rgba(0, 70, 60, 0.08);
+}
+
+.g-driver__car svg {
+  display: none;
+}
+
+.g-driver__car {
+  width: 58px;
+  height: 50px;
+  background: #e3f4f4 url("../img/greensm/car-taxi.jpg") center / cover no-repeat;
+}
+
+.g-driver__tx {
+  flex: 1;
+  min-width: 0;
+}
+
+.g-driver__tx b {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.g-driver__tx span {
+  display: block;
+  font-size: 12.5px;
+  color: #6a7b77;
+  margin-top: 2px;
+}
+
+.g-plate {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  background: #0f2a26;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 9px;
+  white-space: nowrap;
+  flex: none;
+}
+
+/* chat */
+.g-chathead {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  background: #fff;
+  color: #1d2022;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.g-chathead .iconbtn {
+  color: #1d2022;
+}
+
+.g-chathead__av {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #e3f7f8;
+  color: #167f86;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  flex: none;
+}
+
+.g-chathead__name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.g-chathead__sub {
+  font-size: 11px;
+  color: #878b8c;
+}
+
+.g-chatbody {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f4f6f6;
+}
+
+.g-bubble {
+  max-width: 82%;
+  padding: 9px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.g-bubble time {
+  display: block;
+  font-size: 9.5px;
+  opacity: 0.55;
+  margin-top: 3px;
+  text-align: right;
+}
+
+.g-bubble--in {
+  align-self: flex-start;
+  background: #fff;
+  border-bottom-left-radius: 4px;
+}
+
+.g-bubble--out {
+  align-self: flex-end;
+  background: #d3f4f6;
+  border-bottom-right-radius: 4px;
+}
+
+.g-quick {
+  flex: none;
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px 2px;
+  flex-wrap: wrap;
+}
+
+.g-qbtn {
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1.5px solid #bfecef;
+  background: #fff;
+  color: var(--g-teal-d);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.g-chatinput {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px 12px;
+  background: #fff;
+}
+
+.g-chatinput__field {
+  flex: 1;
+  height: 42px;
+  border-radius: 999px;
+  background: #f2f6f5;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 13px;
+  color: #8a9995;
+}
+
+.g-chatinput .iconbtn {
+  background: var(--g-teal);
+  color: #fff;
+  flex: none;
 }
 
 .pin--end {

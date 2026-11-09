@@ -24,18 +24,6 @@
         "</div></div>"
       );
     }
-    if (app === "vostok") {
-      return (
-        '<div class="mini">' +
-        '<div class="mini__bar" style="background:#123a5c;color:#fff"><span style="font-weight:800">Восток Си</span></div>' +
-        '<div class="mini__body">' +
-        '<div class="mini__row"><span>Откуда</span><b>Абая, 15</b></div>' +
-        '<div class="mini__row"><span>Куда</span><b>Толе би, 59</b></div>' +
-        '<div class="mini__row"><span>Стоимость</span><b>900 ₸</b></div>' +
-        '<div class="mini__cta" style="background:#f08a24">Заказать такси</div>' +
-        "</div></div>"
-      );
-    }
     if (app === "kaspi") {
       return (
         '<div class="mini">' +
@@ -86,11 +74,11 @@
     if (app === "greensm") {
       return (
         '<div class="mini">' +
-        '<div class="mini__bar" style="background:#0b7a45;color:#fff"><span style="font-weight:800">Xanh SM</span></div>' +
+        '<div class="mini__bar" style="background:#2bc4cc;color:#fff"><span style="font-weight:800">Green SM</span></div>' +
         '<div class="mini__body">' +
-        '<div class="mini__field"><svg aria-hidden="true"><use href="#i-search"/></svg>Where to?</div>' +
-        '<div class="mini__row"><span>GreenCar</span><b>180 000 ₫</b></div>' +
-        '<div class="mini__cta" style="background:#0b7a45">Book</div>' +
+        '<div class="mini__field"><svg aria-hidden="true"><use href="#i-search"/></svg>Куда поедем?</div>' +
+        '<div class="mini__row"><span>Green SM Taxi</span><b>2 500 ₸</b></div>' +
+        '<div class="mini__cta" style="background:#2bc4cc">Заказать</div>' +
         "</div></div>"
       );
     }

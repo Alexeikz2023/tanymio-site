@@ -1,7 +1,7 @@
 {
   "provider": "edge-neural (prototype)",
   "rate": "-5%",
-  "generatedAt": "2026-11-08T21:00:38",
+  "generatedAt": "2026-11-09T19:36:50",
   "languages": {
     "ru": {
       "female": {
@@ -34,7 +34,6 @@
       "taxi-indrive",
       "taxi-greensm",
       "safety-call",
-      "taxi-vostok",
       "kaspi-transfer",
       "whatsapp-photo",
       "whatsapp-video",
@@ -60,7 +59,6 @@
     "kk": [
       "taxi-yandex",
       "safety-call",
-      "taxi-vostok",
       "kaspi-transfer",
       "whatsapp-photo",
       "whatsapp-video",
