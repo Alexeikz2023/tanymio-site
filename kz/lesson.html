@@ -748,6 +748,182 @@
     </div>
   </section>
 </div>
+                ﻿<div class="screens" data-screens="taxi-vostok">
+  <!-- form -->
+  <section class="screen v-app" data-screen="v_home">
+    <div class="v-head">
+      <div class="v-head__top">
+        <div class="v-logo"><span aria-hidden="true">В</span>Восток Си</div>
+        <button type="button" class="iconbtn" aria-label="Меню" style="color:#fff">
+          <svg aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+      <p>Заказ такси по городу · Усть-Каменогорск</p>
+    </div>
+    <div class="v-body">
+      <div class="v-map">
+        <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+        <span class="pin" style="left:38%;top:62%"></span>
+      </div>
+      <div class="v-card">
+        <div class="v-fields">
+          <button type="button" class="v-field" aria-label="Откуда: улица Абая, 15">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span>
+              <span class="v-field__label">Откуда</span>
+              <span class="v-field__value">ул. Абая, 15</span>
+            </span>
+          </button>
+          <button type="button" class="v-field" data-t="where" aria-label="Куда поедем? Указать адрес">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-search"/></svg></span>
+            <span>
+              <span class="v-field__label">Куда</span>
+              <span class="v-field__value is-empty">Введите адрес</span>
+            </span>
+            <svg aria-hidden="true" style="margin-left:auto;width:16px;height:16px;color:#9aa6ae"><use href="#i-chevron-right"/></svg>
+          </button>
+        </div>
+        <div class="v-fare"><span>Предварительная стоимость</span><b>— ₸</b></div>
+      </div>
+      <div class="v-card">
+        <div class="v-note">
+          <svg aria-hidden="true"><use href="#i-info"/></svg>
+          <span>Оплата наличными водителю. Цену подтвердите до посадки.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- address list -->
+  <section class="screen v-app" data-screen="v_suggest">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:#fff">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Куда поедем?</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body" style="padding:12px">
+      <div style="height:42px;background:#fff;border-radius:10px;display:flex;align-items:center;gap:8px;padding:0 12px;font-size:12px;color:#6b7883">
+        <svg aria-hidden="true" style="width:15px;height:15px"><use href="#i-search"/></svg>
+        Поликлиника
+      </div>
+      <div class="v-card" style="padding:0;overflow:hidden">
+        <button type="button" class="v-item" data-t="clinic">
+          <svg aria-hidden="true"><use href="#i-map-pin"/></svg>
+          <span><b>Поликлиника №4</b><span>ул. Толе би, 59 · 4,2 км</span></span>
+        </button>
+        <button type="button" class="v-item">
+          <svg aria-hidden="true"><use href="#i-map-pin"/></svg>
+          <span><b>Поликлиника №7</b><span>ул. Розыбакиева, 105</span></span>
+        </button>
+        <button type="button" class="v-item">
+          <svg aria-hidden="true"><use href="#i-home"/></svg>
+          <span><b>Аптека на Абая</b><span>ул. Абая, 20</span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- route -->
+  <section class="screen v-app" data-screen="v_route">
+    <div class="v-head">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:#fff">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Ваш заказ</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-map">
+        <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+        <svg class="y-route-layer" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <path d="M118 214C146 196 160 186 186 170S232 138 250 116" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+          <path d="M118 214C146 196 160 186 186 170S232 138 250 116" fill="none" stroke="#123a5c" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span class="pin" style="left:31%;top:64%"></span>
+        <span class="pin pin--dest" style="left:67%;top:31%"></span>
+      </div>
+      <div class="v-card">
+        <div class="v-fields">
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span><span class="v-field__label">Откуда</span><span class="v-field__value">ул. Абая, 15</span></span>
+          </div>
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span><span class="v-field__label">Куда</span><span class="v-field__value">Поликлиника №4, Толе би, 59</span></span>
+          </div>
+        </div>
+        <div class="v-fare"><span>4,2 км · около 12 минут</span><b>900 ₸</b></div>
+      </div>
+      <button type="button" class="app-cta v-cta" data-t="order">Заказать такси</button>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>Оплата наличными водителю. Цена может измениться при ожидании.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- driver found -->
+  <section class="screen v-app" data-screen="v_found">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <div style="font-size:14px;font-weight:700">Заказ принят</div>
+        <span style="font-size:10px;color:#a9c1d4">№ 10482</span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-card v-found">
+        <div class="v-found__badge" aria-hidden="true"><svg><use href="#i-check"/></svg></div>
+        <h3>Машина найдена</h3>
+        <p>Приедет через 4 минуты</p>
+        <div class="v-car">
+          <div class="v-car__icon" aria-hidden="true"><svg style="width:22px;height:22px"><use href="#i-car"/></svg></div>
+          <div style="text-align:left">
+            <b>Lada Vesta, синяя</b>
+            <span>445 KZ 05 · Сергей, 4,8 ★</span>
+          </div>
+        </div>
+      </div>
+      <div class="v-actions">
+        <button type="button" class="app-cta v-cta" data-t="call">Позвонить</button>
+        <button type="button" class="app-cta" style="background:#e2eaf0;color:#123a5c">Отменить</button>
+      </div>
+      <div class="v-note">
+        <svg aria-hidden="true"><use href="#i-info"/></svg>
+        <span>Позвоните, если не можете найти машину. Скажите, у какого подъезда стоите.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- call -->
+  <section class="screen" data-screen="v_call">
+    <div class="v-call">
+      <div class="v-call__av" aria-hidden="true">С</div>
+      <h3>Сергей</h3>
+      <p>водитель · Lada Vesta</p>
+      <div class="v-call__timer">00:07</div>
+      <div class="v-call__buttons">
+        <button type="button" class="callbtn" aria-label="Выключить микрофон">
+          <svg aria-hidden="true"><use href="#i-mic"/></svg>
+        </button>
+        <button type="button" class="callbtn" aria-label="Громкая связь">
+          <svg aria-hidden="true"><use href="#i-speaker"/></svg>
+        </button>
+        <button type="button" class="callbtn callbtn--end" data-t="hangup" aria-label="Завершить звонок">
+          <svg aria-hidden="true" style="transform:rotate(135deg)"><use href="#i-phone"/></svg>
+        </button>
+      </div>
+      <p style="margin-top:16px;max-width:26ch">Скажите: «Я у второго подъезда, стою у лавочки».</p>
+    </div>
+  </section>
+</div>
+
                 <div class="screens" data-screens="taxi-indrive">
   <!-- home -->
   <section class="screen v-app v-app--indrive" data-screen="i_home">
@@ -2340,7 +2516,7 @@
 </footer>
 
 <script src="../assets/js/app.js?v=cc3a365241"></script>
-<script src="../assets/js/data-kz.js?v=94a010fc85"></script>
+<script src="../assets/js/data-kz.js?v=5334c24d46"></script>
 <script src="../assets/js/app-configs.js?v=3e43b91b76"></script>
 <script src="../assets/js/data-kz-taxis.js?v=1172426148"></script>
 <script src="../assets/js/app-lessons-kz.js?v=762f918c58"></script>
