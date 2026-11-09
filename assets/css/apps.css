@@ -3141,11 +3141,11 @@
 }
 
 .gh-tile--auto {
-  background-image: url("../img/greensm/tile-auto.jpg");
+  background-image: url("../img/greensm/tile-auto-blank.jpg");
 }
 
 .gh-tile--pay {
-  background-image: url("../img/greensm/tile-pay.jpg");
+  background-image: url("../img/greensm/tile-pay-blank.jpg");
 }
 
 .gh-h {
@@ -3182,7 +3182,7 @@
   margin-top: 22px;
   aspect-ratio: 855 / 357;
   border-radius: 14px;
-  background: url("../img/greensm/zone.jpg") center / cover no-repeat;
+  background: url("../img/greensm/zone-blank.jpg") center / cover no-repeat;
 }
 
 .gh-dots {
@@ -3222,11 +3222,11 @@
 }
 
 .gh-promo--corp {
-  background-image: url("../img/greensm/promo-corp.jpg");
+  background-image: url("../img/greensm/promo-corp-blank.jpg");
 }
 
 .gh-promo--drv {
-  background-image: url("../img/greensm/promo-drivers.jpg");
+  background-image: url("../img/greensm/promo-drivers-blank.jpg");
 }
 
 .gh-nav {
@@ -3254,6 +3254,282 @@
   fill: #9d9ea0;
   fill-rule: evenodd;
   stroke: none;
+}
+
+/* подписи на картинках главного экрана — текстом, чтобы были на русском и казахском */
+.gh-tile,
+.gh-zone,
+.gh-promo {
+  position: relative;
+  overflow: hidden;
+}
+
+.gh-tile__t {
+  position: absolute;
+  left: 7%;
+  top: 12%;
+  max-width: 62%;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #141618;
+}
+
+.gh-zone__t {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  width: 36%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.gh-zone__t em {
+  font-style: normal;
+  color: #ffd21f;
+}
+
+.gh-promo__t {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  right: 3%;
+  font-size: 15.5px;
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  color: #0a3d2a;
+}
+
+.gh-promo__t span {
+  display: block;
+  color: #1b8fd8;
+}
+
+.gh-promo__btn {
+  position: absolute;
+  bottom: -4px;
+  height: 15%;
+  display: grid;
+  place-items: center;
+  padding-bottom: 3px;
+  border-radius: 999px;
+  background: #1f9ae4;
+  box-shadow: 0 3px 0 #ffd21f;
+  font-size: 8.5px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.gh-promo--corp .gh-promo__btn {
+  left: 39%;
+  width: 56%;
+}
+
+.gh-promo--drv .gh-promo__btn {
+  left: 20%;
+  width: 60%;
+  height: 12%;
+}
+
+/* нижнее меню с кнопками (урок про язык: профиль нажимается) */
+.gh-nav button {
+  width: 46px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  background: none;
+  cursor: pointer;
+}
+
+.gh-nav .is-on {
+  width: 74px;
+  background: radial-gradient(ellipse at center, #c9f3f4 0%, #e3f8f8 60%, rgba(227, 248, 248, 0) 100%);
+}
+
+.gh-nav .is-on svg {
+  fill: #2cc4cc;
+}
+
+/* профиль: оплата, промокоды, настройки */
+.gpr {
+  background: linear-gradient(180deg, #e3f7f7 0%, #f3f6f7 38%, #f4f5f7 100%);
+}
+
+.gpr-body {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  padding: 14px 12px 80px;
+}
+
+.gpr-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.gpr-card {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  border-radius: 14px;
+  background: #fff;
+  font-size: 13.5px;
+  line-height: 1.2;
+  color: #16191b;
+}
+
+.gpr-card i {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #e2f7f8;
+  color: #1fb8c1;
+}
+
+.gpr-card i svg {
+  width: 18px;
+  height: 18px;
+}
+
+.gpr-h {
+  margin: 16px 2px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111416;
+}
+
+.gpr-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 11px 6px;
+  border: 0;
+  border-radius: 12px;
+  background: none;
+  font: inherit;
+  font-size: 15.5px;
+  font-weight: 500;
+  color: #16191b;
+  text-align: left;
+}
+
+button.gpr-row {
+  cursor: pointer;
+}
+
+.gpr-row svg {
+  width: 23px;
+  height: 23px;
+  flex: none;
+  color: #55595c;
+}
+
+.gpr-row i {
+  margin-left: auto;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1;
+  color: #8e9194;
+}
+
+/* выбор языка */
+.glang {
+  background: #fff;
+}
+
+.glang-top {
+  flex: none;
+  padding: 12px 16px 0;
+}
+
+.glang-top svg {
+  width: 24px;
+  height: 24px;
+  color: #1d2022;
+}
+
+.glang-top h3 {
+  margin: 12px 0 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.glang-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 16px;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 16.5px;
+  color: #1d2022;
+  text-align: left;
+  cursor: pointer;
+}
+
+.glang-flag {
+  width: 34px;
+  height: 24px;
+  flex: none;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.glang-flag svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.glang-radio {
+  width: 22px;
+  height: 22px;
+  margin-left: auto;
+  flex: none;
+  border: 1.5px solid #dcdfe1;
+  border-radius: 50%;
+}
+
+.glang-row.is-on .glang-radio {
+  border: 7px solid #2cc8d0;
+}
+
+.glang-cta {
+  flex: none;
+  margin: auto 16px 18px;
+  height: 50px;
+  border: 0;
+  border-radius: 12px;
+  background: #f0f0f2;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 500;
+  color: #b3b5b8;
+}
+
+.glang-cta.is-ready {
+  background: #2cc8d0;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* search — как в приложении: «Использовать моё местоположение», серое поле с жёлтым квадратом, бирюзовый плюс */
