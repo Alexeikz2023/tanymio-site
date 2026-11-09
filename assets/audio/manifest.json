@@ -1,7 +1,7 @@
 {
   "provider": "edge-neural (prototype)",
   "rate": "-5%",
-  "generatedAt": "2026-11-09T19:36:50",
+  "generatedAt": "2026-11-10T00:43:50",
   "languages": {
     "ru": {
       "female": {
@@ -14,18 +14,6 @@
         "label": "Дмитрий",
         "sample": "samples/ru-male.mp3"
       }
-    },
-    "kk": {
-      "female": {
-        "voice": "kk-KZ-AigulNeural",
-        "label": "Айгүл",
-        "sample": "samples/kk-female.mp3"
-      },
-      "male": {
-        "voice": "kk-KZ-DauletNeural",
-        "label": "Дәулет",
-        "sample": "samples/kk-male.mp3"
-      }
     }
   },
   "lessons": {
@@ -33,6 +21,7 @@
       "taxi-yandex",
       "taxi-indrive",
       "taxi-greensm",
+      "taxi-vostok",
       "safety-call",
       "kaspi-transfer",
       "whatsapp-photo",
@@ -54,34 +43,27 @@
       "egov",
       "eotinish",
       "kaspi-gov",
-      "halyk-gov"
-    ],
-    "kk": [
-      "taxi-yandex",
-      "safety-call",
-      "kaspi-transfer",
-      "whatsapp-photo",
-      "whatsapp-video",
-      "taxi-indrive",
-      "taxi-greensm",
-      "bank-halyk",
-      "bank-bcc",
-      "bank-freedom",
-      "telegram",
-      "instagram",
-      "tiktok",
-      "kaspi-shop",
-      "ozon",
-      "wildberries",
-      "temu",
-      "yandex-delivery",
-      "wolt",
-      "glovo",
-      "magnum",
-      "egov",
-      "eotinish",
-      "kaspi-gov",
-      "halyk-gov"
+      "halyk-gov",
+      "market-kaspi-search",
+      "market-kaspi-pharmacy",
+      "market-kaspi-cart",
+      "market-kaspi-delivery",
+      "market-kaspi-pay",
+      "market-ozon-search",
+      "market-ozon-sellers",
+      "market-ozon-pickup",
+      "market-ozon-checkout",
+      "market-ozon-pay",
+      "market-wb-search",
+      "market-wb-size",
+      "market-wb-cart",
+      "market-wb-pickup",
+      "market-wb-pay",
+      "market-temu-search",
+      "market-temu-seller",
+      "market-temu-delivery",
+      "market-temu-checkout",
+      "market-temu-pay"
     ]
   }
 }

@@ -273,7 +273,7 @@
 
       next: "kaspi-transfer"
 
-    },,
+    },
 
     {
       id: "safety-call",
