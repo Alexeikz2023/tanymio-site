@@ -42,9 +42,12 @@
   var audioBase = (document.body && document.body.dataset.audioBase) || "assets/audio/";
   if (!/\/$/.test(audioBase)) audioBase += "/";
   T.audioBase = audioBase;
+  /* build.py stamps a hash of all voice clips, so re-recorded lines are not served from cache */
+  var audioVer = (document.body && document.body.dataset.audioVer) || "";
   T.audioUrl = function (lang, lessonId, part) {
     var pack = lang === "kk" ? settings.voiceKk : settings.voiceRu;
-    return audioBase + lang + "/" + (pack === "male" ? "male" : "female") + "/" + lessonId + "/" + part + ".mp3";
+    return audioBase + lang + "/" + (pack === "male" ? "male" : "female") + "/" + lessonId + "/" + part + ".mp3" +
+      (audioVer ? "?v=" + audioVer : "");
   };
 
   T.saveSettings = function () {
