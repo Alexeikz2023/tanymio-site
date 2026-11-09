@@ -653,6 +653,46 @@
   font-weight: 700;
 }
 
+/* способ оплаты слева от «Заказать», как в приложении */
+.y-order {
+  flex: none;
+  display: flex;
+  gap: 8px;
+}
+
+.y-order .y-cta {
+  flex: 1;
+  width: auto;
+}
+
+.y-paybtn {
+  flex: none;
+  min-width: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 12px;
+  background: #f1f0eb;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  color: #111;
+  cursor: pointer;
+}
+
+.y-paybtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.y-paybtn--card {
+  background: #fff8cc;
+}
+
 .y-tip {
   display: flex;
   gap: 8px;
@@ -3936,14 +3976,70 @@
 .go-toast svg {
   width: 17px;
   height: 17px;
-  color: #6fe3e9;
+  color: var(--pm-toast, #6fe3e9);
   stroke-width: 2.4;
 }
 
-/* payment — способ оплаты, учебная карта, код из SMS (в стиле приложения) */
+/* payment — способ оплаты, учебная карта, код из SMS (в стиле приложения).
+   Общие экраны для такси: цвета приложения задаются переменными --pm-*. */
 .gpay,
 .gsms {
+  --pm: #2bccd4;
+  --pm-on: #fff;
+  --pm-text: #149ca4;
+  --pm-mark: #2bccd4;
+  --pm-soft: #f4fdfd;
+  --pm-bank: #e3f7f8;
+  --pm-bank-ink: #167f86;
+  --pm-card: linear-gradient(135deg, #2bccd4, #12868d);
+  --pm-card-shadow: rgba(27, 163, 171, 0.3);
   background: #fff;
+  color: #1d2022;
+}
+
+.pm-yandex {
+  --pm: #ffdd2d;
+  --pm-on: #111;
+  --pm-text: #111;
+  --pm-mark: #111;
+  --pm-soft: #fffbe6;
+  --pm-bank: #fff4b8;
+  --pm-bank-ink: #111;
+  --pm-card: linear-gradient(135deg, #3b3b3b, #121212);
+  --pm-card-shadow: rgba(0, 0, 0, 0.25);
+  --pm-toast: #ffdd2d;
+}
+
+.pm-indrive {
+  --pm: #c8f36a;
+  --pm-on: #101010;
+  --pm-text: #101010;
+  --pm-mark: #101010;
+  --pm-soft: #f5fde4;
+  --pm-bank: #eafbc6;
+  --pm-bank-ink: #2d4209;
+  --pm-card: linear-gradient(135deg, #2f3a1d, #101010);
+  --pm-card-shadow: rgba(0, 0, 0, 0.25);
+  --pm-toast: #c8f36a;
+}
+
+.pm-indrive .v-cta {
+  background: #101010;
+  color: #fff;
+}
+
+.gpay .app-cta,
+.gsms .app-cta {
+  flex: none;
+  width: auto;
+  margin: auto 12px 16px;
+}
+
+.pm-back {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  color: #1d2022;
 }
 
 .gpay-top {
@@ -4003,8 +4099,8 @@ button.gpay-row {
 }
 
 .gpay-ic--add {
-  background: #2dcbd6;
-  color: #fff;
+  background: var(--pm);
+  color: var(--pm-on);
 }
 
 .gpay-ic--add svg {
@@ -4036,7 +4132,7 @@ button.gpay-row {
 }
 
 .gpay-add .gpay-tx b {
-  color: #149ca4;
+  color: var(--pm-text);
   font-weight: 600;
 }
 
@@ -4044,7 +4140,7 @@ button.gpay-row {
   width: 20px;
   height: 20px;
   flex: none;
-  border: 6px solid #2bccd4;
+  border: 6px solid var(--pm-mark);
   border-radius: 50%;
   background: #fff;
 }
@@ -4078,7 +4174,7 @@ button.gpay-row {
   height: 16px;
   flex: none;
   margin-top: 1px;
-  color: #2bccd4;
+  color: var(--pm-mark);
 }
 
 .gpay .gp-cta,
@@ -4095,8 +4191,8 @@ button.gpay-row {
   margin: 4px 16px 14px;
   padding: 16px 18px;
   border-radius: 16px;
-  background: linear-gradient(135deg, #2bccd4, #12868d);
-  box-shadow: 0 8px 20px rgba(27, 163, 171, 0.3);
+  background: var(--pm-card);
+  box-shadow: 0 8px 20px var(--pm-card-shadow);
   color: #fff;
 }
 
@@ -4221,8 +4317,8 @@ button.gpay-row {
   place-items: center;
   margin: 2px auto 12px;
   border-radius: 50%;
-  background: #e3f7f8;
-  color: #167f86;
+  background: var(--pm-bank);
+  color: var(--pm-bank-ink);
 }
 
 .gsms-bank svg {
@@ -4255,9 +4351,9 @@ button.gpay-row {
   height: 54px;
   display: grid;
   place-items: center;
-  border: 1.5px solid #2bccd4;
+  border: 1.5px solid var(--pm-mark);
   border-radius: 12px;
-  background: #f4fdfd;
+  background: var(--pm-soft);
   font-style: normal;
   font-size: 24px;
   font-weight: 600;

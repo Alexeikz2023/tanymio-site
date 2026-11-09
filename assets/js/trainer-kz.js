@@ -126,7 +126,10 @@
   function speakStep() {
     var step = lesson.steps[state.step];
     if (!step) return;
-    T.speak(step.voice || step.text, T.audioUrl(LANG, lesson.id, state.step));
+    /* step.clip: исходная запись для шага; null — записи нет, шаг без озвучки */
+    var clip = "clip" in step ? step.clip : state.step;
+    if (clip === null) { T.stopSpeech(); return; }
+    T.speak(step.voice || step.text, T.audioUrl(LANG, lesson.id, clip));
   }
 
   function renderCoach(feedback, kind) {

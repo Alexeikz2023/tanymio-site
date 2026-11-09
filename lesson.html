@@ -13,7 +13,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/fonts.css?v=3cfdaf4889">
   <link rel="stylesheet" href="assets/css/styles.css?v=9fa35d885c">
-  <link rel="stylesheet" href="assets/css/apps.css?v=e141241f27"><link rel="stylesheet" href="assets/css/trainer.css?v=a8aa109562">
+  <link rel="stylesheet" href="assets/css/apps.css?v=be6d8410a3"><link rel="stylesheet" href="assets/css/trainer.css?v=a8aa109562">
 </head>
 <body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="b266e9e3ac">
   <a class="skip" href="#main">Перейти к содержанию</a>
@@ -524,9 +524,142 @@
           <b>Комфорт+</b><span>6 мин</span><strong>2 400 ₸</strong>
         </button>
       </div>
-      <button type="button" class="app-cta y-cta" data-t="order">
-        Заказать <span>· 1 250 ₸</span>
+      <div class="y-order">
+        <button type="button" class="y-paybtn" data-t="pay" aria-label="Способ оплаты: наличные">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.6"/></svg>
+          Наличные
+        </button>
+        <button type="button" class="app-cta y-cta">
+          Заказать <span>· 1 250 ₸</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- payment methods -->
+  <section class="screen gpay pm-yandex" data-screen="y_pay">
+    <div class="gpay-top">
+      <svg class="pm-back" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+      <b>Способ оплаты</b>
+    </div>
+    <p class="gpay-h">Выберите, как платить за поездку</p>
+    <div class="gpay-row is-on">
+      <span class="gpay-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.6"/></svg></span>
+      <span class="gpay-tx"><b>Наличные</b><span>Оплата водителю после поездки</span></span>
+      <i class="gpay-radio" aria-hidden="true"></i>
+    </div>
+    <button type="button" class="gpay-row gpay-add" data-t="addcard">
+      <span class="gpay-ic gpay-ic--add"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+      <span class="gpay-tx"><b>Привязать карту</b><span>Банковская карта Visa или Mastercard</span></span>
+      <i class="gpay-chev" aria-hidden="true">›</i>
+    </button>
+    <h4 class="gpay-h2">Промокоды</h4>
+    <div class="gpay-row">
+      <span class="gpay-ic"><svg aria-hidden="true"><use href="#i-gift"/></svg></span>
+      <span class="gpay-tx"><b>Ввести промокод</b><span>Скидка на следующую поездку</span></span>
+      <i class="gpay-chev" aria-hidden="true">›</i>
+    </div>
+    <p class="gpay-note"><svg aria-hidden="true"><use href="#i-lock"/></svg>С привязанной карты деньги списываются сами после поездки. Наличные водителю не нужны.</p>
+  </section>
+
+  <!-- add card form (учебная карта) -->
+  <section class="screen gpay pm-yandex" data-screen="y_card">
+    <div class="gpay-top">
+      <svg class="pm-back" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+      <b>Новая карта</b>
+    </div>
+    <div class="gcard-pre" aria-hidden="true">
+      <span class="gcard-pre__top"><i class="gcard-pre__chip"></i><small>Учебная карта</small></span>
+      <span class="gcard-pre__num">4000 0000 0000 1234</span>
+      <span class="gcard-pre__row"><span>Срок 12/29</span></span>
+    </div>
+    <div class="gcard-f"><span>Номер карты</span><b>4000 0000 0000 1234</b></div>
+    <div class="gcard-2">
+      <div class="gcard-f"><span>Срок действия</span><b>12/29</b></div>
+      <div class="gcard-f"><span>CVV / CVC</span><b>•••</b></div>
+    </div>
+    <p class="gpay-note"><svg aria-hidden="true"><use href="#i-lock"/></svg>Данные карты уходят в банк в зашифрованном виде. Водитель их не видит.</p>
+    <button type="button" class="app-cta y-cta" data-t="savecard">Привязать карту</button>
+  </section>
+
+  <!-- 3-D Secure: код из SMS -->
+  <section class="screen gsms pm-yandex" data-screen="y_sms">
+    <div class="gsms-push">
+      <i aria-hidden="true">SMS</i>
+      <span><b>Сообщения · сейчас</b>Код 5370 для привязки карты в Яндекс Go. Никому не сообщайте код.</span>
+    </div>
+    <div class="gpay-top">
+      <svg class="pm-back" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+      <b>Подтверждение карты</b>
+    </div>
+    <div class="gsms-body">
+      <span class="gsms-bank" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5M5 10v8M9.7 10v8M14.3 10v8M19 10v8M3 20.5h18"/></svg></span>
+      <h3>Введите код из SMS</h3>
+      <p>Ваш банк отправил код на номер <span style="white-space:nowrap">+7 700 ••• •• 67</span></p>
+      <div class="gsms-code" aria-label="Код 5370"><i>5</i><i>3</i><i>7</i><i>0</i></div>
+      <p class="gsms-sub">Отправить код ещё раз через 0:42</p>
+    </div>
+    <button type="button" class="app-cta y-cta" data-t="sms">Подтвердить</button>
+  </section>
+
+  <!-- route again: card attached -->
+  <section class="screen pm-yandex" data-screen="y_route_card">
+    <div class="y-map">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <svg class="y-route-layer" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M118 214C146 196 160 186 186 170S232 138 250 116" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+        <path d="M118 214C146 196 160 186 186 170S232 138 250 116" fill="none" stroke="#2E6BE6" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <div class="y-map__top">
+        <button type="button" class="y-menu" aria-label="Меню приложения">
+          <svg aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+        <button type="button" class="y-search" aria-label="Адрес: Поликлиника №4">
+          <svg aria-hidden="true"><use href="#i-search"/></svg>
+          <span>Поликлиника №4</span>
+        </button>
+      </div>
+      <span class="pin" style="left:31%;top:64%"></span>
+      <span class="pin pin--dest" style="left:67%;top:31%"></span>
+      <span class="go-toast"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Карта •• 1234 привязана</span>
+    </div>
+    <div class="y-sheet y-sheet--grow">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="y-dest-row">
+        <span class="y-dot y-dot--line" aria-hidden="true"></span>
+        <div>
+          <h4>Поликлиника №4</h4>
+          <p>ул. Толе би, 59 · 12 минут в пути</p>
+        </div>
+        <button type="button" class="y-edit">Изменить</button>
+      </div>
+      <button type="button" class="y-field" aria-label="Откуда: улица Абая, 15">
+        <span class="y-dot" aria-hidden="true"></span>
+        <span>
+          <span class="y-field__label">Откуда</span>
+          <span class="y-field__value">ул. Абая, 15</span>
+        </span>
       </button>
+      <div class="y-tariffs" role="group" aria-label="Тариф">
+        <button type="button" class="y-tariff is-selected">
+          <b>Эконом</b><span>4 мин · 1 машина</span><strong>1 250 ₸</strong>
+        </button>
+        <button type="button" class="y-tariff">
+          <b>Комфорт</b><span>5 мин</span><strong>1 890 ₸</strong>
+        </button>
+        <button type="button" class="y-tariff">
+          <b>Комфорт+</b><span>6 мин</span><strong>2 400 ₸</strong>
+        </button>
+      </div>
+      <div class="y-order">
+        <button type="button" class="y-paybtn y-paybtn--card" aria-label="Способ оплаты: карта, последние цифры 1234">
+          <svg aria-hidden="true"><use href="#i-card"/></svg>
+          •• 1234
+        </button>
+        <button type="button" class="app-cta y-cta" data-t="order">
+          Заказать <span>· 1 250 ₸</span>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -714,14 +847,118 @@
             <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
             <span><span class="v-field__label">Куда</span><span class="v-field__value">Поликлиника №4, Толе би, 59</span></span>
           </div>
+          <button type="button" class="v-field" data-t="pay">
+            <span class="v-field__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.6"/></svg></span>
+            <span><span class="v-field__label">Способ оплаты</span><span class="v-field__value">Наличные</span></span>
+            <svg aria-hidden="true" style="margin-left:auto;width:16px;height:16px;color:#9aa6ae"><use href="#i-chevron-right"/></svg>
+          </button>
         </div>
         <div class="v-fare"><span>Ваша цена · 4,2 км</span><b>1 200 ₸</b></div>
       </div>
-      <button type="button" class="app-cta v-cta" data-t="order">Заказать за 1 200 ₸</button>
+      <button type="button" class="app-cta v-cta">Заказать за 1 200 ₸</button>
       <div class="v-note">
         <svg aria-hidden="true"><use href="#i-info"/></svg>
         <span>В inDrive цену предлагает пассажир. Водители могут согласиться или предложить свою.</span>
       </div>
+    </div>
+  </section>
+
+  <!-- payment methods -->
+  <section class="screen gpay pm-indrive" data-screen="i_pay">
+    <div class="gpay-top">
+      <svg class="pm-back" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+      <b>Способ оплаты</b>
+    </div>
+    <p class="gpay-h">Выберите, как платить за поездку</p>
+    <div class="gpay-row is-on">
+      <span class="gpay-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.6"/></svg></span>
+      <span class="gpay-tx"><b>Наличные</b><span>Оплата водителю после поездки</span></span>
+      <i class="gpay-radio" aria-hidden="true"></i>
+    </div>
+    <button type="button" class="gpay-row gpay-add" data-t="addcard">
+      <span class="gpay-ic gpay-ic--add"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+      <span class="gpay-tx"><b>Добавить карту</b><span>Банковская карта Visa или Mastercard</span></span>
+      <i class="gpay-chev" aria-hidden="true">›</i>
+    </button>
+    <p class="gpay-note"><svg aria-hidden="true"><use href="#i-lock"/></svg>С привязанной карты деньги списываются сами после поездки, по цене, о которой вы договорились с водителем.</p>
+  </section>
+
+  <!-- add card form (учебная карта) -->
+  <section class="screen gpay pm-indrive" data-screen="i_card">
+    <div class="gpay-top">
+      <svg class="pm-back" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+      <b>Добавить карту</b>
+    </div>
+    <div class="gcard-pre" aria-hidden="true">
+      <span class="gcard-pre__top"><i class="gcard-pre__chip"></i><small>Учебная карта</small></span>
+      <span class="gcard-pre__num">4000 0000 0000 1234</span>
+      <span class="gcard-pre__row"><span>Срок 12/29</span></span>
+    </div>
+    <div class="gcard-f"><span>Номер карты</span><b>4000 0000 0000 1234</b></div>
+    <div class="gcard-2">
+      <div class="gcard-f"><span>Срок действия</span><b>12/29</b></div>
+      <div class="gcard-f"><span>CVV / CVC</span><b>•••</b></div>
+    </div>
+    <p class="gpay-note"><svg aria-hidden="true"><use href="#i-lock"/></svg>Данные карты уходят в банк в зашифрованном виде. Водитель их не видит.</p>
+    <button type="button" class="app-cta v-cta" data-t="savecard">Добавить карту</button>
+  </section>
+
+  <!-- 3-D Secure: код из SMS -->
+  <section class="screen gsms pm-indrive" data-screen="i_sms">
+    <div class="gsms-push">
+      <i aria-hidden="true">SMS</i>
+      <span><b>Сообщения · сейчас</b>Код 5370 для привязки карты в inDrive. Никому не сообщайте код.</span>
+    </div>
+    <div class="gpay-top">
+      <svg class="pm-back" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+      <b>Подтверждение карты</b>
+    </div>
+    <div class="gsms-body">
+      <span class="gsms-bank" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5M5 10v8M9.7 10v8M14.3 10v8M19 10v8M3 20.5h18"/></svg></span>
+      <h3>Введите код из SMS</h3>
+      <p>Ваш банк отправил код на номер <span style="white-space:nowrap">+7 700 ••• •• 67</span></p>
+      <div class="gsms-code" aria-label="Код 5370"><i>5</i><i>3</i><i>7</i><i>0</i></div>
+      <p class="gsms-sub">Отправить код ещё раз через 0:42</p>
+    </div>
+    <button type="button" class="app-cta v-cta" data-t="sms">Подтвердить</button>
+  </section>
+
+  <!-- offer again: card attached -->
+  <section class="screen v-app v-app--indrive pm-indrive" data-screen="i_offer_card">
+    <div class="v-head" style="padding-bottom:12px">
+      <div class="v-head__top">
+        <button type="button" class="iconbtn" aria-label="Назад" style="color:#101010">
+          <svg aria-hidden="true"><use href="#i-arrow-left"/></svg>
+        </button>
+        <div style="font-size:14px;font-weight:700">Ваш заказ</div>
+        <span style="width:38px"></span>
+      </div>
+    </div>
+    <div class="v-body">
+      <div class="v-map" style="flex:1;min-height:150px">
+        <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+        <span class="pin" style="left:42%;top:64%"></span>
+        <span class="pin pin--end" style="left:58%;top:38%"></span>
+        <span class="go-toast"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Карта •• 1234 привязана</span>
+      </div>
+      <div class="v-card">
+        <div class="v-fields">
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span><span class="v-field__label">Откуда</span><span class="v-field__value">ул. Абая, 15</span></span>
+          </div>
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-map-pin"/></svg></span>
+            <span><span class="v-field__label">Куда</span><span class="v-field__value">Поликлиника №4, Толе би, 59</span></span>
+          </div>
+          <div class="v-field">
+            <span class="v-field__icon" aria-hidden="true"><svg><use href="#i-card"/></svg></span>
+            <span><span class="v-field__label">Способ оплаты</span><span class="v-field__value">Карта •• 1234</span></span>
+          </div>
+        </div>
+        <div class="v-fare"><span>Ваша цена · 4,2 км</span><b>1 200 ₸</b></div>
+      </div>
+      <button type="button" class="app-cta v-cta" data-t="order">Заказать за 1 200 ₸</button>
     </div>
   </section>
 
@@ -2105,9 +2342,9 @@
 </footer>
 
 <script src="assets/js/app.js?v=cc3a365241"></script>
-<script src="assets/js/data.js?v=d308d724c6"></script>
+<script src="assets/js/data.js?v=f2e73ea752"></script>
 <script src="assets/js/app-configs.js?v=3e43b91b76"></script>
 <script src="assets/js/app-lessons.js?v=e7963eb67e"></script>
-<script src="assets/js/trainer.js?v=0a67520d6c"></script>
+<script src="assets/js/trainer.js?v=281c1f5d35"></script>
 </body>
 </html>
