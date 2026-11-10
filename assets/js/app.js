@@ -169,61 +169,26 @@
   /* speech                                                                  */
   /* ---------------------------------------------------------------------- */
 
-  var voice = null;
-
-  function pickVoice() {
-    if (!("speechSynthesis" in window)) return;
-    var voices = window.speechSynthesis.getVoices() || [];
-    voice = voices.find(function (v) { return (KZ ? /^kk([-_]|$)/i : /^ru([-_]|$)/i).test(v.lang); }) || null;
-  }
-
-  if ("speechSynthesis" in window) {
-    pickVoice();
-    window.speechSynthesis.onvoiceschanged = pickVoice;
-  }
-
+  /* Only the pre-recorded voice files are played. There is no browser
+     speech-synthesis fallback: if a recording is missing, the step is silent. */
   var audioEl = null;
 
-  function speakFallback(text) {
-    if (!("speechSynthesis" in window) || !text) return false;
+  T.speak = function (text, url) {
+    T.stopSpeech();
+    if (!url) return false;
     try {
-      window.speechSynthesis.cancel();
-      var utter = new SpeechSynthesisUtterance(String(text));
-      utter.lang = KZ ? "kk-KZ" : "ru-RU";
-      utter.rate = 0.88;
-      utter.pitch = 1;
-      if (voice) utter.voice = voice;
-      window.speechSynthesis.speak(utter);
+      audioEl = new Audio(url);
+      audioEl.preload = "auto";
+      audioEl.onerror = function () { audioEl = null; };
+      var playing = audioEl.play();
+      if (playing && playing.catch) {
+        playing.catch(function () { audioEl = null; });
+      }
       return true;
     } catch (err) {
+      audioEl = null;
       return false;
     }
-  }
-
-  T.speak = function (text, url) {
-    if (!text && !url) return false;
-    T.stopSpeech();
-    if (url) {
-      try {
-        audioEl = new Audio(url);
-        audioEl.preload = "auto";
-        audioEl.onerror = function () {
-          audioEl = null;
-          speakFallback(text);
-        };
-        var playing = audioEl.play();
-        if (playing && playing.catch) {
-          playing.catch(function () {
-            audioEl = null;
-            speakFallback(text);
-          });
-        }
-        return true;
-      } catch (err) {
-        audioEl = null;
-      }
-    }
-    return speakFallback(text);
   };
 
   T.stopSpeech = function () {
@@ -232,7 +197,6 @@
       audioEl.currentTime = 0;
       audioEl = null;
     }
-    if ("speechSynthesis" in window) window.speechSynthesis.cancel();
   };
 
   /* ---------------------------------------------------------------------- */
