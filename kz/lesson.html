@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="6ba49d15c5">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="544de14b4e">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -3143,6 +3143,422 @@
   </section>
 </div>
 
+                <!-- Pension & money module: neutral training mock-ups in the spirit of eGov mobile, the ENPF app and a bank app.
+     All names, sums, numbers and dates are fictional. -->
+<div class="screens" data-screens="money">
+
+  <!-- ===== ENPF ===== -->
+  <section class="screen lf lf--enpf" data-screen="mo_enpf_login">
+    <div class="lf-head"><div class="lf-head__top">ЕНПФ</div><small>Единый накопительный пенсионный фонд · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Вход в личный кабинет</small><b style="display:block;font-size:13px;margin-top:4px">Сауле Касымова</b><small>ИИН ••••••••4417</small></div>
+      <div class="lf-note">Приложение ЕНПФ открывайте со своего экрана. Ссылки «проверить пенсию» из сообщений ведут на поддельные сайты.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="enpf_login">Войти</button></div>
+  </section>
+
+  <section class="screen lf lf--enpf" data-screen="mo_enpf_home">
+    <div class="lf-head"><div class="lf-head__top">Мои накопления</div><small>Сауле Касымова</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Пенсионные накопления на 1 ноября 2026</small><b class="lf-big">3 245 870 ₸</b><small>Обязательные пенсионные взносы</small></div>
+      <button type="button" class="lf-row" data-t="enpf_statement"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Выписка по счёту<small>Поступления и доход за период</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-info"/></svg><span>Порог достаточности<small>Сколько можно использовать досрочно</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Контакт-центр 1418<small>Бесплатно, в рабочее время</small></span></div>
+    </div>
+    <div class="lf-tabs"><span class="is-on"><svg aria-hidden="true"><use href="#i-home"/></svg>Главная</span><span><svg aria-hidden="true"><use href="#i-history"/></svg>Выписка</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Профиль</span></div>
+  </section>
+
+  <section class="screen lf lf--enpf" data-screen="mo_enpf_statement">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Выписка</div><small>Январь — октябрь 2026</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-plus"/></svg><span>Инвестиционный доход<small>Октябрь 2026</small></span><b>+18 340 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-plus"/></svg><span>Обязательные взносы<small>Сентябрь 2026 · от работодателя</small></span><b>+12 000 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-plus"/></svg><span>Инвестиционный доход<small>Сентябрь 2026</small></span><b>+17 905 ₸</b></div>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Изъятие на лечение<small>Август 2026 · вы не подавали заявку?</small></span><b>−400 000 ₸</b></div>
+      <div class="lf-note">Выписку стоит смотреть раз в несколько месяцев. Любое незнакомое списание — повод сразу позвонить в ЕНПФ: 1418.</div>
+    </div>
+  </section>
+
+  <!-- ===== eGov mobile ===== -->
+  <section class="screen lf lf--egov" data-screen="mo_egov_home">
+    <div class="lf-head"><div class="lf-head__top">eGov mobile</div><small>Здравствуйте, Сауле</small>
+      <div class="lf-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск услуг</div></div>
+    <div class="lf-body">
+      <p class="lf-label">Популярное</p>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Справка о пенсионных отчислениях</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Цифровые документы</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-history"/></svg><span>История получения услуг</span></div>
+    </div>
+    <div class="lf-tabs"><span class="is-on"><svg aria-hidden="true"><use href="#i-home"/></svg>Главная</span><button type="button" data-t="egov_services"><svg aria-hidden="true"><use href="#i-menu"/></svg>Услуги</button><span><svg aria-hidden="true"><use href="#i-bell"/></svg>Уведомления</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Профиль</span></div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="mo_egov_cats">
+    <div class="lf-head"><div class="lf-head__top">Услуги</div><small>Выберите раздел</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-users"/></svg><span>Семья и дети</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-help"/></svg><span>Здравоохранение</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Социальное обеспечение</span></div>
+      <button type="button" class="lf-row" data-t="egov_finance"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Налоги и финансы<small>Займы, кредитный отчёт, налоги</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Недвижимость</span></div>
+    </div>
+    <div class="lf-tabs"><span><svg aria-hidden="true"><use href="#i-home"/></svg>Главная</span><span class="is-on"><svg aria-hidden="true"><use href="#i-menu"/></svg>Услуги</span><span><svg aria-hidden="true"><use href="#i-bell"/></svg>Уведомления</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Профиль</span></div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="mo_egov_finance">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Налоги и финансы</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="egov_selfban"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Добровольный отказ от получения банковских займов, микрокредитов<small>На 6 месяцев · бесплатно</small></span></button>
+      <button type="button" class="lf-row" data-t="egov_report"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Кредитный отчёт<small>Какие займы оформлены на ваше имя</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Налог на имущество</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="mo_egov_form">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Отказ от займов</div><small>Заявка</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Заявитель</small><b style="display:block;font-size:12.5px;margin-top:3px">Касымова Сауле</b><small>ИИН ••••••••4417</small></div>
+      <div class="lf-card"><small>Срок запрета</small><b style="display:block;font-size:12.5px;margin-top:3px">6 месяцев</b><small>Банки и микрофинансовые организации не выдадут вам заём</small></div>
+      <div class="lf-check"><i>✓</i><span>Я подаю заявку сам(а) и понимаю, что отменить запрет можно не раньше чем через 6 месяцев</span></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="egov_sign">Подписать</button></div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="mo_egov_code">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Подтверждение</div></div>
+    <div class="lf-body">
+      <p style="margin:6px 0 0;font-size:12.5px;font-weight:700">Введите код из SMS</p>
+      <p style="margin:0;font-size:10.5px;color:#6b7686">Код пришёл от 1414 на номер +7 701 ••• •• 34</p>
+      <div class="lf-code"><span>4</span><span>8</span><span>2</span><span>1</span><span>0</span><span>6</span></div>
+      <div class="lf-note">Код вводите только сами, здесь, в приложении. Никому не называйте его — ни «сотрудникам», ни «курьерам».</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="egov_confirm">Подтвердить</button></div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="mo_egov_done">
+    <div class="lf-head"><div class="lf-head__top">История получения услуг</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Отказ от займов — исполнено</b><br>Действует до 11 мая 2027</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Справка о пенсионных отчислениях<small>2 октября 2026 · исполнено</small></span></div>
+      <div class="lf-note">Отправленная заявка и действующий запрет — не одно и то же. Убедитесь, что здесь стоит «исполнено».</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="mo_egov_report">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Кредитный отчёт</div><small>На 11 ноября 2026</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Кредитная карта<small>Ваш банк · с 2023 года</small></span><b>0 ₸</b></div>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Микрокредит<small>МФО «Быстрые деньги» · 3 ноября 2026</small></span><b>150 000 ₸</b></div>
+      <div class="lf-note">Если в отчёте заём, который вы не брали, действуйте в тот же день.</div>
+    </div>
+  </section>
+
+  <!-- ===== Bank: pension arrived ===== -->
+  <section class="screen lf lf--bank" data-screen="mo_bank_home">
+    <div class="lf-head"><div class="lf-head__top">Мой банк</div><small>Учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Карта •• 4417</small><b class="lf-big">96 480 ₸</b></div>
+      <button type="button" class="lf-row" data-t="bank_history"><svg aria-hidden="true"><use href="#i-history"/></svg><span>История операций</span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-transfer"/></svg><span>Переводы</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Платежи</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="mo_bank_history">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>История операций</div><small>Ноябрь 2026</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="bank_pension"><svg aria-hidden="true"><use href="#i-plus"/></svg><span>Пенсия<small>10 ноября · Госкорпорация</small></span><b style="color:#1f6b3f">+118 600 ₸</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Аптека<small>9 ноября · покупка</small></span><b>−4 320 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Коммунальные услуги<small>5 ноября · платёж</small></span><b>−17 800 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="mo_bank_pension">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Зачисление</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Пенсия за ноябрь</small><b class="lf-big" style="color:#1f6b3f">+118 600 ₸</b><small>10 ноября 2026 · отправитель: Госкорпорация «Правительство для граждан»</small></div>
+      <div class="lf-note">Пенсию перечисляет государство. Оно не звонит и не просит «вернуть переплату» переводом на карту.</div>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="mo_call">
+    <div class="s-call">
+      <div class="s-call__label">Входящий звонок · 00:44</div>
+      <div class="s-call__num">+7 708 515 22 47</div>
+      <div class="s-call__av" aria-hidden="true"><svg><use href="#i-user"/></svg></div>
+      <h3 style="font-size:17px;margin:0;font-family:var(--font-sans);font-weight:600">«Отдел пенсионных выплат»</h3>
+      <div class="sx-said sx-said--dark">«Вам по ошибке начислили лишние 40 000 ₸. Верните их на карту, которую я продиктую, иначе пенсию заблокируют».</div>
+      <div class="s-call__buttons">
+        <button type="button" class="callbtn callbtn--end" data-t="call_end" aria-label="Завершить вызов"><svg aria-hidden="true" style="transform:rotate(135deg)"><use href="#i-phone"/></svg></button>
+      </div>
+    </div>
+  </section>
+</div>
+
+                <!-- Health module: neutral training mock-ups in the spirit of eGov mobile, Damumed and pharmacy search.
+     All names, clinics, times, prices and numbers are fictional (except public service numbers 103, 112, 1406). -->
+<div class="screens" data-screens="health">
+
+  <!-- ===== Doctor appointment ===== -->
+  <section class="screen lf lf--health" data-screen="he_home">
+    <div class="lf-head"><div class="lf-head__top">Моё здоровье</div><small>Поликлиника № 4 · учебный экран</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="he_book"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Записаться к врачу<small>Терапевт, узкие специалисты</small></span></button>
+      <button type="button" class="lf-row" data-t="he_visits"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Мои приёмы<small>История посещений</small></span></button>
+      <button type="button" class="lf-row" data-t="he_osms"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Статус страхования ОСМС</span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-text"/></svg><span>Результаты анализов</span></div>
+    </div>
+    <div class="lf-tabs"><span class="is-on"><svg aria-hidden="true"><use href="#i-home"/></svg>Главная</span><span><svg aria-hidden="true"><use href="#i-clock"/></svg>Записи</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Профиль</span></div>
+  </section>
+
+  <section class="screen lf lf--health" data-screen="he_doctors">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Выберите врача</div><small>Поликлиника № 4</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="he_therapist"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Терапевт участковый<small>Ахметова Г. С. · участок 12</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Кардиолог<small>Нужно направление терапевта</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Офтальмолог<small>Нужно направление терапевта</small></span></div>
+      <div class="lf-note">К узким специалистам обычно записывают по направлению участкового врача.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--health" data-screen="he_slots">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Терапевт</div><small>Ахметова Г. С. · каб. 214</small></div>
+    <div class="lf-body">
+      <p class="lf-label">Четверг, 13 ноября</p>
+      <div class="lf-chips"><span class="lf-chip">09:00 занято</span><span class="lf-chip">09:30 занято</span><button type="button" class="lf-chip" data-t="he_slot">10:30</button><span class="lf-chip">11:00</span></div>
+      <p class="lf-label">Пятница, 14 ноября</p>
+      <div class="lf-chips"><span class="lf-chip">14:00</span><span class="lf-chip">15:30</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--health" data-screen="he_confirm">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Подтверждение</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Вы записываетесь</small><b style="display:block;font-size:13px;margin-top:4px">Терапевт · Ахметова Г. С.</b><small>Чт, 13 ноября, 10:30 · кабинет 214</small></div>
+      <div class="lf-card"><small>Пациент</small><b style="display:block;font-size:12.5px;margin-top:3px">Касымова Сауле</b><small>Поликлиника № 4</small></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="he_confirm">Записаться</button></div>
+  </section>
+
+  <section class="screen lf lf--health" data-screen="he_booked">
+    <div class="lf-head"><div class="lf-head__top">Мои записи</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Вы записаны</b><br>Чт, 13 ноября, 10:30 · каб. 214</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-x"/></svg><span>Отменить запись<small>Если не сможете прийти — отмените, чтобы время досталось другому</small></span></div>
+      <div class="lf-note">Возьмите удостоверение личности. Приходите за 10–15 минут.</div>
+    </div>
+  </section>
+
+  <!-- ===== My visits ===== -->
+  <section class="screen lf lf--health" data-screen="he_visits">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Мои приёмы</div><small>2026 год</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Терапевт<small>14 сентября · осмотр</small></span></div>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Кардиолог · ЭКГ<small>2 октября · вы у него не были?</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Анализ крови<small>21 октября</small></span></div>
+      <button type="button" class="lf-row" data-t="he_complain"><svg aria-hidden="true"><use href="#i-message"/></svg><span>Сообщить о приёме, которого не было<small>Фонд медицинского страхования · 1406</small></span></button>
+    </div>
+  </section>
+
+  <section class="screen sx-plain" data-screen="he_fund">
+    <div class="sx-plainhead"><b>Фонд медицинского страхования</b><span>Жалобу на «приписанный» приём принимают бесплатно</span></div>
+    <div class="sx-rows">
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-globe"/></svg><span>Сайт fms.kz</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-message"/></svg><span>Приложение Qoldau 24/7</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-info"/></svg><span>Назовите дату, врача и что вы не были на приёме</span></div>
+    </div>
+    <button type="button" class="sx-dial" data-t="he_call1406"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить: 1406</button>
+  </section>
+
+  <!-- ===== OSMS status ===== -->
+  <section class="screen lf lf--health" data-screen="he_osms">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Статус ОСМС</div><small>Обязательное социальное медицинское страхование</small></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Застрахован(а)</b><br>Категория: пенсионер · взносы платит государство</span></div>
+      <div class="lf-note">Пенсионеры по возрасту застрахованы за счёт государства. Платить самому не нужно.</div>
+    </div>
+  </section>
+
+  <section class="screen w-app" data-screen="he_scam">
+    <div class="w-chathead">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <span class="w-av" style="width:34px;height:34px;background:#d8efef;color:#0f7f86">+</span>
+      <div style="flex:1;min-width:0">
+        <div class="w-chathead__name">Мед. страховка</div>
+        <div class="w-chathead__sub">+7 776 330 18 54</div>
+      </div>
+    </div>
+    <div class="w-chatbody">
+      <div class="w-bubble">Ваша медицинская страховка ОСМС истекает сегодня! Без неё вас не примут в поликлинике.<time>09:14</time></div>
+      <div class="w-bubble">Оплатите 4 900 ₸ по ссылке: <span class="sx-link">osms-oplata.site</span><time>09:14</time></div>
+    </div>
+    <div class="w-input"><div class="w-input__field">Сообщение</div></div>
+  </section>
+
+  <!-- ===== Pharmacy ===== -->
+  <section class="screen lf lf--health" data-screen="he_pharm">
+    <div class="lf-head"><div class="lf-head__top">Поиск лекарств</div><small>Учебный экран</small>
+      <div class="lf-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Эналаприл 10 мг</div></div>
+    <div class="lf-body">
+      <p class="lf-label">Найдено в 3 аптеках рядом</p>
+      <button type="button" class="lf-row" data-t="he_pharm_pick"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Аптека на Абая, 15<small>в наличии · 400 м · до 22:00</small></span><b>640 ₸</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Аптека «Здоровье»<small>в наличии · 2,1 км</small></span><b>590 ₸</b></div>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Аптека у рынка<small>нет в наличии</small></span><b>—</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--health" data-screen="he_pharm_card">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Аптека на Абая, 15</div><small>Открыто до 22:00</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Эналаприл 10 мг, 20 таблеток</small><b class="lf-big">640 ₸</b><small>В наличии: 6 упаковок</small></div>
+      <div class="lf-note">Перед поездкой позвоните и попросите отложить лекарство. По рецепту врача некоторые лекарства выдают бесплатно — спросите в поликлинике.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="he_pharm_call">Позвонить в аптеку</button><button type="button" class="lf-btn lf-btn--ghost">Маршрут</button></div>
+  </section>
+
+  <!-- ===== 103 ===== -->
+  <section class="screen sx-plain" data-screen="he_dial">
+    <div class="sx-plainhead"><b>Телефон</b><span>Скорая помощь — 103. Единый номер экстренных служб — 112</span></div>
+    <div class="lf-input" style="margin-top:14px;text-align:center;font-size:28px">103</div>
+    <button type="button" class="sx-dial" data-t="he_call103"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить 103</button>
+  </section>
+
+  <section class="screen" data-screen="he_103">
+    <div class="call-screen">
+      <div class="call-avatar" aria-hidden="true">103</div>
+      <h3>Скорая помощь</h3>
+      <p>Звонок · 00:12</p>
+      <div class="sx-said">«Скорая помощь, слушаю. Что случилось?»</div>
+      <div class="call-controls">
+        <button type="button" class="callbtn" aria-label="Микрофон"><svg aria-hidden="true"><use href="#i-mic"/></svg></button>
+        <button type="button" class="callbtn" aria-label="Громкая связь"><svg aria-hidden="true"><use href="#i-speaker"/></svg></button>
+        <button type="button" class="callbtn callbtn--end" aria-label="Завершить"><svg aria-hidden="true" style="transform:rotate(135deg)"><use href="#i-phone"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen sx-plain" data-screen="he_wait">
+    <div class="sx-plainhead"><b>Пока едет скорая</b><span>Подготовьтесь, чтобы врачу было проще</span></div>
+    <div class="sx-rows">
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Откройте дверь, придержите собаку</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Удостоверение личности</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-text"/></svg><span>Список лекарств, которые принимаете</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-users"/></svg><span>Позвоните родным</span></div>
+    </div>
+  </section>
+</div>
+
+                <!-- Home, utilities and phone service module: neutral training mock-ups.
+     Providers, account numbers, sums and phone numbers are fictional (except public emergency numbers 101–104, 112). -->
+<div class="screens" data-screens="home">
+
+  <!-- ===== Utilities in a bank's "Payments" ===== -->
+  <section class="screen lf lf--pay" data-screen="ho_pay_home">
+    <div class="lf-head"><div class="lf-head__top">Платежи</div><small>Мой банк · учебный экран</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="ho_utilities"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Коммунальные услуги<small>Ул. Абая, 15, кв. 7</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Мобильная связь</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-wifi"/></svg><span>Интернет и ТВ</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--pay" data-screen="ho_utilities">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Коммунальные услуги</div><small>Лицевой счёт 0123 4567 · ул. Абая, 15, кв. 7</small></div>
+    <div class="lf-body">
+      <p class="lf-label">Счёт за октябрь 2026</p>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Содержание дома</span><b>3 200 ₸</b></div>
+      <button type="button" class="lf-row" data-t="ho_water"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Холодная вода<small>Передать показания</small></span><b>—</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-star"/></svg><span>Электроэнергия</span><b>6 450 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Газ</span><b>1 900 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Отопление</span><b>6 250 ₸</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="ho_pay">Оплатить 17 800 ₸</button></div>
+  </section>
+
+  <section class="screen lf lf--pay" data-screen="ho_meter">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Холодная вода</div><small>Счётчик № 45 118 · кухня</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Прошлые показания (сентябрь)</small><b style="display:block;font-size:15px;margin-top:3px">00 412 м³</b></div>
+      <div class="lf-input"><small>Новые показания — чёрные цифры до запятой</small>00 418</div>
+      <div class="lf-note">Красные цифры после запятой — литры, их не передают. Расход за месяц: 6 м³.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="ho_meter_send">Передать показания</button></div>
+  </section>
+
+  <section class="screen lf lf--pay" data-screen="ho_check">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Проверьте платёж</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Получатель</small><b style="display:block;font-size:12.5px;margin-top:3px">Коммунальные услуги</b><small>Лицевой счёт 0123 4567 · ул. Абая, 15, кв. 7</small></div>
+      <div class="lf-card"><small>Период</small><b style="display:block;font-size:12.5px;margin-top:3px">Октябрь 2026</b></div>
+      <div class="lf-card"><small>Сумма</small><b class="lf-big">17 800 ₸</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="ho_pay_confirm">Оплатить</button></div>
+  </section>
+
+  <section class="screen lf lf--pay" data-screen="ho_receipt">
+    <div class="lf-head"><div class="lf-head__top">Готово</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Оплачено 17 800 ₸</b><br>Коммунальные услуги · октябрь 2026</span></div>
+      <button type="button" class="lf-row" data-t="ho_receipt_save"><svg aria-hidden="true"><use href="#i-download"/></svg><span>Сохранить чек<small>PDF-файл в телефоне</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Сделать платёж регулярным</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Emergency services ===== -->
+  <section class="screen sx-plain" data-screen="ho_gas">
+    <div class="sx-plainhead"><b>На кухне пахнет газом</b><span>Учебная ситуация</span></div>
+    <div class="sx-rows">
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>101 — пожарная служба</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>104 — аварийная газовая служба</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>112 — единый номер экстренных служб</span></div>
+    </div>
+  </section>
+
+  <section class="screen sx-plain" data-screen="ho_dial104">
+    <div class="sx-plainhead"><b>Вы вышли на улицу</b><span>Звоните уже из безопасного места</span></div>
+    <div class="lf-input" style="margin-top:14px;text-align:center;font-size:28px">104</div>
+    <button type="button" class="sx-dial" data-t="ho_call104"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить 104</button>
+  </section>
+
+  <section class="screen sx-plain" data-screen="ho_flood">
+    <div class="sx-plainhead"><b>С потолка течёт вода</b><span>Соседи сверху не открывают</span></div>
+    <div class="sx-rows">
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-star"/></svg><span>Не трогайте мокрые розетки и выключатели</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Аварийная служба дома — номер на квитанции или в подъезде</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-camera"/></svg><span>Сфотографируйте следы протечки</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Mobile operator ===== -->
+  <section class="screen lf lf--op" data-screen="ho_op_home">
+    <div class="lf-head"><div class="lf-head__top">Мой оператор</div><small>+7 701 ••• •• 34 · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Баланс</small><b class="lf-big">215 ₸</b><small>Списания за неделю: 1 050 ₸ — больше обычного</small></div>
+      <button type="button" class="lf-row" data-t="ho_subs"><svg aria-hidden="true"><use href="#i-bell"/></svg><span>Подписки и услуги<small>Подключено: 2 платные</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-plus"/></svg><span>Пополнить баланс</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-signal"/></svg><span>Мой тариф</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--op" data-screen="ho_subs">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Подписки и услуги</div></div>
+    <div class="lf-body">
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-star"/></svg><span>«Гороскоп дня»<small>150 ₸ в день · подключено 3 ноября</small></span><button type="button" class="lf-chip" data-t="ho_unsub">Отключить</button></div>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-play"/></svg><span>«Мелодия вместо гудка»<small>90 ₸ в день</small></span><span class="lf-chip">Отключить</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-message"/></svg><span>SMS-уведомления банка<small>бесплатно</small></span></div>
+      <div class="lf-note">Платные подписки часто подключаются одним случайным нажатием на рекламу.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--op" data-screen="ho_unsub_ok">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Подписки и услуги</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>«Гороскоп дня» отключён</b><br>Деньги за него больше не списываются</span></div>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-play"/></svg><span>«Мелодия вместо гудка»<small>90 ₸ в день</small></span><span class="lf-chip">Отключить</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-message"/></svg><span>SMS-уведомления банка<small>бесплатно</small></span></div>
+    </div>
+  </section>
+</div>
+
                 <!-- Phone basics module: a generic Android-style phone. One shared screen group
      for all five lessons (lesson.uiGroup = "phone-basics"). Names, numbers and
      network names are fictional. -->
@@ -3455,6 +3871,52 @@
       <div class="px-kbd__row"><i class="w">⇧</i><i>я</i><i>ч</i><i>с</i><i>м</i><i>и</i><i>т</i><i>ь</i><i>б</i><i>ю</i><i class="w">⌫</i></div>
       <div class="px-kbd__row"><i class="w">?123</i><i class="sp">Русский</i><i class="w">↵</i></div>
     </div>
+  </section>
+  <!-- ============ Back, Home, Recent: three navigation buttons ============ -->
+  <section class="screen px-set" data-screen="pn_deep" style="padding-bottom:46px">
+    <div class="px-title" style="font-size:15px">Wi-Fi › Дополнительно › Прокси-сервер</div>
+    <div class="px-list">
+      <span class="px-row"><span><b>Прокси-сервер</b><small>Нет</small></span></span>
+      <span class="px-row"><span><b>IP-настройки</b><small>DHCP</small></span></span>
+      <span class="px-row"><span><b>MAC-адрес</b><small>Случайный</small></span></span>
+    </div>
+    <div class="sx-tip" style="margin:12px 14px 0">Вы зашли слишком глубоко. Здесь ничего менять не нужно.</div>
+    <div class="pn-nav"><button type="button" data-t="back" aria-label="Назад"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5 7 12l9 7z"/></svg></button><button type="button" data-t="home" aria-label="Домой"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg></button><button type="button" data-t="recent" aria-label="Недавние"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg></button></div>
+  </section>
+
+  <section class="screen px-set" data-screen="pn_settings" style="padding-bottom:46px">
+    <div class="px-title">Настройки</div>
+    <div class="px-list">
+      <span class="px-row"><i style="background:#2f6fd0"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Wi-Fi</b><small>Дом_Сауле</small></span></span>
+      <span class="px-row"><i style="background:#d8577a"><svg aria-hidden="true"><use href="#i-speaker"/></svg></i><span><b>Звук и вибрация</b></span></span>
+      <span class="px-row"><i style="background:#e0a21b"><svg aria-hidden="true"><use href="#i-contrast"/></svg></i><span><b>Экран</b></span></span>
+    </div>
+    <div class="pn-nav"><button type="button" data-t="back" aria-label="Назад"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5 7 12l9 7z"/></svg></button><button type="button" data-t="home" aria-label="Домой"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg></button><button type="button" data-t="recent" aria-label="Недавние"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg></button></div>
+  </section>
+
+  <section class="screen px-home" data-screen="pn_home" style="padding-bottom:46px">
+    <div class="px-clock"><b>9:41</b><span>вторник, 10 ноября · +4°</span></div>
+    <div class="px-grid">
+      <span class="px-ic"><i style="background:#e9eef5;color:#3d6fb8"><svg aria-hidden="true"><use href="#i-camera"/></svg></i>Камера</span>
+      <span class="px-ic"><i style="background:#fdebd6;color:#c96a12"><svg aria-hidden="true"><use href="#i-image"/></svg></i>Галерея</span>
+      <span class="px-ic"><i style="background:#e5f3ec;color:#2f7d4f"><svg aria-hidden="true"><use href="#i-clock"/></svg></i>Часы</span>
+      <span class="px-ic"><i style="background:#5f6b73;color:#fff"><svg aria-hidden="true"><use href="#i-menu"/></svg></i>Настройки</span>
+    </div>
+    <div class="px-dock" style="bottom:56px">
+      <span class="px-ic"><i style="background:#2f9e5b;color:#fff"><svg aria-hidden="true"><use href="#i-phone"/></svg></i>Телефон</span>
+      <span class="px-ic"><i style="background:#25d366;color:#fff"><svg aria-hidden="true"><use href="#i-message"/></svg></i>WhatsApp</span>
+      <span class="px-ic"><i style="background:#edf0f2;color:#3c4043"><svg aria-hidden="true"><use href="#i-globe"/></svg></i>Браузер</span>
+    </div>
+    <div class="pn-nav"><button type="button" data-t="back" aria-label="Назад"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5 7 12l9 7z"/></svg></button><button type="button" data-t="home" aria-label="Домой"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg></button><button type="button" data-t="recent" aria-label="Недавние"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg></button></div>
+  </section>
+
+  <section class="screen" data-screen="pn_recent" style="background:#2b2f33">
+    <div class="pn-recent">
+      <div class="pn-card"><b>WhatsApp</b><small>Не отвечает</small><i></i></div>
+      <div class="pn-card"><b>Настройки</b><small>Wi-Fi</small><i></i></div>
+    </div>
+    <span class="pn-closeall">Закрыть все</span>
+    <div class="pn-nav"><button type="button" data-t="back" aria-label="Назад"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5 7 12l9 7z"/></svg></button><button type="button" data-t="home" aria-label="Домой"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg></button><button type="button" data-t="recent" aria-label="Недавние"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg></button></div>
   </section>
 </div>
 

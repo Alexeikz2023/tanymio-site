@@ -81,6 +81,39 @@
         "</div></div>"
       );
     }
+    if (app === "money") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#1f7a5a;color:#fff"><span style="font-weight:800">БЖЗҚ · eGov</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Жинақ</span><b>Көшірме</b></div>' +
+        '<div class="mini__row"><span>Несие</span><b>Тыйым</b></div>' +
+        '<div class="mini__row"><span>Зейнетақы</span><b>Түсті</b></div>' +
+        "</div></div>"
+      );
+    }
+    if (app === "health") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#0f7f86;color:#fff"><span style="font-weight:800">Денсаулығым</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Терапевт</span><b>10:30</b></div>' +
+        '<div class="mini__row"><span>МӘМС</span><b>Сақтандырылған</b></div>' +
+        '<div class="mini__row"><span>Жедел жәрдем</span><b>103</b></div>' +
+        "</div></div>"
+      );
+    }
+    if (app === "home") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#c2410c;color:#fff"><span style="font-weight:800">Платежи</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Су</span><b>00 418</b></div>' +
+        '<div class="mini__row"><span>Коммуналдық</span><b>Төленді</b></div>' +
+        '<div class="mini__row"><span>Жазылым</span><b>Өшіру</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "greensm") {
       return (
         '<div class="mini">' +

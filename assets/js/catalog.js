@@ -82,6 +82,39 @@
         "</div></div>"
       );
     }
+    if (app === "money") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#1f7a5a;color:#fff"><span style="font-weight:800">ЕНПФ · eGov</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Накопления</span><b>Выписка</b></div>' +
+        '<div class="mini__row"><span>Кредиты</span><b>Запрет</b></div>' +
+        '<div class="mini__row"><span>Пенсия</span><b>Пришла</b></div>' +
+        "</div></div>"
+      );
+    }
+    if (app === "health") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#0f7f86;color:#fff"><span style="font-weight:800">Моё здоровье</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Терапевт</span><b>10:30</b></div>' +
+        '<div class="mini__row"><span>ОСМС</span><b>Застрахован</b></div>' +
+        '<div class="mini__row"><span>Скорая</span><b>103</b></div>' +
+        "</div></div>"
+      );
+    }
+    if (app === "home") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#c2410c;color:#fff"><span style="font-weight:800">Платежи</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Вода</span><b>00 418</b></div>' +
+        '<div class="mini__row"><span>Коммуналка</span><b>Оплачено</b></div>' +
+        '<div class="mini__row"><span>Подписки</span><b>Отключить</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "greensm") {
       return (
         '<div class="mini">' +
