@@ -3572,3 +3572,13 @@ a.lesson-card:hover .lesson-card__foot svg {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Account demo */
+.acct-form { display: grid; gap: 14px; margin: 18px 0 8px; }
+.acct-field { display: grid; gap: 6px; font-weight: 600; }
+.acct-field input { min-height: 52px; padding: 10px 14px; border: 1px solid var(--line, #d6d3ca); border-radius: 10px; font: inherit; background: #fff; color: #17201d; }
+.acct-field input:focus { outline: 3px solid rgba(46,107,230,.25); border-color: #2e6be6; }
+.acct-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 560px) { .acct-stats { grid-template-columns: 1fr; } }
+button.help-card { width: 100%; cursor: pointer; font: inherit; color: inherit; }
