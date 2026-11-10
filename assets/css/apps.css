@@ -5106,3 +5106,19 @@ button.gpay-row {
 .v-app--halyk .v-cta { background: #087f45; border-color: #087f45; }
 .v-app--bcc .v-cta { background: #1b3f73; border-color: #1b3f73; }
 .v-app--freedom .v-cta { background: #c8102e; border-color: #c8102e; }
+
+
+/* Marketplace brand themes */
+.v-app--market-kaspi .v-head { background: #f14635; color: #fff; }
+.v-app--market-kaspi .v-cta { background: #f14635; border-color: #f14635; }
+.v-app--market-ozon .v-head { background: #005bff; color: #fff; }
+.v-app--market-ozon .v-cta { background: #005bff; border-color: #005bff; }
+.v-app--market-wb .v-head { background: #cb11ab; color: #fff; }
+.v-app--market-wb .v-cta { background: #cb11ab; border-color: #cb11ab; }
+.v-app--market-temu .v-head { background: #fb7701; color: #fff; }
+.v-app--market-temu .v-cta { background: #fb7701; border-color: #fb7701; }
+
+.v-tabbar { display: none; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; padding: 8px 8px 10px; border-top: 1px solid #e6e6e6; background: #fff; font-size: 9.5px; color: #6b7280; text-align: center; margin-top: auto; }
+.v-app[class*="--market-"] .v-tabbar { display: grid; }
+.v-tabbar i { display: block; width: 16px; height: 16px; margin: 0 auto 3px; border-radius: 5px; background: currentColor; opacity: .25; }
+.v-tabbar b { display: block; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

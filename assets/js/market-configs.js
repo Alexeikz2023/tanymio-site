@@ -3,7 +3,7 @@
   "use strict";
   window.TANYMIO_MARKET_CONFIGS = [
     {
-      app: "kaspi-shop", prefix: "market-kaspi", brand: "Kaspi Магазин", letter: "K",
+      app: "kaspi-shop", prefix: "market-kaspi", brand: "Kaspi Магазин", letter: "K", theme: "market-kaspi", tabs: ["Каталог", "Избранное", "Корзина", "Мои заказы"],
       lessons: [
         {
           slug: "search", title: "Поиск товара и цена",
@@ -49,7 +49,7 @@
       ]
     },
     {
-      app: "ozon", prefix: "market-ozon", brand: "Ozon", letter: "O",
+      app: "ozon", prefix: "market-ozon", brand: "Ozon", letter: "O", theme: "market-ozon", tabs: ["Главная", "Каталог", "Корзина", "Заказы"],
       lessons: [
         {
           slug: "search", title: "Поиск и сравнение цены",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      app: "wildberries", prefix: "market-wb", brand: "Wildberries", letter: "W",
+      app: "wildberries", prefix: "market-wb", brand: "Wildberries", letter: "W", theme: "market-wb", tabs: ["Главная", "Каталог", "Корзина", "Профиль"],
       lessons: [
         {
           slug: "search", title: "Поиск и фильтры",
@@ -141,7 +141,7 @@
       ]
     },
     {
-      app: "temu", prefix: "market-temu", brand: "Temu", letter: "T",
+      app: "temu", prefix: "market-temu", brand: "Temu", letter: "T", theme: "market-temu", tabs: ["Главная", "Категории", "Корзина", "Заказы"],
       lessons: [
         {
           slug: "search", title: "Поиск и проверка товара",

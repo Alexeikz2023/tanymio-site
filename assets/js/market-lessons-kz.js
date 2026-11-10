@@ -75,7 +75,7 @@
   function build(mod, lesson, index) {
     var id = mod.prefix + "-" + lesson.slug;
     var ui = {
-      brand: mod.brand, letter: mod.letter, city: "Алматы · оқу экраны", theme: "market",
+      brand: mod.brand, letter: mod.letter, city: "Алматы · оқу экраны", theme: mod.theme || "market",
       homeLabel: lesson.home.label, homeValue: lesson.home.value, homeNote: lesson.home.note,
       homeAmount: lesson.home.amount, homeHint: "Бұл оқу экраны. Нақты тапсырыс орындалмайды.",
       listTitle: lesson.list.title
@@ -84,6 +84,7 @@
       ui["item" + i + "Label"] = item[0];
       ui["item" + i + "Sub"] = item[1];
     });
+    (mod.tabs || []).forEach(function (tab, i) { ui["tab" + i] = tab; });
     ui.confirmTitle = lesson.confirm.title;
     lesson.confirm.rows.forEach(function (row, i) {
       ui["row" + i + "Label"] = row[0];
