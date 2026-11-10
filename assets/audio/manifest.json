@@ -1,7 +1,7 @@
 {
   "provider": "edge-neural (prototype)",
   "rate": "-5%",
-  "generatedAt": "2026-11-10T12:21:55",
+  "generatedAt": "2026-11-10T23:56:36",
   "languages": {
     "ru": {
       "female": {
@@ -39,9 +39,19 @@
       "safety-new-number",
       "safety-remote",
       "safety-prize",
+      "safety-voice",
+      "safety-safe-account",
+      "safety-pension",
+      "safety-courier",
+      "safety-after",
       "kaspi-transfer",
       "whatsapp-photo",
       "whatsapp-video",
+      "phone-font",
+      "phone-volume",
+      "phone-wifi",
+      "phone-contact",
+      "phone-voice",
       "bank-halyk",
       "bank-bcc",
       "bank-freedom",
@@ -99,7 +109,11 @@
       "delivery-magnum-product",
       "delivery-magnum-cart",
       "delivery-magnum-slot",
-      "delivery-magnum-pay"
+      "delivery-magnum-pay",
+      "bank-freedom-kopilka",
+      "bank-freedom-strategy",
+      "bank-freedom-utilities",
+      "bank-freedom-history"
     ],
     "kk": [
       "taxi-yandex",
@@ -108,9 +122,19 @@
       "safety-new-number",
       "safety-remote",
       "safety-prize",
+      "safety-voice",
+      "safety-safe-account",
+      "safety-pension",
+      "safety-courier",
+      "safety-after",
       "kaspi-transfer",
       "whatsapp-photo",
       "whatsapp-video",
+      "phone-font",
+      "phone-volume",
+      "phone-wifi",
+      "phone-contact",
+      "phone-voice",
       "taxi-indrive",
       "taxi-greensm",
       "greensm-lang",
@@ -171,7 +195,11 @@
       "delivery-magnum-product",
       "delivery-magnum-cart",
       "delivery-magnum-slot",
-      "delivery-magnum-pay"
+      "delivery-magnum-pay",
+      "bank-freedom-kopilka",
+      "bank-freedom-strategy",
+      "bank-freedom-utilities",
+      "bank-freedom-history"
     ]
   }
 }
