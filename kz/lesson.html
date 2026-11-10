@@ -13,9 +13,9 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/css/fonts.css?v=3cfdaf4889">
   <link rel="stylesheet" href="../assets/css/styles.css?v=9fa35d885c">
-  <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=aa10efc567"><link rel="stylesheet" href="../assets/css/trainer.css?v=a8aa109562">
+  <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=2e4f3a82d5"><link rel="stylesheet" href="../assets/css/trainer.css?v=a8aa109562">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="cd2c03808f">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="cc53e3b7eb">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -2425,6 +2425,297 @@
     </div>
   </section>
 </div>
+                <!-- Safety module: training mock-ups with fictional numbers, links and names. -->
+
+<!-- ============ 1. SMS with a fake link ============ -->
+<div class="screens" data-screens="safety-sms-link">
+  <section class="screen" data-screen="sl_lock">
+    <div class="s-lock" style="justify-content:flex-start;padding-top:34px">
+      <div class="s-lock__time">10:24</div>
+      <p>вторник, 10 ноября</p>
+      <div style="width:100%;display:grid;gap:8px;margin-top:26px;text-align:left">
+        <div class="s-notif sx-warn">
+          <i><svg aria-hidden="true"><use href="#i-message"/></svg></i>
+          <div>
+            <b>KASPI-BANK · сейчас</b>
+            <p>Ваша карта заблокирована из-за подозрительной операции. Чтобы разблокировать, перейдите: <span class="sx-link">kaspi-kz.top/unlock</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen sx-msg" data-screen="sl_thread">
+    <div class="sx-msghead">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <span class="sx-av">K</span>
+      <div><b>KASPI-BANK</b><span>Нет в контактах</span></div>
+    </div>
+    <div class="sx-spam">
+      <svg aria-hidden="true"><use href="#i-alert"/></svg>
+      <span>Неизвестный отправитель. Имя можно подделать.</span>
+      <button type="button" class="sx-spam__btn" data-t="block">Заблокировать</button>
+    </div>
+    <div class="sx-msgbody">
+      <div class="sx-day">Сегодня, 10:24</div>
+      <div class="sx-bubble">Ваша карта заблокирована из-за подозрительной операции. Чтобы разблокировать, перейдите: <span class="sx-link">kaspi-kz.top/unlock</span></div>
+      <div class="sx-compare">
+        <div><small>Настоящий сайт</small><b>kaspi.kz</b></div>
+        <div class="is-bad"><small>В сообщении</small><b>kaspi<em>-</em>kz<em>.top</em></b></div>
+      </div>
+    </div>
+    <div class="sx-msginput">Отвечать на это сообщение не нужно</div>
+  </section>
+
+  <section class="screen sx-msg" data-screen="sl_confirm">
+    <div class="sx-msghead">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <span class="sx-av">K</span>
+      <div><b>KASPI-BANK</b><span>Нет в контактах</span></div>
+    </div>
+    <div class="sx-msgbody sx-dim">
+      <div class="sx-bubble">Ваша карта заблокирована из-за подозрительной операции. Чтобы разблокировать, перейдите: <span class="sx-link">kaspi-kz.top/unlock</span></div>
+    </div>
+    <div class="sx-dialog" role="dialog" aria-label="Заблокировать отправителя">
+      <h4>Заблокировать KASPI-BANK?</h4>
+      <p>Сообщения от этого отправителя больше не будут приходить.</p>
+      <label class="sx-check"><span class="sx-box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Сообщить о спаме</label>
+      <div class="sx-dialog__btns">
+        <button type="button">Отмена</button>
+        <button type="button" class="is-main" data-t="confirm">Заблокировать</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen k-app" data-screen="sl_bank">
+    <div class="k-head">
+      <div class="k-head__top">
+        <div class="k-logo">kaspi<span>.kz</span></div>
+        <button type="button" class="iconbtn" aria-label="Профиль" style="color:#fff"><svg aria-hidden="true"><use href="#i-user"/></svg></button>
+      </div>
+      <p style="margin:6px 0 0;font-size:10.5px;color:#ffd9d4">Здравствуйте, Сауле</p>
+    </div>
+    <div class="k-body">
+      <div class="k-gold">
+        <div class="k-gold__row"><span>Kaspi Gold</span><span>•• 4417</span></div>
+        <b>48 500 ₸</b>
+        <div class="k-gold__num">5169 49•• •••• 4417</div>
+      </div>
+      <div class="sx-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Карта активна</b>Блокировок нет. Последняя операция — ваша покупка в аптеке.</span></div>
+      <div class="sx-tip">Вы открыли приложение банка сами, а не по ссылке из SMS. Так проверять безопасно.</div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ 2. "Grandma, this is my new number" ============ -->
+<div class="screens" data-screens="safety-new-number">
+  <section class="screen w-app" data-screen="sn_chat">
+    <div class="w-chathead">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <span class="w-av" style="width:34px;height:34px;background:#e6e2d8;color:#5f5a4c">?</span>
+      <div style="flex:1;min-width:0">
+        <div class="w-chathead__name">+7 747 555 01 23</div>
+        <div class="w-chathead__sub">в сети</div>
+      </div>
+    </div>
+    <div class="sx-unknown">
+      <span>Этого номера нет в ваших контактах</span>
+      <div><button type="button" class="is-red" data-t="block">Заблокировать</button><button type="button">Добавить</button></div>
+    </div>
+    <div class="w-chatbody">
+      <div class="w-bubble">Бабушка, привет! Это Аслан. Телефон разбился, пишу с нового номера.<time>11:02</time></div>
+      <div class="w-bubble">Срочно нужно 45 000 ₸ до вечера. Переведи на эту карту: 4400 43•• •••• 7781, завтра верну.<time>11:03</time></div>
+      <div class="w-bubble">Только маме не говори, пожалуйста 🙏<time>11:03</time></div>
+    </div>
+    <div class="w-input">
+      <div class="w-input__field">Сообщение</div>
+    </div>
+  </section>
+
+  <section class="screen w-app" data-screen="sn_list">
+    <div class="w-head">
+      <div class="w-head__top"><span>WhatsApp</span></div>
+      <div class="w-tabs"><span class="is-on">Чаты</span><span>Статусы</span><span>Звонки</span></div>
+    </div>
+    <div class="w-list">
+      <div class="w-chat">
+        <span class="w-av" style="background:#e6e2d8;color:#5f5a4c">?</span>
+        <span class="w-chat__t"><b>+7 747 555 01 23</b><span>Только маме не говори, пожалуйста 🙏</span></span>
+        <span class="w-chat__meta">11:03</span>
+      </div>
+      <div class="w-chat sx-saved">
+        <span class="w-av">А</span>
+        <span class="w-chat__t"><b>Аслан</b><span>Сохранён в контактах · старый номер</span></span>
+        <button type="button" class="sx-callbtn" data-t="call" aria-label="Позвонить Аслану"><svg aria-hidden="true"><use href="#i-phone"/></svg></button>
+      </div>
+      <div class="w-chat">
+        <span class="w-av" style="background:#efe3d3;color:#7a5a2f">С</span>
+        <span class="w-chat__t"><b>Семья Алматы</b><span>Марина: созвонимся в субботу?</span></span>
+        <span class="w-chat__meta">вчера</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="sn_call">
+    <div class="call-screen">
+      <div class="call-avatar" aria-hidden="true">А</div>
+      <h3>Аслан</h3>
+      <p>Звонок · 00:41</p>
+      <div class="sx-said">«Бабушка, я ничего не писал! Телефон у меня тот же, всё хорошо».</div>
+      <div class="call-controls">
+        <button type="button" class="callbtn" aria-label="Микрофон"><svg aria-hidden="true"><use href="#i-mic"/></svg></button>
+        <button type="button" class="callbtn" aria-label="Громкая связь"><svg aria-hidden="true"><use href="#i-speaker"/></svg></button>
+        <button type="button" class="callbtn callbtn--end" aria-label="Завершить"><svg aria-hidden="true" style="transform:rotate(135deg)"><use href="#i-phone"/></svg></button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ 3. "Install a protection app" ============ -->
+<div class="screens" data-screens="safety-remote">
+  <section class="screen" data-screen="sr_call">
+    <div class="s-call">
+      <div class="s-call__label">Идёт разговор · 02:14</div>
+      <div class="s-call__num">+7 705 300 14 88</div>
+      <div class="s-call__av" aria-hidden="true"><svg><use href="#i-user"/></svg></div>
+      <h3 style="font-size:17px;margin:0;font-family:var(--font-sans);font-weight:600">«Служба безопасности банка»</h3>
+      <div class="sx-said sx-said--dark">«На вас пытаются оформить кредит. Установите приложение защиты по ссылке из SMS — так мы остановим мошенников».</div>
+      <div class="s-call__buttons">
+        <button type="button" class="callbtn callbtn--end" aria-label="Завершить вызов"><svg aria-hidden="true" style="transform:rotate(135deg)"><use href="#i-phone"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="sr_sms">
+    <div class="s-lock" style="justify-content:flex-start;padding-top:34px">
+      <div class="s-lock__time">14:07</div>
+      <p>вторник, 10 ноября</p>
+      <div style="width:100%;display:grid;gap:8px;margin-top:26px;text-align:left">
+        <div class="s-notif sx-warn">
+          <i><svg aria-hidden="true"><use href="#i-message"/></svg></i>
+          <div>
+            <b>+7 705 300 14 88 · сейчас</b>
+            <p>Установите «Защиту счёта»: <span class="sx-link">bank-zashita.site/app.apk</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="sr_install">
+    <div class="sx-browser">
+      <div class="sx-url"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>bank-zashita.site/app.apk</span></div>
+      <div class="sx-page sx-dim">
+        <div class="sx-file"><svg aria-hidden="true"><use href="#i-download"/></svg><b>app.apk</b><span>Загрузка завершена</span></div>
+      </div>
+      <div class="sx-dialog" role="dialog" aria-label="Установка приложения">
+        <h4>Установить неизвестное приложение?</h4>
+        <p>Из соображений безопасности телефон не разрешает устанавливать приложения из этого источника.</p>
+        <div class="sx-dialog__btns">
+          <button type="button">Настройки</button>
+          <button type="button" class="is-main" data-t="cancel">Отмена</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen sx-plain" data-screen="sr_apps">
+    <div class="sx-plainhead"><b>Программы удалённого доступа</b><span>Через них чужой человек видит ваш экран и нажимает за вас</span></div>
+    <div class="sx-apps">
+      <div class="sx-app"><i style="background:#ef443b">A</i><span>AnyDesk</span></div>
+      <div class="sx-app"><i style="background:#2e6fd8">R</i><span>RustDesk</span></div>
+      <div class="sx-app"><i style="background:#1f7ae0">T</i><span>TeamViewer<br>QuickSupport</span></div>
+    </div>
+    <div class="sx-tip">Если звонящий просит установить такую программу, «приложение защиты» или файл .apk — это мошенник. Банк так не делает.</div>
+  </section>
+
+  <section class="screen sx-plain" data-screen="sr_dial">
+    <div class="sx-plainhead"><b>Звонок в банк</b><span>Номер — только с обратной стороны карты или с официального сайта</span></div>
+    <div class="sx-cardback">
+      <div class="sx-cardback__strip"></div>
+      <span>Служба поддержки</span>
+      <b>номер банка</b>
+      <small>напечатан на обороте карты</small>
+    </div>
+    <button type="button" class="sx-dial" data-t="call"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить в банк</button>
+  </section>
+</div>
+
+<!-- ============ 4. "You won a prize" and a fake site ============ -->
+<div class="screens" data-screens="safety-prize">
+  <section class="screen w-app" data-screen="sp_msg">
+    <div class="w-chathead">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <span class="w-av" style="width:34px;height:34px;background:#f4d6d2;color:#b3261c">🎁</span>
+      <div style="flex:1;min-width:0">
+        <div class="w-chathead__name">Kaspi Розыгрыш</div>
+        <div class="w-chathead__sub">+7 776 410 22 09</div>
+      </div>
+    </div>
+    <div class="w-chatbody">
+      <div class="w-bubble">🎉 Поздравляем! Ваш номер выиграл 500 000 ₸ в новогоднем розыгрыше.<time>16:20</time></div>
+      <div class="w-bubble">Получите приз до 18:00, иначе он сгорит: <span class="sx-link">kaspi-bonus.online/priz</span><time>16:20</time></div>
+    </div>
+    <div class="w-input"><div class="w-input__field">Сообщение</div></div>
+  </section>
+
+  <section class="screen" data-screen="sp_page">
+    <div class="sx-browser">
+      <div class="sx-url">
+        <svg aria-hidden="true"><use href="#i-alert"/></svg>
+        <span>kaspi-bonus.online/priz</span>
+        <button type="button" class="sx-url__close" data-t="close" aria-label="Закрыть вкладку"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+      </div>
+      <div class="sx-page sx-fake">
+        <div class="sx-fake__logo">kaspi<span>.kz</span></div>
+        <h4>Ваш приз: 500 000 ₸</h4>
+        <p>Введите данные карты, на которую перечислить выигрыш</p>
+        <div class="sx-field"><small>Номер карты</small><span>0000 0000 0000 0000</span></div>
+        <div class="sx-field2">
+          <div class="sx-field"><small>Срок</small><span>ММ/ГГ</span></div>
+          <div class="sx-field is-bad"><small>CVV — 3 цифры на обороте</small><span>•••</span></div>
+        </div>
+        <div class="sx-fake__btn">Получить 500 000 ₸</div>
+        <div class="sx-fake__timer">Осталось 01:39:12</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen k-app" data-screen="sp_card">
+    <div class="k-header">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <h3>Kaspi Gold •• 4417</h3>
+    </div>
+    <div class="k-body">
+      <div class="k-gold">
+        <div class="k-gold__row"><span>Kaspi Gold</span><span>•• 4417</span></div>
+        <b>48 500 ₸</b>
+        <div class="k-gold__num">5169 49•• •••• 4417</div>
+      </div>
+      <div class="sx-rows">
+        <div class="sx-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Реквизиты карты</span></div>
+        <div class="sx-row"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Лимиты</span></div>
+        <button type="button" class="sx-row sx-row--danger" data-t="lock"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Заблокировать карту</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen k-app" data-screen="sp_locked">
+    <div class="k-header">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <h3>Kaspi Gold •• 4417</h3>
+    </div>
+    <div class="k-body">
+      <div class="k-gold sx-locked">
+        <div class="k-gold__row"><span>Kaspi Gold</span><span>•• 4417</span></div>
+        <b><svg aria-hidden="true"><use href="#i-lock"/></svg>Заблокирована</b>
+        <div class="k-gold__num">5169 49•• •••• 4417</div>
+      </div>
+      <div class="sx-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Карта заблокирована</b>По ней нельзя заплатить, даже если у мошенников есть номер и CVV.</span></div>
+    </div>
+  </section>
+</div>
+
                 <div class="phone-done" id="phoneDone" hidden></div>
               </div>
               <span class="phone__home" aria-hidden="true"></span>
@@ -2567,7 +2858,7 @@
 </footer>
 
 <script src="../assets/js/app.js?v=abf75ca4e7"></script>
-<script src="../assets/js/data-kz.js?v=94a010fc85"></script>
+<script src="../assets/js/data-kz.js?v=2c401bb48e"></script>
 <script src="../assets/js/app-configs.js?v=5d38bf11f8"></script>
 <script src="../assets/js/data-kz-taxis.js?v=008daed356"></script>
 <script src="../assets/js/app-lessons-kz.js?v=762f918c58"></script>
