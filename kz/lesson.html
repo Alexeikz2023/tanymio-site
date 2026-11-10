@@ -1881,6 +1881,56 @@
     </div>
     <div class="mw-foot"><button type="button" class="mw-cta" data-t="w_cart" data-slot="confirmCta">В корзину</button></div>
   </section>
+
+  <section class="screen v-app mw" data-screen="wb_cart">
+    <div class="mw-head mw-head--small"><div class="mw-head__top"><span class="mw-back">‹</span><b>Корзина</b><span class="mw-ic">♡</span></div></div>
+    <div class="mw-body">
+      <div class="mw-cart-item"><i></i><div><b data-slot="row0Value">Куртка, 48</b><small data-slot="row0Label">Товар</small><span class="mw-qty">1 шт</span></div><b data-slot="confirmValue">7 900 ₸</b></div>
+      <div class="mw-cart-line"><span>Товар</span><b data-slot="homeValue">1 товар</b></div>
+      <div class="mw-cart-line"><span>Скидка</span><b>−1 000 ₸</b></div>
+      <div class="mw-cart-line mw-cart-line--total"><span>Итого</span><b data-slot="homeAmount">7 900 ₸</b></div>
+      <div class="mw-pickup-note"><b>Пункт выдачи</b><span data-slot="row1Value">Толе би, 59 · примерка</span></div>
+    </div>
+    <div class="mw-foot"><button type="button" class="mw-cta" data-t="w_checkout" data-slot="confirmCta">Оформить заказ</button></div>
+  </section>
+
+  <section class="screen v-app mw" data-screen="wb_delivery">
+    <div class="mw-head mw-head--small"><div class="mw-head__top"><span class="mw-back">‹</span><b>Оформление заказа</b><span class="mw-ic">♡</span></div></div>
+    <div class="mw-body">
+      <h3 class="mw-title">Куда доставить?</h3>
+      <p class="mw-label">Пункт выдачи</p>
+      <button type="button" class="mw-address" data-t="w_pickup"><b data-slot="homeValue">Толе би, 59</b><span data-slot="homeLabel">Пункт выдачи · примерка</span><em>Изменить</em></button>
+      <div class="mw-info"><span>Срок</span><b data-slot="row0Value">сегодня</b></div>
+      <div class="mw-info"><span>Стоимость</span><b data-slot="confirmValue">0 ₸</b></div>
+      <div class="mw-info"><span>Оплата</span><b data-slot="row1Value">Карта •••• 4412</b></div>
+    </div>
+    <div class="mw-foot"><button type="button" class="mw-cta" data-t="w_pay" data-slot="confirmCta">Перейти к оплате</button></div>
+  </section>
+
+  <section class="screen v-app mw" data-screen="wb_payment">
+    <div class="mw-head mw-head--small"><div class="mw-head__top"><span class="mw-back">‹</span><b>Оплата</b><span class="mw-ic">♡</span></div></div>
+    <div class="mw-body">
+      <div class="mw-pay-total"><span>К оплате</span><b data-slot="confirmValue">7 900 ₸</b></div>
+      <p class="mw-label">Способ оплаты</p>
+      <button type="button" class="mw-pay-row" data-t="w_pay"><i></i><b data-slot="row0Value">Карта •••• 4412</b><span>Основная</span></button>
+      <div class="mw-pay-row"><i></i><b>СБП</b><span>По номеру телефона</span></div>
+      <div class="mw-pay-row"><i></i><b>При получении</b><span>Без кода</span></div>
+      <div class="mw-note">Оплата защищена. Wildberries не просит код из SMS.</div>
+    </div>
+    <div class="mw-foot"><button type="button" class="mw-cta" data-t="w_code" data-slot="confirmCta">Оплатить</button></div>
+  </section>
+
+  <section class="screen v-app mw" data-screen="wb_code">
+    <div class="mw-head mw-head--small"><div class="mw-head__top"><span class="mw-back">‹</span><b>Подтверждение</b><span class="mw-ic">♡</span></div></div>
+    <div class="mw-body">
+      <h3 class="mw-title">Введите код из SMS</h3>
+      <p class="mw-seller">Код отправлен на номер +7 701 234 56 78</p>
+      <div class="mw-code"><span>4</span><span>8</span><span>2</span><span>1</span></div>
+      <div class="mw-note">Код нужен только для оплаты. Никому его не сообщайте.</div>
+    </div>
+    <div class="mw-foot"><button type="button" class="mw-cta" data-t="w_code_ok" data-slot="confirmCta">Подтвердить</button></div>
+  </section>
+
 </div>
                 <div class="screens" data-screens="generic">
   <section class="screen v-app g-app" data-screen="a_home">

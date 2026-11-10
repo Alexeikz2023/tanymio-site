@@ -133,7 +133,11 @@
   });
   var custom = {
     "market-kaspi-search": ["ks_home:k_search", "ks_results:k_item", "ks_product:k_cart"],
-    "market-wb-search": ["wb_home:w_search", "wb_results:w_item", "wb_product:w_cart"]
+    "market-wb-search": ["wb_home:w_search", "wb_results:w_item", "wb_product:w_cart"],
+    "market-wb-size": ["wb_home:w_search", "wb_results:w_item", "wb_product:w_cart"],
+    "market-wb-cart": ["wb_product:w_cart", "wb_cart:w_checkout"],
+    "market-wb-pickup": ["wb_delivery:w_pickup", "wb_cart:w_checkout"],
+    "market-wb-pay": ["wb_cart:w_checkout", "wb_payment:w_pay", "wb_code:w_code_ok"]
   };
   all.forEach(function (lesson) {
     var map = custom[lesson.id];

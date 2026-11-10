@@ -191,5 +191,21 @@
   }
 
   var built = apps.map(build);
+  var custom = {
+    "kaspi-shop": { group: "market-kaspi", map: ["ks_home:k_search", "ks_results:k_item", "ks_product:k_cart"] },
+    "wildberries": { group: "market-wb", map: ["wb_home:w_search", "wb_results:w_item", "wb_product:w_cart"] }
+  };
+  built.forEach(function (lesson) {
+    var c = custom[lesson.id];
+    if (!c) return;
+    lesson.uiGroup = c.group;
+    lesson.steps = lesson.steps.slice(0, c.map.length).map(function (step, i) {
+      var pair = c.map[i].split(":");
+      step.screen = pair[0];
+      step.target = pair[1];
+      return step;
+    });
+  });
+
   window.TANYMIO_LESSONS = (window.TANYMIO_LESSONS || []).concat(built);
 })();
