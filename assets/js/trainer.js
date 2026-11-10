@@ -22,8 +22,8 @@
   }
 
   function applyGenericUi() {
-    if (!lesson || lesson.uiGroup !== "generic" || !lesson.ui) return;
-    var group = els.phone.querySelector('.screens[data-screens="generic"]');
+    if (!lesson || !lesson.uiGroup || !lesson.ui) return;
+    var group = els.phone.querySelector('.screens[data-screens="' + lesson.uiGroup + '"]');
     if (!group) return;
     group.querySelectorAll("[data-slot]").forEach(function (el) {
       var value = lesson.ui[el.dataset.slot];

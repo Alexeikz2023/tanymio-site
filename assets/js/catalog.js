@@ -71,6 +71,17 @@
         "</div></div>"
       );
     }
+    if (app === "phone") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#3d6b78;color:#fff"><span style="font-weight:800">Настройки</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Экран</span><b>Шрифт</b></div>' +
+        '<div class="mini__row"><span>Звук</span><b>Громко</b></div>' +
+        '<div class="mini__row"><span>Wi-Fi</span><b>Вкл</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "greensm") {
       return (
         '<div class="mini">' +

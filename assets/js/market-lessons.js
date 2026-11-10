@@ -105,5 +105,21 @@
   modules.forEach(function (mod) {
     mod.lessons.forEach(function (lesson) { all.push(build(mod, lesson)); });
   });
+  var custom = {
+    "market-kaspi-search": ["ks_home:k_search", "ks_results:k_item", "ks_product:k_cart"],
+    "market-wb-search": ["wb_home:w_search", "wb_results:w_item", "wb_product:w_cart"]
+  };
+  all.forEach(function (lesson) {
+    var map = custom[lesson.id];
+    if (!map) return;
+    lesson.uiGroup = lesson.id.indexOf("kaspi") !== -1 ? "market-kaspi" : "market-wb";
+    lesson.steps = lesson.steps.slice(0, map.length).map(function (step, i) {
+      var pair = map[i].split(":");
+      step.screen = pair[0];
+      step.target = pair[1];
+      return step;
+    });
+  });
+
   window.TANYMIO_LESSONS = (window.TANYMIO_LESSONS || []).concat(all);
 })();
