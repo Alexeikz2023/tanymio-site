@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="82e9002eb8">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="9948faf91f">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -5050,6 +5050,261 @@
     </div>
   </section>
 
+</div>
+
+                <!-- Lab results (Health) and Travel module: train ticket, online flight check-in, fake tour offer.
+     Neutral training mock-ups. Clinics, trains, flights, prices, people and numbers are fictional. -->
+<div class="screens" data-screens="life2">
+
+  <!-- ===== Lab results ===== -->
+  <section class="screen lf lf--health" data-screen="hl_home">
+    <div class="lf-head"><div class="lf-head__top">Моё здоровье</div><small>Поликлиника № 4 · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Записаться к врачу</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Мои приёмы</span></div>
+      <button type="button" class="lf-row" data-t="hl_results"><svg aria-hidden="true"><use href="#i-text"/></svg><span>Результаты анализов<small>Новый результат · 7 ноября</small></span><b class="tr-badge">1</b></button>
+    </div>
+    <div class="lf-tabs"><span class="is-on"><svg aria-hidden="true"><use href="#i-home"/></svg>Главная</span><span><svg aria-hidden="true"><use href="#i-clock"/></svg>Записи</span><span><svg aria-hidden="true"><use href="#i-user"/></svg>Профиль</span></div>
+  </section>
+
+  <section class="screen lf lf--health" data-screen="hl_list">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Результаты анализов</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="hl_blood"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Общий анализ крови<small>7 ноября · готов · направил терапевт</small></span><b>›</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Глюкоза крови<small>7 ноября · готов</small></span><b>›</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Холестерин<small>В работе</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--health" data-screen="hl_blood">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Общий анализ крови</div><small>7 ноября · учебные значения</small></div>
+    <div class="lf-body">
+      <div class="tr-lab"><span>Показатель</span><span>Результат</span><span>Норма</span></div>
+      <div class="tr-lab"><span>Гемоглобин</span><b>128 г/л</b><small>120–140</small></div>
+      <div class="tr-lab"><span>Лейкоциты</span><b>6,1</b><small>4,0–9,0</small></div>
+      <div class="tr-lab is-high"><span>СОЭ</span><b>24 мм/ч ↑</b><small>2–20</small></div>
+      <div class="tr-lab"><span>Тромбоциты</span><b>250</b><small>180–320</small></div>
+      <div class="lf-note">Значения вне нормы отмечены красным. Расшифровку даёт врач.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="hl_book">Записаться к терапевту</button><button type="button" class="lf-btn lf-btn--ghost">Скачать PDF</button></div>
+  </section>
+
+  <!-- ===== Train ticket ===== -->
+  <section class="screen lf lf--rail" data-screen="tt_search">
+    <div class="lf-head"><div class="lf-head__top">Freedom Travel · ЖД билеты</div><small>учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-input"><small>Откуда</small>Алматы</div>
+      <div class="lf-input"><small>Куда</small>Астана</div>
+      <div class="lf-input"><small>Дата</small>Чт, 20 ноября</div>
+      <div class="lf-input"><small>Пассажиры</small>1 взрослый</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="tt_find">Найти поезда</button></div>
+  </section>
+
+  <section class="screen lf lf--rail" data-screen="tt_trains">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Алматы → Астана</div><small>Чт, 20 ноября · 3 поезда</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="tt_train"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Поезд № 012 · 20:30 → 08:40<small>12 ч 10 мин · купе есть · нижние места есть</small></span><b>16 400 ₸</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Поезд № 078 · 15:05 → 09:20<small>18 ч 15 мин · плацкарт</small></span><b>9 800 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Поезд № 104 · 23:50 → 14:10<small>14 ч 20 мин · только верхние</small></span><b>15 200 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--rail" data-screen="tt_seats">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Вагон 5 · купе</div><small>Поезд № 012 · выберите место</small></div>
+    <div class="lf-body">
+      <div class="tr-coupe">
+        <div class="tr-coupe__box"><span class="is-busy">10<small>верх</small></span><span class="is-busy">9<small>низ</small></span></div>
+        <div class="tr-coupe__box"><span>14<small>верх</small></span><button type="button" data-t="tt_seat">13<small>низ</small></button></div>
+        <div class="tr-coupe__box"><span>18<small>верх</small></span><span class="is-busy">17<small>низ</small></span></div>
+      </div>
+      <div class="lf-note">Серые места заняты. Под номером написано, нижнее место или верхнее.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--rail" data-screen="tt_passenger">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Данные пассажира</div><small>Как в удостоверении личности</small></div>
+    <div class="lf-body">
+      <div class="lf-input"><small>Фамилия и имя</small>КАСЫМОВА САУЛЕ</div>
+      <div class="lf-input"><small>Удостоверение личности</small>№ ••• ••• 471</div>
+      <div class="lf-card"><small>Место</small><b style="display:block;font-size:12.5px;margin-top:3px">Вагон 5, место 13, нижнее, купе</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="tt_pay">Оплатить 16 400 ₸</button></div>
+  </section>
+
+  <section class="screen lf lf--rail" data-screen="tt_ticket">
+    <div class="lf-head"><div class="lf-head__top">Электронный билет</div><small>Сохранён в «Мои поездки»</small></div>
+    <div class="lf-body">
+      <div class="tr-ticket">
+        <div><small>Поезд</small><b>№ 012 · Алматы-2 → Астана</b></div>
+        <div><small>Отправление</small><b>Чт, 20 ноября, 20:30</b></div>
+        <div class="tr-ticket__row"><span><small>Вагон</small><b>5</b></span><span><small>Место</small><b>13, нижнее</b></span></div>
+        <span class="tr-qr"><svg aria-hidden="true"><use href="#i-qr"/></svg></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Online flight check-in ===== -->
+  <section class="screen lf lf--air" data-screen="ta_trips">
+    <div class="lf-head"><div class="lf-head__top">Мои поездки</div><small>Приложение авиакомпании · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Вт, 25 ноября · рейс 851</small><b style="display:block;font-size:14px;margin-top:3px">Алматы 07:10 → Астана 08:55</b><small>Пассажир: Касымова Сауле · багаж 23 кг</small></div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Онлайн-регистрация открыта</span></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="ta_checkin">Пройти регистрацию</button></div>
+  </section>
+
+  <section class="screen lf lf--air" data-screen="ta_seat">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Выбор места</div><small>Ряд 12 · бесплатно</small></div>
+    <div class="lf-body">
+      <div class="tr-plane"><span>A<small>окно</small></span><span>B<small>середина</small></span><button type="button" data-t="ta_aisle">C<small>проход</small></button><i></i><span class="is-busy">D<small>занято</small></span></div>
+      <div class="lf-note">Место у прохода: можно вставать, не беспокоя соседей. У окна — удобно спать, но выходить труднее.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--air" data-screen="ta_pass">
+    <div class="lf-head"><div class="lf-head__top">Посадочный талон</div><small>Сохранён в телефоне</small></div>
+    <div class="lf-body">
+      <div class="tr-ticket">
+        <div><small>Рейс 851 · Вт, 25 ноября</small><b>Алматы → Астана</b></div>
+        <div class="tr-ticket__row"><span><small>Посадка</small><b>06:30</b></span><span><small>Выход</small><b>4</b></span><span><small>Место</small><b>12C</b></span></div>
+        <span class="tr-qr"><svg aria-hidden="true"><use href="#i-qr"/></svg></span>
+      </div>
+      <div class="lf-note">Багаж сдают на стойке регистрации. Выход на посадку могут изменить — смотрите табло.</div>
+    </div>
+  </section>
+
+  <!-- ===== Fake tour offer ===== -->
+  <section class="screen ig" data-screen="ts_post">
+    <div class="ig-head"><b>Instagram</b></div>
+    <div class="ig-post">
+      <div class="ig-post__top"><span class="ig-av" style="background:#ffeedd;color:#fb7701;width:30px;height:30px">✈</span><span><b>goryashie_tury_kz</b><small>создан 3 недели назад</small></span></div>
+      <div class="ig-post__img" style="background:linear-gradient(160deg,#dff3ff,#fff1d6)"><span>🏖️</span><b style="color:#a14a00">Анталья, 7 ночей — 149 000 ₸</b><small>вместо 450 000 ₸ · осталось 2 места · пишите в WhatsApp, предоплата 50%</small></div>
+    </div>
+  </section>
+
+  <section class="screen w-app" data-screen="ts_chat">
+    <div class="w-chathead"><span class="iconbtn"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span><span class="w-av" style="width:34px;height:34px;background:#ffeedd;color:#fb7701">А</span><div style="flex:1;min-width:0"><div class="w-chathead__name">Менеджер Айдана</div><div class="w-chathead__sub">+7 747 000 39 12</div></div></div>
+    <div class="w-chatbody">
+      <div class="w-bubble">Здравствуйте! Тур есть, но бронь держу только 30 минут 🙏<time>12:01</time></div>
+      <div class="w-bubble">Переведите предоплату 74 500 ₸ на карту 4400 •••• 9012 — это личная карта директора, так быстрее. Договор пришлю потом.<time>12:02</time></div>
+    </div>
+    <div class="tr-actions"><span>Позвонить</span><button type="button" data-t="ts_block">Заблокировать и пожаловаться</button></div>
+  </section>
+</div>
+
+                <!-- Leisure module: concert ticket, YouTube without ad traps, free clubs nearby.
+     Neutral training mock-ups. Events, venues, clubs, people, prices and numbers are fictional. -->
+<div class="screens" data-screens="leisure">
+
+  <!-- ===== Concert ticket in Freedom SuperApp (Ticketon tickets) ===== -->
+  <section class="screen lf lf--freedom" data-screen="lt_super">
+    <div class="lf-head"><div class="lf-head__top">Freedom</div><small>SuperApp · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Карта Freedom •••• 2207</small><b class="lf-big">64 300 ₸</b></div>
+      <div class="ls-grid">
+        <span><svg aria-hidden="true"><use href="#i-transfer"/></svg>Переводы</span>
+        <span><svg aria-hidden="true"><use href="#i-card"/></svg>Платежи</span>
+        <button type="button" data-t="lt_tickets"><svg aria-hidden="true"><use href="#i-star"/></svg>Билеты<small>Ticketon</small></button>
+        <span><svg aria-hidden="true"><use href="#i-send"/></svg>Travel</span>
+      </div>
+      <div class="lf-note">Концерты, кино и театр — в разделе «Билеты». Те же билеты продаются и в отдельном приложении Ticketon.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--freedom" data-screen="lt_home">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Билеты · Ticketon</div><small>Алматы · концерты, кино, театр</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="lt_event"><span class="ls-pic">🎻</span><span>Концерт «Дала әуені»<small>Филармония · сб, 22 ноября, 19:00</small></span><b>от 3 000 ₸</b></button>
+      <div class="lf-row"><span class="ls-pic">🎭</span><span>Спектакль «Сватовство»<small>Драмтеатр · вс, 23 ноября, 18:00</small></span><b>от 2 500 ₸</b></div>
+      <div class="lf-row"><span class="ls-pic">🖼️</span><span>Выставка «Степь в красках»<small>Музей · до 30 ноября</small></span><b>1 000 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--freedom" data-screen="lt_hall">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Выберите место</div><small>«Дала әуені» · сб, 22 ноября, 19:00</small></div>
+    <div class="lf-body">
+      <div class="ls-stage">СЦЕНА</div>
+      <div class="ls-hall">
+        <div><i>3</i><span class="is-busy"></span><span class="is-busy"></span><span></span><b></b><span class="is-busy"></span><span></span><span></span></div>
+        <div><i>5</i><span></span><span class="is-busy"></span><span></span><button type="button" data-t="lt_seat" aria-label="Ряд 5, место у прохода"></button><b></b><span class="is-busy"></span><span></span><span></span></div>
+        <div><i>9</i><span></span><span></span><span></span><span></span><b></b><span></span><span></span><span></span></div>
+        <div><i>14</i><span></span><span></span><span></span><span></span><b></b><span></span><span></span><span></span></div>
+      </div>
+      <div class="lf-note">Ряды 1–6 — 4 000 ₸, ряды 7–14 — 3 000 ₸. Серые места заняты. Синее — ряд 5, место 12, у прохода.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--freedom" data-screen="lt_cart">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Оплата</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><span>Ряд 5, место 12<small>«Дала әуені», 22 ноября, 19:00</small></span><b>4 000 ₸</b></div>
+      <div class="lf-row"><span>Сервисный сбор<small>Указан до оплаты</small></span><b>200 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Оплата<small>Карта Freedom •••• 2207</small></span></div>
+      <div class="lf-card"><small>Итого</small><b class="lf-big">4 200 ₸</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="lt_pay">Оплатить 4 200 ₸</button></div>
+  </section>
+
+  <section class="screen lf lf--freedom" data-screen="lt_ticket">
+    <div class="lf-head"><div class="lf-head__top">Электронный билет</div><small>В разделе «Билеты» и на почте</small></div>
+    <div class="lf-body">
+      <div class="tr-ticket">
+        <div><small>Концерт</small><b>«Дала әуені» · Филармония</b></div>
+        <div class="tr-ticket__row"><span><small>Дата</small><b>22 ноября, 19:00</b></span><span><small>Место</small><b>ряд 5, место 12</b></span></div>
+        <span class="tr-qr"><svg aria-hidden="true"><use href="#i-qr"/></svg></span>
+      </div>
+      <div class="lf-note">На входе покажите QR-код с экрана. Вход открывают за 30 минут.</div>
+    </div>
+  </section>
+
+  <!-- ===== YouTube without ad traps ===== -->
+  <section class="screen ly" data-screen="ly_home">
+    <div class="ly-head"><b>▶ YouTube</b><button type="button" class="ly-search" data-t="ly_search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск</button></div>
+    <div class="ly-feed">
+      <div class="ly-card"><span class="ly-thumb">🍲</span><span><b>Бешбармак по-домашнему</b><small>Кухня бабушки · 1,2 млн просмотров</small></span></div>
+      <div class="ly-card"><span class="ly-thumb">🧘</span><span><b>Зарядка для суставов 60+</b><small>Здоровье · 640 тыс. просмотров</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen ly" data-screen="ly_results">
+    <div class="ly-head"><span class="ly-q">дала әуені концерт</span></div>
+    <div class="ly-feed">
+      <div class="ly-card ly-card--ad"><span class="ly-thumb">🎁</span><span><b>Вам положена надбавка к пенсии! Узнайте сейчас</b><small>Реклама · pensiya-bonus.top</small></span></div>
+      <button type="button" class="ly-card" data-t="ly_video"><span class="ly-thumb">🎻</span><span><b>Концерт «Дала әуені» — полная запись</b><small>Филармония · 1:32:10 · 48 тыс. просмотров</small></span></button>
+      <div class="ly-card"><span class="ly-thumb">🎻</span><span><b>«Дала әуені» — лучшие песни</b><small>Нарезка · 12:05</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen ly" data-screen="ly_video">
+    <div class="ly-player"><span>🎻</span><div class="ly-ad">Реклама · «Получите пенсионную надбавку — нажмите здесь» <em>Пропустить через 5</em></div>
+      <div class="ly-controls"><span>CC</span><span>⚙</span><button type="button" data-t="ly_full" aria-label="Во весь экран">⛶</button></div></div>
+    <div class="ly-info"><b>Концерт «Дала әуені» — полная запись</b><small>Филармония · 48 тыс. просмотров</small></div>
+  </section>
+
+  <section class="screen ly ly--full" data-screen="ly_full">
+    <div class="ly-wide"><span>🎻</span><small>Во весь экран · поверните телефон боком</small></div>
+  </section>
+
+  <!-- ===== Free clubs nearby ===== -->
+  <section class="screen lf lf--map" data-screen="lc_results">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>«кружки 60+» рядом</div><small>Учебная карта · 3 места</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="lc_club"><span class="ls-pic">🚶</span><span>Скандинавская ходьба 60+<small>Парк у дома · вт, чт 9:00 · бесплатно</small></span><b>700 м</b></button>
+      <div class="lf-row"><span class="ls-pic">🎶</span><span>Хор «Ақ жауын»<small>Дом культуры · ср 11:00 · бесплатно</small></span><b>1,4 км</b></div>
+      <div class="lf-row"><span class="ls-pic">💻</span><span>Компьютерная грамотность 60+<small>Библиотека · пн 15:00 · бесплатно</small></span><b>2 км</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="lc_card">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Скандинавская ходьба 60+</div><small>Центр для старшего поколения · учебно</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Вторник и четверг, 9:00–10:00<small>Сбор у входа в парк</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Бесплатно<small>Палки дают на занятии</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Тренер Гульмира<small>+7 727 000 55 10 · учебный номер</small></span></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="lc_call">Позвонить и записаться</button></div>
+  </section>
 </div>
 
                 <!-- Phone basics module: a generic Android-style phone. One shared screen group

@@ -148,6 +148,28 @@
         "</div></div>"
       );
     }
+    if (app === "travel") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#0b5ea8;color:#fff"><span style="font-weight:800">Поездки</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Поезд</span><b>место 13, низ</b></div>' +
+        '<div class="mini__row"><span>Рейс</span><b>12C, проход</b></div>' +
+        '<div class="mini__row"><span>Тур</span><b>договор</b></div>' +
+        "</div></div>"
+      );
+    }
+    if (app === "leisure") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#7b2d8e;color:#fff"><span style="font-weight:800">Афиша</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Концерт</span><b>ряд 5</b></div>' +
+        '<div class="mini__row"><span>YouTube</span><b>без рекламы</b></div>' +
+        '<div class="mini__row"><span>Кружок</span><b>бесплатно</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "greensm") {
       return (
         '<div class="mini">' +
