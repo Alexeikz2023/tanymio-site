@@ -125,6 +125,17 @@
         "</div></div>"
       );
     }
+    if (app === "family") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#1a73e8;color:#fff"><span style="font-weight:800">Найти устройство</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Телефон</span><b>Шылдырлату</b></div>' +
+        '<div class="mini__row"><span>Экранды көрсету</span><b>Тек туыстарға</b></div>' +
+        '<div class="mini__row"><span>SOS</span><b>5 басу</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "greensm") {
       return (
         '<div class="mini">' +

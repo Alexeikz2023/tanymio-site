@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=20261110e">
   <link rel="stylesheet" href="assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="24e8976558">
+<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="cc96139f3a">
   <a class="skip" href="#main">Перейти к содержанию</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -4097,6 +4097,194 @@
     <div class="wc-center">
       <span class="wc-badge wc-badge--ok"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
       <p><b>Двухшаговая проверка включена.</b><br>Даже если кто-то выманит код из SMS, без PIN-кода он не войдёт в ваш WhatsApp.</p>
+    </div>
+  </section>
+</div>
+
+                <!-- Family & help module: lost phone, screen sharing with family, emergency info and SOS, medicine reminder.
+     Neutral training mock-ups in the spirit of Android settings, a find-my-device service and WhatsApp.
+     Names, numbers, devices and medicine data are fictional (except the public emergency number 112). -->
+<div class="screens" data-screens="family">
+
+  <!-- ===== Lost phone ===== -->
+  <section class="screen sx-plain" data-screen="fl_start">
+    <div class="sx-plainhead"><b>Телефона нет в сумке</b><span>Вы вернулись домой из магазина. Телефон дочери под рукой.</span></div>
+    <div class="sx-rows">
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Позвонить на свой номер</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Найти телефон на карте</span></div>
+      <div class="sx-row"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Заблокировать телефон</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="fl_find">
+    <div class="lf-head"><div class="lf-head__top">Найти устройство</div><small>Открыто на телефоне дочери · учебный экран</small></div>
+    <div class="mp-map mp-map--short">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="mp-me mp-me--big" style="left:56%;top:52%" aria-hidden="true"></span>
+    </div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Ваш телефон</small><b style="display:block;font-size:13px;margin-top:3px">Galaxy A15 · заряд 64%</b><small>Был в сети 2 мин назад · рядом с ул. Абая, 15</small></div>
+      <button type="button" class="lf-row" data-t="fl_ring"><svg aria-hidden="true"><use href="#i-speaker"/></svg><span>Прозвонить<small>Громко 5 минут, даже в беззвучном режиме</small></span></button>
+      <button type="button" class="lf-row" data-t="fl_lock"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Защитить устройство<small>Заблокировать и показать сообщение на экране</small></span></button>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-x"/></svg><span>Очистить устройство<small>Всё удалится, найти телефон будет нельзя</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="fl_ringing">
+    <div class="lf-head"><div class="lf-head__top">Найти устройство</div><small>Galaxy A15</small></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-speaker"/></svg><span><b>Телефон звонит</b><br>Идите на звук. Дома его не слышно?</span></div>
+      <div class="lf-card"><small>Последнее место</small><b style="display:block;font-size:12.5px;margin-top:3px">Магазин «Продукты 24», ул. Абая, 21</b><small>40 минут назад</small></div>
+      <button type="button" class="lf-row" data-t="fl_lock"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Защитить устройство<small>Заблокировать и показать сообщение на экране</small></span></button>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-x"/></svg><span>Очистить устройство<small>Всё удалится, найти телефон будет нельзя</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="fl_lockform">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Защитить устройство</div></div>
+    <div class="lf-body">
+      <div class="lf-input"><small>Сообщение на экране телефона</small>Этот телефон потерян. Пожалуйста, позвоните моей дочери.</div>
+      <div class="lf-input"><small>Номер для звонка</small>+7 701 000 22 33</div>
+      <div class="lf-note">Тот, кто найдёт телефон, увидит сообщение и кнопку звонка, но не сможет открыть ваши приложения.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="fl_lock_go">Заблокировать</button></div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="fl_locked">
+    <div class="lf-head"><div class="lf-head__top">Найти устройство</div><small>Galaxy A15</small></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-lock"/></svg><span><b>Телефон заблокирован</b><br>На экране сообщение и номер дочери</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Банк<small>Заблокировать карту в приложении банка на другом телефоне или по номеру с обратной стороны карты</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-signal"/></svg><span>Оператор связи<small>Заблокировать SIM-карту, потом восстановить номер</small></span></div>
+    </div>
+  </section>
+
+  <!-- ===== Screen sharing with family ===== -->
+  <section class="screen" data-screen="fs_call">
+    <div class="call-screen">
+      <div class="call-self" aria-hidden="true">Вы<br>камера</div>
+      <div class="call-avatar" aria-hidden="true">А</div>
+      <h3>Дочь Айгерим</h3>
+      <p>Видеозвонок WhatsApp · 01:42</p>
+      <div class="call-controls">
+        <button type="button" class="callbtn" data-t="fs_share" aria-label="Показ экрана"><svg aria-hidden="true"><use href="#i-external"/></svg></button>
+        <span class="callbtn"><svg aria-hidden="true"><use href="#i-mic"/></svg></span>
+        <span class="callbtn callbtn--end"><svg aria-hidden="true" style="transform:rotate(135deg)"><use href="#i-phone"/></svg></span>
+      </div>
+      <p style="margin-top:14px;max-width:28ch">Первая кнопка — «Показ экрана»</p>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="fs_confirm">
+    <div class="call-screen" style="opacity:.5" aria-hidden="true">
+      <div class="call-avatar">А</div>
+      <h3>Дочь Айгерим</h3>
+    </div>
+    <div class="sx-dialog">
+      <h4>Начать показ экрана?</h4>
+      <p>Собеседник увидит всё, что на экране: сообщения, уведомления, коды из SMS и пароли, пока показ включён.</p>
+      <div class="sx-dialog__btns"><button type="button">Отмена</button><button type="button" class="is-main" data-t="fs_start">Начать</button></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="fs_sharing">
+    <button type="button" class="fs-bar" data-t="fs_stop"><span class="fs-bar__dot" aria-hidden="true"></span>Вы показываете экран · Дочь Айгерим<b>Остановить</b></button>
+    <div class="lf-head"><div class="lf-head__top">eGov mobile</div><small>учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск услуг</div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-text"/></svg><span>Справки<small>Пенсионные выплаты, адресная справка</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Налоги и финансы</span></div>
+      <div class="lf-note">Дочь видит ваш экран и подсказывает голосом, куда нажать.</div>
+    </div>
+  </section>
+
+  <!-- ===== Emergency info and SOS ===== -->
+  <section class="screen lf lf--sys" data-screen="fe_settings">
+    <div class="lf-head"><div class="lf-head__top">Настройки</div><small>учебный телефон</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-wifi"/></svg><span>Подключения</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-speaker"/></svg><span>Звуки и вибрация</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-text"/></svg><span>Дисплей</span></div>
+      <button type="button" class="lf-row" data-t="fe_safety"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Безопасность и экстренные случаи<small>Медицинская информация, SOS</small></span></button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--sys" data-screen="fe_safety">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Безопасность и экстренные случаи</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="fe_med"><svg aria-hidden="true"><use href="#i-help"/></svg><span>Медицинская информация<small>Группа крови, аллергии, лекарства</small></span></button>
+      <button type="button" class="lf-row" data-t="fe_contacts"><svg aria-hidden="true"><use href="#i-users"/></svg><span>Экстренные контакты<small>Кому сообщить, если с вами что-то случится</small></span></button>
+      <button type="button" class="lf-row" data-t="fe_sos"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Экстренный вызов SOS<small>5 нажатий кнопки питания</small></span></button>
+      <div class="lf-note">Эти данные видны на заблокированном экране — врачам скорой не нужен ваш пароль.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--sys" data-screen="fe_med">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Медицинская информация</div></div>
+    <div class="lf-body">
+      <div class="lf-input"><small>Группа крови</small>II (A) Rh+</div>
+      <div class="lf-input"><small>Аллергии</small>Пенициллин</div>
+      <div class="lf-input"><small>Лекарства</small>Эналаприль 10 мг утром</div>
+      <div class="lf-input"><small>Заболевания</small>Гипертония</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="fe_med_save">Сохранить</button></div>
+  </section>
+
+  <section class="screen lf lf--sys" data-screen="fe_contacts">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Экстренные контакты</div><small>Выберите из контактов</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="fe_add_daughter"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Дочь Айгерим<small>+7 701 000 22 33</small></span><b>+</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Сын Ерлан<small>+7 702 000 44 55</small></span><b>+</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Гульнара, соседка</span><b>+</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--sys" data-screen="fe_sos">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Экстренный вызов SOS</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="fe_sos_on"><span>Вызов SOS<small>Нажмите кнопку питания 5 раз подряд</small></span><i class="fe-toggle" aria-hidden="true"></i></button>
+      <div class="lf-row"><span>Номер вызова<small>112</small></span></div>
+      <div class="lf-row"><span>Отправить местоположение<small>Экстренным контактам: Дочь Айгерим</small></span></div>
+      <div class="lf-note">Телефон позвонит 112 и отправит SMS с вашим местоположением экстренным контактам.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--sys" data-screen="fe_sos_done">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Экстренный вызов SOS</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><span>Вызов SOS<small>Нажмите кнопку питания 5 раз подряд</small></span><i class="fe-toggle is-on" aria-hidden="true"></i></div>
+      <div class="lf-row"><span>Номер вызова<small>112</small></span></div>
+      <div class="lf-row"><span>Отправить местоположение<small>Экстренным контактам: Дочь Айгерим</small></span></div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>SOS включён</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Medicine reminder ===== -->
+  <section class="screen lf lf--clock" data-screen="fr_list">
+    <div class="lf-head"><div class="lf-head__top">Часы</div><small>Будильник</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><span class="fr-time">06:30</span><span>Подъём<small>Пн–Пт</small></span><i class="fe-toggle" aria-hidden="true"></i></div>
+      <div class="lf-note">Будильник можно ставить не только чтобы проснуться, но и чтобы не забыть лекарство.</div>
+    </div>
+    <button type="button" class="fr-add" data-t="fr_add" aria-label="Добавить будильник"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+  </section>
+
+  <section class="screen lf lf--clock" data-screen="fr_new">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Новый будильник</div></div>
+    <div class="lf-body">
+      <div class="fr-big">09:00</div>
+      <div class="lf-chips"><span class="lf-chip is-on">Пн</span><span class="lf-chip is-on">Вт</span><span class="lf-chip is-on">Ср</span><span class="lf-chip is-on">Чт</span><span class="lf-chip is-on">Пт</span><span class="lf-chip is-on">Сб</span><span class="lf-chip is-on">Вс</span></div>
+      <div class="lf-input"><small>Название будильника</small>Эналаприль, 1 таблетка</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="fr_save">Сохранить</button></div>
+  </section>
+
+  <section class="screen fr-ring" data-screen="fr_ring">
+    <div class="fr-ring__time">09:00</div>
+    <div class="fr-ring__label">Эналаприль, 1 таблетка</div>
+    <div class="fr-ring__btns">
+      <span>Отложить</span>
+      <button type="button" data-t="fr_stop">Стоп</button>
     </div>
   </section>
 </div>

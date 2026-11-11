@@ -126,6 +126,17 @@
         "</div></div>"
       );
     }
+    if (app === "family") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#1a73e8;color:#fff"><span style="font-weight:800">Найти устройство</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Телефон</span><b>Прозвонить</b></div>' +
+        '<div class="mini__row"><span>Показ экрана</span><b>Только родным</b></div>' +
+        '<div class="mini__row"><span>SOS</span><b>5 нажатий</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "greensm") {
       return (
         '<div class="mini">' +

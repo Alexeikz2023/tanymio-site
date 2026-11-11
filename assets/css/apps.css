@@ -5611,3 +5611,26 @@ button.w-set { cursor: pointer; }
 .wc-badge--ok { background: #128c7e; color: #fff; }
 .wc-btn { margin-top: auto; width: 100%; min-height: 42px; border: 0; border-radius: 999px; background: #128c7e; color: #fff; font: inherit; font-weight: 700; font-size: 12.5px; cursor: pointer; }
 .wc-small { font-size: 10px; color: #7c8781; line-height: 1.4; }
+
+/* ===== Family & help module: lost phone, screen sharing, SOS, medicine reminder ===== */
+.lf--find { --lf: #1a73e8; }
+.lf--sys { --lf: #3c4a5c; }
+.lf--clock { --lf: #2b5797; }
+.fs-bar { flex: none; display: flex; align-items: center; gap: 7px; width: 100%; border: 0; background: #c62828; color: #fff; font: inherit; font-size: 10.5px; padding: 8px 12px; cursor: pointer; text-align: left; }
+.fs-bar b { margin-left: auto; background: rgba(255,255,255,.2); border-radius: 999px; padding: 4px 10px; font-size: 10.5px; }
+.fs-bar__dot { width: 8px; height: 8px; border-radius: 50%; background: #fff; animation: wv-blink 1s infinite; }
+.fe-toggle { width: 34px; height: 20px; border-radius: 999px; background: #c9d1db; position: relative; flex: none; }
+.fe-toggle::after { content: ""; position: absolute; left: 3px; top: 3px; width: 14px; height: 14px; border-radius: 50%; background: #fff; }
+.fe-toggle.is-on { background: var(--lf); }
+.fe-toggle.is-on::after { left: 17px; }
+.fr-time { font-size: 20px; font-weight: 300; flex: none !important; color: #1b2633; }
+.fr-big { text-align: center; font-size: 46px; font-weight: 300; color: #1b2633; padding: 10px 0; letter-spacing: .02em; }
+.fr-add { position: absolute; right: 18px; bottom: 22px; width: 52px; height: 52px; border-radius: 50%; border: 0; background: var(--lf); color: #fff; display: grid; place-items: center; box-shadow: 0 6px 16px -6px rgba(0,0,0,.45); cursor: pointer; }
+.fr-add svg { width: 24px; height: 24px; }
+.fr-ring { background: linear-gradient(180deg, #1f3b66, #0f1e36); color: #fff; align-items: center; justify-content: center; gap: 10px; padding: 24px; }
+.fr-ring__time { font-size: 56px; font-weight: 300; }
+.fr-ring__label { font-size: 15px; opacity: .9; text-align: center; }
+.fr-ring__btns { display: flex; gap: 14px; margin-top: 40px; width: 100%; }
+.fr-ring__btns > * { flex: 1; min-height: 52px; border-radius: 999px; display: grid; place-items: center; font: inherit; font-size: 14px; font-weight: 700; border: 0; }
+.fr-ring__btns span { background: rgba(255,255,255,.14); color: #fff; }
+.fr-ring__btns button { background: #fff; color: #1f3b66; cursor: pointer; }
