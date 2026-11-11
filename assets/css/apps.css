@@ -5634,3 +5634,8 @@ button.w-set { cursor: pointer; }
 .fr-ring__btns > * { flex: 1; min-height: 52px; border-radius: 999px; display: grid; place-items: center; font: inherit; font-size: 14px; font-weight: 700; border: 0; }
 .fr-ring__btns span { background: rgba(255,255,255,.14); color: #fff; }
 .fr-ring__btns button { background: #fff; color: #1f3b66; cursor: pointer; }
+
+/* ===== Government services, deeper ===== */
+.gc-msg { margin-top: 14px; background: #fff; border-radius: 14px 14px 14px 4px; padding: 12px; font-size: 12.5px; line-height: 1.5; color: #1d1b19; box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+.gc-msg u { color: #1a5fb4; }
+.gc-quote { margin: 10px auto 0; max-width: 30ch; font-style: italic; background: rgba(255,255,255,.1); border-radius: 12px; padding: 10px 12px; line-height: 1.45; }

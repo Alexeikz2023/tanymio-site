@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="cc96139f3a">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="ce608deddd">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -4281,6 +4281,140 @@
     <div class="fr-ring__btns">
       <span>Отложить</span>
       <button type="button" data-t="fr_stop">Стоп</button>
+    </div>
+  </section>
+</div>
+
+                <!-- Government services, deeper: property tax, PSC (TsON) booking, request status, fake e-signature messages.
+     Neutral training mock-ups in the spirit of eGov mobile. Names, sums, addresses, numbers and sites are fictional
+     (except the public eGov short number 1414 and the official domains egov.kz and pki.gov.kz). -->
+<div class="screens" data-screens="gov2">
+
+  <!-- ===== Shared eGov home ===== -->
+  <section class="screen lf lf--egov" data-screen="gv_home">
+    <div class="lf-head"><div class="lf-head__top">eGov mobile</div><small>Здравствуйте, Сауле · учебный экран</small>
+      <div class="lf-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск услуг</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="gv_taxes"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Налоги и финансы<small>Задолженность, уведомления, оплата</small></span></button>
+      <button type="button" class="lf-row" data-t="gv_book"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Запись в ЦОН<small>Выбрать отделение, услугу и время</small></span></button>
+      <button type="button" class="lf-row" data-t="gv_requests"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Мои заявки<small>2 новых статуса</small></span></button>
+    </div>
+    <div class="lf-tabs"><span class="is-on"><svg aria-hidden="true"><use href="#i-home"/></svg>Главная</span><span><svg aria-hidden="true"><use href="#i-menu"/></svg>Услуги</span><span><svg aria-hidden="true"><use href="#i-bell"/></svg>Уведомления</span><button type="button" data-t="gv_profile"><svg aria-hidden="true"><use href="#i-user"/></svg>Профиль</button></div>
+  </section>
+
+  <!-- ===== Property tax ===== -->
+  <section class="screen lf lf--egov" data-screen="gt_taxes">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Налоги и финансы</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="gt_debt"><svg aria-hidden="true"><use href="#i-search"/></svg><span>Проверить задолженность по налогам<small>По вашему ИИН</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-bell"/></svg><span>Налоговые уведомления</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Добровольный отказ от займов</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gt_debt">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Задолженность</div><small>Данные налоговых органов · учебно</small></div>
+    <div class="lf-body">
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Налог на имущество за 2025 год<small>Квартира: ул. Абая, 15, кв. 7 · срок был до 1 октября 2026</small></span><b>3 120 ₸</b></div>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Пеня за просрочку<small>Растёт каждый день, пока налог не оплачен</small></span><b>46 ₸</b></div>
+      <div class="lf-card"><small>Итого к оплате</small><b class="lf-big">3 166 ₸</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="gt_pay">Оплатить</button></div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gt_check">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Оплата налога</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Получатель</small><b style="display:block;font-size:12.5px;margin-top:3px">Управление государственных доходов</b><small>Налог на имущество · 2025</small></div>
+      <div class="lf-card"><small>Списать с карты</small><b style="display:block;font-size:12.5px;margin-top:3px">Мой банк · •• 4021</b></div>
+      <div class="lf-card"><small>Сумма</small><b class="lf-big">3 166 ₸</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="gt_pay_confirm">Оплатить 3 166 ₸</button></div>
+  </section>
+
+  <!-- ===== TsON booking ===== -->
+  <section class="screen lf lf--egov" data-screen="gq_cons">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Запись в ЦОН</div><small>Выберите отделение</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="gq_con"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>ЦОН района · ул. Сатпаева, 9<small>1,2 км · есть свободное время завтра</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>ЦОН · пр. Райымбека, 40<small>6,8 км</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>ЦОН · мкр. Самал, 3<small>9,1 км</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gq_service">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Какая услуга?</div><small>ЦОН района · ул. Сатпаева, 9</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="gq_svc"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Удостоверение личности<small>Замена, утеря, окончание срока</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Регистрация по месту жительства</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-text"/></svg><span>Пенсии и пособия</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gq_slots">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Выберите время</div><small>Удостоверение личности</small></div>
+    <div class="lf-body">
+      <p class="lf-label">Четверг, 13 ноября</p>
+      <div class="lf-chips"><span class="lf-chip">09:00 занято</span><span class="lf-chip">09:20 занято</span><button type="button" class="lf-chip" data-t="gq_slot">10:40</button><span class="lf-chip">11:20</span></div>
+      <p class="lf-label">Пятница, 14 ноября</p>
+      <div class="lf-chips"><span class="lf-chip">14:00</span><span class="lf-chip">16:40</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gq_ticket">
+    <div class="lf-head"><div class="lf-head__top">Вы записаны</div></div>
+    <div class="lf-body">
+      <div class="lf-card" style="text-align:center"><small>Талон</small><b class="lf-big" style="font-size:30px">А-042</b><small>Чт, 13 ноября, 10:40 · ЦОН района, ул. Сатпаева, 9</small></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Удостоверение личности<small>Окно назовут на табло по номеру талона</small></span></div>
+      <div class="lf-note">Талон сохранён в «Моих заявках». Если не сможете прийти — отмените запись там же.</div>
+    </div>
+  </section>
+
+  <!-- ===== Request status ===== -->
+  <section class="screen lf lf--egov" data-screen="gs_list">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Мои заявки</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="gs_done"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Справка о пенсионных выплатах<small>Исполнено · 10 ноября</small></span><b>›</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Справка об адресе<small>В обработке · подана сегодня</small></span></div>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-x"/></svg><span>Справка о наличии недвижимости<small>Отказ · причина в заявке</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gs_doc">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Справка о пенсионных выплатах</div><small>Исполнено · 10 ноября</small></div>
+    <div class="wd-preview" style="background:#e9edf3;color:#56627a">
+      <div class="wd-page" aria-hidden="true"><b>СПРАВКА</b><i></i><i></i><i style="width:70%"></i><i></i><i style="width:55%"></i></div>
+      <small>PDF · подписан электронной подписью</small>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="gs_download">Скачать</button><button type="button" class="lf-btn lf-btn--ghost">Поделиться</button></div>
+  </section>
+
+  <!-- ===== Fake e-signature ===== -->
+  <section class="screen sx-plain" data-screen="gc_sms">
+    <div class="sx-plainhead"><b>SMS · +7 777 000 41 09</b><span>сегодня, 09:12</span></div>
+    <div class="gc-msg">eGov: ВАША ЭЦП ИСТЕКАЕТ СЕГОДНЯ! Продлите, иначе пенсия будет приостановлена: <u>egov-kz-ecp.online</u></div>
+  </section>
+
+  <section class="screen" data-screen="gc_call">
+    <div class="call-screen">
+      <div class="call-avatar" aria-hidden="true">?</div>
+      <h3>+7 708 000 15 27</h3>
+      <p>«Специалист ЦОНа» · 00:48</p>
+      <p class="gc-quote">«Для продления ЭЦП продиктуйте код из SMS от 1414, иначе отключим выплаты».</p>
+      <div class="call-controls">
+        <span class="callbtn"><svg aria-hidden="true"><use href="#i-mic"/></svg></span>
+        <span class="callbtn"><svg aria-hidden="true"><use href="#i-speaker"/></svg></span>
+        <span class="callbtn callbtn--end"><svg aria-hidden="true" style="transform:rotate(135deg)"><use href="#i-phone"/></svg></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gc_profile">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Профиль</div><small>Касымова Сауле</small></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-shield"/></svg><span><b>ЭЦП действует</b><br>до 14 марта 2027 года</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-globe"/></svg><span>Продлить ЭЦП<small>Только на egov.kz, pki.gov.kz или в ЦОНе</small></span></div>
+      <div class="lf-note">eGov не присылает ссылки на продление с обычных номеров, а сотрудники ЦОНа не просят коды из SMS.</div>
     </div>
   </section>
 </div>
