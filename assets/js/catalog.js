@@ -137,6 +137,17 @@
         "</div></div>"
       );
     }
+    if (app === "photo") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#1a73e8;color:#fff"><span style="font-weight:800">Фото</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Освобождено</span><b>3,2 ГБ</b></div>' +
+        '<div class="mini__row"><span>Копирование</span><b>Вкл.</b></div>' +
+        '<div class="mini__row"><span>Лупа</span><b>4×</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "greensm") {
       return (
         '<div class="mini">' +

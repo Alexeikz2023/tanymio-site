@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="ce608deddd">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="8992b5e44d">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -4416,6 +4416,133 @@
       <div class="lf-row"><svg aria-hidden="true"><use href="#i-globe"/></svg><span>Продлить ЭЦП<small>Только на egov.kz, pki.gov.kz или в ЦОНе</small></span></div>
       <div class="lf-note">eGov не присылает ссылки на продление с обычных номеров, а сотрудники ЦОНа не просят коды из SMS.</div>
     </div>
+  </section>
+</div>
+
+                <!-- Photos & memory module: free up storage, back up photos, camera as a magnifier.
+     Neutral training mock-ups in the spirit of Android Files, Google Photos and the camera app. All data is fictional. -->
+<div class="screens" data-screens="photo">
+
+  <!-- ===== Storage full ===== -->
+  <section class="screen lf lf--sys" data-screen="ps_alert">
+    <div class="ph-shade">
+      <div class="ph-clock">10:24<small>среда, 11 ноября</small></div>
+      <button type="button" class="ph-notif" data-t="ps_free">
+        <span class="ph-notif__icon"><svg aria-hidden="true"><use href="#i-alert"/></svg></span>
+        <span><b>Память почти заполнена</b><small>Свободно 0,4 ГБ из 32 ГБ. Фото и сообщения могут не сохраниться.</small><em>Освободить место</em></span>
+      </button>
+      <div class="ph-notif ph-notif--plain"><span class="ph-notif__icon" style="background:#25d366"><svg aria-hidden="true"><use href="#i-message"/></svg></span><span><b>Семья Алматы</b><small>Марина: 🎬 видео</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="ps_files">
+    <div class="lf-head"><div class="lf-head__top">Очистка</div><small>Приложение «Файлы» · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Занято 31,6 ГБ из 32 ГБ</small><div class="ph-bar"><i style="width:98.7%"></i></div></div>
+      <button type="button" class="lf-row" data-t="ps_wa"><svg aria-hidden="true"><use href="#i-message"/></svg><span>Медиафайлы WhatsApp<small>Видео, открытки, голосовые</small></span><b>6,8 ГБ</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-download"/></svg><span>Большие файлы<small>Загрузки старше 3 месяцев</small></span><b>2,1 ГБ</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-image"/></svg><span>Фото и видео с камеры<small>Внуки, дача, праздники</small></span><b>9,4 ГБ</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="ps_wa">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Медиафайлы WhatsApp</div><small>Сначала самые большие · выбрано 26</small></div>
+    <div class="lf-body">
+      <div class="ph-grid">
+        <span class="ph-tile is-sel">🎬<small>С пятницей! · 48 МБ</small></span>
+        <span class="ph-tile is-sel">🌹<small>Открытка · 31 МБ</small></span>
+        <span class="ph-tile is-sel">🎬<small>Анекдот · 64 МБ</small></span>
+        <span class="ph-tile is-sel">🎬<small>Доброе утро · 22 МБ</small></span>
+        <span class="ph-tile is-sel">🌅<small>Открытка · 18 МБ</small></span>
+        <span class="ph-tile">👶<small>Аружан · 12 МБ</small></span>
+      </div>
+      <div class="lf-note">Фото внучки не выбрано — его вы оставите.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="ps_delete">Удалить 26 файлов · 3,2 ГБ</button></div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="ps_confirm">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Медиафайлы WhatsApp</div></div>
+    <div class="lf-body" style="opacity:.4" aria-hidden="true"><div class="ph-grid"><span class="ph-tile">🎬</span><span class="ph-tile">🌹</span><span class="ph-tile">🎬</span></div></div>
+    <div class="sx-dialog">
+      <h4>Удалить 26 файлов?</h4>
+      <p>Они попадут в корзину и будут удалены навсегда через 30 дней. До этого их можно восстановить.</p>
+      <div class="sx-dialog__btns"><button type="button">Отмена</button><button type="button" class="is-main" data-t="ps_confirm_go">Удалить</button></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="ps_done">
+    <div class="lf-head"><div class="lf-head__top">Очистка</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Освобождено 3,2 ГБ</b><br>Свободно 3,6 ГБ</span></div>
+      <div class="lf-card"><small>Занято 28,4 ГБ из 32 ГБ</small><div class="ph-bar"><i style="width:88.7%"></i></div></div>
+      <div class="lf-note">Чтобы память не заполнялась снова: WhatsApp → Настройки → Данные и хранилище → Автозагрузка медиа → «Нет медиа».</div>
+    </div>
+  </section>
+
+  <!-- ===== Photo backup ===== -->
+  <section class="screen lf lf--find" data-screen="pb_photos">
+    <div class="lf-head"><div class="lf-head__top" style="justify-content:space-between">Фото<button type="button" class="ph-avatar" data-t="pb_account" aria-label="Аккаунт">С</button></div><small>учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-status lf-status--warn"><svg aria-hidden="true"><use href="#i-alert"/></svg><span><b>Резервное копирование выключено</b><br>Фото хранятся только в этом телефоне</span></div>
+      <p class="lf-label">Сегодня</p>
+      <div class="ph-grid ph-grid--photos"><span>👶</span><span>🌷</span><span>🏡</span><span>🎂</span><span>👵</span><span>🌳</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="pb_menu">
+    <div class="lf-head"><div class="lf-head__top">Фото</div></div>
+    <div class="lf-body" style="opacity:.35" aria-hidden="true"><div class="ph-grid ph-grid--photos"><span>👶</span><span>🌷</span><span>🏡</span></div></div>
+    <div class="ph-sheet">
+      <div class="ph-sheet__who"><span class="ph-avatar">С</span><span><b>Сауле Касымова</b><small>saule.k@example.com</small></span></div>
+      <button type="button" class="lf-row" data-t="pb_backup"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Резервное копирование<small>Выключено</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-help"/></svg><span>Справка</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="pb_backup">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Резервное копирование</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="pb_on"><span>Резервное копирование<small>Копировать фото и видео в аккаунт Google</small></span><i class="fe-toggle" aria-hidden="true"></i></button>
+      <div class="lf-row"><span>Только по Wi-Fi<small>Не тратить мобильный интернет</small></span><i class="fe-toggle is-on" aria-hidden="true"></i></div>
+      <div class="lf-row"><span>Место в аккаунте<small>Бесплатно 15 ГБ · занято 1,2 ГБ</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="pb_done">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Резервное копирование</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><span>Резервное копирование<small>Копировать фото и видео в аккаунт Google</small></span><i class="fe-toggle is-on" aria-hidden="true"></i></div>
+      <div class="lf-row"><span>Только по Wi-Fi<small>Не тратить мобильный интернет</small></span><i class="fe-toggle is-on" aria-hidden="true"></i></div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span><b>Идёт копирование</b><br>Скопировано 1 840 из 2 345 фото</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Camera as a magnifier ===== -->
+  <section class="screen ph-cam" data-screen="pm_cam">
+    <div class="ph-cam__top"><span class="ph-cam__flash"><svg aria-hidden="true"><use href="#i-star"/></svg></span></div>
+    <div class="ph-cam__view"><div class="ph-leaflet" style="font-size:5px">ИНСТРУКЦИЯ ПО ПРИМЕНЕНИЮ<br>Принимать по 1 таблетке 2 раза в день после еды. Не превышать суточную дозу 20 мг.</div></div>
+    <div class="ph-zoom"><span>0,6</span><span class="is-on">1×</span><span>2×</span><button type="button" data-t="pm_zoom">4×</button></div>
+    <div class="ph-cam__bottom"><span class="ph-shutter"></span></div>
+  </section>
+
+  <section class="screen ph-cam" data-screen="pm_zoomed">
+    <div class="ph-cam__top"><button type="button" class="ph-cam__flash" data-t="pm_flash" aria-label="Фонарик"><svg aria-hidden="true"><use href="#i-star"/></svg></button></div>
+    <div class="ph-cam__view is-dark"><div class="ph-leaflet" style="font-size:13px">Принимать по 1 таблетке 2 раза в день после еды.</div></div>
+    <div class="ph-zoom"><span>0,6</span><span>1×</span><span>2×</span><span class="is-on">4×</span></div>
+    <div class="ph-cam__bottom"><span class="ph-shutter"></span></div>
+  </section>
+
+  <section class="screen ph-cam" data-screen="pm_lit">
+    <div class="ph-cam__top"><span class="ph-cam__flash is-on"><svg aria-hidden="true"><use href="#i-star"/></svg></span></div>
+    <div class="ph-cam__view"><div class="ph-leaflet" style="font-size:13px">Принимать по 1 таблетке 2 раза в день после еды.</div></div>
+    <div class="ph-zoom"><span>0,6</span><span>1×</span><span>2×</span><span class="is-on">4×</span></div>
+    <div class="ph-cam__bottom"><button type="button" class="ph-shutter" data-t="pm_shot" aria-label="Сфотографировать"></button></div>
+  </section>
+
+  <section class="screen ph-cam" data-screen="pm_photo">
+    <div class="ph-cam__view" style="flex:1"><div class="ph-leaflet" style="font-size:18px">Принимать по 1 таблетке<br>2 раза в день после еды.<br>Не превышать<br>суточную дозу 20 мг.</div></div>
+    <div class="ph-pinch">Разведите два пальца, чтобы увеличить</div>
   </section>
 </div>
 
