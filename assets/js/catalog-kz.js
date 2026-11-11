@@ -169,6 +169,17 @@
         "</div></div>"
       );
     }
+    if (app === "bank2") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#a3282e;color:#fff"><span style="font-weight:800">Банк</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Карта</span><b>бұғатталды</b></div>' +
+        '<div class="mini__row"><span>Автотөлем</span><b>телефон</b></div>' +
+        '<div class="mini__row"><span>Интернет</span><b>20 000 ₸</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "leisure") {
       return (
         '<div class="mini">' +

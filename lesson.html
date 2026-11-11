@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=20261110e">
   <link rel="stylesheet" href="assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="7107c6e265">
+<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="07369c621a">
   <a class="skip" href="#main">Перейти к содержанию</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -2247,6 +2247,183 @@
       <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Карта •••• 3051<small>Способ оплаты</small></span></div>
       <div class="dv-item dv-item--total"><span>К оплате</span><b>4 050 ₸</b></div>
       <button type="button" class="lf-btn" data-t="dr_pay">Оплатить 4 050 ₸</button>
+    </div>
+  </section>
+</div>
+
+                <!-- Banks, deeper: neutral bank-app training mock-ups (block a card, autopay for the phone, card limits).
+     Cards, balances, phones and limits are fictional. -->
+<div class="screens" data-screens="bank2">
+
+  <!-- ===== Block a card ===== -->
+  <section class="screen lf lf--bank" data-screen="bb_home">
+    <div class="lf-head"><div class="lf-head__top">Мой банк</div><small>Учебный экран · деньги не спишутся</small></div>
+    <div class="lf-body">
+      <button type="button" class="bk-card" data-t="bb_card"><span class="bk-card__name">Карта •••• 3051</span><b>84 500 ₸</b><small>Дебетовая · Visa</small></button>
+      <div class="bk-tiles"><span><svg aria-hidden="true"><use href="#i-transfer"/></svg>Переводы</span><span><svg aria-hidden="true"><use href="#i-home"/></svg>Платежи</span><span><svg aria-hidden="true"><use href="#i-history"/></svg>История</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Депозит<small>Накопления</small></span><b>250 000 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bb_card">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Карта •••• 3051</div></div>
+    <div class="lf-body">
+      <div class="bk-card bk-card--big"><span class="bk-card__name">Карта •••• 3051</span><b>84 500 ₸</b><small>Дебетовая · Visa · до 08/29</small></div>
+      <div class="bk-acts">
+        <span class="bk-act"><svg aria-hidden="true"><use href="#i-info"/></svg>Реквизиты</span>
+        <span class="bk-act"><svg aria-hidden="true"><use href="#i-signal"/></svg>Лимиты</span>
+        <span class="bk-act"><svg aria-hidden="true"><use href="#i-lock"/></svg>PIN-код</span>
+        <button type="button" class="bk-act bk-act--danger" data-t="bb_block"><svg aria-hidden="true"><use href="#i-x"/></svg>Заблокировать</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bb_kind">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Как заблокировать?</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Временно<small>Если не уверены, где карта. Можно разблокировать самому</small></span></div>
+      <button type="button" class="lf-row is-warn" data-t="bb_forever"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Навсегда<small>Карта потеряна или украдена. Нужна новая карта</small></span></button>
+      <div class="lf-note">Деньги хранятся на счёте, а не на пластике. При блокировке они остаются у вас.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bb_confirm">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Заблокировать навсегда?</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Карта •••• 3051<small>Причина: потеряна или украдена</small></span></div>
+      <div class="lf-status lf-status--warn"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Разблокировать карту будет нельзя. Оплатить ею тоже.</span></div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Деньги на счёте останутся: 84 500 ₸</span></div>
+      <button type="button" class="lf-btn" data-t="bb_confirm_go">Заблокировать</button>
+      <span class="lf-btn lf-btn--ghost bk-ghost">Отмена</span>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bb_done">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Карта •••• 3051</div></div>
+    <div class="lf-body">
+      <div class="bk-card bk-card--big bk-card--off"><span class="bk-card__name">Карта •••• 3051</span><b>Заблокирована</b><small>Сегодня, 10:42</small></div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Никто не сможет оплатить этой картой. Деньги на счёте — 84 500 ₸.</span></div>
+      <button type="button" class="lf-btn" data-t="bb_reissue">Перевыпустить карту</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bb_reissue">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Новая карта</div><small>Тот же счёт, новый номер карты</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="bb_branch"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Забрать в отделении<small>ул. Абая, 20 · через 3 дня · учебный адрес</small></span><b>0 ₸</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-transfer"/></svg><span>Доставка курьером<small>Через 5 дней · с удостоверением</small></span><b>0 ₸</b></div>
+      <div class="lf-note">Новую карту выдают только лично в руки, по удостоверению личности.</div>
+    </div>
+  </section>
+
+  <!-- ===== Autopay for the phone ===== -->
+  <section class="screen lf lf--bank" data-screen="ba_home">
+    <div class="lf-head"><div class="lf-head__top">Мой банк</div><small>Учебный экран · деньги не спишутся</small></div>
+    <div class="lf-body">
+      <div class="bk-card"><span class="bk-card__name">Карта •••• 3051</span><b>84 500 ₸</b><small>Дебетовая · Visa</small></div>
+      <div class="bk-tiles"><span><svg aria-hidden="true"><use href="#i-transfer"/></svg>Переводы</span><button type="button" data-t="ba_payments"><svg aria-hidden="true"><use href="#i-home"/></svg>Платежи</button><span><svg aria-hidden="true"><use href="#i-history"/></svg>История</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="ba_payments">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Платежи</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Мобильная связь</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Коммунальные услуги</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-wifi"/></svg><span>Интернет и ТВ</span></div>
+      <button type="button" class="lf-row" data-t="ba_auto"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Автоплатежи<small>Платить само, без вашего участия</small></span></button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="ba_auto">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Автоплатежи</div></div>
+    <div class="lf-body">
+      <div class="bk-empty"><svg aria-hidden="true"><use href="#i-refresh"/></svg><b>Пока нет автоплатежей</b><small>Телефон и коммуналка могут оплачиваться сами</small></div>
+      <button type="button" class="lf-btn" data-t="ba_new">Создать автоплатёж</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="ba_type">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Что оплачивать?</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="ba_mobile"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Мобильная связь<small>Пополнять баланс телефона</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Коммунальные услуги<small>Раз в месяц по квитанции</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-wifi"/></svg><span>Интернет и ТВ</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="ba_form">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Мобильная связь</div><small>Новый автоплатёж</small></div>
+    <div class="lf-body">
+      <div class="lf-input"><small>Номер телефона</small>+7 707 000 12 34</div>
+      <div class="bk-label">Когда платить</div>
+      <div class="lf-chips"><span class="lf-chip is-on">Баланс ниже 500 ₸</span><span class="lf-chip">Каждый месяц</span></div>
+      <div class="bk-two"><div class="lf-input"><small>Сумма</small>2 000 ₸</div><div class="lf-input"><small>Не больше в месяц</small>6 000 ₸</div></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Карта •••• 3051<small>Списывать с этой карты</small></span></div>
+      <button type="button" class="lf-btn" data-t="ba_save">Сохранить</button>
+    </div>
+  </section>
+
+  <!-- ===== Card limits ===== -->
+  <section class="screen lf lf--bank" data-screen="bl_card">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Карта •••• 3051</div></div>
+    <div class="lf-body">
+      <div class="bk-card bk-card--big"><span class="bk-card__name">Карта •••• 3051</span><b>84 500 ₸</b><small>Дебетовая · Visa · до 08/29</small></div>
+      <div class="bk-acts">
+        <span class="bk-act"><svg aria-hidden="true"><use href="#i-info"/></svg>Реквизиты</span>
+        <button type="button" class="bk-act" data-t="bl_limits"><svg aria-hidden="true"><use href="#i-signal"/></svg>Лимиты</button>
+        <span class="bk-act"><svg aria-hidden="true"><use href="#i-lock"/></svg>PIN-код</span>
+        <span class="bk-act bk-act--danger"><svg aria-hidden="true"><use href="#i-x"/></svg>Заблокировать</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bl_limits">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Лимиты</div><small>Сколько можно потратить за день</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="bl_online"><svg aria-hidden="true"><use href="#i-globe"/></svg><span>Покупки в интернете<small>В день</small></span><b>500 000 ₸</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-transfer"/></svg><span>Переводы<small>В день</small></span><b>1 000 000 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Снятие наличных<small>В день</small></span><b>300 000 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bl_online">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Покупки в интернете</div><small>Сейчас: 500 000 ₸ в день</small></div>
+    <div class="lf-body">
+      <div class="bk-label">Новый лимит в день</div>
+      <div class="lf-chips">
+        <button type="button" class="lf-chip" data-t="bl_20">20 000 ₸</button>
+        <span class="lf-chip">50 000 ₸</span>
+        <span class="lf-chip">100 000 ₸</span>
+        <span class="lf-chip">0 ₸ — запретить</span>
+      </div>
+      <div class="lf-note">Если мошенники узнают данные карты, больше лимита они не спишут.</div>
+      <span class="lf-btn bk-off">Сохранить</span>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bl_online2">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Покупки в интернете</div><small>Сейчас: 500 000 ₸ в день</small></div>
+    <div class="lf-body">
+      <div class="bk-label">Новый лимит в день</div>
+      <div class="lf-chips">
+        <span class="lf-chip is-on">20 000 ₸</span>
+        <span class="lf-chip">50 000 ₸</span>
+        <span class="lf-chip">100 000 ₸</span>
+        <span class="lf-chip">0 ₸ — запретить</span>
+      </div>
+      <div class="lf-note">Если мошенники узнают данные карты, больше лимита они не спишут.</div>
+      <button type="button" class="lf-btn" data-t="bl_save">Сохранить</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bl_saved">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Лимиты</div><small>Сколько можно потратить за день</small></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Лимит изменён</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-globe"/></svg><span>Покупки в интернете<small>В день</small></span><b>20 000 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-transfer"/></svg><span>Переводы<small>В день</small></span><b>1 000 000 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Снятие наличных<small>В день</small></span><b>300 000 ₸</b></div>
     </div>
   </section>
 </div>

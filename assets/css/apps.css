@@ -6060,3 +6060,28 @@ button.ly-card { cursor: pointer; }
 .dv-repeat { display: flex; align-items: center; gap: 5px; border: 0; border-radius: 99px; background: var(--lf); color: #fff; font: inherit; font-size: 11px; font-weight: 700; padding: 7px 11px; cursor: pointer; flex: none; }
 .dv-repeat svg { width: 14px; height: 14px; }
 .dv-repeat--off { background: #eef1f5; color: #56627a; }
+
+/* ===== Banks, deeper (block a card, autopay, limits): neutral bank-app mock-ups ===== */
+.bk-card { display: block; width: 100%; text-align: left; border: 0; border-radius: 14px; padding: 14px; color: #fff; background: linear-gradient(135deg, #a3282e, #5e1418); font: inherit; cursor: pointer; flex: none; }
+.bk-card__name { display: block; font-size: 11px; opacity: .85; }
+.bk-card b { display: block; font-size: 20px; margin: 6px 0 2px; }
+.bk-card small { font-size: 10px; opacity: .8; }
+.bk-card--big { min-height: 120px; display: flex; flex-direction: column; justify-content: flex-end; cursor: default; }
+.bk-card--off { background: linear-gradient(135deg, #8b939c, #59616a); }
+.bk-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; flex: none; }
+.bk-tiles > * { display: grid; justify-items: center; gap: 5px; padding: 10px 4px; border: 1px solid #e3e8ef; border-radius: 12px; background: #fff; font: inherit; font-size: 11px; color: #1b2633; cursor: pointer; }
+.bk-tiles svg { width: 20px; height: 20px; color: var(--lf); }
+.bk-acts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; flex: none; }
+.bk-act { display: flex; align-items: center; gap: 8px; padding: 12px; border: 1px solid #e3e8ef; border-radius: 12px; background: #fff; font: inherit; font-size: 12px; font-weight: 600; color: #1b2633; cursor: pointer; text-align: left; }
+.bk-act svg { width: 18px; height: 18px; color: var(--lf); flex: none; }
+.bk-act--danger { color: #b3261c; border-color: #f0b3ad; background: #fff6f5; }
+.bk-act--danger svg { color: #b3261c; }
+.bk-ghost { display: grid; place-items: center; min-height: 42px; }
+.bk-off { display: grid; place-items: center; opacity: .45; }
+.bk-empty { display: grid; justify-items: center; gap: 4px; padding: 26px 12px; background: #fff; border: 1px dashed #c9d3e3; border-radius: 12px; text-align: center; flex: none; }
+.bk-empty svg { width: 28px; height: 28px; color: var(--lf); }
+.bk-empty b { font-size: 13px; }
+.bk-empty small { font-size: 10.5px; color: #6b7686; }
+.bk-label { font-size: 10.5px; color: #56627a; font-weight: 700; flex: none; }
+.bk-two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; flex: none; }
+.lf--bank button.lf-chip { cursor: pointer; }
