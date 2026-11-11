@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="b1a6619cea">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="7107c6e265">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -1998,6 +1998,251 @@
       </div>
       <div class="lf-status"><svg aria-hidden="true"><use href="#i-message"/></svg><span>Маме отправлено SMS: машина, номер и время</span></div>
       <p class="tx-small">Оплата с вашей карты •••• 3051. Маме платить не нужно.</p>
+    </div>
+  </section>
+</div>
+
+                <!-- Delivery, deeper: neutral training mock-ups in the spirit of food and grocery delivery apps
+     (courier chat, damaged item refund, "delivered" but missing, repeat an order). Shops, couriers, prices and phones are fictional. -->
+<div class="screens" data-screens="delivery2">
+
+  <!-- ===== Courier: tracking ===== -->
+  <section class="screen lf lf--dlv" data-screen="dc_track">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Ваш заказ</div><small>Магазин «Свежий» · 6 товаров · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="dv-eta"><b>Курьер рядом</b><span>ещё около 5 минут</span></div>
+      <div class="dv-steps" aria-label="Статус заказа"><span class="is-done">Собран</span><span class="is-on">В пути</span><span>Доставлен</span></div>
+      <div class="dv-courier">
+        <span class="dv-av" aria-hidden="true">Д</span>
+        <span><b>Данияр</b><small>Курьер · пешком</small></span>
+      </div>
+      <div class="dv-actions">
+        <button type="button" class="dv-act"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</button>
+        <button type="button" class="dv-act" data-t="dc_chat"><svg aria-hidden="true"><use href="#i-message"/></svg>Чат с курьером</button>
+      </div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>ул. Абая, 15, кв. 42<small>Адрес доставки</small></span></div>
+      <div class="lf-note">Учебный заказ: курьер не приедет, деньги не спишутся.</div>
+    </div>
+  </section>
+
+  <section class="screen chat-screen" data-screen="dc_chat">
+    <div class="chat-head">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <div class="chat-head__av dv-chat-av" aria-hidden="true">Д</div>
+      <div><div class="chat-head__name">Данияр</div><div class="chat-head__sub">курьер · заказ из магазина «Свежий»</div></div>
+    </div>
+    <div class="chat-body" aria-label="Сообщения">
+      <div class="bubble">Здравствуйте! Я у дома 15, не могу найти ваш подъезд.<time>13:12</time></div>
+    </div>
+    <div class="y-quick">
+      <button type="button" class="quick" data-t="dc_reply">Подъезд 3, вход со двора, домофон 42</button>
+      <button type="button" class="quick">Сейчас выйду</button>
+      <button type="button" class="quick">Позвоните мне</button>
+    </div>
+    <div class="chat-input"><div class="chat-input__field">Сообщение</div><button type="button" class="iconbtn" aria-label="Отправить"><svg aria-hidden="true"><use href="#i-send"/></svg></button></div>
+  </section>
+
+  <section class="screen chat-screen" data-screen="dc_chat2">
+    <div class="chat-head">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <div class="chat-head__av dv-chat-av" aria-hidden="true">Д</div>
+      <div><div class="chat-head__name">Данияр</div><div class="chat-head__sub">курьер · заказ из магазина «Свежий»</div></div>
+      <button type="button" class="dv-support" data-t="dc_support">Поддержка</button>
+    </div>
+    <div class="chat-body" aria-label="Сообщения">
+      <div class="bubble">Здравствуйте! Я у дома 15, не могу найти ваш подъезд.<time>13:12</time></div>
+      <div class="bubble bubble--out">Подъезд 3, вход со двора, домофон 42<time>13:13 ✓✓</time></div>
+      <div class="bubble">Спасибо, иду! И продиктуйте, пожалуйста, код из SMS от банка — для подтверждения доставки.<time>13:14</time></div>
+    </div>
+    <div class="chat-input"><div class="chat-input__field">Сообщение</div><button type="button" class="iconbtn" aria-label="Отправить"><svg aria-hidden="true"><use href="#i-send"/></svg></button></div>
+  </section>
+
+  <!-- ===== Damaged item: refund ===== -->
+  <section class="screen lf lf--dlv" data-screen="dm_orders">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Мои заказы</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="dm_order"><svg aria-hidden="true"><use href="#i-briefcase"/></svg><span>Магазин «Свежий»<small>Сегодня, 13:20 · Доставлен · 6 товаров</small></span><b>6 450 ₸</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-briefcase"/></svg><span>Аптека «Добрая»<small>5 ноября · Доставлен · 2 товара</small></span><b>3 200 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-briefcase"/></svg><span>Магазин «Свежий»<small>29 октября · Доставлен · 9 товаров</small></span><b>7 900 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dm_order">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Заказ от сегодня</div><small>Магазин «Свежий» · доставлен в 13:20</small></div>
+    <div class="lf-body">
+      <div class="dv-item"><span>Молоко 2,5%, 1 л × 2</span><b>1 180 ₸</b></div>
+      <div class="dv-item"><span>Хлеб ржаной</span><b>390 ₸</b></div>
+      <div class="dv-item"><span>Яйца С1, 10 шт</span><b>1 290 ₸</b></div>
+      <div class="dv-item"><span>Яблоки, 1 кг</span><b>990 ₸</b></div>
+      <div class="dv-item"><span>Сыр, 400 г</span><b>2 100 ₸</b></div>
+      <div class="dv-item"><span>Доставка</span><b>500 ₸</b></div>
+      <div class="dv-item dv-item--total"><span>Итого · карта •••• 3051</span><b>6 450 ₸</b></div>
+      <button type="button" class="lf-btn" data-t="dm_help">Проблема с заказом</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dm_help">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Что случилось?</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-x"/></svg><span>Не привезли товар</span></div>
+      <button type="button" class="lf-row" data-t="dm_damaged"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Товар повреждён или испорчен<small>Разбит, помят, истёк срок</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Привезли не тот товар</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Заказ не приехал</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dm_items">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Какой товар повреждён?</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><i class="dv-check" aria-hidden="true"></i><span>Молоко 2,5%, 1 л × 2</span><b>1 180 ₸</b></div>
+      <div class="lf-row"><i class="dv-check" aria-hidden="true"></i><span>Хлеб ржаной</span><b>390 ₸</b></div>
+      <button type="button" class="lf-row" data-t="dm_eggs"><i class="dv-check" aria-hidden="true"></i><span>Яйца С1, 10 шт</span><b>1 290 ₸</b></button>
+      <div class="lf-row"><i class="dv-check" aria-hidden="true"></i><span>Яблоки, 1 кг</span><b>990 ₸</b></div>
+      <div class="lf-row"><i class="dv-check" aria-hidden="true"></i><span>Сыр, 400 г</span><b>2 100 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dm_photo">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Яйца С1, 10 шт</div><small>Повреждён · 1 290 ₸</small></div>
+    <div class="lf-body">
+      <div class="lf-note">Добавьте фото товара и упаковки. С фото проблему решают быстрее.</div>
+      <button type="button" class="dv-photo" data-t="dm_addphoto"><svg aria-hidden="true"><use href="#i-camera"/></svg><b>Добавить фото</b><small>Камера или галерея</small></button>
+      <div class="lf-input"><small>Комментарий</small>Разбиты 4 яйца, упаковка мокрая</div>
+      <button type="button" class="lf-btn" disabled style="opacity:.45">Отправить</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dm_photo_ok">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Яйца С1, 10 шт</div><small>Повреждён · 1 290 ₸</small></div>
+    <div class="lf-body">
+      <div class="dv-thumbs"><span class="dv-thumb" aria-label="Фото: разбитые яйца"><i></i><i></i><i></i></span><span class="dv-thumb dv-thumb--add" aria-hidden="true">+</span></div>
+      <div class="lf-input"><small>Комментарий</small>Разбиты 4 яйца, упаковка мокрая</div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Вернуть на карту •••• 3051<small>Обычно 3–10 дней, зависит от банка</small></span><b>1 290 ₸</b></div>
+      <button type="button" class="lf-btn" data-t="dm_send">Отправить</button>
+    </div>
+  </section>
+
+  <!-- ===== "Delivered", but nothing at the door ===== -->
+  <section class="screen lf lf--dlv" data-screen="dl_order">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Заказ №4517</div><small>Магазин «Свежий» · 4 товара · 3 900 ₸</small></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Доставлен в 14:05 · оставлен у двери</span></div>
+      <div class="dv-steps"><span class="is-done">Собран</span><span class="is-done">В пути</span><span class="is-done">Доставлен</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>ул. Абая, 15, кв. 42<small>Подъезд 3 · оставить у двери</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Оплачено картой •••• 3051</span><b>3 900 ₸</b></div>
+      <button type="button" class="lf-btn" data-t="dl_help">Помощь</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dl_help">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Что случилось?</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-x"/></svg><span>Не привезли товар</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Товар повреждён или испорчен</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Привезли не тот товар</span></div>
+      <button type="button" class="lf-row" data-t="dl_none"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Заказ не приехал<small>Статус «Доставлен», а заказа нет</small></span></button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dl_check">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Заказ не приехал</div></div>
+    <div class="lf-body">
+      <div class="lf-note">Курьер оставил фото доставки:</div>
+      <div class="dv-door" aria-label="Фото от курьера: пакет у двери квартиры 24">
+        <span class="dv-door__door"><b>24</b></span><span class="dv-door__bag" aria-hidden="true"></span>
+      </div>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Ваш адрес: кв. 42<small>На фото — дверь квартиры 24</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen chat-screen" data-screen="dl_chat">
+    <div class="chat-head">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <div class="chat-head__av dv-chat-av" aria-hidden="true">?</div>
+      <div><div class="chat-head__name">Поддержка</div><div class="chat-head__sub">в приложении · заказ №4517</div></div>
+    </div>
+    <div class="chat-body" aria-label="Сообщения">
+      <div class="bubble">Здравствуйте! Видим ваш заказ №4517. Расскажите, что случилось?<time>14:21</time></div>
+    </div>
+    <div class="y-quick">
+      <button type="button" class="quick" data-t="dl_reply">Заказ оставили у чужой квартиры, 24 вместо 42</button>
+      <button type="button" class="quick">Заказ не приехал</button>
+    </div>
+    <div class="chat-input"><div class="chat-input__field">Сообщение</div><button type="button" class="iconbtn" aria-label="Отправить"><svg aria-hidden="true"><use href="#i-send"/></svg></button></div>
+  </section>
+
+  <section class="screen dv-call" data-screen="dl_call">
+    <div class="dv-call__top">
+      <small>Входящий звонок</small>
+      <b>+7 708 000 77 77</b>
+      <span>«Служба поддержки доставки»</span>
+    </div>
+    <div class="dv-call__said">«Мы видим вашу жалобу. Чтобы вернуть 3 900 ₸, назовите номер карты и код из SMS».</div>
+    <div class="dv-call__btns">
+      <span class="dv-call__btn dv-call__btn--no"><svg aria-hidden="true"><use href="#i-phone-off"/></svg></span>
+      <span class="dv-call__btn dv-call__btn--yes"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+    </div>
+  </section>
+
+  <!-- ===== Repeat an order ===== -->
+  <section class="screen lf lf--dlv" data-screen="dr_orders">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Мои заказы</div></div>
+    <div class="lf-body">
+      <div class="dv-order">
+        <span><b>Магазин «Свежий»</b><small>4 ноября · молоко, хлеб, яйца, гречка</small></span>
+        <button type="button" class="dv-repeat" data-t="dr_repeat"><svg aria-hidden="true"><use href="#i-refresh"/></svg>Повторить</button>
+      </div>
+      <div class="dv-order">
+        <span><b>Аптека «Добрая»</b><small>28 октября · 2 товара</small></span>
+        <span class="dv-repeat dv-repeat--off"><svg aria-hidden="true"><use href="#i-refresh"/></svg>Повторить</span>
+      </div>
+      <div class="lf-note">«Повторить» кладёт в корзину те же товары. Цены и наличие — на сегодня.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dr_cart">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Корзина</div><small>Магазин «Свежий»</small></div>
+    <div class="lf-body">
+      <div class="dv-item"><span>Молоко 2,5%, 1 л × 2</span><b>1 180 ₸</b></div>
+      <div class="dv-item"><span>Хлеб ржаной</span><b>390 ₸</b></div>
+      <div class="dv-item"><span>Яйца С1, 10 шт</span><b>1 290 ₸</b></div>
+      <div class="dv-item dv-item--out"><span>Гречка, 900 г<small>Нет в наличии</small></span>
+        <span class="dv-item__btns"><button type="button" class="dv-mini" data-t="dr_swap">Заменить</button><span class="dv-mini dv-mini--ghost">Удалить</span></span></div>
+      <div class="dv-item dv-item--total"><span>Товары</span><b>2 860 ₸</b></div>
+      <span class="lf-btn dv-btn-off">Оформить · 3 360 ₸</span>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dr_swap">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Замена: гречка</div><small>Было: Гречка, 900 г — 750 ₸</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="dr_pick"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Гречка ядрица, 800 г<small>Похожая · дешевле</small></span><b>690 ₸</b></button>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Гречка органическая, 1 кг<small>Почти в 2 раза дороже</small></span><b>1 450 ₸</b></div>
+      <div class="lf-note">Смотрите на цену и вес замены, прежде чем выбрать.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dr_cart2">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Корзина</div><small>Магазин «Свежий»</small></div>
+    <div class="lf-body">
+      <div class="dv-item"><span>Молоко 2,5%, 1 л × 2</span><b>1 180 ₸</b></div>
+      <div class="dv-item"><span>Хлеб ржаной</span><b>390 ₸</b></div>
+      <div class="dv-item"><span>Яйца С1, 10 шт</span><b>1 290 ₸</b></div>
+      <div class="dv-item"><span>Гречка ядрица, 800 г<small>Замена</small></span><b>690 ₸</b></div>
+      <div class="dv-item"><span>Доставка</span><b>500 ₸</b></div>
+      <div class="dv-item dv-item--total"><span>Итого</span><b>4 050 ₸</b></div>
+      <button type="button" class="lf-btn" data-t="dr_checkout">Оформить · 4 050 ₸</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--dlv" data-screen="dr_checkout">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Оформление</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>ул. Абая, 15, кв. 42<small>Подъезд 3 · домофон 42</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Сегодня, 17:00–18:00<small>Время доставки</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Карта •••• 3051<small>Способ оплаты</small></span></div>
+      <div class="dv-item dv-item--total"><span>К оплате</span><b>4 050 ₸</b></div>
+      <button type="button" class="lf-btn" data-t="dr_pay">Оплатить 4 050 ₸</button>
     </div>
   </section>
 </div>

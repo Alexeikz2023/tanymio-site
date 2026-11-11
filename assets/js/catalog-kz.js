@@ -158,6 +158,17 @@
         "</div></div>"
       );
     }
+    if (app === "delivery2") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#0f8a5f;color:#fff"><span style="font-weight:800">Жеткізу</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Курьер</span><b>3-подъезд</b></div>' +
+        '<div class="mini__row"><span>Сынық</span><b>қайтару</b></div>' +
+        '<div class="mini__row"><span>Қайталау</span><b>4 050 ₸</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "leisure") {
       return (
         '<div class="mini">' +
