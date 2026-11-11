@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=20261110e">
   <link rel="stylesheet" href="assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="9948faf91f">
+<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="b1a6619cea">
   <a class="skip" href="#main">Перейти к содержанию</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -1618,6 +1618,392 @@
     </nav>
   </section>
 
+</div>
+
+                <!-- Taxi, deeper: training mock-ups in the spirit of Yandex Go (cancel and refund, cash or card,
+     check the car and share the trip, order for another person). Drivers, plates, cards, phones and prices are fictional. -->
+<div class="screens" data-screens="taxi2">
+
+  <!-- ===== Cancel: car on the way ===== -->
+  <section class="screen tx" data-screen="tc_driver">
+    <div class="y-map" style="flex:1">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin" style="left:52%;top:44%"></span>
+      <span class="pin pin--dest" style="left:67%;top:31%"></span>
+    </div>
+    <div class="y-sheet">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="y-status"><b>Машина в пути · 6 мин</b><span class="y-progress" aria-hidden="true"><i class="is-on"></i><i></i><i></i></span></div>
+      <div class="y-driver">
+        <div class="y-avatar" aria-hidden="true">Е</div>
+        <div>
+          <div class="y-driver__name">Ерлан</div>
+          <div class="y-driver__meta"><svg aria-hidden="true"><use href="#i-star"/></svg>4,8 · Hyundai Elantra, серая</div>
+        </div>
+        <div class="y-car"><span class="y-plate">512 AKL 02</span></div>
+      </div>
+      <div class="y-actions">
+        <button type="button" class="y-action"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</button>
+        <button type="button" class="y-action"><svg aria-hidden="true"><use href="#i-message"/></svg>Написать</button>
+        <button type="button" class="y-action y-action--danger" data-t="tc_cancel"><svg aria-hidden="true"><use href="#i-x"/></svg>Отменить</button>
+      </div>
+      <div class="y-tip"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Учебный заказ: машина не приедет, деньги не спишутся.</span></div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tc_confirm">
+    <div class="y-map" style="flex:1">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin" style="left:52%;top:44%"></span>
+      <div class="tx-dim" aria-hidden="true"></div>
+    </div>
+    <div class="y-sheet">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <b class="tx-title">Отменить заказ?</b>
+      <p class="tx-text">Водитель уже едет к вам. Сейчас отмена бесплатная.</p>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Плата за отмену: 0 ₸</span></div>
+      <p class="tx-small">Если машина уже приехала и ждёт вас, отмена может стать платной. Сумму приложение покажет здесь заранее.</p>
+      <button type="button" class="app-cta y-cta">Подождать машину</button>
+      <button type="button" class="tx-danger" data-t="tc_confirm_go">Отменить заказ</button>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tc_menu">
+    <div class="tx-menu">
+      <div class="tx-menu__me"><span class="y-avatar" aria-hidden="true">Г</span><span><b>Галина</b><small>+7 700 000 00 00 · учебный</small></span></div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Заказ отменён бесплатно</span></div>
+      <button type="button" class="tx-mrow" data-t="tc_history"><svg aria-hidden="true"><use href="#i-clock"/></svg>История заказов<i aria-hidden="true">›</i></button>
+      <div class="tx-mrow"><svg aria-hidden="true"><use href="#i-card"/></svg>Способы оплаты<i aria-hidden="true">›</i></div>
+      <div class="tx-mrow"><svg aria-hidden="true"><use href="#i-shield"/></svg>Безопасность<i aria-hidden="true">›</i></div>
+      <div class="tx-mrow"><svg aria-hidden="true"><use href="#i-message"/></svg>Поддержка<i aria-hidden="true">›</i></div>
+      <div class="tx-mrow"><svg aria-hidden="true"><use href="#i-help"/></svg>Настройки<i aria-hidden="true">›</i></div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tc_history">
+    <div class="tx-head"><span class="tx-back" aria-hidden="true">‹</span>История заказов</div>
+    <div class="tx-body">
+      <div class="tx-trip"><span><b>Сегодня, 9:41</b><small>ул. Абая, 15 → Поликлиника №4</small><em>Отменён</em></span><strong>0 ₸</strong></div>
+      <button type="button" class="tx-trip is-warn" data-t="tc_trip"><span><b>Вчера, 18:20</b><small>ул. Абая, 15 → ТРЦ «Учебный»</small><em>Отменён</em></span><strong>600 ₸</strong></button>
+      <div class="tx-trip"><span><b>8 ноября, 10:05</b><small>Поликлиника №4 → ул. Абая, 15</small><em class="is-ok">Выполнен</em></span><strong>1 250 ₸</strong></div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tc_trip">
+    <div class="tx-head"><span class="tx-back" aria-hidden="true">‹</span>Вчера, 18:20</div>
+    <div class="tx-body">
+      <div class="lf-status lf-status--warn"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Заказ отменён · списано 600 ₸ за отмену</span></div>
+      <div class="tx-kv"><span>Откуда</span><b>ул. Абая, 15</b></div>
+      <div class="tx-kv"><span>Куда</span><b>ТРЦ «Учебный»</b></div>
+      <div class="tx-kv"><span>Отмена</span><b>через 1 минуту после заказа</b></div>
+      <div class="tx-kv"><span>Оплата</span><b>Карта •••• 3051</b></div>
+      <button type="button" class="tx-help" data-t="tc_help"><svg aria-hidden="true"><use href="#i-message"/></svg>Помощь по заказу</button>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tc_help">
+    <div class="tx-head"><span class="tx-back" aria-hidden="true">‹</span>Что случилось?</div>
+    <div class="tx-body">
+      <button type="button" class="lf-row" data-t="tc_refund"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Списали деньги за отменённый заказ<small>Проверим и вернём на карту</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-car"/></svg><span>Водитель не приехал</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-gift"/></svg><span>Забыли вещи в машине</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-info"/></svg><span>Другое</span></div>
+      <p class="tx-small">Обращение уходит в поддержку приложения. Ответ придёт в чат поддержки.</p>
+    </div>
+  </section>
+
+  <!-- ===== Cash or card ===== -->
+  <section class="screen tx" data-screen="tp_route">
+    <div class="y-map">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <svg class="y-route-layer" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M118 214C146 196 160 186 186 170S232 138 250 116" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+        <path d="M118 214C146 196 160 186 186 170S232 138 250 116" fill="none" stroke="#2E6BE6" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <span class="pin" style="left:31%;top:64%"></span>
+      <span class="pin pin--dest" style="left:67%;top:31%"></span>
+    </div>
+    <div class="y-sheet y-sheet--grow">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="y-dest-row"><span class="y-dot y-dot--line" aria-hidden="true"></span><div><h4>Зелёный базар</h4><p>ул. Жибек Жолы · 15 минут в пути</p></div></div>
+      <div class="y-tariffs" role="group" aria-label="Тариф">
+        <div class="y-tariff is-selected"><b>Эконом</b><span>3 мин</span><strong>1 100 ₸</strong></div>
+        <div class="y-tariff"><b>Комфорт</b><span>5 мин</span><strong>1 650 ₸</strong></div>
+      </div>
+      <div class="y-order">
+        <button type="button" class="y-paybtn" data-t="tp_pay"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.6"/></svg>Наличные</button>
+        <button type="button" class="app-cta y-cta">Заказать <span>· 1 100 ₸</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen gpay pm-yandex" data-screen="tp_methods">
+    <div class="gpay-top"><svg class="pm-back" aria-hidden="true"><use href="#i-arrow-left"/></svg><b>Способ оплаты</b></div>
+    <p class="gpay-h">Выберите, как платить за поездку</p>
+    <div class="gpay-row is-on">
+      <span class="gpay-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.6"/></svg></span>
+      <span class="gpay-tx"><b>Наличные</b><span>Оплата водителю после поездки</span></span>
+      <i class="gpay-radio" aria-hidden="true"></i>
+    </div>
+    <button type="button" class="gpay-row" data-t="tp_card">
+      <span class="gpay-ic"><svg aria-hidden="true"><use href="#i-card"/></svg></span>
+      <span class="gpay-tx"><b>Карта •••• 3051</b><span>Спишется точная сумма после поездки</span></span>
+      <i class="gpay-radio gpay-radio--off" aria-hidden="true"></i>
+    </button>
+    <div class="gpay-row gpay-add">
+      <span class="gpay-ic gpay-ic--add"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+      <span class="gpay-tx"><b>Привязать карту</b><span>Банковская карта Visa или Mastercard</span></span>
+      <i class="gpay-chev" aria-hidden="true">›</i>
+    </div>
+    <p class="gpay-note"><svg aria-hidden="true"><use href="#i-lock"/></svg>Цена поездки видна до заказа. Платят ту сумму, которую показывает приложение.</p>
+  </section>
+
+  <section class="screen tx" data-screen="tp_route_card">
+    <div class="y-map">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <svg class="y-route-layer" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path d="M118 214C146 196 160 186 186 170S232 138 250 116" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+        <path d="M118 214C146 196 160 186 186 170S232 138 250 116" fill="none" stroke="#2E6BE6" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <span class="pin" style="left:31%;top:64%"></span>
+      <span class="pin pin--dest" style="left:67%;top:31%"></span>
+    </div>
+    <div class="y-sheet y-sheet--grow">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="y-dest-row"><span class="y-dot y-dot--line" aria-hidden="true"></span><div><h4>Зелёный базар</h4><p>ул. Жибек Жолы · 15 минут в пути</p></div></div>
+      <div class="y-tariffs" role="group" aria-label="Тариф">
+        <div class="y-tariff is-selected"><b>Эконом</b><span>3 мин</span><strong>1 100 ₸</strong></div>
+        <div class="y-tariff"><b>Комфорт</b><span>5 мин</span><strong>1 650 ₸</strong></div>
+      </div>
+      <div class="y-order">
+        <button type="button" class="y-paybtn y-paybtn--card"><svg aria-hidden="true"><use href="#i-card"/></svg>•••• 3051</button>
+        <button type="button" class="app-cta y-cta" data-t="tp_order">Заказать <span>· 1 100 ₸</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tp_end">
+    <div class="y-map" style="height:190px">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin pin--dest" style="left:55%;top:45%"></span>
+    </div>
+    <div class="y-sheet y-sheet--grow">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <b class="tx-title">Вы приехали · Зелёный базар</b>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Оплачено картой •••• 3051 — 1 100 ₸</span></div>
+      <p class="tx-small">Деньги списались сами. Водителю ничего передавать не нужно.</p>
+      <div class="tx-stars" aria-label="Оценка поездки"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <div class="tx-two">
+        <button type="button" class="tx-ghost" data-t="tp_receipt"><svg aria-hidden="true"><use href="#i-printer"/></svg>Чек</button>
+        <button type="button" class="app-cta y-cta">Готово</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Check the car and share the trip ===== -->
+  <section class="screen tx" data-screen="tq_driver">
+    <div class="y-map" style="flex:1">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin" style="left:52%;top:44%"></span>
+      <span class="pin pin--dest" style="left:67%;top:31%"></span>
+      <button type="button" class="tx-shield" data-t="tq_safety" aria-label="Безопасность"><svg aria-hidden="true"><use href="#i-shield"/></svg></button>
+    </div>
+    <div class="y-sheet">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="y-status"><b>Машина в пути · 4 мин</b><span class="y-progress" aria-hidden="true"><i class="is-on"></i><i></i><i></i></span></div>
+      <div class="y-driver">
+        <div class="y-avatar" aria-hidden="true">Е</div>
+        <div>
+          <div class="y-driver__name">Ерлан</div>
+          <div class="y-driver__meta"><svg aria-hidden="true"><use href="#i-star"/></svg>4,8 · Hyundai Elantra, серая</div>
+        </div>
+        <div class="y-car"><span class="y-plate">512 AKL 02</span></div>
+      </div>
+      <div class="y-actions">
+        <button type="button" class="y-action"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</button>
+        <button type="button" class="y-action"><svg aria-hidden="true"><use href="#i-message"/></svg>Написать</button>
+        <button type="button" class="y-action y-action--danger"><svg aria-hidden="true"><use href="#i-x"/></svg>Отменить</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tq_safety">
+    <div class="y-map" style="flex:1">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <div class="tx-dim" aria-hidden="true"></div>
+    </div>
+    <div class="y-sheet">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <b class="tx-title">Безопасность</b>
+      <button type="button" class="lf-row" data-t="tq_share"><svg aria-hidden="true"><use href="#i-send"/></svg><span>Поделиться поездкой<small>Близкий увидит машину и маршрут</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Позвонить в полицию: 102<small>Если вам угрожает опасность</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-message"/></svg><span>Сообщить о проблеме<small>Напишет служба поддержки</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tq_contacts">
+    <div class="tx-head"><span class="tx-back" aria-hidden="true">‹</span>Кому отправить поездку?</div>
+    <div class="tx-body">
+      <button type="button" class="tx-contact" data-t="tq_daughter"><span class="tx-av" aria-hidden="true">Д</span><span><b>Дочь</b><small>+7 701 000 12 34 · учебный</small></span></button>
+      <div class="tx-contact"><span class="tx-av tx-av--b" aria-hidden="true">С</span><span><b>Сын</b><small>+7 702 000 56 78 · учебный</small></span></div>
+      <div class="tx-contact"><span class="tx-av tx-av--c" aria-hidden="true">С</span><span><b>Соседка Галина</b><small>+7 705 000 90 12 · учебный</small></span></div>
+      <p class="tx-small">Придёт ссылка. По ней видно машину, номер и где вы едете — до конца поездки.</p>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tq_arrive">
+    <div class="tx-street">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Поездку видит: Дочь</span></div>
+      <b class="tx-street__label">У подъезда остановилась машина</b>
+      <div class="tx-car" aria-label="Машина у подъезда: белая, номер 318 BVN 02">
+        <span class="tx-car__roof"></span><span class="tx-car__body"><span class="tx-car__plate">318 BVN 02</span></span>
+        <span class="tx-car__w tx-car__w--l"></span><span class="tx-car__w tx-car__w--r"></span>
+      </div>
+      <small class="tx-street__cap">Белая машина · номер 318 BVN 02</small>
+    </div>
+    <div class="y-sheet">
+      <div class="y-status"><b>Водитель на месте</b></div>
+      <div class="y-driver">
+        <div class="y-avatar" aria-hidden="true">Е</div>
+        <div><div class="y-driver__name">Ерлан</div><div class="y-driver__meta">Hyundai Elantra, серая</div></div>
+        <div class="y-car"><span class="y-plate">512 AKL 02</span></div>
+      </div>
+      <div class="y-actions">
+        <button type="button" class="y-action" data-t="tq_call"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</button>
+        <button type="button" class="y-action"><svg aria-hidden="true"><use href="#i-message"/></svg>Написать</button>
+        <button type="button" class="y-action y-action--danger"><svg aria-hidden="true"><use href="#i-x"/></svg>Отменить</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen chat-screen" data-screen="tq_chat">
+    <div class="chat-head">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <div class="chat-head__av" aria-hidden="true">Е</div>
+      <div><div class="chat-head__name">Ерлан</div><div class="chat-head__sub">водитель · 512 AKL 02</div></div>
+    </div>
+    <div class="chat-body" aria-label="Сообщения">
+      <div class="bubble">Извините, перепутали машину. Я за углом, серая Hyundai, подойдите.<time>9:52</time></div>
+      <div class="bubble">Отмените заказ в приложении, довезу за наличные, будет дешевле 🙂<time>9:53</time></div>
+    </div>
+    <div class="chat-input"><div class="chat-input__field">Сообщение</div><button type="button" class="iconbtn" aria-label="Отправить"><svg aria-hidden="true"><use href="#i-send"/></svg></button></div>
+  </section>
+
+  <!-- ===== Order for another person ===== -->
+  <section class="screen tx" data-screen="tf_route">
+    <div class="y-map" style="height:220px">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin" style="left:31%;top:64%"></span>
+      <span class="pin pin--dest" style="left:67%;top:31%"></span>
+    </div>
+    <div class="y-sheet y-sheet--grow">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="y-dest-row"><span class="y-dot y-dot--line" aria-hidden="true"></span><div><h4>Поликлиника №4</h4><p>ул. Толе би, 59</p></div></div>
+      <div class="y-field"><span class="y-dot" aria-hidden="true"></span><span><span class="y-field__label">Откуда</span><span class="y-field__value">ул. Абая, 15</span></span></div>
+      <button type="button" class="tx-who" data-t="tf_who"><svg aria-hidden="true"><use href="#i-user"/></svg>Поеду я<i aria-hidden="true">▾</i></button>
+      <div class="y-order">
+        <div class="y-paybtn y-paybtn--card"><svg aria-hidden="true"><use href="#i-card"/></svg>•••• 3051</div>
+        <button type="button" class="app-cta y-cta">Заказать <span>· 1 250 ₸</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tf_who_sheet">
+    <div class="y-map" style="flex:1">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <div class="tx-dim" aria-hidden="true"></div>
+    </div>
+    <div class="y-sheet">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <b class="tx-title">Кто поедет?</b>
+      <div class="lf-row is-on"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Я<small>Водитель позвонит вам</small></span><b>✓</b></div>
+      <button type="button" class="lf-row" data-t="tf_other"><svg aria-hidden="true"><use href="#i-users"/></svg><span>Другой человек<small>Водитель позвонит ему, а не вам</small></span></button>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tf_contacts">
+    <div class="tx-head"><span class="tx-back" aria-hidden="true">‹</span>Кто поедет?</div>
+    <div class="tx-body">
+      <div class="lf-input"><small>Поиск по контактам</small>&nbsp;</div>
+      <button type="button" class="tx-contact" data-t="tf_mom"><span class="tx-av" aria-hidden="true">М</span><span><b>Мама</b><small>+7 701 000 43 21 · учебный</small></span></button>
+      <div class="tx-contact"><span class="tx-av tx-av--b" aria-hidden="true">С</span><span><b>Сын</b><small>+7 702 000 56 78 · учебный</small></span></div>
+      <div class="tx-contact"><span class="tx-av tx-av--c" aria-hidden="true">Т</span><span><b>Тётя Роза</b><small>+7 707 000 11 22 · учебный</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tf_route_mom">
+    <div class="y-map" style="height:220px">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin" style="left:31%;top:64%"></span>
+      <span class="pin pin--dest" style="left:67%;top:31%"></span>
+    </div>
+    <div class="y-sheet y-sheet--grow">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="y-dest-row"><span class="y-dot y-dot--line" aria-hidden="true"></span><div><h4>Поликлиника №4</h4><p>ул. Толе би, 59</p></div></div>
+      <button type="button" class="y-field tx-field-warn" data-t="tf_from"><span class="y-dot" aria-hidden="true"></span><span><span class="y-field__label">Откуда · машина приедет сюда</span><span class="y-field__value">ул. Абая, 15 — это ваш адрес</span></span></button>
+      <div class="tx-who is-on"><svg aria-hidden="true"><use href="#i-user"/></svg>Поедет: Мама<i aria-hidden="true">▾</i></div>
+      <div class="y-order">
+        <div class="y-paybtn y-paybtn--card"><svg aria-hidden="true"><use href="#i-card"/></svg>•••• 3051</div>
+        <button type="button" class="app-cta y-cta">Заказать <span>· 1 250 ₸</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="tf_from">
+    <div class="y-searchhead">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <div class="y-input"><svg aria-hidden="true" style="width:15px;height:15px;color:#8a8a80"><use href="#i-search"/></svg><span>Сатпаева 30</span><span class="caret" aria-hidden="true"></span></div>
+    </div>
+    <div class="screen__scroll">
+      <div class="y-suggest">
+        <div class="y-suggest__label">Откуда заберут маму</div>
+        <button type="button" class="y-item" data-t="tf_addr">
+          <span class="y-item__icon"><svg aria-hidden="true"><use href="#i-home"/></svg></span>
+          <span class="y-item__text"><b>ул. Сатпаева, 30</b><span>Алматы · дом мамы, учебный адрес</span></span>
+        </button>
+        <button type="button" class="y-item">
+          <span class="y-item__icon"><svg aria-hidden="true"><use href="#i-map-pin"/></svg></span>
+          <span class="y-item__text"><b>ул. Сатпаева, 30А</b><span>Алматы · другой дом</span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tf_route_ready">
+    <div class="y-map" style="height:220px">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin" style="left:24%;top:46%"></span>
+      <span class="pin pin--dest" style="left:67%;top:31%"></span>
+    </div>
+    <div class="y-sheet y-sheet--grow">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="y-dest-row"><span class="y-dot y-dot--line" aria-hidden="true"></span><div><h4>Поликлиника №4</h4><p>ул. Толе би, 59</p></div></div>
+      <div class="y-field"><span class="y-dot" aria-hidden="true"></span><span><span class="y-field__label">Откуда</span><span class="y-field__value">ул. Сатпаева, 30</span></span></div>
+      <div class="tx-who is-on"><svg aria-hidden="true"><use href="#i-user"/></svg>Поедет: Мама<i aria-hidden="true">▾</i></div>
+      <div class="y-order">
+        <div class="y-paybtn y-paybtn--card"><svg aria-hidden="true"><use href="#i-card"/></svg>•••• 3051</div>
+        <button type="button" class="app-cta y-cta" data-t="tf_order">Заказать <span>· 1 400 ₸</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen tx" data-screen="tf_sent">
+    <div class="y-map" style="flex:1">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin" style="left:24%;top:46%"></span>
+    </div>
+    <div class="y-sheet">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="y-status"><b>Машина едет к маме · 5 мин</b></div>
+      <div class="y-driver">
+        <div class="y-avatar" aria-hidden="true">Б</div>
+        <div><div class="y-driver__name">Бауыржан</div><div class="y-driver__meta"><svg aria-hidden="true"><use href="#i-star"/></svg>4,9 · Kia Rio, синяя</div></div>
+        <div class="y-car"><span class="y-plate">207 MRT 02</span></div>
+      </div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-message"/></svg><span>Маме отправлено SMS: машина, номер и время</span></div>
+      <p class="tx-small">Оплата с вашей карты •••• 3051. Маме платить не нужно.</p>
+    </div>
+  </section>
 </div>
 
                 <div class="screens" data-screens="market-kaspi">
