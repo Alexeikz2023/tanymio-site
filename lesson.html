@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=20261110e">
   <link rel="stylesheet" href="assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="544de14b4e">
+<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="1b2925b904">
   <a class="skip" href="#main">Перейти к содержанию</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -3559,6 +3559,264 @@
       <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>«Гороскоп дня» отключён</b><br>Деньги за него больше не списываются</span></div>
       <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-play"/></svg><span>«Мелодия вместо гудка»<small>90 ₸ в день</small></span><span class="lf-chip">Отключить</span></div>
       <div class="lf-row"><svg aria-hidden="true"><use href="#i-message"/></svg><span>SMS-уведомления банка<small>бесплатно</small></span></div>
+    </div>
+  </section>
+</div>
+
+                <!-- Maps & transport module: neutral training mock-ups in the spirit of city map apps (2GIS, Yandex Maps)
+     and bus QR payment in a bank app. All places, addresses, phones, routes, carriers and prices are fictional. -->
+<div class="screens" data-screens="maps">
+
+  <!-- ===== Map: home ===== -->
+  <section class="screen lf lf--map" data-screen="mp_home">
+    <div class="mp-map">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <button type="button" class="mp-top" data-t="mp_search"><svg aria-hidden="true"><use href="#i-search"/></svg><span>Поиск мест и адресов</span></button>
+      <button type="button" class="mp-stop" data-t="mp_stop_pin" style="left:30%;top:40%"><b>A</b><span>Ост. «Абая — Байтурсынова»</span></button>
+      <span class="mp-me" style="left:40%;top:62%" aria-hidden="true"></span>
+      <button type="button" class="mp-fab" data-t="mp_me" aria-label="Где я" style="right:12px;bottom:12px"><svg aria-hidden="true"><use href="#i-map-pin"/></svg></button>
+    </div>
+    <div class="mp-sheet">
+      <div class="lf-chips"><span class="lf-chip">Аптеки</span><span class="lf-chip">Продукты</span><span class="lf-chip">Банкоматы</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Дом<small>ул. Абая, 15 · учебный адрес</small></span></div>
+    </div>
+  </section>
+
+  <!-- ===== Search ===== -->
+  <section class="screen lf lf--map" data-screen="mp_search">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Поиск</div></div>
+    <div class="lf-body">
+      <div class="lf-input"><small>Вы набрали</small>аптека</div>
+      <button type="button" class="lf-row" data-t="mp_suggest"><svg aria-hidden="true"><use href="#i-search"/></svg><span>Аптеки рядом<small>Найдено 3 места поблизости</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Аптечный склад<small>Промзона, 12 км</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-mic"/></svg><span>Сказать голосом<small>Нажмите микрофон и назовите место</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mp_results">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Аптеки рядом</div><small>Сейчас 20:10 · учебный экран</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="mp_place_a"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Аптека «Добрая»<small>350 м · открыто до 22:00 · ★ 4,7</small></span></button>
+      <div class="lf-row is-warn"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Аптека «Шипа»<small>200 м · закрыто, откроется в 09:00</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Аптека «Круглосуточная»<small>4,1 км · открыто всегда</small></span></div>
+    </div>
+  </section>
+
+  <!-- ===== Place card ===== -->
+  <section class="screen lf lf--map" data-screen="mp_place">
+    <div class="mp-map mp-map--short">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin pin--dest" style="left:52%;top:50%"></span>
+    </div>
+    <div class="mp-sheet">
+      <b class="mp-title">Аптека «Добрая»</b>
+      <small class="mp-sub">ул. Байтурсынова, 22 · 350 м</small>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Открыто до 22:00</span></div>
+      <div class="mp-actions">
+        <button type="button" data-t="mp_route"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg>Маршрут</button>
+        <button type="button" data-t="mp_call"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</button>
+        <button type="button" data-t="mp_save"><svg aria-hidden="true"><use href="#i-star"/></svg>Сохранить</button>
+        <span><svg aria-hidden="true"><use href="#i-send"/></svg>Поделиться</span>
+      </div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>+7 727 000 12 34<small>учебный номер</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mp_place_saved">
+    <div class="mp-map mp-map--short">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin pin--dest" style="left:52%;top:50%"></span>
+    </div>
+    <div class="mp-sheet">
+      <b class="mp-title">Аптека «Добрая»</b>
+      <small class="mp-sub">ул. Байтурсынова, 22 · 350 м</small>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Сохранено в «Избранное»</span></div>
+      <div class="mp-actions">
+        <span><svg aria-hidden="true"><use href="#i-arrow-right"/></svg>Маршрут</span>
+        <button type="button" data-t="mp_call"><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</button>
+        <span class="is-on"><svg aria-hidden="true"><use href="#i-star"/></svg>Сохранено</span>
+        <span><svg aria-hidden="true"><use href="#i-send"/></svg>Поделиться</span>
+      </div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>+7 727 000 12 34<small>учебный номер</small></span></div>
+    </div>
+  </section>
+
+  <!-- ===== Route ===== -->
+  <section class="screen lf lf--map" data-screen="mp_clinic">
+    <div class="mp-map mp-map--short">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="pin pin--dest" style="left:60%;top:46%"></span>
+    </div>
+    <div class="mp-sheet">
+      <b class="mp-title">Поликлиника № 4</b>
+      <small class="mp-sub">ул. Сатпаева, 9 · 2,1 км</small>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Открыто до 19:00</span></div>
+      <div class="mp-actions">
+        <button type="button" data-t="mp_route"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg>Маршрут</button>
+        <span><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</span>
+        <span><svg aria-hidden="true"><use href="#i-star"/></svg>Сохранить</span>
+        <span><svg aria-hidden="true"><use href="#i-send"/></svg>Поделиться</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mp_route">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Маршрут</div><small>Откуда: моё местоположение · Куда: Поликлиника № 4</small></div>
+    <div class="lf-body">
+      <div class="lf-chips"><span class="lf-chip">Пешком 28 мин</span><span class="lf-chip is-on">Автобус 15 мин</span><span class="lf-chip">Такси 7 мин</span></div>
+      <button type="button" class="lf-row" data-t="mp_route_bus"><span class="mp-bus">32</span><span>15 мин · без пересадок<small>Пешком 250 м до остановки · 5 остановок</small></span><b>›</b></button>
+      <div class="lf-row"><span class="mp-bus">12</span><span class="mp-bus">63</span><span>14 мин · 2 пересадки<small>Пешком 600 м · 3 автобуса</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-car"/></svg><span>Такси · 7 мин<small>Откроется приложение такси, поездка платная</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mp_route_detail">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Автобус № 32 · 15 мин</div><small>Прибытие к 10:20</small></div>
+    <div class="lf-body">
+      <div class="mp-steps">
+        <div><i>1</i><span>Пешком 250 м<small>до остановки «Абая — Байтурсынова»</small></span></div>
+        <div><i>2</i><span><span class="mp-bus">32</span> Автобус · 5 остановок<small>следующий через 4 мин</small></span></div>
+        <div><i>3</i><span>Выйти на «Поликлиника № 4»<small>пешком 100 м до входа</small></span></div>
+      </div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="mp_go">Поехали</button></div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mp_nav">
+    <div class="mp-navhead"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg><span><b>Идите прямо 250 м</b><small>к остановке «Абая — Байтурсынова»</small></span></div>
+    <div class="mp-map">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <svg class="mp-line" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="40,64 40,46 58,46" /></svg>
+      <span class="mp-me" style="left:40%;top:64%" aria-hidden="true"></span>
+      <span class="mp-stop" style="left:58%;top:44%"><b>A</b></span>
+    </div>
+    <div class="mp-sheet"><div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Осталось 15 мин<small>Голосовые подсказки включены</small></span></div></div>
+  </section>
+
+  <!-- ===== Bus stop ===== -->
+  <section class="screen lf lf--map" data-screen="mp_stop">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Ост. «Абая — Байтурсынова»</div><small>Прибытие по данным GPS · учебный экран</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="mp_bus32"><span class="mp-bus">32</span><span>через 4 мин<small>Через «Поликлиника № 4» → мкр. Самал</small></span><b>›</b></button>
+      <div class="lf-row"><span class="mp-bus">12</span><span>через 9 мин<small>→ Вокзал</small></span></div>
+      <div class="lf-row"><span class="mp-bus">63</span><span>через 17 мин<small>→ Аэропорт</small></span></div>
+      <div class="lf-note">Время примерное: автобус может задержаться в пробке.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mp_bus_route">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Автобус № 32</div><small>Ваша остановка — 5-я</small></div>
+    <div class="lf-body">
+      <div class="mp-stops">
+        <div class="is-here">Абая — Байтурсынова<small>вы здесь</small></div>
+        <div>Абая — Масанчи</div>
+        <div>ЦУМ</div>
+        <div>Сатпаева — Ауэзова</div>
+        <div class="is-goal">Поликлиника № 4<small>выходите здесь</small></div>
+      </div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="mp_remind">Напомнить о выходе</button></div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mp_remind_ok">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Автобус № 32</div><small>Ваша остановка — 5-я</small></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-bell"/></svg><span><b>Напоминание включено</b><br>Телефон зазвонит за одну остановку до выхода</span></div>
+      <div class="lf-row"><span class="mp-bus">32</span><span>Прибудет через 4 мин<small>Посмотрите номер на табличке спереди автобуса</small></span></div>
+    </div>
+  </section>
+
+  <!-- ===== Bus QR payment in a bank app ===== -->
+  <section class="screen lf lf--bank" data-screen="mp_bank_home">
+    <div class="lf-head"><div class="lf-head__top">Мой банк</div><small>учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Карта · •• 4021</small><b class="lf-big">38 500 ₸</b></div>
+      <button type="button" class="lf-row" data-t="mp_qr"><svg aria-hidden="true"><use href="#i-qr"/></svg><span>Сканировать QR<small>Оплата в магазине и в транспорте</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-transfer"/></svg><span>Переводы</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Платежи</span></div>
+    </div>
+  </section>
+
+  <section class="screen mp-cam" data-screen="mp_qr_cam">
+    <div class="mp-cam__top">Наведите камеру на QR-код</div>
+    <button type="button" class="mp-cam__frame" data-t="mp_qr_read" aria-label="QR-код на стикере в автобусе">
+      <span class="mp-qr"><svg aria-hidden="true"><use href="#i-qr"/></svg></span>
+      <small>Стикер в салоне · Автобус № 32</small>
+    </button>
+    <div class="mp-cam__hint">QR-код для оплаты наклеен в салоне, обычно у дверей</div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="mp_qr_pay">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Оплата проезда</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Маршрут</small><b style="display:block;font-size:13px;margin-top:3px">Автобус № 32</b><small>Перевозчик: ТОО «Городской автобус» · учебно</small></div>
+      <div class="lf-card"><small>Поездок</small><b style="display:block;font-size:13px;margin-top:3px">1</b></div>
+      <div class="lf-card"><small>Сумма</small><b class="lf-big">200 ₸</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="mp_qr_confirm">Оплатить 200 ₸</button></div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="mp_qr_ok">
+    <div class="lf-head"><div class="lf-head__top">Готово</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Проезд оплачен · 200 ₸</b><br>Автобус № 32 · сегодня, 10:06</span></div>
+      <div class="lf-note">Если войдёт контролёр, покажите этот экран. Он также сохранится в истории операций.</div>
+    </div>
+  </section>
+
+  <section class="screen sx-plain" data-screen="mp_qr_fake">
+    <div class="sx-plainhead"><b>QR-код на остановке</b><span>Наклейка: «Оплати проезд со скидкой 50%»</span></div>
+    <div class="mp-fakesite">
+      <small>bus-pay-skidka.top</small>
+      <b>Скидка 50% на проезд</b>
+      <div class="lf-input"><small>Номер карты</small>•••• •••• •••• ••••</div>
+      <div class="lf-input"><small>CVV — 3 цифры на обороте</small>•••</div>
+    </div>
+  </section>
+
+  <!-- ===== Lost: share my location ===== -->
+  <section class="screen lf lf--map" data-screen="mp_where">
+    <div class="mp-map">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="mp-me mp-me--big" style="left:50%;top:48%" aria-hidden="true"></span>
+    </div>
+    <div class="mp-sheet">
+      <b class="mp-title">Вы здесь</b>
+      <small class="mp-sub">около ул. Сатпаева, 30 · магазин «Продукты 24»</small>
+      <button type="button" class="lf-btn" data-t="mp_share">Поделиться местоположением</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mp_share_apps">
+    <div class="mp-map">
+      <svg class="appmap" viewBox="0 0 360 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#map-almaty"/></svg>
+      <span class="mp-me mp-me--big" style="left:50%;top:48%" aria-hidden="true"></span>
+    </div>
+    <div class="mp-sheet">
+      <b class="mp-title">Отправить через</b>
+      <div class="mp-apps">
+        <button type="button" data-t="mp_share_wa"><i style="background:#25d366"><svg aria-hidden="true"><use href="#i-message"/></svg></i>WhatsApp</button>
+        <span><i style="background:#2f80ed"><svg aria-hidden="true"><use href="#i-send"/></svg></i>Telegram</span>
+        <span><i style="background:#6b7686"><svg aria-hidden="true"><use href="#i-text"/></svg></i>SMS</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--wa" data-screen="mp_share_contacts">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Отправить</div><small>Выберите, кому</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="mp_share_daughter"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Дочь Айгерим<small>был(а) недавно</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Сын Ерлан</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-users"/></svg><span>Соседи по дому<small>группа · 46 участников</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--wa" data-screen="mp_share_sent">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Дочь Айгерим</div><small>в сети</small></div>
+    <div class="lf-body mp-chat">
+      <div class="mp-bubble mp-bubble--me"><span class="mp-locpic"><svg aria-hidden="true"><use href="#i-map-pin"/></svg></span><b>Местоположение</b><small>около ул. Сатпаева, 30</small></div>
+      <div class="mp-bubble mp-bubble--me">Я здесь, не могу найти дорогу</div>
+      <div class="mp-bubble">Вижу тебя на карте! Стой у магазина, я позвоню и приеду</div>
     </div>
   </section>
 </div>

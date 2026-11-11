@@ -114,6 +114,17 @@
         "</div></div>"
       );
     }
+    if (app === "maps") {
+      return (
+        '<div class="mini">' +
+        '<div class="mini__bar" style="background:#1e7a46;color:#fff"><span style="font-weight:800">Карта</span></div>' +
+        '<div class="mini__body">' +
+        '<div class="mini__row"><span>Дәріхана</span><b>350 м</b></div>' +
+        '<div class="mini__row"><span>32 автобус</span><b>4 мин</b></div>' +
+        '<div class="mini__row"><span>Мен қайда</span><b>Жіберу</b></div>' +
+        "</div></div>"
+      );
+    }
     if (app === "greensm") {
       return (
         '<div class="mini">' +
