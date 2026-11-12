@@ -9,8 +9,21 @@
 
   var els = {};
   var lesson = null;
-  var state = { step: 0, hints: 0, wrong: 0, hintShown: false, wrongHere: 0, busy: false, finished: false };
+  var state = { step: 0, hints: 0, wrong: 0, hintShown: false, wrongHere: 0, busy: false, finished: false, stats: [], stepStart: 0 };
   var advanceTimer = null;
+  var FEEDBACK = "tanymio.feedback.v1";
+
+  /* Per-step pilot stats: wrong taps, hints shown, seconds spent. */
+  function stat() {
+    if (!state.stats[state.step]) state.stats[state.step] = { w: 0, h: 0, s: 0 };
+    return state.stats[state.step];
+  }
+
+  function closeStepTime() {
+    if (!state.stepStart) return;
+    stat().s += Math.min(900, Math.round((Date.now() - state.stepStart) / 1000));
+    state.stepStart = 0;
+  }
 
   function byId(id) {
     return document.getElementById(id);
@@ -79,6 +92,7 @@
       step: state.step,
       hints: state.hints,
       wrong: state.wrong,
+      stats: state.stats,
       updatedAt: new Date().toISOString()
     });
   }
@@ -214,6 +228,7 @@
     state.hintShown = false;
     state.wrongHere = 0;
     state.busy = false;
+    state.stepStart = Date.now();
 
     var step = lesson.steps[index];
     if (!step) {
@@ -303,7 +318,7 @@
 
     if (step.effect) applyEffect(step.effect);
 
-    state.hints = state.hints;
+    closeStepTime();
     save();
     showFeedback(step.success || "Верно.", "ok");
 
@@ -314,11 +329,13 @@
   function wrong(message) {
     state.wrong += 1;
     state.wrongHere += 1;
+    stat().w += 1;
     save();
     showFeedback(message || "Это другая кнопка. Попробуем ещё раз.", "warn");
 
     if (state.wrongHere >= 2 && !state.hintShown) {
       state.hintShown = true;
+      stat().h += 1;
       var box = els.coach.querySelector("[data-hintbox]");
       if (box) box.hidden = false;
       highlightTarget();
@@ -342,7 +359,7 @@
     buttons[index].classList.add("is-right");
     buttons.forEach(function (btn) { btn.disabled = true; });
     showFeedback(choice.feedback, "ok");
-    state.hints = state.hints;
+    closeStepTime();
     save();
 
     advanceTimer = setTimeout(function () {
@@ -362,6 +379,42 @@
     }
   }
 
+  function readFeedback() {
+    try { return JSON.parse(localStorage.getItem(FEEDBACK) || "{}") || {}; } catch (err) { return {}; }
+  }
+
+  function bindFeedback() {
+    var box = els.coach.querySelector("[data-fb]");
+    if (!box) return;
+    var pick = { ease: "", hard: [] };
+    T.qsa("[data-fb-ease]", box).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        pick.ease = btn.dataset.fbEase;
+        T.qsa("[data-fb-ease]", box).forEach(function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
+        box.querySelector("[data-fb-more]").hidden = false;
+      });
+    });
+    T.qsa("[data-fb-hard]", box).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var on = btn.getAttribute("aria-pressed") !== "true";
+        btn.setAttribute("aria-pressed", String(on));
+        pick.hard = T.qsa("[data-fb-hard][aria-pressed=\"true\"]", box).map(function (b) { return b.dataset.fbHard; });
+      });
+    });
+    box.querySelector("[data-fb-save]").addEventListener("click", function () {
+      var all = readFeedback();
+      all[lesson.id] = {
+        ease: pick.ease,
+        hard: pick.hard,
+        note: (box.querySelector("[data-fb-note]").value || "").trim().slice(0, 500),
+        lang: LANG,
+        at: new Date().toISOString()
+      };
+      try { localStorage.setItem(FEEDBACK, JSON.stringify(all)); } catch (err) { /* storage full or blocked */ }
+      box.innerHTML = '<p class="fb__thanks" role="status">Спасибо! Отзыв сохранён на этом телефоне.</p>';
+    });
+  }
+
   function finish() {
     state.finished = true;
     var done = lesson.done;
@@ -372,6 +425,7 @@
       step: lesson.steps.length,
       hints: state.hints,
       wrong: state.wrong,
+      stats: state.stats,
       completedAt: new Date().toISOString(),
       dueAt: due.toISOString()
     });
@@ -407,6 +461,20 @@
       '<div class="score-row"><span>Неверных нажатий</span><b>' + state.wrong + "</b></div>" +
       '<div class="score-row"><span>Повторить</span><b>' + fmtDate(due) + "</b></div>" +
       "</div>" +
+      '<div class="fb" data-fb role="group" aria-label="Отзыв об уроке">' +
+      '<p class="fb__q">Как прошёл урок?</p>' +
+      '<div class="fb__row">' +
+      '<button type="button" class="fb__opt" data-fb-ease="easy" aria-pressed="false">Легко</button>' +
+      '<button type="button" class="fb__opt" data-fb-ease="ok" aria-pressed="false">Нормально</button>' +
+      '<button type="button" class="fb__opt" data-fb-ease="hard" aria-pressed="false">Трудно</button>' +
+      '</div>' +
+      '<div class="fb__more" data-fb-more hidden>' +
+      '<p class="fb__q">Что мешало? Можно выбрать несколько.</p>' +
+      '<div class="fb__chips"><button type="button" class="fb__chip" data-fb-hard="button" aria-pressed="false">Не нашёл кнопку</button><button type="button" class="fb__chip" data-fb-hard="text" aria-pressed="false">Непонятный текст</button><button type="button" class="fb__chip" data-fb-hard="small" aria-pressed="false">Мелкие буквы</button><button type="button" class="fb__chip" data-fb-hard="voice" aria-pressed="false">Голос</button><button type="button" class="fb__chip" data-fb-hard="none" aria-pressed="false">Ничего не мешало</button></div>' +
+      '<label class="fb__note"><span>Что было непонятно? Можно пропустить.</span><textarea rows="2" maxlength="500" data-fb-note></textarea></label>' +
+      '<button type="button" class="btn btn--primary" data-fb-save>Сохранить отзыв</button>' +
+      '</div>' +
+      '</div>' +
       (next
         ? '<a class="next-lesson" href="' + (nextLocked ? "#" : "lesson.html?id=" + next.id) + '"' +
           (nextLocked ? ' data-require-access' : "") + ">" +
@@ -421,6 +489,8 @@
       '<a class="btn btn--ghost" href="lessons.html">Вернуться к урокам</a>' +
       "</div>";
 
+    bindFeedback();
+
     T.qsa("[data-require-access]", els.coach).forEach(function (link) {
       link.addEventListener("click", function (event) {
         event.preventDefault();
@@ -432,6 +502,7 @@
       T.resetProgress(lesson.id);
       state.hints = 0;
       state.wrong = 0;
+      state.stats = [];
       state.finished = false;
       els.done.hidden = true;
       showStep(0);
@@ -491,6 +562,7 @@
         if (!state.hintShown) {
           state.hintShown = true;
           state.hints += 1;
+          stat().h += 1;
           save();
         }
         var box = els.coach.querySelector("[data-hintbox]");
@@ -605,6 +677,7 @@
     els.done.hidden = true;
     state.hints = 0;
     state.wrong = 0;
+    state.stats = [];
     state.finished = false;
 
     bind();
@@ -623,6 +696,7 @@
     if (startAt > 0 && startAt < lesson.steps.length) {
       state.hints = saved.hints || 0;
       state.wrong = saved.wrong || 0;
+      state.stats = Array.isArray(saved.stats) ? saved.stats : [];
       T.toast("Продолжаем с шага " + (startAt + 1));
     }
 

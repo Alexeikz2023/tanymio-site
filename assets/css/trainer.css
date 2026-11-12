@@ -929,3 +929,97 @@
 .coach__voice { min-height: 44px; }
 .coach__foot a { display: inline-flex; align-items: center; min-height: 44px; }
 .chipbtn { min-height: 44px; }
+
+/* pilot feedback after a lesson ----------------------------------------- */
+
+.fb {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 12px;
+  padding: 14px;
+  border-radius: 11px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.fb__q {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.fb__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.fb__opt,
+.fb__chip {
+  min-height: 46px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-2);
+  font: inherit;
+  font-size: 0.76rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.fb__opt[aria-pressed="true"],
+.fb__chip[aria-pressed="true"] {
+  border-color: var(--teal);
+  background: var(--teal-soft);
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.fb__more {
+  display: grid;
+  gap: 10px;
+}
+
+.fb__more[hidden] {
+  display: none;
+}
+
+.fb__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.fb__note {
+  display: grid;
+  gap: 6px;
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
+.fb__note textarea {
+  width: 100%;
+  min-height: 64px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line-strong);
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--ink);
+  background: #fff;
+  resize: vertical;
+}
+
+.fb .btn {
+  width: 100%;
+  min-height: 48px;
+  font-size: 0.82rem;
+}
+
+.fb__thanks {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--teal);
+}
