@@ -61,7 +61,7 @@
     document.getElementById("routeDone").textContent = done;
     document.getElementById("routeBar").style.width = Math.round((done / (total || 1)) * 100) + "%";
     var nextEl = document.getElementById("routeNext");
-    nextEl.textContent = next ? "следующий: встреча " + next.meet + ", «" + next.title + "»" : "все уроки маршрута пройдены";
+    nextEl.textContent = next ? "следующий: встреча " + next.meet + " — " + next.title : "все уроки маршрута пройдены";
   }
 
   var print = document.querySelector("[data-print]");

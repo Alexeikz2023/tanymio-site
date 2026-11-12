@@ -3589,3 +3589,38 @@ button.help-card { width: 100%; cursor: pointer; font: inherit; color: inherit; 
 .pilot-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
 .pilot-actions .btn { min-height: 48px; }
 .pilot-danger { color: #a12b20; border-color: #e7b3ad; }
+
+/* Pilot route page */
+.route-progress { margin-top: 22px; max-width: 520px; }
+.route-progress__bar { height: 12px; border-radius: 99px; background: rgba(0, 0, 0, .08); overflow: hidden; }
+.route-progress__bar i { display: block; height: 100%; border-radius: 99px; background: var(--teal, #0f6e5a); transition: width .3s ease; }
+.route-progress p { margin: 10px 0 0; font-size: 1rem; }
+.route-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.route-meet__head { margin: 0 0 8px; display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05rem; }
+.route-meet__head span { padding: 3px 10px; border-radius: 99px; background: var(--teal-soft, #e3f1ec); color: var(--teal, #0f6e5a); font-size: .82rem; }
+.route-lesson { display: grid; grid-template-columns: 40px 1fr auto; align-items: center; gap: 12px; padding: 14px; border: 1px solid var(--line, #ddd8cc); border-radius: 14px; background: #fff; }
+.route-lesson + .route-lesson { margin-top: 8px; }
+.route-lesson__mark { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--line-strong, #c9c3b6); display: grid; place-items: center; font-weight: 800; color: #fff; }
+.route-lesson--done .route-lesson__mark { background: var(--teal, #0f6e5a); border-color: var(--teal, #0f6e5a); }
+.route-lesson--started .route-lesson__mark { border-color: var(--teal, #0f6e5a); border-style: dashed; }
+.route-lesson__text b { display: block; font-size: 1.05rem; }
+.route-lesson__text small { display: block; margin-top: 2px; color: var(--muted, #6b6560); font-size: .88rem; }
+.route-lesson__go { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.route-lesson__go .btn { min-height: 48px; }
+.route-card { padding: 20px 22px; }
+.route-card + .route-card { margin-top: 14px; }
+.route-steps { margin: 10px 0 0; padding-left: 22px; display: grid; gap: 8px; line-height: 1.5; }
+.route-steps--dots { list-style: disc; }
+.route-code { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 6px; }
+.route-code input { min-height: 48px; padding: 0 14px; border: 1px solid var(--line-strong, #c9c3b6); border-radius: 10px; font: inherit; flex: 1 1 160px; }
+.route-code .btn { min-height: 48px; }
+@media (max-width: 640px) {
+  .route-lesson { grid-template-columns: 36px 1fr; }
+  .route-lesson__go { grid-column: 1 / -1; justify-content: stretch; }
+  .route-lesson__go .btn { flex: 1; }
+}
+@media print {
+  .site-header, header, footer, .page-hero, .route-print, .route-code, #main > section:not(#facilitator), .topbar, .a11y-bar { display: none !important; }
+  #facilitator { background: #fff !important; padding: 0 !important; }
+  .route-card { break-inside: avoid; border: 1px solid #999; box-shadow: none; }
+}
