@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="1efa45e919">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="dac7971a96">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -6687,6 +6687,94 @@
     </div>
     <div class="tr-actions"><span>Позвонить</span><button type="button" data-t="ts_block">Заблокировать и пожаловаться</button></div>
   </section>
+
+  <!-- ===== Return a train ticket ===== -->
+  <section class="screen lf lf--rail" data-screen="rr_trips">
+    <div class="lf-head"><div class="lf-head__top">Мои поездки</div><small>Учебный экран · билеты вымышленные</small></div>
+    <div class="lf-body">
+      <p class="lf-label">Предстоящие</p>
+      <button type="button" class="lf-row" data-t="rr_ticket"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Алматы-2 → Астана · поезд № 012<small>Чт, 27 ноября, 20:30 · вагон 5, место 13</small></span><b>18 400 ₸</b></button>
+      <p class="lf-label">Прошедшие</p>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Астана → Алматы-2 · поезд № 011<small>2 октября · поездка состоялась</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--rail" data-screen="rr_view">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Электронный билет</div><small>До отправления 6 дней</small></div>
+    <div class="lf-body">
+      <div class="tr-ticket">
+        <div><small>Поезд</small><b>№ 012 · Алматы-2 → Астана</b></div>
+        <div><small>Отправление</small><b>Чт, 27 ноября, 20:30</b></div>
+        <div class="tr-ticket__row"><span><small>Вагон</small><b>5</b></span><span><small>Место</small><b>13, нижнее</b></span><span><small>Цена</small><b>18 400 ₸</b></span></div>
+      </div>
+      <div class="bk-two">
+        <span class="lf-btn lf-btn--ghost bk-ghost">Скачать PDF</span>
+        <button type="button" class="lf-btn rr-return" data-t="rr_return">Вернуть билет</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--rail" data-screen="rr_terms">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Возврат билета</div><small>По правилам перевозчика · учебные суммы</small></div>
+    <div class="lf-body">
+      <div class="br-rc">
+        <dl>
+          <div><dt>Цена билета</dt><dd>18 400 ₸</dd></div>
+          <div><dt>Удержание за возврат</dt><dd>−1 840 ₸</dd></div>
+          <div><dt>Вернут на карту •• 4021</dt><dd>16 560 ₸</dd></div>
+        </dl>
+      </div>
+      <div class="lf-note">Чем ближе к отправлению, тем больше удерживают. Сдавать билет лучше сразу, как поменялись планы.</div>
+      <button type="button" class="lf-btn" data-t="rr_confirm">Вернуть 16 560 ₸</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--rail" data-screen="rr_done">
+    <div class="lf-head"><div class="lf-head__top">Билет возвращён</div><small>Место 13 снова в продаже</small></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Возврат оформлен</b><br>16 560 ₸ придут на карту •• 4021</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Срок зачисления<small>Обычно несколько рабочих дней — зависит от банка</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Квитанция о возврате<small>Сохранена в «Мои поездки»</small></span></div>
+    </div>
+  </section>
+
+  <!-- ===== Book a hotel in the app; "administrator" asks for prepayment ===== -->
+  <section class="screen lf lf--air" data-screen="th_list">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Гостиницы · Шымкент</div><small>12–14 декабря · 1 гость · учебный экран</small></div>
+    <div class="lf-body">
+      <button type="button" class="th-card" data-t="th_hotel"><span class="th-pic" aria-hidden="true">🏨</span><span><b>Гостиница «Самал»</b><small>★ 8,6 · 1,2 км от центра</small><em>Бесплатная отмена · оплата при заселении</em></span><b class="th-price">2 ночи · 36 000 ₸</b></button>
+      <div class="th-card"><span class="th-pic" aria-hidden="true">🏢</span><span><b>Отель «Орда»</b><small>★ 7,9 · 3 км от центра</small><em class="is-no">Без возврата денег</em></span><b class="th-price">2 ночи · 29 000 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--air" data-screen="th_card">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Гостиница «Самал»</div><small>Стандартный номер, 1 гость</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Бесплатная отмена<small>До 10 декабря, 23:59. Потом — стоимость 1 ночи</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Оплата при заселении<small>Сейчас ничего не списывается</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Телефон гостиницы<small>Указан в брони после оформления</small></span></div>
+      <div class="lf-card"><small>Итого за 2 ночи</small><b class="lf-big">36 000 ₸</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="th_book">Забронировать</button></div>
+  </section>
+
+  <section class="screen sx-msg" data-screen="th_wa">
+    <div class="sx-msghead">
+      <span class="iconbtn"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>
+      <span class="sx-av">?</span>
+      <div><b>+7 705 418 22 90</b><span>Нет в контактах</span></div>
+    </div>
+    <div class="sx-spam">
+      <svg aria-hidden="true"><use href="#i-alert"/></svg>
+      <span>Неизвестный номер. Не переходите по ссылкам.</span>
+      <button type="button" class="sx-spam__btn" data-t="th_block">Заблокировать</button>
+    </div>
+    <div class="sx-msgbody">
+      <div class="sx-day">Сегодня, 14:20</div>
+      <div class="sx-bubble">Здравствуйте! Администратор гостиницы «Самал». Чтобы бронь не отменилась, внесите предоплату 50% — 18 000 ₸ до 18:00 по ссылке: <span class="sx-link">samal-hotel-pay.site</span></div>
+    </div>
+    <div class="sx-msginput">Отвечать на это сообщение не нужно</div>
+  </section>
 </div>
 
                 <!-- Leisure module: concert ticket, YouTube without ad traps, free clubs nearby.
@@ -6800,6 +6888,108 @@
       <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Тренер Гульмира<small>+7 727 000 55 10 · учебный номер</small></span></div>
     </div>
     <div class="lf-foot"><button type="button" class="lf-btn" data-t="lc_call">Позвонить и записаться</button></div>
+  </section>
+
+  <!-- ===== Free month of an online cinema: turn off auto-renewal ===== -->
+  <section class="screen lv" data-screen="ls_offer">
+    <div class="lv-logo">КиноДом</div>
+    <div class="lv-hero" aria-hidden="true">🎬</div>
+    <b class="lv-title">Первый месяц — 0 ₸</b>
+    <p class="lv-small">Затем 2 990 ₸ в месяц. Подписка продлевается автоматически. Отменить можно в любой момент в профиле.</p>
+    <button type="button" class="lv-btn" data-t="ls_try">Попробовать бесплатно</button>
+    <span class="lv-link">Карта •• 4021 будет привязана</span>
+  </section>
+
+  <section class="screen lv" data-screen="ls_home">
+    <div class="lv-top"><span class="lv-logo">КиноДом</span><button type="button" class="lv-av" data-t="ls_profile" aria-label="Профиль">С</button></div>
+    <p class="lv-cap">Сейчас смотрят</p>
+    <div class="lv-row"><span>🐎<small>Степь</small></span><span>🎻<small>Концерт</small></span><span>🏔<small>Горы</small></span></div>
+    <p class="lv-cap">Советское кино</p>
+    <div class="lv-row"><span>🚂<small>Вокзал</small></span><span>❄️<small>Зима</small></span><span>🎭<small>Комедия</small></span></div>
+  </section>
+
+  <section class="screen lv" data-screen="ls_prof">
+    <div class="lv-top"><span class="lv-logo">Профиль</span></div>
+    <div class="lv-list">
+      <button type="button" class="lv-item" data-t="ls_sub"><b>Подписка</b><small>Пробный период до 12 декабря · потом 2 990 ₸/мес</small></button>
+      <span class="lv-item"><b>Способ оплаты</b><small>Карта •• 4021</small></span>
+      <span class="lv-item"><b>Устройства</b><small>Этот телефон</small></span>
+    </div>
+  </section>
+
+  <section class="screen lv" data-screen="ls_subs">
+    <div class="lv-top"><span class="lv-logo">Подписка</span></div>
+    <div class="lv-list">
+      <span class="lv-item"><b>Пробный месяц</b><small>Действует до 12 декабря</small></span>
+      <span class="lv-item"><b>Следующее списание</b><small>12 декабря · 2 990 ₸</small></span>
+    </div>
+    <button type="button" class="lv-btn lv-btn--ghost" data-t="ls_cancel">Отключить автопродление</button>
+  </section>
+
+  <section class="screen lv" data-screen="ls_confirm">
+    <div class="lv-top"><span class="lv-logo">Подписка</span></div>
+    <div class="lv-sheet">
+      <b>Отключить автопродление?</b>
+      <p>Смотреть можно до 12 декабря. Потом подписка закончится, деньги списываться не будут.</p>
+      <span class="lv-btn">Остаться с подпиской</span>
+      <button type="button" class="lv-btn lv-btn--ghost" data-t="ls_yes">Отключить</button>
+    </div>
+  </section>
+
+  <!-- ===== Audiobooks: speed and sleep timer ===== -->
+  <section class="screen la" data-screen="la_home">
+    <div class="la-top"><b>Аудиокниги</b><small>учебный экран</small></div>
+    <p class="la-cap">Бесплатно, классика</p>
+    <button type="button" class="la-book" data-t="la_book"><span class="la-cover" aria-hidden="true">📖</span><span><b>Абай. «Слова назидания»</b><small>Читает актёр · 3 ч 40 мин</small></span></button>
+    <div class="la-book"><span class="la-cover la-cover--b" aria-hidden="true">📗</span><span><b>Сказки народов Казахстана</b><small>4 ч 05 мин</small></span></div>
+  </section>
+
+  <section class="screen la" data-screen="la_player">
+    <div class="la-top"><b>Сейчас играет</b></div>
+    <span class="la-cover la-cover--big" aria-hidden="true">📖</span>
+    <b class="la-title">Абай. «Слова назидания»</b>
+    <small class="la-sub">Слово первое · 04:12 из 3:40:00</small>
+    <div class="la-bar"><i style="width:3%"></i></div>
+    <div class="la-ctrl"><span>−15</span><span class="la-play">❚❚</span><span>+15</span></div>
+    <div class="la-tools"><button type="button" data-t="la_speed">Скорость 1,0×</button><span>Таймер сна</span></div>
+  </section>
+
+  <section class="screen la" data-screen="la_speeds">
+    <div class="la-top"><b>Сейчас играет</b></div>
+    <span class="la-cover la-cover--big" aria-hidden="true">📖</span>
+    <div class="la-sheet">
+      <b>Скорость чтения</b>
+      <div class="la-opts"><button type="button" data-t="la_075">0,75× — медленнее</button><span class="is-on">1,0× — обычная</span><span>1,25×</span><span>1,5×</span></div>
+    </div>
+  </section>
+
+  <section class="screen la" data-screen="la_player2">
+    <div class="la-top"><b>Сейчас играет</b></div>
+    <span class="la-cover la-cover--big" aria-hidden="true">📖</span>
+    <b class="la-title">Абай. «Слова назидания»</b>
+    <small class="la-sub">Слово первое · 04:12 из 3:40:00</small>
+    <div class="la-bar"><i style="width:3%"></i></div>
+    <div class="la-ctrl"><span>−15</span><span class="la-play">❚❚</span><span>+15</span></div>
+    <div class="la-tools"><span class="is-on">Скорость 0,75×</span><button type="button" data-t="la_timer">Таймер сна</button></div>
+  </section>
+
+  <section class="screen la" data-screen="la_timers">
+    <div class="la-top"><b>Сейчас играет</b></div>
+    <span class="la-cover la-cover--big" aria-hidden="true">📖</span>
+    <div class="la-sheet">
+      <b>Выключить через</b>
+      <div class="la-opts"><span>15 минут</span><button type="button" data-t="la_30">30 минут</button><span>1 час</span><span>В конце главы</span></div>
+    </div>
+  </section>
+
+  <section class="screen la" data-screen="la_player3">
+    <div class="la-top"><b>Сейчас играет</b></div>
+    <span class="la-cover la-cover--big" aria-hidden="true">📖</span>
+    <b class="la-title">Абай. «Слова назидания»</b>
+    <small class="la-sub">Слово первое · 04:12 из 3:40:00</small>
+    <div class="la-bar"><i style="width:3%"></i></div>
+    <div class="la-ctrl"><span>−15</span><span class="la-play">❚❚</span><span>+15</span></div>
+    <div class="la-tools"><span class="is-on">Скорость 0,75×</span><span class="is-on">Сон через 30:00</span></div>
   </section>
 </div>
 
