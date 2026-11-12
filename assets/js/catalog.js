@@ -2,6 +2,15 @@
 (function () {
   "use strict";
 
+  /* 1 урок, 2 урока, 5 уроков; after "из N": 1 урока, otherwise уроков. */
+  function lessonWord(n, afterOf) {
+    var d = n % 10, h = n % 100;
+    if (afterOf) return d === 1 && h !== 11 ? "урока" : "уроков";
+    if (d === 1 && h !== 11) return "урок";
+    if (d >= 2 && d <= 4 && (h < 12 || h > 14)) return "урока";
+    return "уроков";
+  }
+
   var T = window.TANYMIO;
   var lessons = window.TANYMIO_LESSONS || [];
   var categories = window.TANYMIO_CATEGORIES || {};
@@ -279,8 +288,8 @@
         label.textContent = doneCount === 0
           ? "Начните с бесплатного урока — он займёт около восьми минут."
           : doneCount === lessons.length
-            ? "Все " + lessons.length + " уроков пройдены. Можно повторить любой в удобном темпе."
-            : "Пройдено " + doneCount + " из " + lessons.length + " уроков. Следующий шаг — за вами.";
+            ? "Все " + lessons.length + " " + lessonWord(lessons.length) + " пройдены. Можно повторить любой в удобном темпе."
+            : "Пройдено " + doneCount + " из " + lessons.length + " " + lessonWord(lessons.length, true) + ". Следующий шаг — за вами.";
       }
     }
 

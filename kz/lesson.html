@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="06499d1862">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="1efa45e919">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -4408,6 +4408,31 @@
       <div class="lf-note">По QR-коду на справке банк или соцзащита проверят, что она настоящая.</div>
     </div>
   </section>
+
+  <!-- ===== A call "from ENPF" about a pension recalculation ===== -->
+  <section class="screen" data-screen="me_call">
+    <div class="s-call">
+      <div class="s-call__label">Входящий звонок · 01:12</div>
+      <div class="s-call__num">+7 747 300 18 64</div>
+      <div class="s-call__av" aria-hidden="true"><svg><use href="#i-user"/></svg></div>
+      <h3 style="font-size:17px;margin:0;font-family:var(--font-sans);font-weight:600">«Специалист ЕНПФ»</h3>
+      <div class="sx-said sx-said--dark">«Вам положен перерасчёт пенсионных накоплений — 380 000 ₸. Чтобы получить, назовите код из SMS, он сейчас придёт».</div>
+      <div class="s-call__buttons">
+        <button type="button" class="callbtn callbtn--end" data-t="me_end" aria-label="Завершить вызов"><svg aria-hidden="true" style="transform:rotate(135deg)"><use href="#i-phone"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--enpf" data-screen="me_clean">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Выписка</div><small>Январь — октябрь 2026</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-plus"/></svg><span>Инвестиционный доход<small>Октябрь 2026</small></span><b>+18 340 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-plus"/></svg><span>Обязательные взносы<small>Сентябрь 2026 · от работодателя</small></span><b>+12 000 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-plus"/></svg><span>Инвестиционный доход<small>Сентябрь 2026</small></span><b>+17 905 ₸</b></div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Никаких «перерасчётов» нет</b><br>Списаний и изъятий тоже нет</span></div>
+      <button type="button" class="lf-row" data-t="me_1418"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Контакт-центр 1418<small>Сообщить о звонке мошенников</small></span></button>
+    </div>
+  </section>
 </div>
 
                 <!-- Health module: neutral training mock-ups in the spirit of eGov mobile, Damumed and pharmacy search.
@@ -4713,6 +4738,40 @@
       <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Служба поддержки<small>Номер — в этом приложении и на договоре</small></span></div>
       <button type="button" class="lf-btn" data-t="hi_done">Готово</button>
     </div>
+  </section>
+
+  <!-- ===== Two-tariff electricity meter ===== -->
+  <section class="screen lf lf--pay" data-screen="hm_utilities">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Коммунальные услуги</div><small>Лицевой счёт 0123 4567 · ул. Абая, 15, кв. 7</small></div>
+    <div class="lf-body">
+      <p class="lf-label">Счёт за ноябрь 2026</p>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Содержание дома</span><b>3 200 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Холодная вода<small>Показания переданы</small></span><b>1 140 ₸</b></div>
+      <button type="button" class="lf-row" data-t="hm_power"><svg aria-hidden="true"><use href="#i-star"/></svg><span>Электроэнергия<small>Передать показания · счётчик день/ночь</small></span><b>—</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>Газ</span><b>1 900 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--pay" data-screen="hm_meter">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Электроэнергия</div><small>Счётчик № 7 730 412 · двухтарифный</small></div>
+    <div class="lf-body">
+      <div class="hm-meter" aria-label="Табло счётчика">
+        <div><small>Т1 · день</small><b>04 512</b><i>,6</i></div>
+        <div><small>Т2 · ночь</small><b>01 877</b><i>,3</i></div>
+      </div>
+      <div class="lf-note">Счётчик показывает Т1 и Т2 по очереди, каждые несколько секунд. Передают только цифры до запятой.</div>
+      <div class="lf-card"><small>Прошлые показания (октябрь)</small><b style="display:block;font-size:13px;margin-top:3px">Т1: 04 401 · Т2: 01 832</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--pay" data-screen="hm_filled">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Электроэнергия</div><small>Счётчик № 7 730 412 · двухтарифный</small></div>
+    <div class="lf-body">
+      <div class="lf-input"><small>Т1 · день — новые показания</small>04 512</div>
+      <div class="lf-input"><small>Т2 · ночь — новые показания</small>01 877</div>
+      <div class="lf-card"><small>Расход за месяц</small><b style="display:block;font-size:13px;margin-top:3px">День: 111 кВт·ч · Ночь: 45 кВт·ч</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="hm_send">Передать показания</button></div>
   </section>
 </div>
 
@@ -5509,6 +5568,48 @@
     </div>
     <div class="fg-input"><span>Сообщение</span><i aria-hidden="true"><svg><use href="#i-paperclip"/></svg></i><i aria-hidden="true"><svg><use href="#i-mic"/></svg></i></div>
   </section>
+
+  <!-- ===== "Grandson" asks for a password: check by a phone call ===== -->
+  <section class="screen sx-msg" data-screen="fp_chat">
+    <div class="sx-msghead">
+      <span class="iconbtn"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>
+      <span class="sx-av" style="background:#e3e7f6;color:#4a5aa8">А</span>
+      <div><b>Алихан (внук)</b><span>в сети</span></div>
+      <button type="button" class="fp-callbtn" data-t="fp_call" aria-label="Позвонить Алихану"><svg aria-hidden="true"><use href="#i-phone"/></svg></button>
+    </div>
+    <div class="sx-msgbody">
+      <div class="sx-day">Сегодня, 19:02</div>
+      <div class="sx-bubble">Бабуль, привет! Давай я сам оплачу тебе коммуналку. Скинь пароль от банка и код, который придёт в SMS 🙏</div>
+      <div class="sx-bubble">Только быстрее, пока у меня перерыв</div>
+    </div>
+    <div class="fg-input"><span>Сообщение</span><i aria-hidden="true"><svg><use href="#i-paperclip"/></svg></i><i aria-hidden="true"><svg><use href="#i-mic"/></svg></i></div>
+  </section>
+
+  <section class="screen" data-screen="fp_talk">
+    <div class="s-call">
+      <div class="s-call__label">Исходящий звонок · 00:21</div>
+      <div class="s-call__num">Алихан (внук)</div>
+      <div class="s-call__av" aria-hidden="true"><svg><use href="#i-user"/></svg></div>
+      <h3 style="font-size:17px;margin:0;font-family:var(--font-sans);font-weight:600">Звоните по обычному номеру</h3>
+      <div class="sx-said sx-said--dark">«Бабуль, я ничего не писал! Я на работе. Ничего никому не отправляй».</div>
+      <div class="s-call__buttons">
+        <button type="button" class="callbtn callbtn--end" data-t="fp_end" aria-label="Завершить вызов"><svg aria-hidden="true" style="transform:rotate(135deg)"><use href="#i-phone"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen sx-msg" data-screen="fp_group">
+    <div class="sx-msghead">
+      <span class="iconbtn"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>
+      <span class="sx-av" style="background:#dcefe4;color:#2f7d4f">С</span>
+      <div><b>Семья</b><span>Группа · 6 участников</span></div>
+    </div>
+    <div class="sx-msgbody">
+      <div class="sx-day">Сегодня, 19:05</div>
+      <div class="sx-bubble">Айгерим: Всем привет! В субботу собираемся у мамы 🌷</div>
+    </div>
+    <div class="ps-send__bar br-bar"><span>Осторожно! С WhatsApp Алихана пишут мошенники и просят пароли и коды. Ничего не отправляйте</span><button type="button" data-t="fp_warn" aria-label="Отправить"><svg aria-hidden="true"><use href="#i-send"/></svg></button></div>
+  </section>
 </div>
 
                 <!-- Government services, deeper: property tax, PSC (TsON) booking, request status, fake e-signature messages.
@@ -5885,6 +5986,59 @@
     <div class="ps-send__head"><svg aria-hidden="true"><use href="#i-x"/></svg><span>Семья · 2 фото</span></div>
     <div class="pg-preview" aria-hidden="true"><span>🎂</span><span>👨‍👩‍👦</span></div>
     <div class="ps-send__bar"><span>С днём рождения, Алихан! Фото со вчерашнего праздника</span><button type="button" data-t="pg_send" aria-label="Отправить"><svg aria-hidden="true"><use href="#i-send"/></svg></button></div>
+  </section>
+
+  <!-- ===== Find an old photo: search and Favourites ===== -->
+  <section class="screen lf lf--find" data-screen="pf_grid">
+    <div class="lf-head"><div class="lf-head__top">Фото</div><small>учебный экран · 4 312 фото</small></div>
+    <div class="lf-body">
+      <button type="button" class="pf-search" data-t="pf_search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск: люди, места, вещи</button>
+      <p class="lf-label">Сегодня</p>
+      <div class="ph-grid ph-grid--photos"><span>🌷</span><span>🏡</span><span>🍲</span></div>
+      <p class="lf-label">Октябрь 2026</p>
+      <div class="ph-grid ph-grid--photos"><span>🍂</span><span>👶</span><span>🎂</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="pf_query">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Поиск</div></div>
+    <div class="lf-body">
+      <div class="pf-search is-focus"><svg aria-hidden="true"><use href="#i-search"/></svg>Что ищем?</div>
+      <p class="lf-label">Подсказки</p>
+      <div class="pf-chips"><span>🐶 Собаки</span><button type="button" data-t="pf_sea">🌊 Море</button><span>🌲 Лес</span><span>🎂 Праздники</span><span>📄 Документы</span><span>🗓 2019</span></div>
+      <div class="lf-note">Телефон сам узнаёт на фото море, собак, торты и даже текст. Можно написать слово или сказать в микрофон.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--find" data-screen="pf_results">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Море</div><small>Найдено 86 фото</small></div>
+    <div class="lf-body">
+      <p class="lf-label">Август 2019 · Капшагай</p>
+      <div class="ph-grid ph-grid--photos"><button type="button" class="pf-photo" data-t="pf_photo">👨‍👩‍👧</button><span>🌊</span><span>⛵</span></div>
+      <p class="lf-label">Июль 2016 · Иссык-Куль</p>
+      <div class="ph-grid ph-grid--photos"><span>🏖</span><span>🌅</span><span>🐚</span></div>
+    </div>
+  </section>
+
+  <section class="screen pf-view" data-screen="pf_view">
+    <div class="pf-view__top"><span>‹</span><small>14 августа 2019 · Капшагай</small></div>
+    <div class="pf-view__pic" aria-hidden="true">👨‍👩‍👧</div>
+    <div class="pf-view__bar">
+      <span><svg aria-hidden="true"><use href="#i-send"/></svg>Поделиться</span>
+      <button type="button" data-t="pf_fav" aria-label="В избранное"><svg aria-hidden="true"><use href="#i-star"/></svg>Избранное</button>
+      <span><svg aria-hidden="true"><use href="#i-x"/></svg>Удалить</span>
+    </div>
+  </section>
+
+  <section class="screen pf-view" data-screen="pf_faved">
+    <div class="pf-view__top"><span>‹</span><small>14 августа 2019 · Капшагай</small></div>
+    <div class="pf-view__pic" aria-hidden="true">👨‍👩‍👧</div>
+    <div class="pf-toast">Добавлено в «Избранное»</div>
+    <div class="pf-view__bar">
+      <span><svg aria-hidden="true"><use href="#i-send"/></svg>Поделиться</span>
+      <span class="is-on"><svg aria-hidden="true"><use href="#i-star"/></svg>В избранном</span>
+      <span><svg aria-hidden="true"><use href="#i-x"/></svg>Удалить</span>
+    </div>
   </section>
 </div>
 

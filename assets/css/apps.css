@@ -6265,3 +6265,33 @@ button.bd-prod { cursor: pointer; border-color: var(--lf); box-shadow: 0 0 0 1px
 .hi-sums small { font-size: 10.5px; font-weight: 400; color: #56627a; }
 .hi-sums button { cursor: pointer; }
 .hi-sums .is-on { border-color: var(--lf); box-shadow: 0 0 0 1px var(--lf) inset; color: var(--lf); }
+
+/* ===== Family: "grandson" asks for a password ===== */
+.fp-callbtn { margin-left: auto; width: 44px; height: 44px; flex: none; border: 0; border-radius: 50%; background: #25a35a; color: #fff; display: grid; place-items: center; cursor: pointer; }
+.fp-callbtn svg { width: 20px; height: 20px; }
+
+/* ===== Photo: search and Favourites ===== */
+.pf-search { flex: none; display: flex; align-items: center; gap: 8px; width: 100%; min-height: 44px; padding: 0 14px; border: 0; border-radius: 99px; background: #e8eef7; font: inherit; font-size: 12px; color: #56627a; text-align: left; cursor: pointer; }
+.pf-search svg { width: 16px; height: 16px; flex: none; }
+.pf-search.is-focus { background: #fff; box-shadow: 0 0 0 2px var(--lf) inset; cursor: default; }
+.pf-chips { display: flex; flex-wrap: wrap; gap: 6px; flex: none; }
+.pf-chips > * { min-height: 40px; padding: 0 12px; border: 1px solid #d5dde8; border-radius: 99px; background: #fff; font: inherit; font-size: 12px; color: #1b2633; display: inline-flex; align-items: center; }
+.pf-chips button { cursor: pointer; }
+.pf-photo { aspect-ratio: 1; border: 0; border-radius: 6px; background: linear-gradient(135deg, #f6d9b8, #c9e2f4); font-size: 26px; cursor: pointer; padding: 0; }
+.pf-view { background: #0f1318; color: #fff; }
+.pf-view__top { flex: none; display: flex; align-items: center; gap: 10px; padding: 12px 14px; font-size: 18px; }
+.pf-view__top small { font-size: 11px; color: #c4ccd6; }
+.pf-view__pic { flex: 1; margin: 6px 14px; border-radius: 10px; background: linear-gradient(160deg, #7cc0e8, #f3d9a8); display: grid; place-items: center; font-size: 90px; }
+.pf-view__bar { flex: none; display: flex; justify-content: space-around; padding: 10px 6px 16px; }
+.pf-view__bar > * { display: grid; justify-items: center; gap: 4px; min-width: 70px; min-height: 48px; border: 0; background: none; font: inherit; font-size: 10.5px; color: #e4ebf2; }
+.pf-view__bar svg { width: 20px; height: 20px; }
+.pf-view__bar button { cursor: pointer; }
+.pf-view__bar .is-on { color: #f6c445; font-weight: 700; }
+.pf-toast { flex: none; align-self: center; margin-bottom: 6px; padding: 8px 14px; border-radius: 99px; background: #2c3540; font-size: 11.5px; }
+
+/* ===== Home: two-tariff electricity meter ===== */
+.hm-meter { flex: none; display: grid; gap: 8px; padding: 12px; border-radius: 12px; background: #23292f; }
+.hm-meter > div { display: flex; align-items: baseline; gap: 6px; padding: 8px 10px; border-radius: 8px; background: #b9d3a3; color: #1d2a16; font-family: ui-monospace, Consolas, monospace; }
+.hm-meter small { width: 64px; flex: none; font-family: var(--font-sans, inherit); font-size: 10px; color: #3c4d30; }
+.hm-meter b { font-size: 22px; letter-spacing: .06em; }
+.hm-meter i { font-style: normal; font-size: 18px; color: #b3261c; }
