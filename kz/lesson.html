@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="5cb80d7a87">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="5fb17a6cb4">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -2421,6 +2421,77 @@
       <div class="lf-row"><svg aria-hidden="true"><use href="#i-transfer"/></svg><span>Переводы<small>В день</small></span><b>1 000 000 ₸</b></div>
       <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Снятие наличных<small>В день</small></span><b>300 000 ₸</b></div>
     </div>
+  </section>
+
+  <!-- ===== Find a payment and send the receipt ===== -->
+  <section class="screen lf lf--bank" data-screen="br_home">
+    <div class="lf-head"><div class="lf-head__top">Мой банк</div><small>Учебный экран · деньги не спишутся</small></div>
+    <div class="lf-body">
+      <div class="bk-card"><span class="bk-card__name">Карта •••• 3051</span><b>84 500 ₸</b><small>Дебетовая · Visa</small></div>
+      <div class="bk-tiles"><span><svg aria-hidden="true"><use href="#i-transfer"/></svg>Переводы</span><span><svg aria-hidden="true"><use href="#i-home"/></svg>Платежи</span><button type="button" data-t="br_history"><svg aria-hidden="true"><use href="#i-history"/></svg>История</button></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="br_history">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>История</div><small>Все операции по карте •••• 3051</small></div>
+    <div class="lf-body">
+      <div class="br-tools"><span><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск</span><span><svg aria-hidden="true"><use href="#i-download"/></svg>Выписка</span></div>
+      <div class="bk-label">30 октября</div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-transfer"/></svg><span>Аслан К.<small>Перевод</small></span><b>−5 000 ₸</b></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Продукты у дома<small>Покупка</small></span><b>−3 270 ₸</b></div>
+      <div class="bk-label">28 октября</div>
+      <button type="button" class="lf-row" data-t="br_op"><svg aria-hidden="true"><use href="#i-home"/></svg><span>КСК «Береке»<small>Отопление · коммунальные</small></span><b>−7 840 ₸</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Мобильная связь<small>Автоплатёж</small></span><b>−2 000 ₸</b></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="br_receipt">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Чек</div><small>Платёж от 28 октября</small></div>
+    <div class="lf-body">
+      <div class="br-rc">
+        <div class="br-rc__ok"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><b>Исполнен</b></div>
+        <div class="br-rc__sum">7 840 ₸</div>
+        <dl>
+          <div><dt>Получатель</dt><dd>КСК «Береке»</dd></div>
+          <div><dt>Услуга</dt><dd>Отопление, октябрь</dd></div>
+          <div><dt>Лицевой счёт</dt><dd>12-045</dd></div>
+          <div><dt>Дата и время</dt><dd>28.10.2026, 14:12</dd></div>
+          <div><dt>Номер операции</dt><dd>7731 0042 5518</dd></div>
+          <div><dt>Карта</dt><dd>•••• 3051</dd></div>
+        </dl>
+      </div>
+      <div class="bk-two">
+        <span class="lf-btn lf-btn--ghost bk-ghost">Повторить</span>
+        <button type="button" class="lf-btn" data-t="br_share">Поделиться чеком</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank ps-dim" data-screen="br_share">
+    <div class="ps-sheet">
+      <div class="ps-sheet__head"><span class="br-pdf" aria-hidden="true">PDF</span><span><b>Чек_7840.pdf</b><small>Чек об оплате · 1 страница</small></span></div>
+      <div class="ps-sheet__cap">Отправить через</div>
+      <div class="ps-apps">
+        <button type="button" data-t="br_wa"><i style="background:#25a35a"><svg aria-hidden="true"><use href="#i-message"/></svg></i>WhatsApp</button>
+        <span><i style="background:#2f8fd8"><svg aria-hidden="true"><use href="#i-send"/></svg></i>Telegram</span>
+        <span><i style="background:#d8577a"><svg aria-hidden="true"><use href="#i-paperclip"/></svg></i>Почта</span>
+        <span><i style="background:#6b747b"><svg aria-hidden="true"><use href="#i-download"/></svg></i>Сохранить</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen sx-msg" data-screen="br_chat">
+    <div class="sx-msghead">
+      <span class="iconbtn"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>
+      <span class="sx-av" style="background:#dcefe4;color:#2f7d4f">Б</span>
+      <div><b>Председатель КСК «Береке»</b><span>WhatsApp</span></div>
+    </div>
+    <div class="sx-msgbody">
+      <div class="sx-day">Сегодня, 11:30</div>
+      <div class="sx-bubble">Добрый день! По кв. 45 нет оплаты за отопление за октябрь. Пришлите, пожалуйста, чек.</div>
+    </div>
+    <div class="br-attach"><span class="br-pdf" aria-hidden="true">PDF</span><span><b>Чек_7840.pdf</b><small>Отопление · 7 840 ₸ · 28.10.2026</small></span></div>
+    <div class="ps-send__bar br-bar"><span>Оплатила 28 октября, чек прилагаю</span><button type="button" data-t="br_send" aria-label="Отправить"><svg aria-hidden="true"><use href="#i-send"/></svg></button></div>
   </section>
 </div>
 
