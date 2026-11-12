@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=20261110e">
   <link rel="stylesheet" href="assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="5fb17a6cb4">
+<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="4e05165e69">
   <a class="skip" href="#main">Перейти к содержанию</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -2496,6 +2496,70 @@
     </div>
     <div class="br-attach"><span class="br-pdf" aria-hidden="true">PDF</span><span><b>Чек_7840.pdf</b><small>Отопление · 7 840 ₸ · 28.10.2026</small></span></div>
     <div class="ps-send__bar br-bar"><span>Оплатила 28 октября, чек прилагаю</span><button type="button" data-t="br_send" aria-label="Отправить"><svg aria-hidden="true"><use href="#i-send"/></svg></button></div>
+  </section>
+
+  <!-- ===== Open a deposit (rates are training numbers, not an offer) ===== -->
+  <section class="screen lf lf--bank" data-screen="bd_home">
+    <div class="lf-head"><div class="lf-head__top">Мой банк</div><small>Учебный экран · деньги не спишутся</small></div>
+    <div class="lf-body">
+      <div class="bk-card"><span class="bk-card__name">Карта •••• 3051</span><b>384 500 ₸</b><small>Дебетовая · Visa</small></div>
+      <div class="bk-tiles"><span><svg aria-hidden="true"><use href="#i-transfer"/></svg>Переводы</span><span><svg aria-hidden="true"><use href="#i-home"/></svg>Платежи</span><span><svg aria-hidden="true"><use href="#i-history"/></svg>История</span></div>
+      <button type="button" class="lf-row" data-t="bd_open"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Депозиты<small>Открыть вклад и получать проценты</small></span></button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bd_list">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Открыть депозит</div><small>Ставки учебные, не предложение банка</small></div>
+    <div class="lf-body">
+      <div class="bd-prod">
+        <div class="bd-prod__top"><b>Сберегательный</b><span>14% годовых</span></div>
+        <ul><li>Ставка выше</li><li class="is-no">Снять деньги до конца срока — потерять проценты</li><li class="is-no">Пополнять нельзя</li></ul>
+      </div>
+      <button type="button" class="bd-prod" data-t="bd_flex">
+        <span class="bd-prod__top"><b>Накопительный</b><span>12% годовых</span></span>
+        <span class="bd-ul"><i>Можно пополнять в любой день</i><i>Можно снять часть денег без потери процентов</i><i class="is-mid">Ставка чуть ниже</i></span>
+      </button>
+      <div class="lf-note">Вклады в банках Казахстана гарантирует государственный фонд — КФГД, в пределах лимита. Лимит смотрите на сайте kdif.kz.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bd_form">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Накопительный</div><small>12% годовых · учебная ставка</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Сумма вклада</small><b class="lf-big">300 000 ₸</b><small>С карты •••• 3051</small></div>
+      <div class="bk-label">Срок</div>
+      <div class="bd-terms"><span>3 месяца</span><span>6 месяцев</span><button type="button" data-t="bd_12">12 месяцев</button></div>
+      <span class="lf-btn bk-off">Далее</span>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bd_form2">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Накопительный</div><small>12% годовых · учебная ставка</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Сумма вклада</small><b class="lf-big">300 000 ₸</b><small>С карты •••• 3051</small></div>
+      <div class="bk-label">Срок</div>
+      <div class="bd-terms"><span>3 месяца</span><span>6 месяцев</span><span class="is-on">12 месяцев</span></div>
+      <div class="lf-card bd-income"><small>Доход за 12 месяцев, примерно</small><b class="lf-big">≈ 36 000 ₸</b><small>Через год на вкладе ≈ 336 000 ₸</small></div>
+      <button type="button" class="lf-btn" data-t="bd_next">Далее</button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank" data-screen="bd_confirm">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Проверьте вклад</div></div>
+    <div class="lf-body">
+      <div class="br-rc">
+        <dl>
+          <div><dt>Вклад</dt><dd>Накопительный</dd></div>
+          <div><dt>Сумма</dt><dd>300 000 ₸</dd></div>
+          <div><dt>Срок</dt><dd>12 месяцев</dd></div>
+          <div><dt>Ставка</dt><dd>12% годовых</dd></div>
+          <div><dt>Пополнение и снятие</dt><dd>можно</dd></div>
+          <div><dt>Списать с карты</dt><dd>•••• 3051</dd></div>
+        </dl>
+      </div>
+      <div class="lf-note">Депозит открывают только в своём приложении или в отделении. Сотрудник банка никогда не просит перевести вклад «на безопасный счёт».</div>
+      <button type="button" class="lf-btn" data-t="bd_ok">Открыть депозит</button>
+    </div>
   </section>
 </div>
 
@@ -5416,6 +5480,65 @@
       <div class="lf-row"><svg aria-hidden="true"><use href="#i-globe"/></svg><span>Продлить ЭЦП<small>Только на egov.kz, pki.gov.kz или в ЦОНе</small></span></div>
       <div class="lf-note">eGov не присылает ссылки на продление с обычных номеров, а сотрудники ЦОНа не просят коды из SMS.</div>
     </div>
+  </section>
+
+  <!-- ===== Traffic fines: check and pay in eGov, not by a link from SMS ===== -->
+  <section class="screen sx-msg" data-screen="gf_sms">
+    <div class="sx-msghead">
+      <span class="iconbtn"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>
+      <span class="sx-av">S</span>
+      <div><b>SHTRAF-KZ</b><span>Нет в контактах</span></div>
+    </div>
+    <div class="sx-msgbody">
+      <div class="sx-day">Сегодня, 08:47</div>
+      <div class="sx-bubble">На ваш автомобиль выписан штраф ПДД 14&nbsp;760&nbsp;₸. Оплатите сегодня со скидкой 50%: <span class="sx-link">shtraf-kz.online/pay</span> Завтра скидка сгорит.</div>
+    </div>
+    <div class="sx-msginput">Отвечать на это сообщение не нужно</div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gf_home">
+    <div class="lf-head"><div class="lf-head__top">eGov mobile</div><small>Здравствуйте, Сауле · вы открыли приложение сами</small>
+      <div class="lf-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск услуг</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Налоги и финансы<small>Задолженность, уведомления, оплата</small></span></div>
+      <button type="button" class="lf-row" data-t="gf_fines"><svg aria-hidden="true"><use href="#i-car"/></svg><span>Штрафы<small>Проверить и оплатить по ИИН</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Мои заявки</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gf_list">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Штрафы</div><small>По ИИН и по вашему автомобилю · учебно</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row is-warn" data-t="gf_fine"><svg aria-hidden="true"><use href="#i-car"/></svg><span>Превышение скорости<small>Камера · 10 ноября · 123 ABC 02</small><em class="gf-tag">Скидка 50% до 19 ноября</em></span><b>14 760 ₸</b></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-check"/></svg><span>Парковка в неположенном месте<small>Оплачен 3 сентября</small></span><b>0 ₸</b></div>
+      <div class="lf-note">Здесь видны все настоящие штрафы. Если в eGov штрафа нет, а в SMS он есть — SMS ложная.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gf_fine">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Штраф</div><small>Постановление № 0000 1234 5678 · учебно</small></div>
+    <div class="lf-body">
+      <div class="lf-card">
+        <dl class="gf-kv">
+          <div><dt>Нарушение</dt><dd>Скорость 78 км/ч при 60</dd></div>
+          <div><dt>Где и когда</dt><dd>пр. Абая · 10 ноября, 18:05</dd></div>
+          <div><dt>Автомобиль</dt><dd>123 ABC 02</dd></div>
+          <div><dt>Полная сумма</dt><dd>14 760 ₸</dd></div>
+        </dl>
+      </div>
+      <div class="lf-card gf-sale"><small>Со скидкой 50% — до 19 ноября</small><b class="lf-big">7 380 ₸</b><small>Скидка действует, если оплатить до этой даты и не обжаловать штраф</small></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="gf_pay">Оплатить со скидкой</button></div>
+  </section>
+
+  <section class="screen lf lf--egov" data-screen="gf_check">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Оплата штрафа</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Получатель</small><b style="display:block;font-size:12.5px;margin-top:3px">Штраф ПДД · постановление № 0000 1234 5678</b></div>
+      <div class="lf-card"><small>Списать с карты</small><b style="display:block;font-size:12.5px;margin-top:3px">Мой банк · •• 4021</b></div>
+      <div class="lf-card"><small>Сумма со скидкой</small><b class="lf-big">7 380 ₸</b></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="gf_confirm">Оплатить 7 380 ₸</button></div>
   </section>
 </div>
 

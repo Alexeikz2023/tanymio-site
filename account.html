@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=20261110e">
   
 </head>
-<body data-page="account" class="" data-audio-base="assets/audio/" data-audio-ver="5fb17a6cb4">
+<body data-page="account" class="" data-audio-base="assets/audio/" data-audio-ver="4e05165e69">
   <a class="skip" href="#main">Перейти к содержанию</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -326,6 +326,21 @@
         <p class="small muted" id="payNote" role="status" style="margin-top:12px;min-height:1.4em"></p>
         <p class="small muted">Это демонстрация. Платёжный провайдер, оферта и возвраты появятся до платного запуска.</p>
       </div>
+
+      <div class="card pilot-box" id="pilotExport">
+        <p class="eyebrow">Для пилота</p>
+        <h2 class="h2">Выгрузка прогресса и отзывов</h2>
+        <p class="muted">Для ведущего пилота. Таблица с уроками этого устройства: где человек ошибался, сколько брал подсказок, сколько минут шёл каждый урок и что ответил после урока. Работает и для казахской версии.</p>
+        <label class="acct-field"><span>Код участника, например P03</span><input id="pilotCode" type="text" maxlength="20" autocomplete="off" placeholder="P01"></label>
+        <p class="small muted" id="pilotSummary" style="margin-top:10px">Пройдено уроков: 0</p>
+        <div class="pilot-actions">
+          <button type="button" class="btn btn--primary" id="pilotDownload">Скачать таблицу (CSV)</button>
+          <button type="button" class="btn btn--ghost" id="pilotCopy">Скопировать</button>
+          <button type="button" class="btn btn--ghost pilot-danger" id="pilotReset">Новый участник: стереть данные</button>
+        </div>
+        <p class="small muted" id="pilotStatus" role="status" style="margin-top:12px;min-height:1.4em"></p>
+        <p class="small muted">Имя и телефон в таблицу не попадают — только код участника. Данные никуда не отправляются, пока вы сами не скачаете файл.</p>
+      </div>
     </div>
   </section>
 </main>
@@ -398,5 +413,6 @@
 <script src="assets/js/bank-configs.js?v=20261110e"></script>
 <script src="assets/js/bank-lessons.js?v=20261110e"></script>
 <script src="assets/js/account.js?v=20261110e"></script>
+<script src="assets/js/pilot-export.js?v=1378dbc086"></script>
 </body>
 </html>
