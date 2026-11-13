@@ -7,6 +7,7 @@
   var PROGRESS = "tanymio.progress.v1";
   var FEEDBACK = "tanymio.feedback.v1";
   var PILOT = "tanymio.pilot.v1";
+  var SURVEY = "tanymio.survey.v1";
 
   var EASE = { easy: "легко", ok: "нормально", hard: "трудно" };
   var HARD = { button: "не нашёл кнопку", text: "непонятный текст", small: "мелкие буквы", voice: "голос", none: "ничего не мешало" };
@@ -86,6 +87,15 @@
         localTime(p.completedAt || p.updatedAt),
         localTime(f.at)
       ];
+    }).concat(surveyRows(pilot.code || ""));
+  }
+
+  /* Final survey answers: one row per question, the answer in the "Комментарий" column. */
+  function surveyRows(code) {
+    var sv = read(SURVEY, null);
+    if (!sv || !Array.isArray(sv.rows)) return [];
+    return sv.rows.map(function (r) {
+      return [code, "анкета:" + r.key, r.q, "итоговая анкета", "ответ", "", "", "", "", "", "", "", "", "", r.a, sv.lang || "", "", localTime(sv.at)];
     });
   }
 
@@ -105,9 +115,12 @@
 
   function render() {
     var r = rows();
-    var done = r.filter(function (x) { return x[4] === "пройден"; }).length;
-    var fb = r.filter(function (x) { return x[12]; }).length;
-    summary.textContent = "Пройдено уроков: " + done + " · начато: " + (r.length - done) + " · отзывов: " + fb;
+    var lessonsOnly = r.filter(function (x) { return x[4] !== "ответ"; });
+    var done = lessonsOnly.filter(function (x) { return x[4] === "пройден"; }).length;
+    var fb = lessonsOnly.filter(function (x) { return x[12]; }).length;
+    var sv = read(SURVEY, null);
+    summary.textContent = "Пройдено уроков: " + done + " · начато: " + (lessonsOnly.length - done) + " · отзывов: " + fb +
+      " · итоговая анкета: " + (sv && sv.at ? "заполнена" : "нет");
     code.value = read(PILOT, {}).code || "";
   }
 
@@ -141,11 +154,12 @@
   });
 
   document.getElementById("pilotReset").addEventListener("click", function () {
-    if (!window.confirm("Стереть прогресс и отзывы на этом устройстве? Сначала скачайте файл — восстановить данные будет нельзя.")) return;
+    if (!window.confirm("Стереть прогресс, отзывы и анкету на этом устройстве? Сначала скачайте файл — восстановить данные будет нельзя.")) return;
     try {
       localStorage.removeItem(PROGRESS);
       localStorage.removeItem(FEEDBACK);
       localStorage.removeItem(PILOT);
+      localStorage.removeItem(SURVEY);
     } catch (err) { /* blocked */ }
     status.textContent = "Данные стёрты. Можно начинать с новым участником.";
     render();
