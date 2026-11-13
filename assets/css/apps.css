@@ -6360,3 +6360,92 @@ button.la-book { cursor: pointer; border-color: #b8742a; box-shadow: 0 0 0 1px #
 .la-opts > * { display: flex; align-items: center; min-height: 46px; padding: 0 14px; border: 1px solid #e6dccd; border-radius: 12px; background: #fff; font: inherit; font-size: 13px; color: #2a2118; text-align: left; }
 .la-opts button { cursor: pointer; border-color: #b8742a; box-shadow: 0 0 0 1px #b8742a inset; }
 .la-opts .is-on { background: #fbefe0; font-weight: 700; }
+
+/* ===== Phone basics: install an app (Play Market, App Store) ===== */
+.pi-playicon { background: #fff !important; color: #01875f; }
+.pi { background: #fff; color: #1f1f1f; padding: 10px 12px; gap: 10px; }
+.pi-top { flex: none; display: flex; align-items: center; gap: 8px; min-height: 44px; }
+.pi-back { font-size: 22px; color: #444; padding: 0 6px; }
+.pi-search { flex: 1; display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 16px; border: 0; border-radius: 99px; background: #eef1f4; font: inherit; font-size: 13px; color: #555; text-align: left; cursor: pointer; }
+.pi-search.is-q { color: #1f1f1f; font-weight: 600; cursor: default; }
+.pi-search svg { width: 18px; height: 18px; flex: none; }
+.pi-tabs { display: flex; gap: 16px; font-size: 12px; color: #666; border-bottom: 1px solid #e6e8eb; padding-bottom: 8px; }
+.pi-tabs .is-on { color: #01875f; font-weight: 700; }
+.pi-cap { margin: 4px 0 0; font-size: 13px; font-weight: 700; }
+.pi-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.pi-cards span { display: grid; justify-items: center; gap: 6px; padding: 14px 6px; border-radius: 14px; background: #f3f6f4; font-size: 11px; }
+.pi-cards i { font-style: normal; font-size: 24px; }
+.pi-note { margin-top: auto; font-size: 10px; color: #8a8f96; text-align: center; }
+.pi-list { display: grid; gap: 6px; }
+.pi-row { display: flex; align-items: center; gap: 12px; width: 100%; padding: 8px; border: 0; border-radius: 14px; background: #fff; font: inherit; text-align: left; color: #1f1f1f; }
+button.pi-row { cursor: pointer; }
+.pi-row b { display: block; font-size: 13px; }
+.pi-row small { display: block; font-size: 11px; color: #5f6368; }
+.pi-row em { display: inline-block; margin-top: 3px; padding: 1px 6px; border-radius: 4px; background: #fef3c7; font-style: normal; font-size: 9.5px; font-weight: 700; color: #8a5a00; }
+.pi-ico { width: 48px; height: 48px; flex: none; border-radius: 12px; display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 18px; }
+.pi-ico--kaspi { background: #f14635; }
+.pi-ico--fake { background: linear-gradient(135deg, #f7b500, #e3392b); font-size: 14px; }
+.pi-ico--other { background: #3d6fb8; }
+.pi-ico--big { width: 72px; height: 72px; border-radius: 18px; font-size: 28px; }
+.pi-head { display: flex; align-items: center; gap: 14px; }
+.pi-head b { display: block; font-size: 16px; line-height: 1.25; }
+.pi-dev { display: flex; align-items: center; gap: 5px; margin-top: 3px; font-size: 12px; font-weight: 700; color: #01875f; }
+.pi-dev i { display: grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; background: #01875f; color: #fff; font-style: normal; font-size: 10px; }
+.pi-stats { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; border-top: 1px solid #e6e8eb; border-bottom: 1px solid #e6e8eb; padding: 10px 0; }
+.pi-stats b { display: block; font-size: 13px; }
+.pi-stats small { font-size: 10px; color: #5f6368; }
+.pi-install, .pi-btn { display: grid; place-items: center; min-height: 48px; border: 0; border-radius: 99px; background: #01875f; color: #fff; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.pi-btn--ghost { background: #fff; color: #01875f; box-shadow: 0 0 0 1px #c6d6cf inset; cursor: default; }
+.pi-two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.pi-about { margin: 0; font-size: 12px; line-height: 1.45; color: #444; }
+.pi-sms { padding: 10px 12px; border-radius: 14px; background: #fff4e5; border: 1px solid #f3d3a6; font-size: 11.5px; line-height: 1.4; color: #4a3410; }
+.pi-sms b { display: block; font-size: 10.5px; color: #8a5a00; margin-bottom: 2px; }
+
+.ai { background: linear-gradient(170deg, #7aa6d8, #c7b3e6); color: #fff; padding: 22px 14px; }
+.ai-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px 8px; }
+.ai-ic { display: grid; justify-items: center; gap: 5px; border: 0; background: none; padding: 0; font: inherit; font-size: 10px; color: #fff; min-height: 44px; }
+button.ai-ic { cursor: pointer; }
+.ai-ic i { width: 54px; height: 54px; border-radius: 14px; display: grid; place-items: center; color: #fff; font-style: normal; }
+.ai-ic i svg { width: 26px; height: 26px; }
+.ai-storeicon { background: linear-gradient(180deg, #1ec4fd, #1a6dfa); font-size: 28px; font-weight: 800; }
+.ai--store { background: #fff; color: #111; padding: 14px; gap: 10px; }
+.ai-title { font-size: 28px; font-weight: 800; }
+.ai-title small { display: block; font-size: 10px; font-weight: 400; color: #8e8e93; }
+.ai-hero { height: 180px; border-radius: 18px; background: linear-gradient(135deg, #1a6dfa, #a855f7); display: grid; place-items: center; font-size: 64px; }
+.ai-small { margin: 0; font-size: 12px; line-height: 1.45; color: #555; }
+.ai-tabs { margin-top: auto; display: flex; justify-content: space-around; border-top: 1px solid #e5e5ea; padding-top: 6px; }
+.ai-tabs > * { display: grid; justify-items: center; gap: 2px; min-width: 60px; min-height: 44px; border: 0; background: none; font: inherit; font-size: 10px; color: #8e8e93; }
+.ai-tabs svg { width: 20px; height: 20px; }
+.ai-tabs .is-on { color: #0a84ff; }
+.ai-tabs button { cursor: pointer; color: #0a84ff; font-weight: 700; box-shadow: 0 0 0 2px #0a84ff inset; border-radius: 10px; }
+.ai-q { display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 10px; background: #eeeef0; font-size: 13px; font-weight: 600; }
+.ai-q svg { width: 16px; height: 16px; color: #8e8e93; }
+.ai-list { display: grid; gap: 6px; }
+.ai-row { display: grid; grid-template-columns: 52px 1fr auto; align-items: center; gap: 10px; width: 100%; padding: 8px; border: 0; border-radius: 14px; background: #fff; font: inherit; text-align: left; color: #111; }
+button.ai-row { cursor: pointer; }
+.ai-row b { display: block; font-size: 13px; }
+.ai-row small { display: block; font-size: 11px; color: #8e8e93; }
+.ai-get { padding: 6px 12px; border-radius: 99px; background: #eef3ff; color: #0a84ff; font-size: 11px; font-weight: 700; }
+.ai-appico { width: 52px; height: 52px; border-radius: 13px; display: grid; place-items: center; color: #fff; font-weight: 800; }
+.ai-appico svg { width: 28px; height: 28px; }
+.ai-appico--wa { background: #25d366; }
+.ai-appico--fake { background: linear-gradient(135deg, #4ade80, #0ea5e9); font-size: 15px; }
+.ai-appico--other { background: #128c7e; font-size: 20px; }
+.ai-appico--big { width: 96px; height: 96px; border-radius: 22px; }
+.ai-appico--big svg { width: 48px; height: 48px; }
+.ai-head { display: flex; gap: 14px; align-items: flex-start; }
+.ai-head b { display: block; font-size: 18px; }
+.ai-head small { display: block; font-size: 12px; color: #8e8e93; margin: 2px 0 10px; }
+.ai-head--sm b { font-size: 14px; }
+.ai-head--sm small { margin-bottom: 0; }
+.ai-getbtn { min-height: 40px; padding: 0 22px; border: 0; border-radius: 99px; background: #0a84ff; color: #fff; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.ai-getbtn--wide { width: 100%; min-height: 48px; }
+.ai-stats { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; border-top: 1px solid #e5e5ea; border-bottom: 1px solid #e5e5ea; padding: 10px 0; }
+.ai-stats b { display: block; font-size: 15px; color: #555; }
+.ai-stats small { font-size: 10px; color: #8e8e93; }
+.ai--dim { background: #8e8e93; }
+.ai-sheet { margin-top: auto; display: grid; gap: 12px; padding: 14px; border-radius: 18px; background: #fff; }
+.ai-sheet__top { display: flex; justify-content: space-between; font-size: 13px; }
+.ai-sheet__top span { color: #0a84ff; }
+.ai-sheet__row { display: flex; justify-content: space-between; font-size: 12px; border-top: 1px solid #e5e5ea; padding-top: 8px; }
+.ai-sheet__row small { color: #8e8e93; }

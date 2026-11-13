@@ -3653,3 +3653,27 @@ button.help-card { width: 100%; cursor: pointer; font: inherit; color: inherit; 
   .sv-opts--nps { grid-template-columns: repeat(6, 1fr); }
   .sv-task .sv-opts { display: grid; grid-template-columns: 1fr; }
 }
+
+/* Official apps page */
+.apps-rules { padding: 20px 22px; margin-bottom: 8px; }
+.apps-rules ol { margin: 10px 0 0; padding-left: 22px; display: grid; gap: 6px; line-height: 1.5; }
+.apps-rules__h { margin: 16px 0 8px; font-weight: 700; }
+.apps-group { margin: 34px 0 12px; }
+.apps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+.apps-card { display: flex; gap: 14px; padding: 16px; border: 1px solid var(--line, #ddd8cc); border-radius: 16px; background: #fff; }
+.apps-ico { width: 56px; height: 56px; flex: none; border-radius: 14px; display: grid; place-items: center; color: #fff; font-size: 24px; font-weight: 800; }
+.apps-body { flex: 1; min-width: 0; display: grid; gap: 6px; }
+.apps-body > b { font-size: 1.08rem; }
+.apps-body > small { color: var(--muted, #6b6560); font-size: .88rem; }
+.apps-body dl { margin: 2px 0 0; display: grid; gap: 2px; font-size: .84rem; }
+.apps-body dl div { display: flex; gap: 6px; flex-wrap: wrap; }
+.apps-body dt { color: var(--muted, #6b6560); }
+.apps-body dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+.apps-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.apps-links .btn { min-height: 46px; }
+.apps-checked { margin-top: 26px; }
+@media (max-width: 420px) {
+  .apps-grid { grid-template-columns: 1fr; }
+  .apps-ico { width: 46px; height: 46px; font-size: 20px; }
+  .apps-links .btn { flex: 1; }
+}
