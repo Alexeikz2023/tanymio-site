@@ -1,7 +1,7 @@
 {
   "provider": "edge-neural (prototype)",
   "rate": "-5%",
-  "generatedAt": "2026-11-22T19:42:35",
+  "generatedAt": "2026-11-22T23:37:17",
   "languages": {
     "ru": {
       "female": {
@@ -141,6 +141,12 @@
       "phone-battery",
       "telegram-video",
       "gov-qr",
+      "phone-keyboard",
+      "phone-update",
+      "safety-job",
+      "health-recipe",
+      "gov-address",
+      "photo-restore",
       "bank-halyk",
       "bank-bcc",
       "bank-freedom",
@@ -314,6 +320,12 @@
       "phone-battery",
       "telegram-video",
       "gov-qr",
+      "phone-keyboard",
+      "phone-update",
+      "safety-job",
+      "health-recipe",
+      "gov-address",
+      "photo-restore",
       "taxi-indrive",
       "taxi-greensm",
       "greensm-lang",
