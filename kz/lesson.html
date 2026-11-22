@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="801a608cde">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="1aedea8d4b">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -3322,6 +3322,212 @@
     </div>
   </section>
 </div>
+                <!-- Kaspi.kz, more: pay by QR in a shop, top up the phone balance, installments vs paying at once.
+     Training mock-ups in the spirit of Kaspi.kz. Shops, numbers, sums and names are fictional. -->
+<div class="screens" data-screens="kaspi-more">
+
+  <!-- ===== Pay by Kaspi QR ===== -->
+  <section class="screen k-app" data-screen="kq_home">
+    <div class="k-head">
+      <div class="k-head__top"><div class="k-logo">kaspi<span>.kz</span></div></div>
+      <p style="margin:6px 0 0;font-size:10.5px;color:#ffd9d4">Здравствуйте, Сауле</p>
+    </div>
+    <div class="k-body">
+      <div class="k-gold">
+        <div class="k-gold__row"><span>Kaspi Gold</span><span>•• 4417</span></div>
+        <b>48 500 ₸</b>
+        <div class="k-gold__num">5169 49•• •••• 4417</div>
+      </div>
+      <div class="k-grid">
+        <button type="button" class="k-tile"><i><svg aria-hidden="true"><use href="#i-transfer"/></svg></i>Переводы</button>
+        <button type="button" class="k-tile"><i><svg aria-hidden="true"><use href="#i-card"/></svg></i>Платежи</button>
+        <button type="button" class="k-tile" data-t="kq_qr"><i><svg aria-hidden="true"><use href="#i-qr"/></svg></i>QR</button>
+        <button type="button" class="k-tile"><i><svg aria-hidden="true"><use href="#i-history"/></svg></i>История</button>
+      </div>
+      <div class="k-section">Последние операции</div>
+      <div style="background:#fff;border-radius:12px;padding:2px 12px">
+        <div class="k-op"><i><svg aria-hidden="true"><use href="#i-card"/></svg></i><div><b>Аптека</b><span>вчера, 16:40</span></div><span class="k-op__sum">−1 450 ₸</span></div>
+        <div class="k-op"><i><svg aria-hidden="true"><use href="#i-transfer"/></svg></i><div><b>Пенсия</b><span>3 ноября</span></div><span class="k-op__sum plus">+95 000 ₸</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen mp-cam" data-screen="kq_cam">
+    <div class="mp-cam__top">Наведите камеру на QR-код</div>
+    <button type="button" class="mp-cam__frame" data-t="kq_scan" aria-label="QR-код на кассе магазина">
+      <span class="mp-qr"><svg aria-hidden="true"><use href="#i-qr"/></svg></span>
+      <small>Табличка на кассе · магазин «Береке»</small>
+    </button>
+    <div class="mp-cam__hint">Код стоит на кассе: на табличке или на экране терминала</div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kq_pay">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Оплата по QR</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Продавец</small><b class="kx-b">Магазин «Береке»</b><small>ИП Ахметова · Алматы</small></div>
+      <div class="lf-card"><small>Сумма</small><b class="lf-big">2 350 ₸</b></div>
+      <div class="lf-card"><small>Списать с</small><b class="kx-b">Kaspi Gold •• 4417</b><small>доступно 48 500 ₸</small></div>
+      <div class="lf-note">Сверьте название магазина и сумму с чеком на кассе.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="kq_pay">Оплатить 2 350 ₸</button></div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kq_done">
+    <div class="lf-head"><div class="lf-head__top">Готово</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Оплачено · 2 350 ₸</b><br>Магазин «Береке» · сегодня, 11:42</span></div>
+      <div class="lf-note">Покажите этот экран продавцу. Чек сохранится в «Истории».</div>
+      <div class="kx-say"><b>Продавец:</b> «У меня не видно оплату. Назовите код из SMS, я проверю»</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="kq_ok">Готово</button></div>
+  </section>
+
+  <!-- ===== Top up the phone ===== -->
+  <section class="screen k-app" data-screen="kt_home">
+    <div class="k-head">
+      <div class="k-head__top"><div class="k-logo">kaspi<span>.kz</span></div></div>
+      <p style="margin:6px 0 0;font-size:10.5px;color:#ffd9d4">Здравствуйте, Сауле</p>
+    </div>
+    <div class="k-body">
+      <div class="k-gold">
+        <div class="k-gold__row"><span>Kaspi Gold</span><span>•• 4417</span></div>
+        <b>48 500 ₸</b>
+        <div class="k-gold__num">5169 49•• •••• 4417</div>
+      </div>
+      <div class="k-grid">
+        <button type="button" class="k-tile"><i><svg aria-hidden="true"><use href="#i-transfer"/></svg></i>Переводы</button>
+        <button type="button" class="k-tile" data-t="kt_pay"><i><svg aria-hidden="true"><use href="#i-card"/></svg></i>Платежи</button>
+        <button type="button" class="k-tile"><i><svg aria-hidden="true"><use href="#i-qr"/></svg></i>QR</button>
+        <button type="button" class="k-tile"><i><svg aria-hidden="true"><use href="#i-history"/></svg></i>История</button>
+      </div>
+      <div class="k-section">Последние операции</div>
+      <div style="background:#fff;border-radius:12px;padding:2px 12px">
+        <div class="k-op"><i><svg aria-hidden="true"><use href="#i-card"/></svg></i><div><b>Аптека</b><span>вчера, 16:40</span></div><span class="k-op__sum">−1 450 ₸</span></div>
+        <div class="k-op"><i><svg aria-hidden="true"><use href="#i-transfer"/></svg></i><div><b>Пенсия</b><span>3 ноября</span></div><span class="k-op__sum plus">+95 000 ₸</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen k-app" data-screen="kt_list">
+    <div class="k-header">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <h3>Платежи</h3>
+    </div>
+    <div class="k-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск по платежам</div>
+    <div class="k-list">
+      <button type="button" class="k-row" data-t="kt_mobile">
+        <span class="k-row__ic"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <span class="k-row__t"><b>Мобильная связь</b><span>Пополнить баланс телефона</span></span>
+        <span class="k-row__chev"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      </button>
+      <button type="button" class="k-row">
+        <span class="k-row__ic" style="background:#eef7f0;color:#2f7a4e"><svg aria-hidden="true"><use href="#i-home"/></svg></span>
+        <span class="k-row__t"><b>Коммунальные услуги</b><span>Свет, вода, газ, отопление</span></span>
+        <span class="k-row__chev"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      </button>
+      <button type="button" class="k-row">
+        <span class="k-row__ic" style="background:#eef2f7;color:#3d5a78"><svg aria-hidden="true"><use href="#i-wifi"/></svg></span>
+        <span class="k-row__t"><b>Интернет и ТВ</b><span>Домашний интернет</span></span>
+        <span class="k-row__chev"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      </button>
+      <button type="button" class="k-row">
+        <span class="k-row__ic" style="background:#f7f0e8;color:#8a5a24"><svg aria-hidden="true"><use href="#i-car"/></svg></span>
+        <span class="k-row__t"><b>Штрафы и налоги</b><span>Проверить и оплатить</span></span>
+        <span class="k-row__chev"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      </button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kt_number">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Мобильная связь</div></div>
+    <div class="lf-body">
+      <div class="lf-label">Чей номер пополнить</div>
+      <button type="button" class="lf-row" data-t="kt_my"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Мой номер<small>+7 701 ••• 22 18 · определён автоматически</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-users"/></svg><span>Аслан (внук)<small>+7 701 ••• 45 67</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Другой номер<small>ввести вручную</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kt_amount">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Пополнение</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Номер</small><b class="kx-b">+7 701 ••• 22 18 · мой</b></div>
+      <div class="lf-label">Сумма</div>
+      <div class="lf-chips"><span class="lf-chip">1 000 ₸</span><button type="button" class="lf-chip" data-t="kt_2000">2 000 ₸</button><span class="lf-chip">5 000 ₸</span></div>
+      <div class="lf-note">Деньги придут на баланс за минуту.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kt_confirm">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Проверьте платёж</div></div>
+    <div class="lf-body">
+      <div class="lf-card">
+        <div class="kx-sum"><span>Номер</span><b>+7 701 ••• 22 18</b></div>
+        <div class="kx-sum"><span>Сумма</span><b>2 000 ₸</b></div>
+        <div class="kx-sum"><span>Комиссия</span><b>0 ₸</b></div>
+        <div class="kx-sum"><span>Списать с</span><b>Kaspi Gold •• 4417</b></div>
+      </div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="kt_go">Оплатить 2 000 ₸</button></div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kt_done">
+    <div class="lf-head"><div class="lf-head__top">Готово</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Баланс пополнен · 2 000 ₸</b><br>+7 701 ••• 22 18 · сегодня, 09:30</span></div>
+      <div class="kx-sms"><b>SMS · +7 707 ••• 19 55 · 10:31</b>Здравствуйте! Я ошибочно пополнил ваш номер на 2 000 ₸. Верните, пожалуйста, на +7 707 ••• 19 55. Спасибо!</div>
+    </div>
+  </section>
+
+  <!-- ===== Installments vs paying at once ===== -->
+  <section class="screen lf lf--bank kx" data-screen="kr_checkout">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Оформление заказа</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Товар</small><b class="kx-b">Тонометр автоматический, на плечо</b><small>1 шт. · цена 18 990 ₸</small></div>
+      <div class="lf-card"><small>Способ оплаты · Рассрочка 0-0-12</small><b class="lf-big">1 583 ₸ × 12 мес.</b></div>
+      <button type="button" class="lf-row" data-t="kr_change"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Изменить способ оплаты<small>Kaspi Gold, рассрочка или кредит</small></span></button>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="kr_bad">Оформить</button></div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kr_methods">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Способ оплаты</div></div>
+    <div class="lf-body">
+      <button type="button" class="lf-row" data-t="kr_gold"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Kaspi Gold<small>Сразу 18 990 ₸ · на карте 48 500 ₸</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Рассрочка 0-0-12<small>1 583 ₸ в месяц, 12 месяцев</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Кредит на покупки<small>до 24 месяцев, с переплатой</small></span></div>
+      <div class="lf-note">Рассрочка и кредит — это долг банку. Пропустите платёж — будет штраф и плохая кредитная история.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kr_ready">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Оформление заказа</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Товар</small><b class="kx-b">Тонометр автоматический, на плечо</b><small>1 шт.</small></div>
+      <div class="lf-card"><small>Способ оплаты · Kaspi Gold</small><b class="lf-big">18 990 ₸ сразу</b></div>
+      <div class="lf-note">Без рассрочки и кредита: деньги спишутся один раз.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="kr_pay">Оплатить 18 990 ₸</button></div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kr_done">
+    <div class="lf-head"><div class="lf-head__top">Готово</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Оплачено с Kaspi Gold · 18 990 ₸</b><br>Заказ передан в магазин</span></div>
+      <button type="button" class="lf-row" data-t="kr_loans"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Мои кредиты и рассрочки<small>Проверить, нет ли лишнего</small></span></button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="kr_loans">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Мои кредиты</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Активных кредитов и рассрочек нет</b><br>Обновлено только что</span></div>
+      <div class="lf-note">Здесь видна каждая рассрочка и каждый кредит на ваше имя. Чужой кредит сразу будет заметен.</div>
+      <div class="kx-say kx-say--call"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><b>Входящий звонок</b>«Служба безопасности банка. На вас оформили рассрочку на 300 000 ₸…»</span></div>
+    </div>
+  </section>
+</div>
+
                 <div class="screens" data-screens="whatsapp">
   <!-- chats -->
   <section class="screen w-app" data-screen="w_chats">
@@ -4203,6 +4409,58 @@
   </section>
 </div>
 
+<!-- Investment trap: "30% a month" ad, a "consultant" in WhatsApp, a paid "lawyer". All accounts, numbers and cards are fictional. -->
+<div class="screens" data-screens="safety-invest">
+  <section class="screen ig" data-screen="iv_feed">
+    <div class="ig-head"><b>Instagram</b></div>
+    <div class="ig-post">
+      <div class="ig-post__top"><span class="ig-av" style="background:#fdf1d6;color:#9a6a12;width:30px;height:30px">₸</span><span><b>invest_pensia_kz</b><small>Реклама</small></span><button type="button" class="ig-more" data-t="iv_more" aria-label="Ещё">⋯</button></div>
+      <div class="ig-post__img"><span>📈</span><b>«Доход 30% в месяц — гарантия государства»</b><small>Госпрограмма для пенсионеров · вложите от 50 000 ₸</small></div>
+      <button type="button" class="ig-post__cta" data-t="iv_cta">Подробнее</button>
+    </div>
+  </section>
+
+  <section class="screen ig" data-screen="iv_sheet">
+    <div class="ig-head"><b>Instagram</b></div>
+    <div class="ig-post" style="opacity:.35" aria-hidden="true"><div class="ig-post__img"><span>📈</span></div></div>
+    <div class="ig-sheet">
+      <div class="ig-sheet__row">Почему я вижу эту рекламу</div>
+      <div class="ig-sheet__row">Скрыть рекламу</div>
+      <button type="button" class="ig-sheet__row ig-sheet__row--red" data-t="iv_report">Пожаловаться на рекламу</button>
+    </div>
+  </section>
+
+  <section class="screen sx-msg" data-screen="iv_chat">
+    <div class="sx-msghead">
+      <button type="button" class="iconbtn" aria-label="Назад"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+      <span class="sx-av" style="background:#fdf1d6;color:#9a6a12">₸</span>
+      <div><b>Финансовый консультант</b><span>+7 776 ••• 40 12 · WhatsApp</span></div>
+    </div>
+    <div class="sx-spam">
+      <svg aria-hidden="true"><use href="#i-alert"/></svg>
+      <span>Номера нет в контактах.</span>
+      <button type="button" class="sx-spam__btn" data-t="iv_block">Заблокировать</button>
+    </div>
+    <div class="sx-msgbody">
+      <div class="sx-day">Сегодня, 14:05</div>
+      <div class="sx-bubble">Здравствуйте! Вы смотрели госпрограмму «Пенсионный доход» 👍</div>
+      <div class="sx-bubble">Первый взнос 50 000 ₸ переведите на карту нашего брокера 4400 43•• •••• 1208. Через месяц получите 65 000 ₸.</div>
+      <div class="sx-bubble">И установите приложение AnyDesk — я помогу открыть счёт.</div>
+    </div>
+    <div class="sx-msginput">Сообщение</div>
+  </section>
+
+  <section class="screen sx-plain lf--bank" data-screen="iv_after">
+    <div class="sx-plainhead"><b>Если деньги уже перевели</b><span>Что делать сразу — в первый час</span></div>
+    <div class="mp-steps">
+      <div><i>1</i><span>Позвонить в банк<small>по номеру на обороте карты</small></span></div>
+      <div><i>2</i><span>Заблокировать карту<small>в приложении банка</small></span></div>
+      <div><i>3</i><span>Заявление в полицию<small>102 или участковому</small></span></div>
+      <div><i>4</i><span>Не платить «юристам»<small>которые обещают вернуть деньги за плату</small></span></div>
+    </div>
+  </section>
+</div>
+
                 <!-- Pension & money module: neutral training mock-ups in the spirit of eGov mobile, the ENPF app and a bank app.
      All names, sums, numbers and dates are fictional. -->
 <div class="screens" data-screens="money">
@@ -5031,6 +5289,49 @@
       <div class="mp-bubble">Вижу тебя на карте! Стой у магазина, я позвоню и приеду</div>
     </div>
   </section>
+  <!-- ===== Top up the Onay transport card ===== -->
+  <section class="screen lf lf--onay kx" data-screen="on_home">
+    <div class="lf-head"><div class="lf-head__top">Onay</div><small>учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Транспортная карта •• 3388</small><b class="lf-big">40 ₸</b><small>Последняя поездка: вчера, автобус № 32</small></div>
+      <div class="lf-status lf-status--warn"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>На поездку не хватает</span></div>
+      <button type="button" class="lf-row" data-t="on_top"><svg aria-hidden="true"><use href="#i-plus"/></svg><span>Пополнить карту<small>С банковской карты</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-qr"/></svg><span>Оплатить по QR в салоне</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--onay kx" data-screen="on_amount">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Пополнение</div></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Карта •• 3388</small><b class="kx-b">Баланс 40 ₸</b></div>
+      <div class="lf-label">Сумма</div>
+      <div class="lf-chips"><span class="lf-chip">500 ₸</span><button type="button" class="lf-chip" data-t="on_1000">1 000 ₸</button><span class="lf-chip">2 000 ₸</span></div>
+      <div class="lf-note">Деньги поступят на карту за минуту.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--onay kx" data-screen="on_pay">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Оплата</div></div>
+    <div class="lf-body">
+      <div class="lf-card">
+        <div class="kx-sum"><span>Карта Onay</span><b>•• 3388</b></div>
+        <div class="kx-sum"><span>Пополнение</span><b>1 000 ₸</b></div>
+      </div>
+      <div class="lf-label">Списать с</div>
+      <div class="lf-row is-on"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Kaspi Gold •• 4417<small>банковская карта</small></span><svg aria-hidden="true"><use href="#i-check"/></svg></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="on_pay">Оплатить 1 000 ₸</button></div>
+  </section>
+
+  <section class="screen lf lf--onay kx" data-screen="on_done">
+    <div class="lf-head"><div class="lf-head__top">Onay</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Карта пополнена · баланс 1 040 ₸</b><br>Карта работает</span></div>
+      <div class="kx-sms"><b>SMS · ONAY-INFO · 10:05</b>Ваша карта Onay заблокирована. Разблокируйте по ссылке: onay-karta.top</div>
+      <button type="button" class="lf-row" data-t="on_hist"><svg aria-hidden="true"><use href="#i-history"/></svg><span>История операций<small>Пополнения и поездки</small></span></button>
+    </div>
+  </section>
+
 </div>
 
                 <!-- WhatsApp deeper lessons: voice messages, family group, documents, privacy, account code.
@@ -7531,6 +7832,57 @@
     <span class="pn-closeall">Закрыть все</span>
     <div class="pn-nav"><button type="button" data-t="back" aria-label="Назад"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5 7 12l9 7z"/></svg></button><button type="button" data-t="home" aria-label="Домой"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/></svg></button><button type="button" data-t="recent" aria-label="Недавние"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg></button></div>
   </section>
+  <!-- ============ Unknown number: block spam ============ -->
+  <section class="screen px-set" data-screen="bs_recent">
+    <div class="px-title">Недавние</div>
+    <div class="px-list px-list--card">
+      <button type="button" class="px-call" data-t="bs_num"><span class="sx-av bs-av">!</span><span><b>+7 747 ••• 31 08</b><small class="bs-warn"><svg aria-hidden="true"><use href="#i-phone-off"/></svg>Пропущенный ×3 · 09:12 · Возможно, спам</small></span><svg class="px-lock" aria-hidden="true"><use href="#i-info"/></svg></button>
+      <span class="px-call"><span class="sx-av" style="background:#fbe3d6;color:#a5521f">А</span><span><b>Айгерим (дочь)</b><small><svg aria-hidden="true"><use href="#i-phone"/></svg>Исходящий · вчера, 12:05</small></span></span>
+      <span class="px-call"><span class="sx-av" style="background:#dcefe4;color:#2f7d4f">П</span><span><b>Поликлиника №4</b><small><svg aria-hidden="true"><use href="#i-phone"/></svg>Входящий · 8 ноября</small></span></span>
+      <span class="px-call"><span class="sx-av" style="background:#e3e7f6;color:#4a5aa8">Е</span><span><b>Ержан</b><small><svg aria-hidden="true"><use href="#i-phone"/></svg>Входящий · 7 ноября</small></span></span>
+    </div>
+    <div class="px-tabs"><span><svg aria-hidden="true"><use href="#i-menu"/></svg>Клавиатура</span><span class="is-on"><svg aria-hidden="true"><use href="#i-clock"/></svg>Недавние</span><span><svg aria-hidden="true"><use href="#i-users"/></svg>Контакты</span></div>
+  </section>
+
+  <section class="screen px-set" data-screen="bs_detail">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span></div>
+    <div class="px-person"><span class="sx-av bs-av">!</span><b>+7 747 ••• 31 08</b><small>Нет в контактах · 3 звонка за утро</small></div>
+    <div class="px-acts"><span><svg aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</span><span><svg aria-hidden="true"><use href="#i-message"/></svg>Сообщение</span></div>
+    <div class="px-list px-list--card">
+      <span class="px-row px-row--plain"><svg aria-hidden="true"><use href="#i-history"/></svg><span><b>История звонков</b><small>Сегодня, 09:02–09:12 · пропущенные</small></span></span>
+      <span class="px-row px-row--plain"><svg aria-hidden="true"><use href="#i-user"/></svg><span><b>Создать контакт</b></span></span>
+      <button type="button" class="px-row px-row--plain bs-red" data-t="bs_block"><svg aria-hidden="true"><use href="#i-x"/></svg><span><b>Заблокировать номер</b></span></button>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="bs_dialog">
+    <div class="px-person" style="opacity:.35" aria-hidden="true"><span class="sx-av bs-av">!</span><b>+7 747 ••• 31 08</b></div>
+    <div class="sx-dialog">
+      <h4>Заблокировать +7 747 ••• 31 08?</h4>
+      <p>Звонки и SMS с этого номера больше не будут приходить.</p>
+      <div class="bs-check"><i>✓</i>Сообщить о спаме</div>
+      <div class="sx-dialog__btns"><button type="button">Отмена</button><button type="button" class="is-main" data-t="bs_ok">Заблокировать</button></div>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="bs_blocked">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span></div>
+    <div class="px-person"><span class="sx-av" style="background:#e4e6e9;color:#5f6368"><svg aria-hidden="true"><use href="#i-x"/></svg></span><b>+7 747 ••• 31 08</b><small>Номер заблокирован</small></div>
+    <div class="px-list px-list--card">
+      <button type="button" class="px-row px-row--plain px-row--blue" data-t="bs_settings"><svg aria-hidden="true"><use href="#i-menu"/></svg><span><b>Настройки звонков</b><small>Фильтр спама, заблокированные номера</small></span></button>
+      <span class="px-row px-row--plain"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span><b>Разблокировать</b></span></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="bs_settings">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Настройки звонков</div>
+    <div class="px-card px-card--row px-card--main"><span><b>Фильтр спам-звонков</b><small>Телефон предупредит о спаме или отклонит звонок</small></span><button type="button" class="px-tog" data-t="bs_filter" aria-label="Включить фильтр спам-звонков"></button></div>
+    <div class="px-cap">Заблокированные номера</div>
+    <div class="px-list px-list--card">
+      <span class="px-row px-row--plain"><svg aria-hidden="true"><use href="#i-x"/></svg><span><b>+7 747 ••• 31 08</b><small>Заблокирован сегодня</small></span></span>
+    </div>
+  </section>
+
 </div>
 
                 <div class="phone-done" id="phoneDone" hidden></div>
