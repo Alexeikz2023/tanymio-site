@@ -186,7 +186,7 @@
         rows: [["Қосымша", app.brand], ["Нәтиже", "Оқу сценарийі орындалды"]],
         tip: "Нақты операция алдында алушыны, соманы және кодты тексеріңіз."
       },
-      next: index < apps.length - 1 ? apps[index + 1].id : "taxi-yandex"
+      next: app.next || (index < apps.length - 1 ? apps[index + 1].id : "taxi-yandex")
     };
   }
 

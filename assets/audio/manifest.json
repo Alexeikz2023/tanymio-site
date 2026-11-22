@@ -1,7 +1,7 @@
 {
   "provider": "edge-neural (prototype)",
   "rate": "-5%",
-  "generatedAt": "2026-11-22T16:07:00",
+  "generatedAt": "2026-11-22T19:42:35",
   "languages": {
     "ru": {
       "female": {
@@ -135,6 +135,12 @@
       "kaspi-red",
       "phone-spam",
       "maps-onay",
+      "safety-fake-bank",
+      "safety-romance",
+      "phone-lock",
+      "phone-battery",
+      "telegram-video",
+      "gov-qr",
       "bank-halyk",
       "bank-bcc",
       "bank-freedom",
@@ -302,6 +308,12 @@
       "kaspi-red",
       "phone-spam",
       "maps-onay",
+      "safety-fake-bank",
+      "safety-romance",
+      "phone-lock",
+      "phone-battery",
+      "telegram-video",
+      "gov-qr",
       "taxi-indrive",
       "taxi-greensm",
       "greensm-lang",

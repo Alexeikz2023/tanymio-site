@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css?v=20261110e">
   <link rel="stylesheet" href="assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="1aedea8d4b">
+<body data-page="lessons" class="trainer-page" data-audio-base="assets/audio/" data-audio-ver="83062f83af">
   <a class="skip" href="#main">Перейти к содержанию</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -3528,6 +3528,223 @@
       <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Активных кредитов и рассрочек нет</b><br>Обновлено только что</span></div>
       <div class="lf-note">Здесь видна каждая рассрочка и каждый кредит на ваше имя. Чужой кредит сразу будет заметен.</div>
       <div class="kx-say kx-say--call"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><b>Входящий звонок</b>«Служба безопасности банка. На вас оформили рассрочку на 300 000 ₸…»</span></div>
+    </div>
+  </section>
+</div>
+
+                <!-- Batch: Telegram video call, fake bank site, romance scam, eGov QR login.
+     Training mock-ups in the spirit of the real apps. Names, numbers, sites and messages are fictional. -->
+<div class="screens" data-screens="tg-video">
+  <section class="screen tg" data-screen="tv_chats">
+    <div class="tg-head"><span>Telegram</span><svg aria-hidden="true"><use href="#i-search"/></svg></div>
+    <div class="tg-list">
+      <button type="button" class="tg-row" data-t="tv_chat"><span class="tg-av" style="background:#e17076">А</span><span class="tg-row__t"><b>Аслан (внук)</b><small>Позвони мне по видео, покажу Алию!</small></span><time>10:42</time></button>
+      <div class="tg-row"><span class="tg-av" style="background:#7bc862">Д</span><span class="tg-row__t"><b>Дочь Айгерим</b><small>Мама, купила тебе лекарство</small></span><time>09:15</time></div>
+      <div class="tg-row"><span class="tg-av" style="background:#65aadd">К</span><span class="tg-row__t"><b>Клуб «Серебряный возраст»</b><small>Завтра хор в 11:00 🎶</small></span><time>вчера</time></div>
+      <div class="tg-row"><span class="tg-av" style="background:#ee7aae">Н</span><span class="tg-row__t"><b>Нурлан</b><small>Спасибо за рецепт!</small></span><time>пн</time></div>
+    </div>
+  </section>
+
+  <section class="screen tg" data-screen="tv_chat">
+    <div class="tg-chathead"><span class="tg-back">‹</span><span class="tg-av tg-av--sm" style="background:#e17076">А</span><span><b>Аслан (внук)</b><small>в сети</small></span><button type="button" class="tg-callbtn" data-t="tv_call" aria-label="Позвонить"><svg aria-hidden="true"><use href="#i-phone"/></svg></button></div>
+    <div class="tg-body">
+      <div class="tg-msg">Бабушка, привет! 😊</div>
+      <div class="tg-msg">Позвони мне по видео, покажу, как Алия научилась ходить!</div>
+      <div class="tg-msg tg-msg--me">Сейчас позвоню</div>
+    </div>
+    <div class="tg-input">Сообщение</div>
+  </section>
+
+  <section class="screen tg" data-screen="tv_menu">
+    <div class="tg-chathead tg-dim"><span class="tg-back">‹</span><span class="tg-av tg-av--sm" style="background:#e17076">А</span><span><b>Аслан (внук)</b><small>в сети</small></span><span class="tg-callbtn"><svg aria-hidden="true"><use href="#i-phone"/></svg></span></div>
+    <div class="tg-body tg-dim">
+      <div class="tg-msg">Бабушка, привет! 😊</div>
+      <div class="tg-msg">Позвони мне по видео, покажу, как Алия научилась ходить!</div>
+      <div class="tg-msg tg-msg--me">Сейчас позвоню</div>
+    </div>
+    <div class="tg-input tg-dim">Сообщение</div>
+    <div class="ig-sheet"><b>Позвонить Аслану</b><div class="ig-sheet__row">Аудиозвонок</div><button type="button" class="ig-sheet__row tg-sheet__main" data-t="tv_video">Видеозвонок</button><div class="ig-sheet__row">Отмена</div></div>
+  </section>
+
+  <section class="screen tg-call" data-screen="tv_call">
+    <div class="tg-call__video"><span class="tg-call__face">А</span><b>Аслан (внук)</b><small>Видеозвонок · 00:14</small><span class="tg-self" aria-hidden="true">вы</span></div>
+    <div class="tg-call__btns">
+      <span class="tg-cb"><i><svg aria-hidden="true"><use href="#i-video"/></svg></i>Камера</span>
+      <button type="button" class="tg-cb tg-cb--off" data-t="tv_mic"><i><svg aria-hidden="true"><use href="#i-mic"/></svg></i>Микрофон выкл.</button>
+      <span class="tg-cb"><i><svg aria-hidden="true"><use href="#i-speaker"/></svg></i>Динамик</span>
+      <button type="button" class="tg-cb tg-cb--end" data-t="tv_end"><i><svg aria-hidden="true"><use href="#i-phone-off"/></svg></i>Завершить</button>
+    </div>
+  </section>
+
+  <section class="screen tg-call" data-screen="tv_call_on">
+    <div class="tg-call__video"><span class="tg-call__face">А</span><b>Аслан (внук)</b><small>Видеозвонок · 00:52</small><span class="tg-self" aria-hidden="true">вы</span></div>
+    <div class="tg-call__btns">
+      <span class="tg-cb"><i><svg aria-hidden="true"><use href="#i-video"/></svg></i>Камера</span>
+      <span class="tg-cb"><i><svg aria-hidden="true"><use href="#i-mic"/></svg></i>Микрофон</span>
+      <span class="tg-cb"><i><svg aria-hidden="true"><use href="#i-speaker"/></svg></i>Динамик</span>
+      <button type="button" class="tg-cb tg-cb--end" data-t="tv_end"><i><svg aria-hidden="true"><use href="#i-phone-off"/></svg></i>Завершить</button>
+    </div>
+  </section>
+
+  <section class="screen tg" data-screen="tv_after">
+    <div class="tg-head"><span>Telegram</span><svg aria-hidden="true"><use href="#i-search"/></svg></div>
+    <div class="tg-list">
+      <div class="tg-row"><span class="tg-av" style="background:#2aa3ef">T</span><span class="tg-row__t"><b>Telegram Support <i class="tg-tick">✓</i></b><small>Ваш аккаунт будет удалён. Пришлите код из SMS для подтверждения</small></span><time>10:58</time></div>
+      <div class="tg-row"><span class="tg-av" style="background:#e17076">А</span><span class="tg-row__t"><b>Аслан (внук)</b><small>Видеозвонок · 3 мин</small></span><time>10:55</time></div>
+      <div class="tg-row"><span class="tg-av" style="background:#7bc862">Д</span><span class="tg-row__t"><b>Дочь Айгерим</b><small>Мама, купила тебе лекарство</small></span><time>09:15</time></div>
+    </div>
+  </section>
+</div>
+
+<div class="screens" data-screens="safety-fakebank">
+  <section class="screen sk-browser" data-screen="fb_fake">
+    <div class="sk-bar">
+      <button type="button" class="sk-close" data-t="fb_close" aria-label="Закрыть страницу"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+      <div class="sk-addr"><svg aria-hidden="true"><use href="#i-alert"/></svg><span>kaspi-bonus.online/login</span></div>
+    </div>
+    <div class="sk-page">
+      <div class="fb-brand">kaspi<span>.kz</span></div>
+      <b class="sk-page__h">Бонус 10 000 ₸ каждому клиенту</b>
+      <p>Войдите, чтобы получить бонус на карту:</p>
+      <div class="sk-field"><small>Номер карты</small>•••• •••• •••• ••••</div>
+      <div class="sk-field"><small>Срок действия и CVV</small>__ / __ · ___</div>
+      <div class="sk-field"><small>Код из SMS</small>_ _ _ _</div>
+      <span class="sk-page__btn">Получить бонус</span>
+    </div>
+  </section>
+
+  <section class="screen sk-browser" data-screen="fb_search">
+    <div class="sk-bar">
+      <span class="sk-close"><svg aria-hidden="true"><use href="#i-x"/></svg></span>
+      <div class="sk-addr fb-addr"><svg aria-hidden="true"><use href="#i-search"/></svg><span>каспи вход</span></div>
+    </div>
+    <div class="sk-page fb-results">
+      <div class="fb-res fb-res--ad"><small>Реклама · kaspi-vhod.online</small><b>Вход в Kaspi без SMS — бонус 5 000 ₸</b><span>Быстрый вход в личный кабинет. Только сегодня!</span></div>
+      <div class="fb-res"><small>kaspi.kz</small><b>Kaspi.kz — платежи, переводы, магазин</b><span>Официальный сайт. Скачайте приложение Kaspi.kz.</span></div>
+      <div class="fb-res"><small>kaspi-login.site</small><b>Kaspi Online — вход по номеру карты</b><span>Введите данные карты для входа.</span></div>
+    </div>
+  </section>
+
+  <section class="screen px-home" data-screen="fb_home">
+    <div class="px-clock"><b>9:41</b><span>вторник, 24 ноября · −2°</span></div>
+    <div class="px-grid">
+      <span class="px-ic"><i style="background:#e9eef5;color:#3d6fb8"><svg aria-hidden="true"><use href="#i-camera"/></svg></i>Камера</span>
+      <span class="px-ic"><i style="background:#fdebd6;color:#c96a12"><svg aria-hidden="true"><use href="#i-image"/></svg></i>Галерея</span>
+      <span class="px-ic"><i style="background:#e5f3ec;color:#2f7d4f"><svg aria-hidden="true"><use href="#i-clock"/></svg></i>Часы</span>
+      <button type="button" class="px-ic" data-t="fb_kaspi"><i style="background:#e23b2e;color:#fff;font-style:normal;font-weight:800">K</i>Kaspi.kz</button>
+      <span class="px-ic"><i style="background:#ece8f6;color:#5b45a8"><svg aria-hidden="true"><use href="#i-play"/></svg></i>Видео</span>
+      <span class="px-ic"><i style="background:#e4f1f8;color:#1d6f99"><svg aria-hidden="true"><use href="#i-map-pin"/></svg></i>Карты</span>
+      <span class="px-ic"><i style="background:#25d366;color:#fff"><svg aria-hidden="true"><use href="#i-message"/></svg></i>WhatsApp</span>
+      <span class="px-ic"><i style="background:#edf0f2;color:#3c4043"><svg aria-hidden="true"><use href="#i-globe"/></svg></i>Браузер</span>
+    </div>
+    <div class="px-dock">
+      <span class="px-ic"><i style="background:#2f9e5b;color:#fff"><svg aria-hidden="true"><use href="#i-phone"/></svg></i>Телефон</span>
+      <span class="px-ic"><i style="background:#2f6fd0;color:#fff"><svg aria-hidden="true"><use href="#i-message"/></svg></i>Сообщения</span>
+      <span class="px-ic"><i style="background:#edf0f2;color:#3c4043"><svg aria-hidden="true"><use href="#i-users"/></svg></i>Контакты</span>
+    </div>
+  </section>
+
+  <section class="screen lf lf--bank kx" data-screen="fb_bank">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Kaspi Gold</div><small>Вы открыли приложение сами</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Карта •• 4417</small><b class="lf-big">48 500 ₸</b></div>
+      <button type="button" class="lf-row" data-t="fb_block"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Заблокировать карту<small>Сразу, за секунду. Разблокировать можно потом</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-card"/></svg><span>Реквизиты карты</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Лимиты на покупки</span></div>
+      <div class="lf-note">После блокировки позвоните в банк по номеру на обороте карты.</div>
+    </div>
+  </section>
+</div>
+
+<div class="screens" data-screens="safety-romance">
+  <section class="screen ig" data-screen="rm_dm">
+    <div class="ig-chathead"><span class="ig-back">‹</span><button type="button" class="rm-av" data-t="rm_avatar" aria-label="Фото профиля">👨🏻‍🦳</button><span><b>Ерлан, 63</b><small>в сети · переписка 3 недели</small></span></div>
+    <div class="ig-body">
+      <div class="ig-msg">Доброе утро, моя дорогая Сауле ☀️</div>
+      <div class="ig-msg">Думаю о тебе каждый день. Контракт на платформе в море скоро закончится, и я приеду к тебе.</div>
+      <div class="ig-msg">После смерти жены ты — единственная родная душа 🙏</div>
+    </div>
+    <div class="ig-input">Сообщение…</div>
+  </section>
+
+  <section class="screen rm-view" data-screen="rm_photo">
+    <div class="rm-view__top"><span>‹</span>Ерлан, 63 · фото профиля</div>
+    <div class="rm-view__img" aria-hidden="true">👨🏻‍🦳</div>
+    <button type="button" class="rm-lens" data-t="rm_lens"><svg aria-hidden="true"><use href="#i-search"/></svg>Найти по фото</button>
+  </section>
+
+  <section class="screen lf kx" data-screen="rm_results">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Поиск по фото</div><small>Похожие изображения в интернете</small></div>
+    <div class="lf-body">
+      <div class="lf-status lf-status--warn"><svg aria-hidden="true"><use href="#i-alert"/></svg><span><b>Найдено на 37 сайтах</b><br>Одно и то же фото, разные имена</span></div>
+      <div class="lf-row"><span class="rm-thumb">👨🏻‍🦳</span><span>Фотобанк<small>«Мужчина 60 лет, улыбка» · купить фото</small></span></div>
+      <div class="lf-row"><span class="rm-thumb">👨🏻‍🦳</span><span>Сайт знакомств<small>Richard, 61, инженер, США</small></span></div>
+      <div class="lf-row"><span class="rm-thumb">👨🏻‍🦳</span><span>Соцсеть<small>Михаил, 64, военный врач</small></span></div>
+      <div class="lf-row"><span class="rm-thumb">👨🏻‍🦳</span><span>Анкета<small>Ерлан, 63, вдовец, инженер</small></span></div>
+    </div>
+  </section>
+
+  <section class="screen ig" data-screen="rm_money">
+    <div class="ig-chathead"><span class="ig-back">‹</span><span class="rm-av">👨🏻‍🦳</span><span><b>Ерлан, 63</b><small>в сети</small></span><button type="button" class="ig-btn ig-btn--red rm-block" data-t="rm_block">Заблокировать</button></div>
+    <div class="ig-body">
+      <div class="ig-msg">Дорогая, я отправил тебе подарок: золото и 20 000 долларов 🎁</div>
+      <div class="ig-msg">Посылку задержали на таможне. Нужно оплатить пошлину 180 000 ₸.</div>
+      <div class="ig-msg">Переведи таможеннику на карту 5169 49•• •••• 7731, я всё верну, обещаю ❤️</div>
+    </div>
+    <div class="ig-input">Сообщение…</div>
+  </section>
+</div>
+
+<div class="screens" data-screens="gov-qr">
+  <section class="screen lf lf--egov kx" data-screen="eq_home">
+    <div class="lf-head"><div class="lf-head__top">eGov mobile</div><small>Учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card"><small>Здравствуйте</small><b class="kx-b">Сауле К.</b></div>
+      <button type="button" class="lf-row" data-t="eq_scan"><svg aria-hidden="true"><use href="#i-qr"/></svg><span>Сканировать QR<small>Вход на egov.kz с компьютера</small></span></button>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-user"/></svg><span>Мои документы</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-help"/></svg><span>Справки</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-bell"/></svg><span>Уведомления</span></div>
+    </div>
+  </section>
+
+  <section class="screen mp-cam" data-screen="eq_cam">
+    <div class="mp-cam__top">Наведите камеру на QR-код</div>
+    <button type="button" class="mp-cam__frame" data-t="eq_code" aria-label="QR-код на экране компьютера">
+      <span class="mp-qr"><svg aria-hidden="true"><use href="#i-qr"/></svg></span>
+      <small>Экран компьютера · egov.kz · «Вход по QR»</small>
+    </button>
+    <div class="mp-cam__hint">Сайт egov.kz на компьютере показывает QR-код для входа</div>
+  </section>
+
+  <section class="screen lf lf--egov kx" data-screen="eq_confirm">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Запрос на вход</div></div>
+    <div class="lf-body">
+      <div class="lf-card">
+        <div class="kx-sum"><span>Сайт</span><b>egov.kz</b></div>
+        <div class="kx-sum"><span>Устройство</span><b>Windows · браузер Edge</b></div>
+        <div class="kx-sum"><span>Город</span><b>Алматы</b></div>
+        <div class="kx-sum"><span>Время</span><b>сейчас, 10:14</b></div>
+      </div>
+      <div class="lf-note">Подтверждайте, только если входите вы сами, прямо сейчас, за этим компьютером.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="eq_ok">Подтвердить вход</button><span class="lf-btn lf-btn--ghost eq-deny">Отклонить</span></div>
+  </section>
+
+  <section class="screen lf lf--egov kx" data-screen="eq_done">
+    <div class="lf-head"><div class="lf-head__top">Готово</div></div>
+    <div class="lf-body">
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span><b>Вы вошли на egov.kz</b><br>Windows · Алматы · 10:14</span></div>
+      <div class="lf-note">Закончили — нажмите «Выйти» на сайте, особенно на чужом компьютере.</div>
+      <button type="button" class="lf-row" data-t="eq_sess"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Активные входы<small>Где сейчас открыт ваш eGov</small></span></button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--egov kx" data-screen="eq_sessions">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Активные входы</div></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Этот телефон<small>eGov mobile · сейчас</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-globe"/></svg><span>Windows · Edge<small>Алматы · вход по QR · 10:14</small></span><b class="eq-end">Завершить</b></div>
+      <div class="kx-say kx-say--call"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><b>Входящий звонок</b>«Вам положена выплата 85 000 ₸. Отсканируйте в eGov QR-код, который мы пришлём в WhatsApp»</span></div>
     </div>
   </section>
 </div>
@@ -7885,6 +8102,129 @@
     <div class="px-list px-list--card">
       <span class="px-row px-row--plain"><svg aria-hidden="true"><use href="#i-x"/></svg><span><b>+7 747 ••• 31 08</b><small>Заблокирован сегодня</small></span></span>
     </div>
+  </section>
+
+  <!-- ============ Screen lock: PIN ============ -->
+  <section class="screen px-set" data-screen="pl_settings">
+    <div class="px-title">Настройки</div>
+    <div class="px-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск настроек</div>
+    <div class="px-list">
+      <span class="px-row"><i style="background:#2f6fd0"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Wi-Fi</b><small>Подключено: Dom_Saule</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row"><i style="background:#d8577a"><svg aria-hidden="true"><use href="#i-speaker"/></svg></i><span><b>Звук и вибрация</b><small>Обычный режим</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row"><i style="background:#e19a1f"><svg aria-hidden="true"><use href="#i-text"/></svg></i><span><b>Экран</b><small>Яркость, тёмная тема, шрифт</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row"><i style="background:#3f9b6e"><svg aria-hidden="true"><use href="#i-battery"/></svg></i><span><b>Батарея</b><small>78%</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <button type="button" class="px-row" data-t="pl_secrow"><i style="background:#4a5aa8"><svg aria-hidden="true"><use href="#i-lock"/></svg></i><span><b>Безопасность и блокировка</b><small>Блокировка экрана, отпечаток</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+      <span class="px-row"><i style="background:#6b747b"><svg aria-hidden="true"><use href="#i-info"/></svg></i><span><b>О телефоне</b><small>Модель, память</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="pl_sec">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Безопасность</div>
+    <div class="px-list px-list--card">
+      <button type="button" class="px-row px-row--plain" data-t="pl_lock"><span><b>Блокировка экрана</b><small class="bs-warn">Нет — телефон открывается без кода</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+      <span class="px-row px-row--plain"><span><b>Отпечаток пальца</b><small>Сначала включите блокировку экрана</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row px-row--plain"><span><b>Найти устройство</b><small>Включено</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row px-row--plain"><span><b>Обновления безопасности</b><small>1 октября 2026</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="pl_types">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Блокировка экрана</div>
+    <div class="px-cap">Выберите способ</div>
+    <div class="px-list px-list--card">
+      <span class="px-row px-row--plain"><span><b>Нет</b><small>Сейчас выбрано · защиты нет</small></span></span>
+      <span class="px-row px-row--plain"><span><b>Провести по экрану</b><small>Защиты нет</small></span></span>
+      <button type="button" class="px-row px-row--plain" data-t="pl_pin"><span><b>PIN-код</b><small>4–6 цифр · рекомендуем</small></span></button>
+      <span class="px-row px-row--plain"><span><b>Пароль</b><small>Буквы и цифры</small></span></span>
+      <span class="px-row px-row--plain"><span><b>Графический ключ</b><small>Соединить точки</small></span></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="pl_enter">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>PIN-код</div>
+    <div class="pl-pin">
+      <p>Повторите PIN-код</p>
+      <div class="pl-dots" aria-label="Введено 6 цифр"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <small>✓ PIN-коды совпадают</small>
+    </div>
+    <div class="pl-keys" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span></span><span>0</span><span>⌫</span></div>
+    <button type="button" class="pl-btn" data-t="pl_next">Продолжить</button>
+  </section>
+
+  <section class="screen px-set" data-screen="pl_done">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Безопасность</div>
+    <div class="px-list px-list--card">
+      <span class="px-row px-row--plain"><span><b>Блокировка экрана</b><small class="pl-ok">PIN-код ✓</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row px-row--plain"><span><b>Отпечаток пальца</b><small>Можно добавить</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row px-row--plain"><span><b>Найти устройство</b><small>Включено</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+    </div>
+    <div class="kx-say kx-say--call pl-call"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><b>Входящий · +7 700 ••• 00 15</b>«Оператор связи. Для обновления продиктуйте PIN-код от телефона»</span></div>
+  </section>
+
+  <!-- ============ Battery saver ============ -->
+  <section class="screen px-set" data-screen="bt_settings">
+    <div class="px-title">Настройки</div>
+    <div class="px-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск настроек</div>
+    <div class="px-list">
+      <span class="px-row"><i style="background:#2f6fd0"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Wi-Fi</b><small>Подключено: Dom_Saule</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row"><i style="background:#d8577a"><svg aria-hidden="true"><use href="#i-speaker"/></svg></i><span><b>Звук и вибрация</b><small>Обычный режим</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row"><i style="background:#e19a1f"><svg aria-hidden="true"><use href="#i-text"/></svg></i><span><b>Экран</b><small>Яркость, тёмная тема, шрифт</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <button type="button" class="px-row" data-t="bt_bat"><i style="background:#3f9b6e"><svg aria-hidden="true"><use href="#i-battery"/></svg></i><span><b>Батарея</b><small class="bs-warn">15% · садится быстро</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+      <span class="px-row"><i style="background:#4a5aa8"><svg aria-hidden="true"><use href="#i-lock"/></svg></i><span><b>Безопасность и блокировка</b><small>Блокировка экрана, отпечаток</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row"><i style="background:#6b747b"><svg aria-hidden="true"><use href="#i-info"/></svg></i><span><b>О телефоне</b><small>Модель, память</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="bt_battery">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Батарея</div>
+    <div class="bt-level"><b>15%</b><span>Осталось около 1 ч 10 мин</span></div>
+    <div class="px-card px-card--row px-card--main"><span><b>Энергосбережение</b><small>Меньше работы в фоне, звонки и сообщения работают</small></span><button type="button" class="px-tog" data-t="bt_saver" aria-label="Включить энергосбережение"></button></div>
+    <div class="px-list px-list--card">
+      <span class="px-row px-row--plain"><span><b>Яркость экрана</b><small>100% — тратит больше всего</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+    </div>
+    <div class="px-cap">Расход с последней зарядки</div>
+    <div class="px-list px-list--card bt-use">
+      <span class="px-row px-row--plain"><span><b>YouTube · видео</b></span><em>41%</em></span>
+      <span class="px-row px-row--plain"><span><b>Экран</b></span><em>22%</em></span>
+      <span class="px-row px-row--plain"><span><b>WhatsApp</b></span><em>9%</em></span>
+      <span class="px-row px-row--plain"><span><b>Камера</b></span><em>5%</em></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="bt_saving">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Батарея</div>
+    <div class="bt-level"><b>15%</b><span>С экономией — примерно до 22:40</span></div>
+    <div class="px-card px-card--row px-card--main"><span><b>Энергосбережение</b><small>Меньше работы в фоне, звонки и сообщения работают</small></span><span class="px-tog is-on"></span></div>
+    <div class="px-list px-list--card">
+      <button type="button" class="px-row px-row--plain" data-t="bt_bright"><span><b>Яркость экрана</b><small>100% — тратит больше всего</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+    </div>
+    <div class="px-cap">Расход с последней зарядки</div>
+    <div class="px-list px-list--card bt-use">
+      <span class="px-row px-row--plain"><span><b>YouTube · видео</b></span><em>41%</em></span>
+      <span class="px-row px-row--plain"><span><b>Экран</b></span><em>22%</em></span>
+      <span class="px-row px-row--plain"><span><b>WhatsApp</b></span><em>9%</em></span>
+      <span class="px-row px-row--plain"><span><b>Камера</b></span><em>5%</em></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="bt_display">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Яркость</div>
+    <div class="px-list px-list--card">
+      <span class="px-row px-row--plain"><span><b>Яркость</b><span class="px-slider"><span style="width:100%"></span></span></span></span>
+    </div>
+    <div class="px-card px-card--row px-card--main"><span><b>Автояркость</b><small>Экран сам подстраивается под свет вокруг</small></span><button type="button" class="px-tog" data-t="bt_auto" aria-label="Включить автояркость"></button></div>
+    <div class="px-list px-list--card">
+      <span class="px-row px-row--plain"><span><b>Тёмная тема</b><small>Тёмный фон тоже экономит заряд</small></span></span>
+      <span class="px-row px-row--plain"><span><b>Отключение экрана</b><small>Через 30 секунд</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="bt_done">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Батарея</div>
+    <div class="bt-level"><b>64%</b><span>Заряжается · 22:15</span></div>
+    <div class="px-card px-card--row px-card--main"><span><b>Энергосбережение</b><small>Включено</small></span><span class="px-tog is-on"></span></div>
+    <div class="px-card px-card--row px-card--main"><span><b>Автояркость</b><small>Включена</small></span><span class="px-tog is-on"></span></div>
+    <div class="kx-say bt-hot">🔥 Вечер. Телефон заряжается под подушкой и стал горячим.</div>
   </section>
 
 </div>

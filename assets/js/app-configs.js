@@ -36,7 +36,7 @@
       done: { title: "Перевод отправлен", text: "Вы проверили получателя и сумму перед подтверждением.", rows: [["Получатель", "Аслан"], ["Сумма", "4 000 ₸ · учебно"]], tip: "Сохраняйте чек в приложении, пока получатель не подтвердит перевод." }
     },
     {
-      id: "telegram", category: "comm", brand: "Telegram", letter: "T", theme: "messenger",
+      id: "telegram", category: "comm", brand: "Telegram", letter: "T", theme: "messenger", next: "telegram-video",
       title: "Telegram: написать внуку", short: "Найти чат, прочитать сообщение и ответить.",
       goal: "Открыть чат в Telegram и отправить готовый ответ.",
       home: { label: "Чаты", value: "Аслан", note: "3 новых сообщения", amount: "онлайн" },

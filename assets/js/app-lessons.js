@@ -138,7 +138,7 @@
       intro: "Учебный сценарий. Реальные операции не выполняются.",
       steps: steps,
       done: app.done,
-      next: index < apps.length - 1 ? apps[index + 1].id : "taxi-yandex"
+      next: app.next || (index < apps.length - 1 ? apps[index + 1].id : "taxi-yandex")
     };
   }
 
