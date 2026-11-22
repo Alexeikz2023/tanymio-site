@@ -109,6 +109,25 @@
 
   var root = document.getElementById("pilotExport");
   if (!root) return;
+
+  /* Screen messages follow the page language. CSV headers and statuses stay in Russian;
+     lesson and step titles come from the page data (Kazakh on kz/route.html), IDs are the same. */
+  var KZ = document.documentElement.lang === "kk";
+  var MSG = KZ ? {
+    sum: function (d, s, f, sv) { return "Өтілген сабақ: " + d + " · басталған: " + s + " · пікір: " + f + " · қорытынды сауалнама: " + (sv ? "толтырылды" : "жоқ"); },
+    saved: "Қатысушы коды сақталды: ", removed: "Қатысушы коды өшірілді.",
+    file: "Файл жүктелді: ", copied: "Кесте көшірілді. Оны Excel немесе Google Кестелерге қойыңыз.",
+    copyFail: "Көшіру мүмкін болмады. Файлды жүктеп алыңыз.", copyNone: "Көшіру қолжетімсіз. Файлды жүктеп алыңыз.",
+    confirm: "Осы құрылғыдағы прогресті, пікірлерді және сауалнаманы өшіру керек пе? Алдымен файлды жүктеп алыңыз — деректерді қалпына келтіру мүмкін болмайды.",
+    wiped: "Деректер өшірілді. Жаңа қатысушымен бастауға болады."
+  } : {
+    sum: function (d, s, f, sv) { return "Пройдено уроков: " + d + " · начато: " + s + " · отзывов: " + f + " · итоговая анкета: " + (sv ? "заполнена" : "нет"); },
+    saved: "Код участника сохранён: ", removed: "Код участника удалён.",
+    file: "Файл скачан: ", copied: "Таблица скопирована. Вставьте её в Excel или Google Таблицы.",
+    copyFail: "Не удалось скопировать. Скачайте файл.", copyNone: "Копирование недоступно. Скачайте файл.",
+    confirm: "Стереть прогресс, отзывы и анкету на этом устройстве? Сначала скачайте файл — восстановить данные будет нельзя.",
+    wiped: "Данные стёрты. Можно начинать с новым участником."
+  };
   var code = document.getElementById("pilotCode");
   var summary = document.getElementById("pilotSummary");
   var status = document.getElementById("pilotStatus");
@@ -119,8 +138,7 @@
     var done = lessonsOnly.filter(function (x) { return x[4] === "пройден"; }).length;
     var fb = lessonsOnly.filter(function (x) { return x[12]; }).length;
     var sv = read(SURVEY, null);
-    summary.textContent = "Пройдено уроков: " + done + " · начато: " + (lessonsOnly.length - done) + " · отзывов: " + fb +
-      " · итоговая анкета: " + (sv && sv.at ? "заполнена" : "нет");
+    summary.textContent = MSG.sum(done, lessonsOnly.length - done, fb, !!(sv && sv.at));
     code.value = read(PILOT, {}).code || "";
   }
 
@@ -128,7 +146,7 @@
     var data = read(PILOT, {});
     data.code = code.value.trim().slice(0, 20);
     write(PILOT, data);
-    status.textContent = data.code ? "Код участника сохранён: " + data.code : "Код участника удалён.";
+    status.textContent = data.code ? MSG.saved + data.code : MSG.removed;
   });
 
   document.getElementById("pilotDownload").addEventListener("click", function () {
@@ -140,28 +158,28 @@
     document.body.appendChild(a);
     a.click();
     setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
-    status.textContent = "Файл скачан: " + name;
+    status.textContent = MSG.file + name;
   });
 
   document.getElementById("pilotCopy").addEventListener("click", function () {
     var text = csv();
-    var done = function () { status.textContent = "Таблица скопирована. Вставьте её в Excel или Google Таблицы."; };
+    var done = function () { status.textContent = MSG.copied; };
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(done, function () { status.textContent = "Не удалось скопировать. Скачайте файл."; });
+      navigator.clipboard.writeText(text).then(done, function () { status.textContent = MSG.copyFail; });
     } else {
-      status.textContent = "Копирование недоступно. Скачайте файл.";
+      status.textContent = MSG.copyNone;
     }
   });
 
   document.getElementById("pilotReset").addEventListener("click", function () {
-    if (!window.confirm("Стереть прогресс, отзывы и анкету на этом устройстве? Сначала скачайте файл — восстановить данные будет нельзя.")) return;
+    if (!window.confirm(MSG.confirm)) return;
     try {
       localStorage.removeItem(PROGRESS);
       localStorage.removeItem(FEEDBACK);
       localStorage.removeItem(PILOT);
       localStorage.removeItem(SURVEY);
     } catch (err) { /* blocked */ }
-    status.textContent = "Данные стёрты. Можно начинать с новым участником.";
+    status.textContent = MSG.wiped;
     render();
     document.dispatchEvent(new CustomEvent("tanymio:progress", { detail: {} }));
   });

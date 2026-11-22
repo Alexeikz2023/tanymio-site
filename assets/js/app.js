@@ -114,7 +114,7 @@
     T.qsa("[data-voice]").forEach(function (btn) {
       btn.setAttribute("aria-pressed", String(!!settings.voice));
       var label = btn.querySelector("span");
-      if (label) label.textContent = settings.voice ? "Озвучка вкл." : "Озвучка";
+      if (label) label.textContent = settings.voice ? ui("Озвучка вкл.", "Дыбыстау қосулы") : ui("Озвучка", "Дыбыстау");
     });
   }
 
