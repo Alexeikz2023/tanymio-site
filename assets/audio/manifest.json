@@ -1,7 +1,7 @@
 {
   "provider": "edge-neural (prototype)",
   "rate": "-5%",
-  "generatedAt": "2026-11-22T23:37:17",
+  "generatedAt": "2026-11-23T07:48:23",
   "languages": {
     "ru": {
       "female": {
@@ -147,6 +147,12 @@
       "health-recipe",
       "gov-address",
       "photo-restore",
+      "tg-groups",
+      "soc-clone",
+      "bank-reissue",
+      "family-call",
+      "dlv-postamat",
+      "weather",
       "bank-halyk",
       "bank-bcc",
       "bank-freedom",
@@ -326,6 +332,12 @@
       "health-recipe",
       "gov-address",
       "photo-restore",
+      "tg-groups",
+      "soc-clone",
+      "bank-reissue",
+      "family-call",
+      "dlv-postamat",
+      "weather",
       "taxi-indrive",
       "taxi-greensm",
       "greensm-lang",
