@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=20261110e">
   <link rel="alternate" hreflang="ru" href="../lesson.html"><link rel="stylesheet" href="../assets/css/apps.css?v=20261110e"><link rel="stylesheet" href="../assets/css/trainer.css?v=20261110e">
 </head>
-<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="610676be96">
+<body data-page="lessons" class="trainer-page" data-audio-base="../assets/audio/" data-audio-ver="61cf7f6bc7">
   <a class="skip" href="#main">Мазмұнға өту</a>
   <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
   <defs>
@@ -4719,6 +4719,444 @@
       <div class="lf-row"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Скрининг сердца и сосудов<small>Бесплатно · давление, холестерин, сахар крови</small></span></div>
       <p class="lf-label">Пройдено</p>
       <div class="lf-row rx-old"><svg aria-hidden="true"><use href="#i-history"/></svg><span>Флюорография<small>Пройдена в марте 2026</small></span></div>
+    </div>
+  </section>
+</div>
+
+                <!-- Batch: fake gas inspector, calculator, favourite address, stories, data roaming, birthday reminder.
+     Neutral training mock-ups. Names, numbers, addresses, accounts and messages are fictional. -->
+<div class="screens" data-screens="home-gas">
+  <section class="screen lf lf--sys" data-screen="gs_door">
+    <div class="lf-head"><div class="lf-head__top">Домофон</div><small>Подъезд 2 · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="gs-cam" aria-hidden="true"><i></i></div>
+      <div class="kx-say kx-say--call"><svg aria-hidden="true"><use href="#i-user"/></svg><span><b>Мужчина у двери</b>«Газовая служба! Плановая проверка плиты. Откройте, это бесплатно».</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Открыть дверь</span></div>
+      <button type="button" class="lf-row" data-t="gs_ask"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Не открывать. Спросить имя и удостоверение</span></button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--sys" data-screen="gs_answer">
+    <div class="lf-head"><div class="lf-head__top">Домофон</div><small>Подъезд 2 · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="gs-cam" aria-hidden="true"><i></i></div>
+      <div class="kx-say kx-say--call"><svg aria-hidden="true"><use href="#i-user"/></svg><span><b>Мужчина у двери</b>«Мастер Ержан. Удостоверение покажу в квартире. Шланг у плиты старый — надо срочно менять, 18 000 ₸, иначе штраф».</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-lock"/></svg><span>Открыть дверь</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-shield"/></svg><span>Не открывать. Спросить имя и удостоверение</span></div>
+      <button type="button" class="lf-row" data-t="gs_call"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Позвонить в газовую службу<small>Номер — с вашей квитанции</small></span></button>
+    </div>
+  </section>
+
+  <section class="screen lf lf--pay kx" data-screen="gs_bill">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Квитанция за газ</div><small>Ноябрь 2026 · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-card">
+        <div class="kx-sum"><span>Лицевой счёт</span><b>0000 1234</b></div>
+        <div class="kx-sum"><span>Поставщик</span><b>Газовая служба города</b></div>
+        <div class="kx-sum"><span>Справочная</span><b>+7 700 000 00 00</b></div>
+        <div class="kx-sum"><span>Аварийная служба</span><b>104</b></div>
+      </div>
+      <div class="lf-note">Звоните по номеру с квитанции или с официального сайта. Номер, который даёт человек за дверью, может вести к его сообщнику.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="gs_dial">Позвонить в справочную</button></div>
+  </section>
+
+  <section class="screen lf lf--sys" data-screen="gs_talk">
+    <div class="lf-head"><div class="lf-head__top">Звонок</div><small>Газовая служба · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="kx-say kx-say--call"><svg aria-hidden="true"><use href="#i-phone"/></svg><span><b>Оператор</b>«Плановых проверок в вашем доме на этой неделе нет. О проверке заранее вешают объявление в подъезде. Наши мастера ничего не продают на месте».</span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-phone-off"/></svg><span>Завершить звонок</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--wa" data-screen="gs_chat">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Дом, 2 подъезд</div><small>Чат соседей · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="kx-say kx-say--call"><svg aria-hidden="true"><use href="#i-message"/></svg><span><b>Сауле, кв. 12</b>Кто-то звонил в домофон, сказал «газовщик». Я не открыла.</span></div>
+      <div class="lf-card gs-draft"><small>Ваше сообщение</small>Соседи, внимание! По подъезду ходит мужчина, называет себя газовщиком и просит 18 000 ₸ за шланг. В газовой службе сказали: проверок нет. Не открывайте.</div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="gs_send">Отправить</button></div>
+  </section>
+</div>
+
+<div class="screens" data-screens="money-calc">
+  <section class="screen px-home" data-screen="cx_home">
+    <div class="px-clock"><b>11:20</b><span>вторник, 24 ноября · магазин</span></div>
+    <div class="px-grid">
+      <span class="px-ic"><i style="background:#e9eef5;color:#3d6fb8"><svg aria-hidden="true"><use href="#i-camera"/></svg></i>Камера</span>
+      <span class="px-ic"><i style="background:#fdebd6;color:#c96a12"><svg aria-hidden="true"><use href="#i-image"/></svg></i>Галерея</span>
+      <button type="button" class="px-ic cx-icon" data-t="cx_app"><i style="background:#3c4a5c;color:#fff"><span class="cx-glyph">±</span></i>Калькулятор</button>
+      <span class="px-ic"><i style="background:#e5f3ec;color:#2f7d4f"><svg aria-hidden="true"><use href="#i-clock"/></svg></i>Часы</span>
+    </div>
+    <div class="px-dock">
+      <span class="px-ic"><i style="background:#2f9e5b;color:#fff"><svg aria-hidden="true"><use href="#i-phone"/></svg></i>Телефон</span>
+      <span class="px-ic"><i style="background:#2f6fd0;color:#fff"><svg aria-hidden="true"><use href="#i-message"/></svg></i>Сообщения</span>
+    </div>
+  </section>
+
+  <section class="screen cx" data-screen="cx_calc">
+    <div class="cx-disp"><b>1250+870+2400</b><small>4520</small></div>
+    <div class="cx-keys">
+      <span class="cx-key cx-key--c">C</span>
+      <span class="cx-key cx-key--op">( )</span>
+      <span class="cx-key cx-key--op">%</span>
+      <span class="cx-key cx-key--op">÷</span>
+      <span class="cx-key">7</span>
+      <span class="cx-key">8</span>
+      <span class="cx-key">9</span>
+      <span class="cx-key cx-key--op">×</span>
+      <span class="cx-key">4</span>
+      <span class="cx-key">5</span>
+      <span class="cx-key">6</span>
+      <span class="cx-key cx-key--op">−</span>
+      <span class="cx-key">1</span>
+      <span class="cx-key">2</span>
+      <span class="cx-key">3</span>
+      <span class="cx-key cx-key--op">+</span>
+      <span class="cx-key">0</span>
+      <span class="cx-key">,</span>
+      <span class="cx-key">⌫</span>
+      <button type="button" class="cx-key cx-key--eq" data-t="cx_eq">=</button>
+    </div>
+  </section>
+
+  <section class="screen cx" data-screen="cx_sum">
+    <div class="cx-disp"><b>4520</b><small>&nbsp;</small></div>
+    <div class="cx-keys">
+      <button type="button" class="cx-key cx-key--c" data-t="cx_c">C</button>
+      <span class="cx-key cx-key--op">( )</span>
+      <span class="cx-key cx-key--op">%</span>
+      <span class="cx-key cx-key--op">÷</span>
+      <span class="cx-key">7</span>
+      <span class="cx-key">8</span>
+      <span class="cx-key">9</span>
+      <span class="cx-key cx-key--op">×</span>
+      <span class="cx-key">4</span>
+      <span class="cx-key">5</span>
+      <span class="cx-key">6</span>
+      <span class="cx-key cx-key--op">−</span>
+      <span class="cx-key">1</span>
+      <span class="cx-key">2</span>
+      <span class="cx-key">3</span>
+      <span class="cx-key cx-key--op">+</span>
+      <span class="cx-key">0</span>
+      <span class="cx-key">,</span>
+      <span class="cx-key">⌫</span>
+      <span class="cx-key cx-key--eq">=</span>
+    </div>
+  </section>
+
+  <section class="screen cx" data-screen="cx_pct">
+    <div class="cx-disp"><b>8000−15</b><small>7985</small></div>
+    <div class="cx-keys">
+      <span class="cx-key cx-key--c">C</span>
+      <span class="cx-key cx-key--op">( )</span>
+      <button type="button" class="cx-key cx-key--op" data-t="cx_pct">%</button>
+      <span class="cx-key cx-key--op">÷</span>
+      <span class="cx-key">7</span>
+      <span class="cx-key">8</span>
+      <span class="cx-key">9</span>
+      <span class="cx-key cx-key--op">×</span>
+      <span class="cx-key">4</span>
+      <span class="cx-key">5</span>
+      <span class="cx-key">6</span>
+      <span class="cx-key cx-key--op">−</span>
+      <span class="cx-key">1</span>
+      <span class="cx-key">2</span>
+      <span class="cx-key">3</span>
+      <span class="cx-key cx-key--op">+</span>
+      <span class="cx-key">0</span>
+      <span class="cx-key">,</span>
+      <span class="cx-key">⌫</span>
+      <span class="cx-key cx-key--eq">=</span>
+    </div>
+  </section>
+
+  <section class="screen cx" data-screen="cx_pct2">
+    <div class="cx-disp"><b>8000−15%</b><small>6800</small></div>
+    <div class="cx-keys">
+      <span class="cx-key cx-key--c">C</span>
+      <span class="cx-key cx-key--op">( )</span>
+      <span class="cx-key cx-key--op">%</span>
+      <span class="cx-key cx-key--op">÷</span>
+      <span class="cx-key">7</span>
+      <span class="cx-key">8</span>
+      <span class="cx-key">9</span>
+      <span class="cx-key cx-key--op">×</span>
+      <span class="cx-key">4</span>
+      <span class="cx-key">5</span>
+      <span class="cx-key">6</span>
+      <span class="cx-key cx-key--op">−</span>
+      <span class="cx-key">1</span>
+      <span class="cx-key">2</span>
+      <span class="cx-key">3</span>
+      <span class="cx-key cx-key--op">+</span>
+      <span class="cx-key">0</span>
+      <span class="cx-key">,</span>
+      <span class="cx-key">⌫</span>
+      <button type="button" class="cx-key cx-key--eq" data-t="cx_eq2">=</button>
+    </div>
+  </section>
+
+  <section class="screen cx" data-screen="cx_res">
+    <div class="cx-disp"><b>6800</b><small>&nbsp;</small></div>
+    <div class="cx-keys">
+      <span class="cx-key cx-key--c">C</span>
+      <span class="cx-key cx-key--op">( )</span>
+      <span class="cx-key cx-key--op">%</span>
+      <span class="cx-key cx-key--op">÷</span>
+      <span class="cx-key">7</span>
+      <span class="cx-key">8</span>
+      <span class="cx-key">9</span>
+      <span class="cx-key cx-key--op">×</span>
+      <span class="cx-key">4</span>
+      <span class="cx-key">5</span>
+      <span class="cx-key">6</span>
+      <span class="cx-key cx-key--op">−</span>
+      <span class="cx-key">1</span>
+      <span class="cx-key">2</span>
+      <span class="cx-key">3</span>
+      <span class="cx-key cx-key--op">+</span>
+      <span class="cx-key">0</span>
+      <span class="cx-key">,</span>
+      <span class="cx-key">⌫</span>
+      <span class="cx-key cx-key--eq">=</span>
+    </div>
+  </section>
+</div>
+
+<div class="screens" data-screens="maps-fav">
+  <section class="screen lf lf--map" data-screen="mf_home">
+    <div class="lf-head"><div class="lf-head__top">Карты</div><small>Учебный экран</small></div>
+    <div class="lf-body">
+      <button type="button" class="lf-search mf-search" data-t="mf_search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск адреса или места</button>
+      <div class="mf-map" aria-hidden="true"><i class="mf-road"></i><i class="mf-road mf-road--v"></i><span class="mf-me"></span></div>
+    </div>
+    <div class="lf-tabs"><span class="is-on"><svg aria-hidden="true"><use href="#i-map-pin"/></svg>Карта</span><span><svg aria-hidden="true"><use href="#i-star"/></svg>Избранное</span><span><svg aria-hidden="true"><use href="#i-arrow-right"/></svg>Маршруты</span></div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mf_results">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Поиск</div><small>Карты · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-input">Садовая 14<small>Найдено 2 места</small></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Садовая улица, 14<small>Алматы, Ауэзовский район · 6 км</small></span></div>
+      <button type="button" class="lf-row" data-t="mf_result"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span>Садовая улица, 14<small>СНТ «Яблонька», Алматинская обл. · 32 км</small></span></button>
+      <div class="lf-note">Улицы с одинаковым названием есть в разных районах. Смотрите на вторую строчку — там город или посёлок.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mf_place">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Садовая улица, 14</div><small>Карты · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="mf-map mf-map--small" aria-hidden="true"><i class="mf-road"></i><span class="mf-pin"><svg aria-hidden="true"><use href="#i-map-pin"/></svg></span></div>
+      <div class="lf-card"><b class="mf-title">Садовая улица, 14</b><small>СНТ «Яблонька», Алматинская обл. · 32 км</small></div>
+      <div class="lf-chips mf-actions"><span class="lf-chip"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg>Маршрут</span><button type="button" class="lf-chip mf-hot" data-t="mf_save"><svg aria-hidden="true"><use href="#i-star"/></svg>В избранное</button><span class="lf-chip"><svg aria-hidden="true"><use href="#i-send"/></svg>Поделиться</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mf_name">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Садовая улица, 14</div><small>Карты · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="mf-map mf-map--small" aria-hidden="true"><i class="mf-road"></i><span class="mf-pin"><svg aria-hidden="true"><use href="#i-map-pin"/></svg></span></div>
+      <div class="lf-card"><b class="mf-title">Садовая улица, 14</b><small>СНТ «Яблонька», Алматинская обл. · 32 км</small></div>
+      <div class="lf-chips mf-actions"><span class="lf-chip"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg>Маршрут</span><span class="lf-chip"><svg aria-hidden="true"><use href="#i-star"/></svg>В избранное</span><span class="lf-chip"><svg aria-hidden="true"><use href="#i-send"/></svg>Поделиться</span></div>
+      <p class="lf-label">Сохранить как</p>
+      <div class="lf-chips">
+        <span class="lf-chip">Дом</span><span class="lf-chip">Работа</span>
+        <button type="button" class="lf-chip mf-hot" data-t="mf_dacha">Дача</button><span class="lf-chip">Другое</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mf_saved">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Садовая улица, 14</div><small>Карты · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="mf-map mf-map--small" aria-hidden="true"><i class="mf-road"></i><span class="mf-pin"><svg aria-hidden="true"><use href="#i-map-pin"/></svg></span></div>
+      <div class="lf-card"><b class="mf-title">Садовая улица, 14</b><small>СНТ «Яблонька», Алматинская обл. · 32 км</small></div>
+      <div class="lf-chips mf-actions"><span class="lf-chip"><svg aria-hidden="true"><use href="#i-arrow-right"/></svg>Маршрут</span><span class="lf-chip is-on"><svg aria-hidden="true"><use href="#i-star"/></svg>В избранном</span><span class="lf-chip"><svg aria-hidden="true"><use href="#i-send"/></svg>Поделиться</span></div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Адрес сохранён в «Избранное» как «Дача»</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mf_home2">
+    <div class="lf-head"><div class="lf-head__top">Карты</div><small>Учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск адреса или места</div>
+      <div class="mf-map" aria-hidden="true"><i class="mf-road"></i><i class="mf-road mf-road--v"></i><span class="mf-me"></span></div>
+    </div>
+    <div class="lf-tabs"><span class="is-on"><svg aria-hidden="true"><use href="#i-map-pin"/></svg>Карта</span><button type="button" class="mf-tab" data-t="mf_favs"><svg aria-hidden="true"><use href="#i-star"/></svg>Избранное</button><span><svg aria-hidden="true"><use href="#i-arrow-right"/></svg>Маршруты</span></div>
+  </section>
+
+  <section class="screen lf lf--map" data-screen="mf_list">
+    <div class="lf-head"><div class="lf-head__top">Избранное</div><small>Карты · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Дом<small>Адрес не указан</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-briefcase"/></svg><span>Работа<small>Адрес не указан</small></span></div>
+      <button type="button" class="lf-row" data-t="mf_go"><svg aria-hidden="true"><use href="#i-star"/></svg><span>Дача<small>Садовая улица, 14 · СНТ «Яблонька»</small></span><b>Маршрут</b></button>
+    </div>
+    <div class="lf-tabs"><span><svg aria-hidden="true"><use href="#i-map-pin"/></svg>Карта</span><span class="is-on"><svg aria-hidden="true"><use href="#i-star"/></svg>Избранное</span><span><svg aria-hidden="true"><use href="#i-arrow-right"/></svg>Маршруты</span></div>
+  </section>
+</div>
+
+<div class="screens" data-screens="soc-stories">
+  <section class="screen ig" data-screen="st_feed">
+    <div class="ig-head"><b class="st-logo">Instagram</b><span class="ig-head__tools"><svg aria-hidden="true"><use href="#i-message"/></svg></span></div>
+    <div class="st-row">
+      <span class="st-bub"><span class="ig-av st-av st-av--me">Вы</span>Ваша история</span>
+      <button type="button" class="st-bub" data-t="st_open"><span class="ig-av st-av st-ring" style="background:#fde2e4;color:#a33a4b">А</span>aru_nur</button>
+      <span class="st-bub"><span class="ig-av st-av st-ring" style="background:#e3eefc;color:#2f5fa8">Б</span>bakhyt.k</span>
+      <span class="st-bub"><span class="ig-av st-av st-ring st-ring--seen" style="background:#e5f3ec;color:#2f7d4f">Д</span>dina_m</span>
+    </div>
+    <div class="st-post"><div class="st-post__h"><span class="ig-av st-av--sm" style="background:#e3eefc;color:#2f5fa8">Б</span><b>bakhyt.k</b></div><div class="st-post__img" aria-hidden="true"></div><small>Нравится: 12 · Осенний парк</small></div>
+  </section>
+
+  <section class="screen st" data-screen="st_story">
+    <div class="st-bars"><i class="is-on"></i><i></i></div>
+    <div class="st-top"><span class="ig-av st-av--sm" style="background:#fde2e4;color:#a33a4b">А</span><b>aru_nur</b><small>2 ч</small><span class="st-x" aria-hidden="true"><svg aria-hidden="true"><use href="#i-x"/></svg></span></div>
+    <div class="st-img" aria-hidden="true"><span class="st-piano"><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    <div class="st-cap">Мой первый концерт в музыкальной школе 🎹</div>
+    
+    <div class="st-bottom"><span class="st-reply">Отправить сообщение…</span><button type="button" class="st-heart" data-t="st_like" aria-label="Нравится">♡</button><span class="st-send"><svg aria-hidden="true"><use href="#i-send"/></svg></span></div>
+  </section>
+
+  <section class="screen st" data-screen="st_react">
+    <div class="st-bars"><i class="is-on"></i><i></i></div>
+    <div class="st-top"><span class="ig-av st-av--sm" style="background:#fde2e4;color:#a33a4b">А</span><b>aru_nur</b><small>2 ч</small><span class="st-x" aria-hidden="true"><svg aria-hidden="true"><use href="#i-x"/></svg></span></div>
+    <div class="st-img" aria-hidden="true"><span class="st-piano"><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    <div class="st-cap">Мой первый концерт в музыкальной школе 🎹</div>
+    <div class="st-emo"><small>Быстрые реакции</small><div><span>😂</span><span>😍</span><button type="button" data-t="st_emoji" aria-label="Хлопать">👏</button><span>🔥</span><span>😢</span></div></div>
+    <div class="st-bottom"><span class="st-reply">Отправить сообщение…</span><span class="st-heart is-on" aria-hidden="true">♥</span><span class="st-send"><svg aria-hidden="true"><use href="#i-send"/></svg></span></div>
+  </section>
+
+  <section class="screen st" data-screen="st_sent">
+    <div class="st-bars"><i class="is-on"></i><i></i></div>
+    <div class="st-top"><span class="ig-av st-av--sm" style="background:#fde2e4;color:#a33a4b">А</span><b>aru_nur</b><small>2 ч</small><button type="button" class="st-x" data-t="st_close" aria-label="Закрыть"><svg aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <div class="st-img" aria-hidden="true"><span class="st-piano"><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    <div class="st-cap">Мой первый концерт в музыкальной школе 🎹</div>
+    <div class="st-toast">Реакция 👏 отправлена</div>
+    <div class="st-bottom"><span class="st-reply">Отправить сообщение…</span><span class="st-heart is-on" aria-hidden="true">♥</span><span class="st-send"><svg aria-hidden="true"><use href="#i-send"/></svg></span></div>
+  </section>
+</div>
+
+<div class="screens" data-screens="travel-roam">
+  <section class="screen px-set" data-screen="rm_set">
+    <div class="px-title">Настройки</div>
+    <div class="px-search"><svg aria-hidden="true"><use href="#i-search"/></svg>Поиск настроек</div>
+    <div class="px-list">
+      <span class="px-row"><i style="background:#2f6fd0"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Wi-Fi</b><small>Не подключено</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <button type="button" class="px-row" data-t="rm_simrow"><i style="background:#1f8a70"><svg aria-hidden="true"><use href="#i-signal"/></svg></i><span><b>SIM-карты и мобильные сети</b><small>Мобильные данные, роуминг</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+      <span class="px-row"><i style="background:#d8577a"><svg aria-hidden="true"><use href="#i-speaker"/></svg></i><span><b>Звук и вибрация</b><small>Обычный режим</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+      <span class="px-row"><i style="background:#3f9b6e"><svg aria-hidden="true"><use href="#i-battery"/></svg></i><span><b>Батарея</b><small>64%</small></span><svg class="px-chev" aria-hidden="true"><use href="#i-chevron-right"/></svg></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="rm_sim">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>SIM-карты и сети</div>
+    <div class="px-card px-card--row"><span><b>Мобильные данные</b><small>Интернет через сим-карту</small></span><span class="px-tog is-on"></span></div>
+    <div class="px-card px-card--row rm-warn"><span><b>Роуминг данных</b><small>Интернет через чужую сеть за границей. Может стоить очень дорого</small></span><button type="button" class="px-tog is-on" data-t="rm_tog" aria-label="Выключить роуминг данных"></button></div>
+    <div class="px-cap">Вы в поездке · Турция</div>
+    <div class="px-list px-list--card"><span class="px-row px-row--plain"><span><b>Сеть</b><small>TR Mobile · роуминг</small></span></span></div>
+  </section>
+
+  <section class="screen px-set" data-screen="rm_off">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>SIM-карты и сети</div>
+    <div class="px-card px-card--row"><span><b>Мобильные данные</b><small>Интернет через сим-карту</small></span><span class="px-tog is-on"></span></div>
+    <div class="px-card px-card--row"><span><b>Роуминг данных</b><small>Интернет через чужую сеть за границей. Может стоить очень дорого</small></span><span class="px-tog"></span></div>
+    <div class="px-card rm-ok"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>Роуминг данных выключен. Звонки и SMS работают как обычно.</span></div>
+    <div class="px-cap">Вы в поездке · Турция</div>
+    <div class="px-list px-list--card"><span class="px-row px-row--plain"><span><b>Сеть</b><small>TR Mobile · роуминг</small></span></span></div>
+  </section>
+
+  <section class="screen px-set" data-screen="rm_wifi">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Wi-Fi</div>
+    <div class="px-card px-card--row"><span><b>Wi-Fi</b></span><span class="px-tog is-on"></span></div>
+    <div class="px-cap">Доступные сети</div>
+    <div class="px-list px-list--card">
+      <button type="button" class="px-row" data-t="rm_hotel"><i style="background:#2f6fd0"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Hotel_Guest</b><small>Защищена · пароль на ресепшене</small></span><svg aria-hidden="true"><use href="#i-lock"/></svg></button>
+      <span class="px-row"><i style="background:#9aa0a6"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Free_Airport_WiFi</b><small>Открытая сеть, без пароля</small></span></span>
+      <span class="px-row"><i style="background:#9aa0a6"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Cafe_Deniz</b><small>Защищена</small></span><svg aria-hidden="true"><use href="#i-lock"/></svg></span>
+    </div>
+  </section>
+
+  <section class="screen px-set" data-screen="rm_conn">
+    <div class="px-head"><span class="px-back"><svg aria-hidden="true"><use href="#i-arrow-left"/></svg></span>Wi-Fi</div>
+    <div class="px-card px-card--row"><span><b>Wi-Fi</b></span><span class="px-tog is-on"></span></div>
+    <div class="px-cap">Доступные сети</div>
+    <div class="px-list px-list--card">
+      <span class="px-row"><i style="background:#2f6fd0"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Hotel_Guest</b><small class="rm-conn">Подключено</small></span></span>
+      <span class="px-row"><i style="background:#9aa0a6"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Free_Airport_WiFi</b><small>Открытая сеть, без пароля</small></span></span>
+      <span class="px-row"><i style="background:#9aa0a6"><svg aria-hidden="true"><use href="#i-wifi"/></svg></i><span><b>Cafe_Deniz</b><small>Защищена</small></span><svg aria-hidden="true"><use href="#i-lock"/></svg></span>
+    </div>
+  </section>
+</div>
+
+<div class="screens" data-screens="family-bday">
+  <section class="screen lf lf--clock" data-screen="bd_month">
+    <div class="lf-head"><div class="lf-head__top">Календарь</div><small>Декабрь 2026 · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="bd-grid"><span class="bd-wd">Пн</span><span class="bd-wd">Вт</span><span class="bd-wd">Ср</span><span class="bd-wd">Чт</span><span class="bd-wd">Пт</span><span class="bd-wd">Сб</span><span class="bd-wd">Вс</span><span></span><span class="bd-d">1</span><span class="bd-d">2</span><span class="bd-d">3</span><span class="bd-d">4</span><span class="bd-d">5</span><span class="bd-d">6</span><span class="bd-d">7</span><span class="bd-d">8</span><span class="bd-d">9</span><span class="bd-d">10</span><span class="bd-d">11</span><span class="bd-d">12</span><span class="bd-d">13</span><button type="button" class="bd-d bd-hot" data-t="bd_d14">14</button><span class="bd-d">15</span><span class="bd-d">16</span><span class="bd-d">17</span><span class="bd-d">18</span><span class="bd-d">19</span><span class="bd-d">20</span><span class="bd-d">21</span><span class="bd-d">22</span><span class="bd-d">23</span><span class="bd-d">24</span><span class="bd-d">25</span><span class="bd-d">26</span><span class="bd-d">27</span><span class="bd-d">28</span><span class="bd-d">29</span><span class="bd-d">30</span><span class="bd-d">31</span></div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--clock" data-screen="bd_day">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Понедельник, 14 декабря</div><small>Календарь · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-note">Событий нет</div>
+    </div>
+    <button type="button" class="sc-fab bd-fab" data-t="bd_add" aria-label="Новое событие"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+  </section>
+
+  <section class="screen lf lf--clock" data-screen="bd_new">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Новое событие</div><small>Календарь · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-input">День рождения Арсена<small>Название</small></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Понедельник, 14 декабря<small>Весь день</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Повторять каждый год<small>Не повторять</small></span><button type="button" class="px-tog" data-t="bd_year" aria-label="Повторять каждый год"></button></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-bell"/></svg><span>Напоминание<small>Нет</small></span></div>
+    </div>
+    <div class="lf-foot"><span class="lf-btn bd-off">Сохранить</span></div>
+  </section>
+
+  <section class="screen lf lf--clock" data-screen="bd_new2">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Новое событие</div><small>Календарь · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-input">День рождения Арсена<small>Название</small></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Понедельник, 14 декабря<small>Весь день</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Повторять каждый год<small>Каждый год 14 декабря</small></span><span class="px-tog is-on"></span></div>
+      <button type="button" class="lf-row" data-t="bd_rem"><svg aria-hidden="true"><use href="#i-bell"/></svg><span>Напоминание<small>Нет</small></span></button>
+    </div>
+    <div class="lf-foot"><span class="lf-btn bd-off">Сохранить</span></div>
+  </section>
+
+  <section class="screen lf lf--clock" data-screen="bd_remind">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Напоминание</div><small>Календарь · учебный экран</small></div>
+    <div class="lf-body">
+      <p class="lf-label">Когда напомнить</p>
+      <div class="lf-chips bd-col">
+        <span class="lf-chip">В день события, в 9:00</span>
+        <button type="button" class="lf-chip bd-hot" data-t="bd_1d">За 1 день, в 10:00</button>
+        <span class="lf-chip">За неделю</span>
+      </div>
+      <div class="lf-note">За день до праздника телефон покажет уведомление и подаст звук. Успеете купить подарок и позвонить.</div>
+    </div>
+  </section>
+
+  <section class="screen lf lf--clock" data-screen="bd_new3">
+    <div class="lf-head"><div class="lf-head__top"><span class="lf-back">‹</span>Новое событие</div><small>Календарь · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="lf-input">День рождения Арсена<small>Название</small></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-clock"/></svg><span>Понедельник, 14 декабря<small>Весь день</small></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-refresh"/></svg><span>Повторять каждый год<small>Каждый год 14 декабря</small></span><span class="px-tog is-on"></span></div>
+      <div class="lf-row"><svg aria-hidden="true"><use href="#i-bell"/></svg><span>Напоминание<small>За 1 день, в 10:00</small></span></div>
+    </div>
+    <div class="lf-foot"><button type="button" class="lf-btn" data-t="bd_save">Сохранить</button></div>
+  </section>
+
+  <section class="screen lf lf--clock" data-screen="bd_saved">
+    <div class="lf-head"><div class="lf-head__top">Календарь</div><small>Декабрь 2026 · учебный экран</small></div>
+    <div class="lf-body">
+      <div class="bd-grid"><span class="bd-wd">Пн</span><span class="bd-wd">Вт</span><span class="bd-wd">Ср</span><span class="bd-wd">Чт</span><span class="bd-wd">Пт</span><span class="bd-wd">Сб</span><span class="bd-wd">Вс</span><span></span><span class="bd-d">1</span><span class="bd-d">2</span><span class="bd-d">3</span><span class="bd-d">4</span><span class="bd-d">5</span><span class="bd-d">6</span><span class="bd-d">7</span><span class="bd-d">8</span><span class="bd-d">9</span><span class="bd-d">10</span><span class="bd-d">11</span><span class="bd-d">12</span><span class="bd-d">13</span><span class="bd-d bd-mark">14</span><span class="bd-d">15</span><span class="bd-d">16</span><span class="bd-d">17</span><span class="bd-d">18</span><span class="bd-d">19</span><span class="bd-d">20</span><span class="bd-d">21</span><span class="bd-d">22</span><span class="bd-d">23</span><span class="bd-d">24</span><span class="bd-d">25</span><span class="bd-d">26</span><span class="bd-d">27</span><span class="bd-d">28</span><span class="bd-d">29</span><span class="bd-d">30</span><span class="bd-d">31</span></div>
+      <div class="lf-status"><svg aria-hidden="true"><use href="#i-check-circle"/></svg><span>«День рождения Арсена» — каждый год 14 декабря, напоминание за день</span></div>
     </div>
   </section>
 </div>

@@ -1,7 +1,7 @@
 {
   "provider": "edge-neural (prototype)",
   "rate": "-5%",
-  "generatedAt": "2026-11-23T12:53:51",
+  "generatedAt": "2026-11-23T23:28:11",
   "languages": {
     "ru": {
       "female": {
@@ -159,6 +159,12 @@
       "photo-scan",
       "wa-forward",
       "health-screening",
+      "home-gas-check",
+      "money-calc",
+      "maps-fav",
+      "soc-stories",
+      "travel-roaming",
+      "family-birthday",
       "bank-halyk",
       "bank-bcc",
       "bank-freedom",
@@ -350,6 +356,12 @@
       "photo-scan",
       "wa-forward",
       "health-screening",
+      "home-gas-check",
+      "money-calc",
+      "maps-fav",
+      "soc-stories",
+      "travel-roaming",
+      "family-birthday",
       "taxi-indrive",
       "taxi-greensm",
       "greensm-lang",
