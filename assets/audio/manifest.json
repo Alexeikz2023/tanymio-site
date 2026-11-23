@@ -1,7 +1,7 @@
 {
   "provider": "edge-neural (prototype)",
   "rate": "-5%",
-  "generatedAt": "2026-11-23T07:48:23",
+  "generatedAt": "2026-11-23T12:53:51",
   "languages": {
     "ru": {
       "female": {
@@ -153,6 +153,12 @@
       "family-call",
       "dlv-postamat",
       "weather",
+      "phone-flashlight",
+      "safety-qr",
+      "gov-109",
+      "photo-scan",
+      "wa-forward",
+      "health-screening",
       "bank-halyk",
       "bank-bcc",
       "bank-freedom",
@@ -338,6 +344,12 @@
       "family-call",
       "dlv-postamat",
       "weather",
+      "phone-flashlight",
+      "safety-qr",
+      "gov-109",
+      "photo-scan",
+      "wa-forward",
+      "health-screening",
       "taxi-indrive",
       "taxi-greensm",
       "greensm-lang",
